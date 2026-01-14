@@ -69,14 +69,14 @@ With 3+ years of experience building scalable data platforms across cloud and on
 - Designed and implemented a Lakehouse using Medallion Architecture
 - Processed hundreds of millions of IoT records/day from 90k+ devices
 - Improved data reliability and analytics availability for business teams  
-➡️ Repo: github.com/yourname/iot-lakehouse
+➡️ Repo: github.com/devzurc/iot-lakehouse
 
 ### Payments Data Warehouse
 **Tech:** Python, SQL, Airflow, Oracle, Power BI  
 - Integrated multiple payment providers (PagSeguro, Stone, Cielo)
 - Built a Data Warehouse supporting financial and operational reporting
 - Enabled faster decision-making for stakeholders  
-➡️ Repositorio: github.com/yourname/payments-dwh
+➡️ Repositorio: github.com/devzurc/payments-dwh
 <!-- ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg) -->
 
 ---
