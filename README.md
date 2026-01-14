@@ -1,10 +1,9 @@
 ### Big Data Engineer
 With 3+ years of experience delivering scalable data platforms across cloud (AWS) and on-premises environments. Strong background in Python, SQL, PySpark, Airflow, Trino and Docker, with hands-on experience designing Data Lake, Data Warehouse and Lakehouse architectures. Proven ability to integrate complex data sources (APIs, databases, IoT streams) and deliver reliable analytics for business stakeholders. Currently expanding expertise in Snowflake, Databricks, dbt and Kafka, with a strong interest in modern, cloud-native data engineering roles in the UK. 
 #### Technical Skills: Python, SQL, AWS, Snowflake, Databricks, dbt, PySpark, Airflow, Trino, Power B.I ...
+- [My Linkedin](https://www.linkedin.com/in/lucas-cruz/)
 - [⬇️ Download CV (ENG)](assets/files/cv/eng.pdf)
 - [⬇️ Download CV (PT-BR)](assets/files/cv/ptbr.pdf)
-
-- [Linkedin](https://www.linkedin.com/in/lucas-cruz/)
 
 ## Education		        		
 - B.S., System Analysis and Development | Dom Bosco University 
@@ -12,38 +11,33 @@ With 3+ years of experience delivering scalable data platforms across cloud (AWS
 
 ## Work Experience
 **Data Engineer @ Spacecom Monitoramento (_Apr 2023 - Jul 2024_)**
-- Led stakeholder discussions to gather requirements and translate business needs into 
-technical data solutions. 
-- Designed and implemented an end-to-end batch data pipeline integrating PostgreSQL, SQL Server, APIs and Excel/CSV sources using Python and SQL. 
-- Built and maintained a Big Data Lakehouse on AWS S3 following the Medallion Architecture (Bronze, Silver, Gold) with Delta Parquet. 
-- Developed scalable data transformations using PySpark and Pandas and exposed curated datasets via Trino. 
-- Orchestrated ETL workflows with Apache Airflow, ensuring reliable scheduling and monitoring. 
-- Deployed services using Docker on AWS EC2, supporting production-grade workloads. 
-- Created analytical dashboards with Qlik Sense and Apache Superset, enabling data-driven decision-making. 
-- Supported a platform ingesting data from 90k+ IoT devices, processing hundreds of millions of records per day. 
+- Owned end-to-end batch data pipelines, working closely with stakeholders to translate bussiness requirements into scalable data solutions.
+- Built and maintained a Big Data Lakehouse on AWS S3 using Medallion Architecture (Bronze, Silver, Gold) with Delta Parquet, PySpark, Pandas, SQL, and Trino.
+- Orchestrated and monitored ETL workflows with Apache Airflow and deployed containerised services with Docker on AWS EC2. 
+- Supported a production platform ingesting data from 90k+ IoT devices, processing hundres of milions of records per day, and delivering insights via Qlik Sense and Apache Superset dashboards.
 
 **Data Engineer Consultant @ wDiscover (_Jun 2022 - May 2024_)**
-- Delivered multiple end-to-end data projects in collaboration with business stakeholders. 
-- Integrated data from payment providers (PagSeguro, Stone, Cielo) and agricultural machinery (John Deere). 
-- Ingested and processed data from APIs, SQL Server, PostgreSQL, Excel/CSV files and web scraping pipelines using Python and SQL. 
-- Designed and maintained Data Warehouses on SQL Server and Oracle Autonomous Database. 
-- Performed data cleansing, transformation and loading using Pandas. 
-- Orchestrated ETL pipelines with Apache Airflow and deployed solutions on Oracle Cloud VMs using Docker. 
-- Developed Power BI dashboards to support operational and strategic business analytics.
+- Delivered multiple end-to-end data projects as a consultant, collaborating directly with business and technical stakeholders across different domains.
+- Integrated and processed data from payment providers (PagSeguro, Stone, Cielo), agricultural machinery (John Deere), APIs, relational databases, Excel/CSV files and web scraping pipelines using Python and SQL.
+- Designed and maintained Data Warehouses on SQL Server and Oracle Autonomous Database, handling data modelling, cleansing and transformations with Pandas.
+- Orchestrated ETL pipelines with Apache Airflow, deployed solutions using Docker on Oracle Cloud VMs, and built Power BI dashboards to support operational and strategic decision-making.
 
 **Data Analyst @ Itaete Group (_Jun 2020 - Feb 2023_)**
-- Developed data solutions integrating IoT devices, PostgreSQL, SQL Server, APIs and Excel/CSV files. 
-- Built data pipelines using Python and SQL, performing data cleansing and transformation with Pandas. 
-- Designed and implemented a Data Warehouse in SQL Server to support reporting and analytics. 
-- Created dashboards using Power BI and Excel for internal teams and clients. 
-- Developed an internal system for inventory management and financial process automation, including invoice generation and automated weekly dashboard distribution. 
-- Provided ongoing client support, ensuring data quality, reliability and platform stability. 
+- Built and maintained data solutions integrating IoT devices, PostgreSQL, SQL Server, APIs and Excel/CSV sources to support operational and analytical needs.
+- Developed and optimised data pipelines using Python and SQL, performing data cleansing, transformation and validation with Pandas.
+- Designed and implemented a SQL Server Data Warehouse, enabling reliable reporting and business analytics for internal teams and clients.
+- Created Power BI and Excel dashboards to support decision-making, and developed internal systems for inventory management and financial automation, including invoice generation and automated weekly report distribution. 
 
 **Data Assistant @ Noster Group (_Jun 2017 - Feb 2018_)**
-- ...
+- Supported data solutions integrating telemetry data, SQL Server, APIs and Excel/CSV files for operational monitoring and reporting.
+- Assisted in training drivers and operational staff on telemetry, charging systems and equipment usage, ensuring correct system adoption and data accuracy.
+- Produced Excel reports and dashboards, using VBA macros to automate recurring tasks, data consolidation and basic data manipulation for operational analysis and day-to-day decision-making.
 
 **IT Assistant @ Noster Group (_Nov 2014 - Nov 2016_)**
-- ...
+- Provided day-to-day support for IT infrastructure, including networks, security and on-premise systems.
+- Performed computer and system maintenance, troubleshooting hardware and software issues to ensure operational continuity.
+- Supported database administration tasks, including basic maintenance, backups and data organisation.
+- Created Excel reports and dashboards, leveraging VBA macros to automate manual processes, standardise data handling and improve reporting efficiency.
 
 <!-- - Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
 - Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
@@ -53,15 +47,10 @@ technical data solutions.
 - Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes -->
 
 ## Projects
-### Data-Driven Spacecom
+### Developing
 [Publication](https://www.mdpi.com/1424-8220/22/8/3048)
-Developed a **Data Pipeline**.
+Developing a **Big Data Pipeline**.
 <!-- ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg) -->
-
-### ETL JohnDeere wDiscover
-[Publication](https://www.mdpi.com/1424-8220/22/11/4240)
-Used **Johndeere API**.
-<!-- ![Bike Study](/assets/img/bike_study.jpeg) -->
 
 ## Certificates
 #### English:
