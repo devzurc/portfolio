@@ -85,9 +85,9 @@ With 3+ years of experience building scalable data platforms across cloud and on
 ## 🏆 Selected Certifications (Verified)
 ### 🌍 English
 * **IELTS – International English Language Testing System**
-  📄 Proof: `assets/files/ed-certificates/ielts-general-site`
+  📄 [Proof]('assets/files/ed-certificates/ielts-general-site')
 * **Udemy – Inglês Extremo (Intermediate)**
-  🔗 [https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec](https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec)
+  [🔗](https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec)
 ---
 ### 🏗️ Data Engineering (Core)
 * **IBM / Coursera – Introduction to Data Engineering**
