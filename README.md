@@ -40,15 +40,17 @@ technical data solutions.
 - Provided ongoing client support, ensuring data quality, reliability and platform stability. 
 
 **Data Assistant @ Noster Group (_Jun 2017 - Feb 2018_)**
-- Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
+- ...
+
+**IT Assistant @ Noster Group (_Nov 2014 - Nov 2016_)**
+- ...
+
+<!-- - Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
 - Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
 - Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
 - Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
-
-
-**IT Assistant @ Noster Group (_Nov 2014 - Nov 2016_)**
 - Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
-- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
+- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes -->
 
 ## Projects
 ### Data-Driven Spacecom
