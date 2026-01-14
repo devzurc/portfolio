@@ -102,15 +102,10 @@ With 3+ years of experience building scalable data platforms across cloud and on
 * [DS Academy – Python for Data Analysis](https://mycourse.app/f5pLpS2UcVbZ66iq8)
 * Alura – Python for Data Science Track
   * [Python & NumPy](https://cursos.alura.com.br/certificate/74d6c51a-2c05-47f7-9776-c59f0c1682a1)  
-    🔗 https://cursos.alura.com.br/certificate/74d6c51a-2c05-47f7-9776-c59f0c1682a1
   * [Pandas & Data Manipulation](https://cursos.alura.com.br/certificate/87802c24-9028-4dba-986d-2b5b96462e37)  
-    🔗 https://cursos.alura.com.br/certificate/87802c24-9028-4dba-986d-2b5b96462e37
   * [Pandas I/O & File Formats](https://cursos.alura.com.br/certificate/66b174ad-2f0f-468b-8318-0f44ec4d9549)  
-    🔗 https://cursos.alura.com.br/certificate/66b174ad-2f0f-468b-8318-0f44ec4d9549
   * [Pandas Fundamentals](https://cursos.alura.com.br/certificate/fc1e7983-1a3a-45f2-91a2-ea7a11ef2523)  
-    🔗 https://cursos.alura.com.br/certificate/fc1e7983-1a3a-45f2-91a2-ea7a11ef2523
   * [Python for Data Science – Foundations](https://cursos.alura.com.br/certificate/44e0fed8-4f87-4824-94b8-bdca55d01843)  
-    🔗 https://cursos.alura.com.br/certificate/44e0fed8-4f87-4824-94b8-bdca55d01843
 
 ---
 
@@ -148,8 +143,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 ---
 
 ### Agile & Methodology
-* Scrum Foundation Professional Certificate (SFPC™) 
-  🔗 https://www.credly.com/badges/3c1a2135-0ef4-4af4-9905-f716aa45a520/linked_in_profile
+* [Scrum Foundation Professional Certificate (SFPC™)](https://www.credly.com/badges/3c1a2135-0ef4-4af4-9905-f716aa45a520/linked_in_profile)
 
 ---
 
