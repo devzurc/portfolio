@@ -1,5 +1,4 @@
-# I’m Lucas Cruz — Data Engineer
-Driven by curiosity, ownership, and continuous self-learning. I enjoy turning messy, high-volume data into reliable platforms that support real business decisions. I’ve worked end-to-end on production data systems — from ingestion to analytics — always focused on scalability, data quality, and measurable impact. I believe good data engineering is not just about tools, but about understanding problems, asking the right questions, and building solutions that actually get used.
+# Data Engineer
 With 3+ years of experience building scalable data platforms across cloud and on-prem environments. Proven expertise in Lakehouse, Data Lake and Data Warehouse architectures, high-volume IoT data (100k+ devices), and end-to-end ETL pipelines. Strong hands-on experience with Python, SQL, PySpark, Airflow, Trino and Docker, with growing focus on Snowflake, Databricks, dbt and Kafka.
 
 ---
