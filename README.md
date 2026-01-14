@@ -1,6 +1,6 @@
 ### Big Data Engineer
-With 3+ years of experience delivering scalable data platforms across cloud (AWS) and on-premises environments. Strong background in Python, SQL, PySpark, Airflow, Trino and Docker, with hands-on experience designing Data Lake, Data Warehouse and Lakehouse architectures. Proven ability to integrate complex data sources (APIs, databases, IoT streams) and deliver reliable analytics for business stakeholders. Currently expanding expertise in Snowflake, Databricks, dbt and Kafka, with a strong interest in modern, cloud-native data engineering roles in the UK. 
-#### Technical Skills: Python, SQL, AWS, Snowflake, Databricks, dbt, PySpark, Airflow, Trino, Power B.I ...
+Data Engineer with 3+ years of experience delivering scalable data platforms across cloud and on-prem environments. Led end-to-end development of batch and analytical pipelines, identifying and correcting pipeline gaps that directly improved data reliability for business users. Built and optimised Lakehouse, Data Lake and Data Warehouse architectures supporting high-volume IoT platforms (90k+ devices, hundreds of millions of records/day). Proven ability to integrate complex sources (APIs, payments, databases, telemetry) and translate business requirements into trusted analytics, dashboards and operational insights. Strong expertise in Python, SQL, PySpark, Airflow, Trino and Docker, with growing focus on Snowflake, Databricks, dbt and Kafka.
+
 - <a href="https://www.linkedin.com/in/lucas-cruz/" target="_blank" rel="noopener noreferrer">➡️ Access LinkedIn</a>
 - <a href="assets/files/cv/eng.pdf" target="_blank" rel="noopener noreferrer">⬇️ Download CV (ENG)</a>
 - <a href="assets/files/cv/ptbr.pdf" target="_blank" rel="noopener noreferrer">⬇️ Download CV (PT-BR)</a>
@@ -48,6 +48,31 @@ With 3+ years of experience delivering scalable data platforms across cloud (AWS
 - Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
 - Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
 - Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes -->
+
+## Technical Skills: 
+#### Data Platforms & Analytics
+- Snowflake, Databricks, Apache Spark, PySpark, Trino, Hadoop
+#### Data Architecture
+- Data Lake, Data Warehouse, Lakehouse Architecture
+- Medallion Architecture (Bronze, Silver, Gold)
+- Big Data Analytics, Data Modeling, Data Architecture
+#### Orchestration & ETL
+- Apache Airflow, ETL Pipelines, Oracle Data Integrator (ODI)
+#### Cloud & Infrastructure
+- Amazon Web Services (AWS): S3, EC2, ECS, Lambda, IAM, RDS
+- Oracle Cloud Infrastructure (OCI)
+#### Programming & Query Languages
+- Python, SQL, Shell Scripting
+#### Databases
+- PostgreSQL, SQL Server, Oracle Database
+#### BI & Data Visualisation
+- Power BI, Qlik Sense, Apache Superset, Looker
+#### DevOps & Tooling
+- Docker, Git, Nginx
+#### Productivity & Reporting
+- Microsoft Excel, Microsoft Office
+#### Currently Expanding
+- dbt, Apache Kafka
 
 ## Projects
 ### Developing
