@@ -142,6 +142,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 
 ## 📫 Let’s Connect
 - **Email:** *dev.lucascruz@gmail.com*
+
 - <a href="https://www.linkedin.com/in/lucas-cruz/" target="_blank" rel="noopener noreferrer">➡️ Access LinkedIn</a>
 ---
 - <a href="assets/files/cv/eng.pdf" target="_blank" rel="noopener noreferrer">⬇️ Download CV (ENG)</a>
