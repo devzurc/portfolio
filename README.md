@@ -3,8 +3,9 @@ with 3+ years of experience delivering scalable data platforms across cloud (AWS
 
 #### Technical Skills: Python, SQL, AWS, Snowflake, Databricks...
 
-[⬇️ Download Resume (ENG)](assets/files/LucasCruz_curriculo_eng)
-[⬇️ Download Resume (PT-BR)](assets/files/LucasCruz_curriculo_pt.pdf)
+## Resume;
+- [⬇️ Download CV (ENG)](assets/files/LucasCruz_curriculo_eng.pdf)
+- [⬇️ Download CV (PT-BR)](assets/files/LucasCruz_curriculo_pt.pdf)
 
 ## Education		        		
 - B.S., System Analysis and Development | Dom Bosco University 
