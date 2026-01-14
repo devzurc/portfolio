@@ -4,6 +4,21 @@ With 3+ years of experience delivering scalable data platforms across cloud (AWS
 - [➡️ Access Linkedin](https://www.linkedin.com/in/lucas-cruz/)
 - [⬇️ Download CV (ENG)](assets/files/cv/eng.pdf)
 - [⬇️ Download CV (PT-BR)](assets/files/cv/ptbr.pdf)
+<a href="https://www.linkedin.com/in/lucas-cruz/" target="_blank" rel="noopener noreferrer">
+➡️ Access LinkedIn
+</a>
+
+<br/>
+
+<a href="assets/files/cv/eng.pdf" target="_blank" rel="noopener noreferrer">
+⬇️ Download CV (ENG)
+</a>
+
+<br/>
+
+<a href="assets/files/cv/ptbr.pdf" target="_blank" rel="noopener noreferrer">
+⬇️ Download CV (PT-BR)
+</a>
 
 ## Education		        		
 - B.S., System Analysis and Development | Dom Bosco University 
