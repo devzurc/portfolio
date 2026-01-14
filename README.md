@@ -1,7 +1,7 @@
 ### Big Data Engineer
 With 3+ years of experience delivering scalable data platforms across cloud (AWS) and on-premises environments. Strong background in Python, SQL, PySpark, Airflow, Trino and Docker, with hands-on experience designing Data Lake, Data Warehouse and Lakehouse architectures. Proven ability to integrate complex data sources (APIs, databases, IoT streams) and deliver reliable analytics for business stakeholders. Currently expanding expertise in Snowflake, Databricks, dbt and Kafka, with a strong interest in modern, cloud-native data engineering roles in the UK. 
 #### Technical Skills: Python, SQL, AWS, Snowflake, Databricks, dbt, PySpark, Airflow, Trino, Power B.I ...
-- [My Linkedin](https://www.linkedin.com/in/lucas-cruz/)
+- [➡️ Access Linkedin](https://www.linkedin.com/in/lucas-cruz/)
 - [⬇️ Download CV (ENG)](assets/files/cv/eng.pdf)
 - [⬇️ Download CV (PT-BR)](assets/files/cv/ptbr.pdf)
 
