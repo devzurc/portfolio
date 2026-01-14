@@ -1,6 +1,10 @@
 # Big Data Engineer
+with 3+ years of experience delivering scalable data platforms across cloud (AWS) and on-premises environments. Strong background in Python, SQL, PySpark, Airflow, Trino and Docker, with hands-on experience designing Data Lake, Data Warehouse and Lakehouse architectures. Proven ability to integrate complex data sources (APIs, databases, IoT streams) and deliver reliable analytics for business stakeholders. Currently expanding expertise in Snowflake, Databricks, dbt and Kafka, with a strong interest in modern, cloud-native data engineering roles in the UK. 
 
 #### Technical Skills: Python, SQL, AWS, Snowflake, Databricks...
+
+[⬇️ Download Resume (ENG)](assets/files/LucasCruz_curriculo_eng)
+[⬇️ Download Resume (PT-BR)](assets/files/LucasCruz_curriculo_pt.pdf)
 
 ## Education		        		
 - B.S., System Analysis and Development | Dom Bosco University 
