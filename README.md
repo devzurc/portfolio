@@ -28,6 +28,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 * Supported a large-scale production platform ingesting data from **90k+ IoT devices**, processing **hundreds of millions of records per day**.
 * Delivered analytics-ready data to **Qlik Sense and Apache Superset dashboards**, improving data reliability, observability, and decision-making.
 * Identified and corrected missing steps in production pipelines, significantly improving **data quality and downstream analytics accuracy**.
+
 ---
 ### **Data Engineer Consultant @ wDiscover**
 *Jun 2022 – May 2024*
@@ -36,6 +37,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 * Designed and maintained **Data Warehouses** on **SQL Server and Oracle Autonomous Database**, handling data modelling, cleansing, and complex transformations using **Python, Pandas, and SQL**.
 * Built and orchestrated **production-ready ETL pipelines** with **Apache Airflow**, deploying solutions using **Docker on Oracle Cloud VMs**.
 * Developed **Power BI dashboards** to support operational monitoring and strategic decision-making, enabling stakeholders to track KPIs and business performance.
+
 ---
 ### **Data Analyst @ Itaete Group**
 *Jun 2020 – Feb 2023*
@@ -44,12 +46,14 @@ With 3+ years of experience building scalable data platforms across cloud and on
 * Designed and implemented a **SQL Server Data Warehouse**, enabling reliable reporting and scalable business analytics for internal teams and external clients.
 * Created **Power BI and Excel dashboards** to support management decision-making and operational analysis.
 * Developed internal systems for **inventory management and financial automation**, including invoice generation and **automated weekly report distribution**, reducing manual effort and errors.
+
 ---
 ### **Data Assistant @ Noster Group**
 *Jun 2017 – Feb 2018*
 * Supported data solutions integrating **telemetry data, SQL Server, APIs, and Excel/CSV files** for operational monitoring and reporting.
 * Assisted in training drivers and operational staff on telemetry systems, charging platforms, and equipment usage, ensuring correct system adoption and data accuracy.
 * Produced **Excel reports and dashboards**, using **VBA macros** to automate recurring tasks, data consolidation, and basic data manipulation for day-to-day operational analysis.
+
 ---
 ### **IT Assistant @ Noster Group**
 *Nov 2014 – Nov 2016*
