@@ -83,89 +83,67 @@ With 3+ years of experience building scalable data platforms across cloud and on
 ## 🏆 Selected Certifications
 
 ### English Proficiency
-* IELTS – International English Language Testing System
-  📄 [Proof](assets/files/ed-certificates/ielts-general-site)
-* Udemy – Inglês Extremo (Intermediate)
-  🔗 https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec
+* [IELTS – International English Language Testing System](assets/files/ed-certificates/ielts-general-site)
+* [Udemy – Inglês Extremo (Intermediate)](https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec)
 
 ---
 
 ### Data Engineering
-* IBM / Coursera – Introduction to Data Engineering
-  🔗 https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X
-* DS Academy – Fundamentos de Engenharia de Dados**  
-  🔗 https://mycourse.app/mDey2z4xSWzPUS2T7
+* [IBM / Coursera – Introduction to Data Engineering](https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X)
+* [DS Academy – Fundamentos de Engenharia de Dados](https://mycourse.app/mDey2z4xSWzPUS2T7)
 * Alura – ETL with SQL Server Integration Services (SSIS)
-  * Data Modeling  
-    🔗 https://cursos.alura.com.br/certificate/b1e3dc95-d65d-4ba7-a422-5914475941eb
-  * Data Transformation  
-    🔗 https://cursos.alura.com.br/certificate/56011c99-ecd5-40f1-8647-56469f4bcee8
+  * [Data Modeling](https://cursos.alura.com.br/certificate/b1e3dc95-d65d-4ba7-a422-5914475941eb)
+  * [Data Transformation](https://cursos.alura.com.br/certificate/56011c99-ecd5-40f1-8647-56469f4bcee8)
 
 ---
 
 ### Python & Data Processing
-* Udemy – The Complete Python Developer Certification
-  🔗 https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/
-* DS Academy – Python for Data Analysis
-  🔗 https://mycourse.app/f5pLpS2UcVbZ66iq8
+* [Udemy – The Complete Python Developer Certification](https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/)
+* [DS Academy – Python for Data Analysis](https://mycourse.app/f5pLpS2UcVbZ66iq8)
 * Alura – Python for Data Science Track
-  * Python & NumPy  
+  * [Python & NumPy](https://cursos.alura.com.br/certificate/74d6c51a-2c05-47f7-9776-c59f0c1682a1)  
     🔗 https://cursos.alura.com.br/certificate/74d6c51a-2c05-47f7-9776-c59f0c1682a1
-  * Pandas & Data Manipulation  
+  * [Pandas & Data Manipulation](https://cursos.alura.com.br/certificate/87802c24-9028-4dba-986d-2b5b96462e37)  
     🔗 https://cursos.alura.com.br/certificate/87802c24-9028-4dba-986d-2b5b96462e37
-  * Pandas I/O & File Formats  
+  * [Pandas I/O & File Formats](https://cursos.alura.com.br/certificate/66b174ad-2f0f-468b-8318-0f44ec4d9549)  
     🔗 https://cursos.alura.com.br/certificate/66b174ad-2f0f-468b-8318-0f44ec4d9549
-  * Pandas Fundamentals  
+  * [Pandas Fundamentals](https://cursos.alura.com.br/certificate/fc1e7983-1a3a-45f2-91a2-ea7a11ef2523)  
     🔗 https://cursos.alura.com.br/certificate/fc1e7983-1a3a-45f2-91a2-ea7a11ef2523
-  * Python for Data Science – Foundations  
+  * [Python for Data Science – Foundations](https://cursos.alura.com.br/certificate/44e0fed8-4f87-4824-94b8-bdca55d01843)  
     🔗 https://cursos.alura.com.br/certificate/44e0fed8-4f87-4824-94b8-bdca55d01843
 
 ---
 
 ### Cloud Computing (AWS)
-* Coursera - AWS Cloud Practitioner Essentials
-  🔗 https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD
-* Udemy – AWS for Beginners
-  🔗 https://ude.my/UC-d6419758-f145-4661-9252-4042381674ee
+* [Coursera - AWS Cloud Practitioner Essentials](https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD)
+* [Udemy – AWS for Beginners](https://ude.my/UC-d6419758-f145-4661-9252-4042381674ee)
 
 ---
 
 ### SQL & Databases
 * Alura – SQL Server (2017 & 2019)
-  * Introduction to SQL  
-    🔗 https://cursos.alura.com.br/certificate/c045f437-8705-460b-9536-c39f61bb7928
-  * Advanced Queries  
-    🔗 https://cursos.alura.com.br/certificate/4fcdf8c2-cd7d-43f4-9da0-2fac68c50f5d
-  * SQL Server 2019  
-    🔗 https://cursos.alura.com.br/certificate/d34e618a-1f0a-44dd-a51c-54467402a53a
-* Alura – SQL with MySQL
-  🔗 https://cursos.alura.com.br/certificate/81df51fb-96b1-4897-8ba9-789f0f356776
+  * [Introduction to SQL](https://cursos.alura.com.br/certificate/c045f437-8705-460b-9536-c39f61bb7928)
+  * [Advanced Queries](https://cursos.alura.com.br/certificate/4fcdf8c2-cd7d-43f4-9da0-2fac68c50f5d)
+  * [SQL Server 2019](https://cursos.alura.com.br/certificate/d34e618a-1f0a-44dd-a51c-54467402a53a)
+* [Alura – SQL with MySQL](https://cursos.alura.com.br/certificate/81df51fb-96b1-4897-8ba9-789f0f356776)
 
 ---
 
 ### Workflow Orchestration
 * Alura – Apache Airflow
-  * Data Extraction  
-    🔗 https://cursos.alura.com.br/certificate/f3be1257-e150-450f-a670-7fcd94bc6ed0
-  * Pipeline Orchestration  
-    🔗 https://cursos.alura.com.br/certificate/da8b7956-c3c7-4b2a-945d-8e28ae61239b
+  * [Data Extraction](https://cursos.alura.com.br/certificate/f3be1257-e150-450f-a670-7fcd94bc6ed0)
+  * [Pipeline Orchestration](https://cursos.alura.com.br/certificate/da8b7956-c3c7-4b2a-945d-8e28ae61239b)
 
 ---
 
 ### Business Intelligence & Analytics (Qlik Sense)
 * Alura – Qlik Sense Track
-  * Introduction to Qlik Sense  
-    🔗 https://cursos.alura.com.br/certificate/e9d0d2cf-dd27-449f-8f7f-cdb83dbfc2da
-  * SQL Connections  
-    🔗 https://cursos.alura.com.br/certificate/c66a0621-fc9f-4ef1-ab02-e5c27c3a4260
-  * Data Analysis  
-    🔗 https://cursos.alura.com.br/certificate/54d08254-3753-4cde-ae60-142e828a3bb6
-  * Data Manipulation  
-    🔗 https://cursos.alura.com.br/certificate/2cf4822e-a0ef-4342-b081-edab63006522
-  * Advanced Expressions  
-    🔗 https://cursos.alura.com.br/certificate/ddf46038-66fa-47b7-a763-ea19c6a51dbc
-  * Business Intelligence & Data Warehouse  
-    🔗 https://cursos.alura.com.br/certificate/8e1d56d2-d07b-4419-803c-8a89d7459a98
+  * [Introduction to Qlik Sense](https://cursos.alura.com.br/certificate/e9d0d2cf-dd27-449f-8f7f-cdb83dbfc2da)
+  * [SQL Connections](https://cursos.alura.com.br/certificate/c66a0621-fc9f-4ef1-ab02-e5c27c3a4260)
+  * [Data Analysis](https://cursos.alura.com.br/certificate/54d08254-3753-4cde-ae60-142e828a3bb6)
+  * [Data Manipulation](https://cursos.alura.com.br/certificate/2cf4822e-a0ef-4342-b081-edab63006522)
+  * [Advanced Expressions](https://cursos.alura.com.br/certificate/ddf46038-66fa-47b7-a763-ea19c6a51dbc)
+  * [Business Intelligence & Data Warehouse](https://cursos.alura.com.br/certificate/8e1d56d2-d07b-4419-803c-8a89d7459a98)
 
 ---
 
