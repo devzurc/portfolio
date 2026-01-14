@@ -4,11 +4,11 @@ With 3+ years of experience building scalable data platforms across cloud and on
 ---
 
 ## 🧠 Core Skills
-* **Data Engineering:** Python, SQL, PySpark, Pandas, Airflow, Trino
-* **Cloud & Big Data:** AWS (S3, EC2), Lakehouse, Delta/Parquet
-* **Databases:** PostgreSQL, SQL Server, Oracle Autonomous DB, MySQL
-* **Analytics & BI:** Power BI, Qlik Sense, Apache Superset
-* **Dev & Ops:** Docker, Git, Linux
+* **Data Engineering:** Python, SQL, PySpark, Pandas, Apache Airflow, Trino, dbt  
+* **Cloud & Big Data:** AWS (S3, EC2, Lambda, IAM), Databricks, Snowflake, Lakehouse, Delta/Parquet  
+* **Databases:** PostgreSQL, SQL Server, Oracle Autonomous DB, MySQL  
+* **Analytics & BI:** Power BI, Qlik Sense, Apache Superset  
+* **DevOps & CI/CD:** Docker, Git, CI/CD pipelines, Linux  
 * **Methodologies:** Agile / Scrum
 
 ---
@@ -82,28 +82,28 @@ With 3+ years of experience building scalable data platforms across cloud and on
 ---
 ## 🏆 Selected Certifications
 ### English
-* **IELTS – International English Language Testing System**
+* IELTS – International English Language Testing System
   📄 [Proof]('assets/files/ed-certificates/ielts-general-site')
-* **Udemy – Inglês Extremo (Intermediate)**
+* Udemy – Inglês Extremo (Intermediate)
   [🔗](https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec)
 
 ### Data Engineering
-* **IBM / Coursera – Introduction to Data Engineering**
+* IBM / Coursera – Introduction to Data Engineering
   [🔗](https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X)
-* **DS Academy – Fundamentos de Engenharia de Dados**
+* DS Academy – Fundamentos de Engenharia de Dados
   [🔗](https://mycourse.app/mDey2z4xSWzPUS2T7)
-* **Alura – ETL com SQL Server Integration Services (SSIS)**
+* Alura – ETL com SQL Server Integration Services (SSIS)
   * Modelagem de Dados
     [🔗](https://cursos.alura.com.br/certificate/b1e3dc95-d65d-4ba7-a422-5914475941eb)
   * Transformação de Dados
     [🔗](https://cursos.alura.com.br/certificate/56011c99-ecd5-40f1-8647-56469f4bcee8)
 
 ### Python & Data Processing
-* **Udemy – The Complete Python Developer Certification**
+* Udemy – The Complete Python Developer Certification
   [🔗](https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/)
-* **DS Academy – Python for Data Analysis**
+* DS Academy – Python for Data Analysis
   [🔗](https://mycourse.app/f5pLpS2UcVbZ66iq8)
-* **Alura – Python for Data Science (Full Track)**
+* Alura – Python for Data Science (Full Track)
   * Python & NumPy
     [🔗](https://cursos.alura.com.br/certificate/74d6c51a-2c05-47f7-9776-c59f0c1682a1)
   * Pandas & Data Manipulation
@@ -112,30 +112,30 @@ With 3+ years of experience building scalable data platforms across cloud and on
     [🔗](https://cursos.alura.com.br/certificate/66b174ad-2f0f-468b-8318-0f44ec4d9549)
 
 ### Cloud
-* **AWS Cloud Practitioner Essentials – Coursera**
+* AWS Cloud Practitioner Essentials – Coursera
   [🔗](https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD)
-* **Udemy – AWS for Beginners**
+* Udemy – AWS for Beginners
   [🔗](https://ude.my/UC-d6419758-f145-4661-9252-4042381674ee)
 
 ### SQL & Databases
-* **Alura – SQL Server (2017 & 2019)**
+* Alura – SQL Server (2017 & 2019)
   * Introduction & Advanced Queries
     [🔗](https://cursos.alura.com.br/certificate/c045f437-8705-460b-9536-c39f61bb7928)
     [🔗](https://cursos.alura.com.br/certificate/4fcdf8c2-cd7d-43f4-9da0-2fac68c50f5d)
-* **Alura – SQL with MySQL**
+* Alura – SQL with MySQL
   [🔗](https://cursos.alura.com.br/certificate/81df51fb-96b1-4897-8ba9-789f0f356776)
 
 ### Orchestration & BI
-* **Apache Airflow – Alura**
+* Apache Airflow – Alura
   * Data Extraction
     [🔗](https://cursos.alura.com.br/certificate/f3be1257-e150-450f-a670-7fcd94bc6ed0)
   * Pipeline Orchestration
     [🔗](https://cursos.alura.com.br/certificate/da8b7956-c3c7-4b2a-945d-8e28ae61239b)
-* **Qlik Sense – Full BI Track**
+* Qlik Sense – Full BI Track
   [🔗](https://cursos.alura.com.br/certificate/e9d0d2cf-dd27-449f-8f7f-cdb83dbfc2da)
 
 ### Agile
-* **Scrum Foundation Professional Certificate (SFPC™)**
+* Scrum Foundation Professional Certificate (SFPC™)
   [🔗](https://www.credly.com/badges/3c1a2135-0ef4-4af4-9905-f716aa45a520/linked_in_profile)
 
 ---
