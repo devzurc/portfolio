@@ -81,14 +81,15 @@ With 3+ years of experience building scalable data platforms across cloud and on
 <!-- ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg) -->
 
 ---
-
 ## 🏆 Selected Certifications (Verified)
 ### 🌍 English
 * **IELTS – International English Language Testing System**
   📄 [Proof]('assets/files/ed-certificates/ielts-general-site')
 * **Udemy – Inglês Extremo (Intermediate)**
   [🔗](https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec)
+
 ---
+
 ### 🏗️ Data Engineering (Core)
 * **IBM / Coursera – Introduction to Data Engineering**
   [🔗](https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X)
@@ -99,7 +100,9 @@ With 3+ years of experience building scalable data platforms across cloud and on
     [🔗](https://cursos.alura.com.br/certificate/b1e3dc95-d65d-4ba7-a422-5914475941eb)
   * Transformação de Dados
     [🔗](https://cursos.alura.com.br/certificate/56011c99-ecd5-40f1-8647-56469f4bcee8)
+
 ---
+
 ### 🐍 Python & Data Processing
 * **Udemy – The Complete Python Developer Certification**
   [🔗](https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/)
@@ -112,13 +115,17 @@ With 3+ years of experience building scalable data platforms across cloud and on
     [🔗](https://cursos.alura.com.br/certificate/87802c24-9028-4dba-986d-2b5b96462e37)
   * Pandas I/O & File Formats
     [🔗](https://cursos.alura.com.br/certificate/66b174ad-2f0f-468b-8318-0f44ec4d9549)
+
 ---
+
 ### ☁️ Cloud (AWS)
 * **AWS Cloud Practitioner Essentials – Coursera**
   [🔗](https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD)
 * **Udemy – AWS for Beginners**
   [🔗](https://ude.my/UC-d6419758-f145-4661-9252-4042381674ee)
+
 ---
+
 ### 🗄️ SQL & Databases
 * **Alura – SQL Server (2017 & 2019)**
   * Introduction & Advanced Queries
@@ -126,7 +133,9 @@ With 3+ years of experience building scalable data platforms across cloud and on
     [🔗](https://cursos.alura.com.br/certificate/4fcdf8c2-cd7d-43f4-9da0-2fac68c50f5d)
 * **Alura – SQL with MySQL**
   [🔗](https://cursos.alura.com.br/certificate/81df51fb-96b1-4897-8ba9-789f0f356776)
+
 ---
+
 ### 🔄 Orchestration & BI
 * **Apache Airflow – Alura**
   * Data Extraction
@@ -135,7 +144,9 @@ With 3+ years of experience building scalable data platforms across cloud and on
     [🔗](https://cursos.alura.com.br/certificate/da8b7956-c3c7-4b2a-945d-8e28ae61239b)
 * **Qlik Sense – Full BI Track**
   [🔗](https://cursos.alura.com.br/certificate/e9d0d2cf-dd27-449f-8f7f-cdb83dbfc2da)
+
 ---
+
 ### 🧩 Agile
 * **Scrum Foundation Professional Certificate (SFPC™)**
   [🔗](https://www.credly.com/badges/3c1a2135-0ef4-4af4-9905-f716aa45a520/linked_in_profile)
