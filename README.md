@@ -83,7 +83,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 ## 🏆 Selected Certifications
 
 ### English Proficiency
-* [IELTS – International English Language Testing System](assets/files/ed-certificates/ielts-general-site)
+* [IELTS – International English Language Testing System](assets/files/ed-certificates/ielts-general-site.pdf)
 * [Udemy – Inglês Extremo (Intermediate)](https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec)
 
 ---
