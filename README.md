@@ -1,5 +1,5 @@
 # Data Engineer
-With 3+ years of experience building scalable data platforms across cloud and on-prem environments. Proven expertise in Lakehouse, Data Lake and Data Warehouse architectures, high-volume IoT data (100k+ devices), and end-to-end ETL pipelines. Strong hands-on experience with Python, SQL, PySpark, Airflow, Trino and Docker, with growing focus on Snowflake, Databricks, dbt and Kafka.
+With 3+ years of experience building scalable data platforms across cloud and on-prem environments. Proven expertise in Lakehouse, Data Lake and Data Warehouse architectures, high-volume IoT data (95k+ devices), and end-to-end ETL pipelines. Strong hands-on experience with Python, SQL, PySpark, Airflow, Trino and Docker, with growing focus on Snowflake, Databricks, dbt and Kafka.
 
 ---
 
@@ -24,7 +24,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 * Owned **end-to-end production batch pipelines**, working closely with stakeholders to translate business requirements into scalable and reliable data solutions.
 * Built and maintained a **Big Data Lakehouse on AWS S3**, following **Medallion Architecture (Bronze, Silver, Gold)** using **Delta/Parquet, PySpark, Pandas, SQL, and Trino**.
 * Orchestrated, monitored, and optimised ETL workflows with **Apache Airflow**, deploying containerised services using **Docker on AWS EC2**.
-* Supported a large-scale production platform ingesting data from **90k+ IoT devices**, processing **hundreds of millions of records per day**.
+* Supported a large-scale production platform ingesting data from **95k+ IoT devices**, processing **hundreds of millions of records per day**.
 * Delivered analytics-ready data to **Qlik Sense and Apache Superset dashboards**, improving data reliability, observability, and decision-making.
 * Identified and corrected missing steps in production pipelines, significantly improving **data quality and downstream analytics accuracy**.
 
