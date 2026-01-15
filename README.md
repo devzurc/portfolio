@@ -70,8 +70,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 - Processed **hundreds of millions of IoT records per day** from **90k+ connected devices** with reliable batch ingestion.
 - Identified and fixed missing pipeline steps, improving **data reliability by ~15–20%** and significantly reducing downstream reporting issues.
 - Optimised transformations and query layers, reducing **analytics latency by ~20%** for BI consumers.
-- Enabled business teams to access **trusted, near-real-time insights**, supporting operational monitoring and strategic decisions at scale.  
-
+- Enabled business teams to access **trusted, near-real-time insights**, supporting operational monitoring and strategic decisions at scale.<br>
 ➡️ *Private Repository:* https://github.com/devzurc/iot-lakehouse
 
 ### Payments Data Warehouse
@@ -80,8 +79,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 - Designed and implemented a **Data Warehouse** supporting financial, operational and reconciliation reporting.
 - Automated ETL pipelines, reducing **manual data processing effort by ~50%** and improving **data freshness from days to hours**.
 - Improved data consistency and validation, decreasing **financial reporting discrepancies by ~20–30%**.
-- Enabled faster, data-driven decision-making for finance and operations teams through **self-service Power BI dashboards**.  
-
+- Enabled faster, data-driven decision-making for finance and operations teams through **self-service Power BI dashboards**.<br>
 ➡️ *Private Repository:* https://github.com/devzurc/payments-dwh 
 
 ### John Deere API Data Pipeline
@@ -90,8 +88,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 - Modelled and stored operational data in an **Oracle-based Data Warehouse** for fleet and agribusiness analytics.
 - Automated daily pipelines with Airflow, improving **data availability by ~40%** compared to manual extraction processes.
 - Enabled stakeholders to monitor **equipment performance, usage and operational KPIs** through Power BI dashboards.
-- Designed the solution to be **extensible**, allowing new machinery data sources to be onboarded with minimal rework.  
-
+- Designed the solution to be **extensible**, allowing new machinery data sources to be onboarded with minimal rework.<br>
 ➡️ *Private Repository:* https://github.com/devzurc/api-johndeere
 
 <!-- ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg) -->
