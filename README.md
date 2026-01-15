@@ -148,9 +148,8 @@ With 3+ years of experience building scalable data platforms across cloud and on
 
 ## Publications
 - [Data Engineer Blog](https://medium.com/@dev.lucascruz)
-<!-- 1. [Python Concepts.](https://medium.com/@dev.lucascruz)
-2. [ETL Concepts.](https://medium.com/@dev.lucascruz)
-3. [Lakehouse Medalion Architecture.](https://medium.com/@dev.lucascruz) -->
+1. [Python Concepts.](https://medium.com/@dev.lucascruz)
+2. [Lakehouse Medalion Architecture.](https://medium.com/@dev.lucascruz)
 
 ---
 
