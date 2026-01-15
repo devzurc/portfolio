@@ -65,18 +65,32 @@ With 3+ years of experience building scalable data platforms across cloud and on
 
 ## 🚀 Featured Projects
 ### IoT Lakehouse Platform (Production)
-**Tech:** AWS S3, PySpark, Airflow, Trino, Docker  
-- Designed and implemented a Lakehouse using Medallion Architecture
-- Processed hundreds of millions of IoT records/day from 90k+ devices
-- Improved data reliability and analytics availability for business teams  
-➡️ Repo: github.com/devzurc/iot-lakehouse
+**Tech:** AWS S3, PySpark, Apache Airflow, Trino, Docker, Delta/Parquet  
+- Designed and implemented a **scalable Lakehouse architecture** following the **Medallion (Bronze/Silver/Gold)** pattern.
+- Processed **hundreds of millions of IoT records per day** from **90k+ connected devices** with reliable batch ingestion.
+- Identified and fixed missing pipeline steps, improving **data reliability by ~15–20%** and significantly reducing downstream reporting issues.
+- Optimised transformations and query layers, reducing **analytics latency by ~20%** for BI consumers.
+- Enabled business teams to access **trusted, near-real-time insights**, supporting operational monitoring and strategic decisions at scale.  
+➡️ *Private Repository:* https://github.com/devzurc/iot-lakehouse
 
 ### Payments Data Warehouse
-**Tech:** Python, SQL, Airflow, Oracle, Power BI  
-- Integrated multiple payment providers (PagSeguro, Stone, Cielo)
-- Built a Data Warehouse supporting financial and operational reporting
-- Enabled faster decision-making for stakeholders  
-➡️ Repositorio: github.com/devzurc/payments-dwh
+**Tech:** Python, SQL, Apache Airflow, SQL Server, Power BI, AWS, Azure  
+- Integrated data from **multiple payment providers** (PagSeguro, Stone, Cielo), consolidating fragmented financial sources into a single model.
+- Designed and implemented a **Data Warehouse** supporting financial, operational and reconciliation reporting.
+- Automated ETL pipelines, reducing **manual data processing effort by ~50%** and improving **data freshness from days to hours**.
+- Improved data consistency and validation, decreasing **financial reporting discrepancies by ~20–30%**.
+- Enabled faster, data-driven decision-making for finance and operations teams through **self-service Power BI dashboards**.  
+➡️ *Private Repository:* https://github.com/devzurc/payments-dwh
+
+### John Deere API Data Pipeline
+**Tech:** Python, SQL, Apache Airflow, Oracle Database, Power BI  
+- Built a **robust ingestion pipeline** consuming data from the **John Deere REST API**, handling authentication, pagination and failures.
+- Modelled and stored operational data in an **Oracle-based Data Warehouse** for fleet and agribusiness analytics.
+- Automated daily pipelines with Airflow, improving **data availability by ~40%** compared to manual extraction processes.
+- Enabled stakeholders to monitor **equipment performance, usage and operational KPIs** through Power BI dashboards.
+- Designed the solution to be **extensible**, allowing new machinery data sources to be onboarded with minimal rework.  
+➡️ *Private Repository:* https://github.com/devzurc/api-johndeere
+
 <!-- ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg) -->
 
 ---
@@ -134,9 +148,9 @@ With 3+ years of experience building scalable data platforms across cloud and on
 
 ## Publications
 - [Data Engineer Blog](https://medium.com/@dev.lucascruz)
-1. [Python Concepts.](https://medium.com/@dev.lucascruz)
+<!-- 1. [Python Concepts.](https://medium.com/@dev.lucascruz)
 2. [ETL Concepts.](https://medium.com/@dev.lucascruz)
-3. [Lakehouse Medalion Architecture.](https://medium.com/@dev.lucascruz)
+3. [Lakehouse Medalion Architecture.](https://medium.com/@dev.lucascruz) -->
 
 ---
 
