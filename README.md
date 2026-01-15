@@ -65,7 +65,6 @@ With 3+ years of experience building scalable data platforms across cloud and on
 
 ## 🚀 Featured Projects
 ### IoT Lakehouse Platform (Production)
-➡️ *Private Repository:* https://github.com/devzurc/iot-lakehouse
 **Tech:** AWS S3, PySpark, Apache Airflow, Trino, Docker, Delta/Parquet  
 - Designed and implemented a **scalable Lakehouse architecture** following the **Medallion (Bronze/Silver/Gold)** pattern.
 - Processed **hundreds of millions of IoT records per day** from **90k+ connected devices** with reliable batch ingestion.
@@ -73,8 +72,9 @@ With 3+ years of experience building scalable data platforms across cloud and on
 - Optimised transformations and query layers, reducing **analytics latency by ~20%** for BI consumers.
 - Enabled business teams to access **trusted, near-real-time insights**, supporting operational monitoring and strategic decisions at scale.  
 
+➡️ *Private Repository:* https://github.com/devzurc/iot-lakehouse
+
 ### Payments Data Warehouse
-➡️ *Private Repository:* https://github.com/devzurc/payments-dwh
 **Tech:** Python, SQL, Apache Airflow, SQL Server, Power BI, AWS, Azure  
 - Integrated data from **multiple payment providers** (PagSeguro, Stone, Cielo), consolidating fragmented financial sources into a single model.
 - Designed and implemented a **Data Warehouse** supporting financial, operational and reconciliation reporting.
@@ -82,14 +82,17 @@ With 3+ years of experience building scalable data platforms across cloud and on
 - Improved data consistency and validation, decreasing **financial reporting discrepancies by ~20–30%**.
 - Enabled faster, data-driven decision-making for finance and operations teams through **self-service Power BI dashboards**.  
 
+➡️ *Private Repository:* https://github.com/devzurc/payments-dwh 
+
 ### John Deere API Data Pipeline
-➡️ *Private Repository:* https://github.com/devzurc/api-johndeere
 **Tech:** Python, SQL, Apache Airflow, Oracle Database, Power BI  
 - Built a **robust ingestion pipeline** consuming data from the **John Deere REST API**, handling authentication, pagination and failures.
 - Modelled and stored operational data in an **Oracle-based Data Warehouse** for fleet and agribusiness analytics.
 - Automated daily pipelines with Airflow, improving **data availability by ~40%** compared to manual extraction processes.
 - Enabled stakeholders to monitor **equipment performance, usage and operational KPIs** through Power BI dashboards.
 - Designed the solution to be **extensible**, allowing new machinery data sources to be onboarded with minimal rework.  
+
+➡️ *Private Repository:* https://github.com/devzurc/api-johndeere
 
 <!-- ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg) -->
 
