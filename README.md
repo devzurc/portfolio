@@ -2,7 +2,6 @@
 With 3+ years of experience building scalable data platforms across cloud and on-prem environments. Proven expertise in Lakehouse, Data Lake and Data Warehouse architectures, high-volume IoT data (95k+ devices), and end-to-end ETL pipelines. Strong hands-on experience with Python, SQL, PySpark, Airflow, Trino and Docker, with growing focus on Snowflake, Databricks, dbt and Kafka.
 
 ---
-
 ## 🧠 Core Skills
 * **Data Engineering:** Python, SQL, PySpark, Pandas, Apache Airflow, Trino, dbt  
 * **Cloud & Big Data:** AWS (S3, EC2, Lambda, IAM), Databricks, Snowflake, Lakehouse, Delta/Parquet  
@@ -12,7 +11,6 @@ With 3+ years of experience building scalable data platforms across cloud and on
 * **Methodologies:** Agile / Scrum
 
 ---
-
 ## 🎓 Education		        		
 - B.S., System Analysis and Development | Dom Bosco University 
 (_Jul 2023_) [Download Certificate](assets/files/ed-certificates/bachelor-systems-analysis-development-certificate.pdf)
@@ -62,8 +60,7 @@ With 3+ years of experience building scalable data platforms across cloud and on
 * Created **Excel reports and dashboards**, leveraging **VBA macros** to automate manual processes, standardise data handling, and improve reporting efficiency.
 
 ---
-
-## 🚀 Featured Projects
+## 🚀 Projects
 ### IoT Lakehouse Platform (Production)
 **Tech:** AWS S3, PySpark, Apache Airflow, Trino, Docker, Delta/Parquet  
 - Designed and implemented a **scalable Lakehouse architecture** following the **Medallion (Bronze/Silver/Gold)** pattern.
@@ -71,8 +68,10 @@ With 3+ years of experience building scalable data platforms across cloud and on
 - Identified and fixed missing pipeline steps, improving **data reliability by ~15–20%** and significantly reducing downstream reporting issues.
 - Optimised transformations and query layers, reducing **analytics latency by ~20%** for BI consumers.
 - Enabled business teams to access **trusted, near-real-time insights**, supporting operational monitoring and strategic decisions at scale.
+
 ➡️ *Private Repository:* https://github.com/devzurc/iot-lakehouse
 
+---
 ### Payments Data Warehouse
 **Tech:** Python, SQL, Apache Airflow, SQL Server, Power BI, AWS, Azure  
 - Integrated data from **multiple payment providers** (PagSeguro, Stone, Cielo), consolidating fragmented financial sources into a single model.
@@ -80,8 +79,10 @@ With 3+ years of experience building scalable data platforms across cloud and on
 - Automated ETL pipelines, reducing **manual data processing effort by ~50%** and improving **data freshness from days to hours**.
 - Improved data consistency and validation, decreasing **financial reporting discrepancies by ~20–30%**.
 - Enabled faster, data-driven decision-making for finance and operations teams through **self-service Power BI dashboards**.
+
 ➡️ *Private Repository:* https://github.com/devzurc/payments-dwh 
 
+---
 ### John Deere API Data Pipeline
 **Tech:** Python, SQL, Apache Airflow, Oracle Database, Power BI  
 - Built a **robust ingestion pipeline** consuming data from the **John Deere REST API**, handling authentication, pagination and failures.
@@ -89,12 +90,12 @@ With 3+ years of experience building scalable data platforms across cloud and on
 - Automated daily pipelines with Airflow, improving **data availability by ~40%** compared to manual extraction processes.
 - Enabled stakeholders to monitor **equipment performance, usage and operational KPIs** through Power BI dashboards.
 - Designed the solution to be **extensible**, allowing new machinery data sources to be onboarded with minimal rework.
-➡️ *Private Repository:* https://github.com/devzurc/api-johndeere
 
+➡️ *Private Repository:* https://github.com/devzurc/api-johndeere
 <!-- ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg) -->
 
 ---
-## 🏆 Selected Certifications
+## 🏅 Certifications
 ### English Proficiency
 * [IELTS – International English Language Testing System](assets/files/ed-certificates/ielts-general-site.pdf)
 * [Udemy – Inglês Extremo (Intermediate)](https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec)
@@ -145,15 +146,13 @@ With 3+ years of experience building scalable data platforms across cloud and on
 * [Scrum Foundation Professional Certificate (SFPC™)](https://www.credly.com/badges/3c1a2135-0ef4-4af4-9905-f716aa45a520/linked_in_profile)
 
 ---
-
-## Publications
+## 📝 Publications
 - [Data Engineer Blog](https://medium.com/@dev.lucascruz)
 1. [Python Concepts.](https://medium.com/@dev.lucascruz)
 2. [Lakehouse Medalion Architecture.](https://medium.com/@dev.lucascruz)
 
 ---
-
-## 📫 Let’s Connect
+## 👥 Let’s Connect
 - **Email:** *dev.lucascruz@gmail.com*
 
 - <a href="https://www.linkedin.com/in/lucas-cruz/" target="_blank" rel="noopener noreferrer">➡️ Access LinkedIn</a>
