@@ -96,18 +96,18 @@ With 3+ years of experience building scalable data platforms across cloud and on
 
 ---
 ## 🏅 Certifications
-### English Proficiency
+**English Proficiency**
 * [IELTS – International English Language Testing System](assets/files/ed-certificates/ielts-general-site.pdf)
 * [Udemy – Inglês Extremo (Intermediate)](https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec)
 
-### Data Engineering
+**Data Engineering**
 * [IBM / Coursera – Introduction to Data Engineering](https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X)
 * [DS Academy – Fundamentos de Engenharia de Dados](https://mycourse.app/mDey2z4xSWzPUS2T7)
 * Alura – ETL with SQL Server Integration Services (SSIS)
   * [Data Modeling](https://cursos.alura.com.br/certificate/b1e3dc95-d65d-4ba7-a422-5914475941eb)
   * [Data Transformation](https://cursos.alura.com.br/certificate/56011c99-ecd5-40f1-8647-56469f4bcee8)
 
-### Python & Data Processing
+**Python & Data Processing**
 * [Udemy – The Complete Python Developer Certification](https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/)
 * [DS Academy – Python for Data Analysis](https://mycourse.app/f5pLpS2UcVbZ66iq8)
 * Alura – Python for Data Science Track
@@ -117,11 +117,11 @@ With 3+ years of experience building scalable data platforms across cloud and on
   * [Pandas Fundamentals](https://cursos.alura.com.br/certificate/fc1e7983-1a3a-45f2-91a2-ea7a11ef2523)  
   * [Python for Data Science – Foundations](https://cursos.alura.com.br/certificate/44e0fed8-4f87-4824-94b8-bdca55d01843)  
 
-### Cloud Computing (AWS)
+**Cloud Computing (AWS)**
 * [Coursera - AWS Cloud Practitioner Essentials](https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD)
 * [Udemy – AWS for Beginners](https://ude.my/UC-d6419758-f145-4661-9252-4042381674ee)
 
-### SQL & Databases
+**SQL & Databases**
 * Alura – SQL Server (2017 & 2019)
   * [Introduction to SQL](https://cursos.alura.com.br/certificate/c045f437-8705-460b-9536-c39f61bb7928)
   * [Advanced Queries](https://cursos.alura.com.br/certificate/4fcdf8c2-cd7d-43f4-9da0-2fac68c50f5d)
