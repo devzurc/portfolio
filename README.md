@@ -1,4 +1,4 @@
-# Data Engineer
+# ⚙️ Data Engineer
 With 3+ years of experience building scalable data platforms across cloud and on-prem environments. Proven expertise in Lakehouse, Data Lake and Data Warehouse architectures, high-volume IoT data (95k+ devices), and end-to-end ETL pipelines. Strong hands-on experience with Python, SQL, PySpark, Airflow, Trino and Docker, with growing focus on Snowflake, Databricks, dbt and Kafka.
 
 ---
