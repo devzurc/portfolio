@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Lucas Cruz — Data Engineer & Gen. AI Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg:       #080C18;
+    --bg2:      #0D1222;
+    --bg3:      #111827;
+    --cyan:     #00D4FF;
+    --cyan2:    #0099CC;
+    --blue:     #1A56A8;
+    --white:    #F0F4FF;
+    --gray:     #8895B3;
+    --gray2:    #4A5568;
+    --border:   rgba(0,212,255,0.15);
+    --glow:     0 0 40px rgba(0,212,255,0.12);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--cyan2); border-radius: 2px; }
+
+  /* ── NAV ─────────────────────────────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 4rem;
+    height: 64px;
+    background: rgba(8,12,24,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.12em;
+    color: var(--cyan);
+    text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gray);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--cyan); }
+
+  /* ── HERO ─────────────────────────────────────────────────────────────── */
+  #hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding: 8rem 4rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-grid-bg {
+    position: absolute; inset: 0; z-index: 0;
+    background-image:
+      linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+  }
+  .hero-glow {
+    position: absolute; top: 20%; left: 10%; z-index: 0;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(0,212,255,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 900px; }
+  .hero-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 1.2rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .hero-tag::before {
+    content: '';
+    display: inline-block;
+    width: 32px; height: 1px;
+    background: var(--cyan);
+  }
+  h1.hero-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(5rem, 12vw, 10rem);
+    line-height: 0.92;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  h1.hero-name span { color: var(--cyan); }
+  .hero-roles {
+    font-family: 'DM Mono', monospace;
+    font-size: 1rem;
+    color: var(--gray);
+    margin-bottom: 2rem;
+    letter-spacing: 0.06em;
+  }
+  .hero-roles b { color: var(--white); font-weight: 500; }
+  .hero-desc {
+    font-size: 1.05rem;
+    color: var(--gray);
+    max-width: 560px;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+  }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.8rem;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: all 0.25s;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--cyan);
+    color: var(--bg);
+    border: 1px solid var(--cyan);
+    font-weight: 500;
+  }
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--cyan);
+    box-shadow: 0 0 20px rgba(0,212,255,0.3);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--cyan);
+    border: 1px solid var(--border);
+  }
+  .btn-outline:hover {
+    border-color: var(--cyan);
+    box-shadow: 0 0 20px rgba(0,212,255,0.15);
+  }
+  .hero-stats {
+    display: flex; gap: 3rem; margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--cyan);
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-top: 0.2rem;
+  }
+
+  /* ── SECTIONS ─────────────────────────────────────────────────────────── */
+  section { padding: 6rem 4rem; max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 0.6rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .section-label::before {
+    content: '';
+    display: inline-block;
+    width: 24px; height: 1px;
+    background: var(--cyan);
+  }
+  h2.section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: 0.05em;
+    color: var(--white);
+    margin-bottom: 3rem;
+    line-height: 1;
+  }
+
+  /* ── SKILLS ─────────────────────────────────────────────────────────────*/
+  #skills { background: var(--bg2); max-width: 100%; padding: 6rem 4rem; }
+  #skills > .inner { max-width: 1100px; margin: 0 auto; }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1px;
+    border: 1px solid var(--border);
+  }
+  .skill-card {
+    padding: 1.6rem 2rem;
+    border: 1px solid transparent;
+    background: var(--bg3);
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .skill-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--cyan);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s;
+  }
+  .skill-card:hover::before { transform: scaleY(1); }
+  .skill-card:hover { background: rgba(0,212,255,0.04); }
+  .skill-cat {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 0.8rem;
+  }
+  .skill-items {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+  }
+  .tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.65rem;
+    background: rgba(0,212,255,0.07);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    color: var(--white);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── EXPERIENCE ─────────────────────────────────────────────────────────*/
+  .timeline { position: relative; padding-left: 2rem; }
+  .timeline::before {
+    content: '';
+    position: absolute; left: 0; top: 8px;
+    width: 1px; height: calc(100% - 8px);
+    background: linear-gradient(to bottom, var(--cyan), transparent);
+  }
+  .job {
+    position: relative;
+    padding: 0 0 3rem 2.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .job.visible { opacity: 1; transform: translateY(0); }
+  .job::before {
+    content: '';
+    position: absolute; left: -4px; top: 8px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 10px rgba(0,212,255,0.5);
+  }
+  .job-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 0.4rem;
+  }
+  .job-meta span {
+    color: var(--cyan);
+    margin-right: 0.8rem;
+  }
+  .job-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+  }
+  .job-company {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--cyan);
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+  }
+  .job-bullets { list-style: none; }
+  .job-bullets li {
+    font-size: 0.9rem;
+    color: var(--gray);
+    padding: 0.25rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.65;
+  }
+  .job-bullets li::before {
+    content: '→';
+    position: absolute; left: 0;
+    color: var(--cyan2);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+  }
+  .job-bullets strong { color: var(--white); font-style: italic; }
+
+  /* ── PROJECTS ─────────────────────────────────────────────────────────── */
+  #projects { background: var(--bg2); max-width: 100%; padding: 6rem 4rem; }
+  #projects > .inner { max-width: 1100px; margin: 0 auto; }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .project-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  .project-card.visible { opacity: 1; transform: translateY(0); }
+  .project-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--cyan), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s;
+  }
+  .project-card:hover::after { transform: scaleX(1); }
+  .project-card:hover {
+    border-color: rgba(0,212,255,0.3);
+    box-shadow: var(--glow);
+    transform: translateY(-3px);
+  }
+  .project-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, rgba(0,212,255,0.06), var(--bg3));
+  }
+  @media (max-width: 700px) { .project-card.featured { grid-column: span 1; } }
+  .project-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 1rem;
+  }
+  .project-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.45rem;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+  }
+  .project-desc {
+    font-size: 0.88rem;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  .project-stack {
+    display: flex; flex-wrap: wrap; gap: 0.35rem;
+    margin-top: auto;
+  }
+  .stack-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(0,212,255,0.06);
+    border: 1px solid rgba(0,212,255,0.18);
+    border-radius: 2px;
+    color: var(--cyan);
+    letter-spacing: 0.06em;
+  }
+
+  /* ── CERTS ─────────────────────────────────────────────────────────────── */
+  .cert-group { margin-bottom: 2.5rem; }
+  .cert-group-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .cert-list { list-style: none; }
+  .cert-list li {
+    font-size: 0.88rem;
+    color: var(--gray);
+    padding: 0.4rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.5;
+  }
+  .cert-list li::before {
+    content: '◆';
+    position: absolute; left: 0;
+    color: var(--cyan2);
+    font-size: 0.45rem;
+    top: 0.55rem;
+  }
+  .cert-list a {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .cert-list a:hover { color: var(--cyan); border-color: var(--cyan); }
+
+  /* ── CONTACT ─────────────────────────────────────────────────────────── */
+  #contact {
+    background: var(--bg2);
+    max-width: 100%;
+    padding: 6rem 4rem;
+    border-top: 1px solid var(--border);
+  }
+  #contact > .inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+    align-items: center;
+  }
+  .contact-headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+  .contact-headline span { color: var(--cyan); }
+  .contact-sub {
+    font-size: 0.95rem;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  .contact-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    color: var(--cyan);
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--cyan);
+    background: rgba(0,212,255,0.04);
+  }
+  .contact-links { display: flex; flex-direction: column; gap: 1rem; }
+  .contact-link {
+    display: flex; align-items: center; gap: 1rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--border);
+    background: var(--bg3);
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.25s;
+    border-radius: 2px;
+  }
+  .contact-link:hover {
+    border-color: var(--cyan);
+    background: rgba(0,212,255,0.06);
+    transform: translateX(4px);
+  }
+  .contact-link-icon {
+    font-size: 1.2rem;
+    width: 32px; text-align: center;
+  }
+  .contact-link-info { flex: 1; }
+  .contact-link-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+  .contact-link-value {
+    font-size: 0.9rem;
+    color: var(--white);
+  }
+  .contact-link-arrow {
+    font-family: 'DM Mono', monospace;
+    color: var(--cyan);
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .contact-link:hover .contact-link-arrow { opacity: 1; }
+
+  /* ── FOOTER ─────────────────────────────────────────────────────────── */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    color: var(--gray2);
+    border-top: 1px solid var(--border);
+  }
+
+  /* ── FADE IN OBSERVER ─────────────────────────────────────────────────── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── RESPONSIVE ──────────────────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    nav { padding: 0 1.5rem; }
+    .nav-links { display: none; }
+    #hero, section, #skills, #projects, #contact { padding: 4rem 1.5rem; }
+    .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+    #contact > .inner { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">LC</a>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Available for Europe Relocation</div>
+    <h1 class="hero-name">LUCAS<br/><span>CRUZ</span></h1>
+    <p class="hero-roles"><b>Data Engineer</b> &nbsp;/&nbsp; <b>Gen. AI Engineer</b></p>
+    <p class="hero-desc">
+      Building scalable data platforms, AI-powered automations, and intelligent agents that turn raw data into real business impact. 5+ years across IoT, fintech, agribusiness &amp; automotive intelligence.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      <a href="#experience" class="btn btn-outline">View Experience</a>
+      <a href="https://www.linkedin.com/in/lucas-cruz" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">95K</div>
+        <div class="stat-label">IoT Devices Supported</div>
+      </div>
+      <div>
+        <div class="stat-num">3</div>
+        <div class="stat-label">Cloud Platforms</div>
+      </div>
+      <div>
+        <div class="stat-num">C1</div>
+        <div class="stat-label">English Level</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<div id="skills">
+  <div class="inner">
+    <div class="section-label">What I Work With</div>
+    <h2 class="section-title">TECHNICAL SKILLS</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card fade-in">
+        <div class="skill-cat">Gen. AI &amp; LLMs</div>
+        <div class="skill-items">
+          <span class="tag">Claude AI</span><span class="tag">Google AI Studio</span>
+          <span class="tag">LLM Integration</span><span class="tag">AI Agents</span>
+          <span class="tag">RAG</span><span class="tag">Prompt Engineering</span>
+          <span class="tag">Chatbot Development</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-cat">Data Engineering</div>
+        <div class="skill-items">
+          <span class="tag">Python</span><span class="tag">SQL</span>
+          <span class="tag">Apache Spark (PySpark)</span><span class="tag">Pandas</span>
+          <span class="tag">dbt</span><span class="tag">Trino</span>
+          <span class="tag">REST APIs</span><span class="tag">Web Scraping</span>
+          <span class="tag">Parquet</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-cat">Pipeline Orchestration</div>
+        <div class="skill-items">
+          <span class="tag">Apache Airflow</span><span class="tag">n8n</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-cat">Cloud Platforms</div>
+        <div class="skill-items">
+          <span class="tag">AWS (S3, EC2, ECS, Lambda, IAM)</span>
+          <span class="tag">Microsoft Azure</span>
+          <span class="tag">Google Cloud (GCP)</span>
+          <span class="tag">Oracle Cloud (OCI)</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-cat">Data Platforms &amp; Lakehouses</div>
+        <div class="skill-items">
+          <span class="tag">Snowflake</span><span class="tag">Databricks</span>
+          <span class="tag">Amazon Redshift</span><span class="tag">Delta Lake</span>
+          <span class="tag">Oracle Autonomous DB</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-cat">Relational Databases</div>
+        <div class="skill-items">
+          <span class="tag">PostgreSQL</span><span class="tag">SQL Server</span>
+          <span class="tag">MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-cat">Analytics &amp; BI</div>
+        <div class="skill-items">
+          <span class="tag">Power BI</span><span class="tag">Qlik Sense</span>
+          <span class="tag">Apache Superset</span><span class="tag">Looker</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-cat">DevOps &amp; Infrastructure</div>
+        <div class="skill-items">
+          <span class="tag">Docker</span><span class="tag">Kubernetes</span>
+          <span class="tag">Git</span><span class="tag">CI/CD Pipelines</span>
+          <span class="tag">Linux</span><span class="tag">Bash Scripting</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-cat">Languages</div>
+        <div class="skill-items">
+          <span class="tag">Portuguese — Native</span>
+          <span class="tag">English — C1 Advanced</span>
+          <span class="tag">Spanish — B1 Intermediate</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">Career History</div>
+  <h2 class="section-title">WORK EXPERIENCE</h2>
+  <div class="timeline">
+
+    <div class="job">
+      <div class="job-meta"><span>Feb 2026 — May 2026</span> Curitiba, Brazil · On-site · Contract</div>
+      <div class="job-title">Gen. AI Engineer</div>
+      <div class="job-company">TK Technologies</div>
+      <ul class="job-bullets">
+        <li>Built a <strong>multi-source web scraping pipeline</strong> in Python targeting 10+ automotive parts websites, extracting pricing data and product metadata at scale for competitive market intelligence.</li>
+        <li>Designed <strong>AI-powered n8n automation workflows</strong> (ETL, RPA, chatbot agents) integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich data and boost team productivity.</li>
+        <li>Developed a <strong>conversational AI chatbot</strong> enabling business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.</li>
+        <li>Deployed containerised backend services on <strong>Azure with Docker</strong>, standardising environments and improving deployment reliability by ~25%.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-meta"><span>Apr 2023 — Jul 2024</span> Curitiba, Brazil · On-site</div>
+      <div class="job-title">Data Engineer</div>
+      <div class="job-company">Spacecom Monitoramento</div>
+      <ul class="job-bullets">
+        <li>Designed and maintained a <strong>Big Data Lakehouse on AWS S3</strong> using Medallion Architecture (Bronze/Silver/Gold) with Delta Lake, Parquet, PySpark, and Trino.</li>
+        <li>Supported a large-scale <strong>IoT platform with 95,000+ devices</strong>, processing hundreds of millions of records per day with high availability.</li>
+        <li>Orchestrated ETL pipelines with <strong>Apache Airflow</strong>, reducing failure rates by ~30%; Docker on AWS EC2 cut deployment issues by ~25%.</li>
+        <li>Identified and fixed inconsistent pipeline steps, increasing <strong>analytics accuracy by ~40%</strong>; delivered datasets to Qlik Sense and Apache Superset dashboards.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-meta"><span>Jun 2022 — May 2024</span> Curitiba, Brazil · Remote</div>
+      <div class="job-title">Data Engineer Consultant</div>
+      <div class="job-company">wDiscover</div>
+      <ul class="job-bullets">
+        <li>Delivered end-to-end data projects for <strong>fintech, agribusiness, and operations</strong> clients — integrating payment providers (PagSeguro, Stone, Cielo), John Deere IoT APIs, REST APIs, and web scraping.</li>
+        <li>Designed <strong>Data Warehouses</strong> on SQL Server and Oracle Autonomous DB with dimensional modelling; automated ETL with Airflow on Docker/Oracle Cloud, reducing manual effort by ~35%.</li>
+        <li>Built <strong>Power BI dashboards</strong> tracking KPIs, financial metrics, and operational performance for stakeholders across multiple client domains.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-meta"><span>Jun 2020 — Feb 2023</span> Curitiba, Brazil · Hybrid</div>
+      <div class="job-title">Data Analyst</div>
+      <div class="job-company">Itaete Group</div>
+      <ul class="job-bullets">
+        <li>Designed a <strong>SQL Server Data Warehouse</strong> and Python/SQL pipelines with Pandas for cleansing, transformation and enrichment, integrating IoT devices, PostgreSQL, APIs and CSV sources.</li>
+        <li>Built <strong>Power BI dashboards</strong> and automated Excel/VBA reporting, reducing data processing time by ~50%.</li>
+        <li>Developed internal systems for <strong>inventory management and financial automation</strong>, including invoice generation and automated weekly report distribution.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<div id="projects">
+  <div class="inner">
+    <div class="section-label">Selected Work</div>
+    <h2 class="section-title">NOTABLE PROJECTS</h2>
+    <div class="projects-grid">
+
+      <div class="project-card featured fade-in">
+        <div class="project-tag">★ Latest · Gen. AI · TK Technologies — 2026</div>
+        <div class="project-name">AUTOMOTIVE MARKET PRICE INTELLIGENCE PLATFORM</div>
+        <div class="project-desc">
+          Built an end-to-end competitive intelligence system that scrapes 10+ automotive parts websites with Python, then orchestrates AI agents via n8n integrating Claude AI, Google AI Studio, and GCP (Sheets, Drive) to automate price analysis. A conversational AI chatbot lets business users query and refine pricing data by natural language. Fully containerised and deployed on Azure.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">n8n</span>
+          <span class="stack-tag">Claude AI</span><span class="stack-tag">Google AI Studio</span>
+          <span class="stack-tag">GCP APIs</span><span class="stack-tag">Azure</span>
+          <span class="stack-tag">Docker</span><span class="stack-tag">Web Scraping</span>
+          <span class="stack-tag">LLMs</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-tag">Personal Project — Jan 2026</div>
+        <div class="project-name">MODERN CLOUD DATA PIPELINE</div>
+        <div class="project-desc">
+          End-to-end analytics pipeline with Apache Airflow, Snowflake, and dbt following modern analytics engineering best practices. Containerised dbt with Docker reducing deployment errors by ~50%. Modular, tested SQL transformations orchestrated via Airflow DAGs.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Snowflake</span><span class="stack-tag">dbt</span>
+          <span class="stack-tag">Apache Airflow</span><span class="stack-tag">Docker</span>
+          <span class="stack-tag">Python</span><span class="stack-tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-tag">Client Project — Feb 2024</div>
+        <div class="project-name">IOT DATA LAKEHOUSE ON AWS</div>
+        <div class="project-desc">
+          Designed a full Medallion Architecture (Bronze/Silver/Gold) lakehouse on AWS S3 ingesting from APIs, databases, and CSV files. Virtualised the Gold layer with Trino and surfaced analytics via Apache Superset dashboards for business consumers.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">AWS S3</span><span class="stack-tag">Apache Spark</span>
+          <span class="stack-tag">Delta Lake</span><span class="stack-tag">Airflow</span>
+          <span class="stack-tag">Trino</span><span class="stack-tag">Apache Superset</span>
+          <span class="stack-tag">Docker</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-label">Credentials</div>
+  <h2 class="section-title">CERTIFICATIONS</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;">
+
+    <div class="cert-group fade-in">
+      <div class="cert-group-title">English Proficiency</div>
+      <ul class="cert-list">
+        <li><a href="https://devzurc.github.io/portfolio/assets/files/ed-certificates/ielts-general-site.pdf" target="_blank">IELTS – International English Language Testing System</a></li>
+        <li><a href="https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec" target="_blank">Udemy – Inglês Extremo (Intermediate)</a></li>
+      </ul>
+    </div>
+
+    <div class="cert-group fade-in">
+      <div class="cert-group-title">Data Engineering</div>
+      <ul class="cert-list">
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X" target="_blank">IBM / Coursera – Introduction to Data Engineering</a></li>
+        <li><a href="https://mycourse.app/mDey2z4xSWzPUS2T7" target="_blank">DS Academy – Fundamentos de Engenharia de Dados</a></li>
+        <li>Alura – ETL with SQL Server Integration Services (SSIS)</li>
+      </ul>
+    </div>
+
+    <div class="cert-group fade-in">
+      <div class="cert-group-title">Python &amp; Data Processing</div>
+      <ul class="cert-list">
+        <li><a href="https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/" target="_blank">Udemy – The Complete Python Developer Certification</a></li>
+        <li><a href="https://mycourse.app/f5pLpS2UcVbZ66iq8" target="_blank">DS Academy – Python for Data Analysis</a></li>
+        <li>Alura – Python for Data Science Track (NumPy, Pandas, Foundations)</li>
+      </ul>
+    </div>
+
+    <div class="cert-group fade-in">
+      <div class="cert-group-title">Cloud Computing</div>
+      <ul class="cert-list">
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD" target="_blank">Coursera – AWS Cloud Practitioner Essentials</a></li>
+        <li><a href="https://ude.my/UC-d6419758-f145-4661-9252-4042381674ee" target="_blank">Udemy – AWS for Beginners</a></li>
+      </ul>
+    </div>
+
+    <div class="cert-group fade-in">
+      <div class="cert-group-title">SQL &amp; Databases</div>
+      <ul class="cert-list">
+        <li>Alura – SQL Server 2017 &amp; 2019 (Intro, Advanced Queries)</li>
+        <li><a href="https://cursos.alura.com.br/certificate/81df51fb-96b1-4897-8ba9-789f0f356776" target="_blank">Alura – SQL with MySQL</a></li>
+      </ul>
+    </div>
+
+    <div class="cert-group fade-in">
+      <div class="cert-group-title">Orchestration &amp; BI</div>
+      <ul class="cert-list">
+        <li>Alura – Apache Airflow (Data Extraction &amp; Pipeline Orchestration)</li>
+        <li>Alura – Qlik Sense Track (6 modules)</li>
+        <li><a href="https://www.credly.com/badges/3c1a2135-0ef4-4af4-9905-f716aa45a520/linked_in_profile" target="_blank">Scrum Foundation Professional Certificate (SFPC™)</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div id="contact">
+  <div class="inner">
+    <div>
+      <div class="section-label">Let's Talk</div>
+      <div class="contact-headline">OPEN TO<br/><span>OPPORTUNITIES</span></div>
+      <p class="contact-sub">
+        I'm actively seeking Data Engineering and Gen. AI roles in Europe. Whether you have a project, a position, or just want to connect — I'd love to hear from you.
+      </p>
+      <div class="contact-note">
+        📍 Based in Curitiba, Brazil &nbsp;·&nbsp; Open to relocation across Europe &nbsp;·&nbsp; Requires visa sponsorship
+      </div>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:dev.lucascruz@gmail.com" class="contact-link">
+        <div class="contact-link-icon">✉</div>
+        <div class="contact-link-info">
+          <div class="contact-link-label">Email</div>
+          <div class="contact-link-value">dev.lucascruz@gmail.com</div>
+        </div>
+        <div class="contact-link-arrow">→</div>
+      </a>
+      <a href="https://www.linkedin.com/in/lucas-cruz" target="_blank" class="contact-link">
+        <div class="contact-link-icon">in</div>
+        <div class="contact-link-info">
+          <div class="contact-link-label">LinkedIn</div>
+          <div class="contact-link-value">linkedin.com/in/lucas-cruz</div>
+        </div>
+        <div class="contact-link-arrow">→</div>
+      </a>
+      <a href="https://github.com/devzurc" target="_blank" class="contact-link">
+        <div class="contact-link-icon">⌥</div>
+        <div class="contact-link-info">
+          <div class="contact-link-label">GitHub</div>
+          <div class="contact-link-value">github.com/devzurc</div>
+        </div>
+        <div class="contact-link-arrow">→</div>
+      </a>
+      <a href="https://medium.com/@dev.lucascruz" target="_blank" class="contact-link">
+        <div class="contact-link-icon">✍</div>
+        <div class="contact-link-info">
+          <div class="contact-link-label">Blog</div>
+          <div class="contact-link-value">medium.com/@dev.lucascruz</div>
+        </div>
+        <div class="contact-link-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Lucas Cruz &nbsp;·&nbsp; Data Engineer &amp; Gen. AI Engineer &nbsp;·&nbsp; Curitiba, Brazil
+</footer>
+
+<script>
+  // Intersection Observer for fade-in animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, entry.target.dataset.delay || 0);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  // Stagger fade-in items
+  document.querySelectorAll('.fade-in').forEach((el, i) => {
+    el.dataset.delay = (i % 4) * 80;
+    observer.observe(el);
+  });
+
+  // Stagger job entries
+  document.querySelectorAll('.job').forEach((el, i) => {
+    el.style.transitionDelay = `${i * 60}ms`;
+    observer.observe(el);
+  });
+
+  // Project cards
+  document.querySelectorAll('.project-card').forEach((el, i) => {
+    el.style.transitionDelay = `${i * 80}ms`;
+    observer.observe(el);
+  });
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current
+        ? 'var(--cyan)' : '';
+    });
+  });
+</script>
+</body>
+</html>
