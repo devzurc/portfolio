@@ -1513,23 +1513,24 @@
           <div class="project-name en-only">AUTOMOTIVE MARKET PRICE INTELLIGENCE PLATFORM</div>
           <div class="project-name pt-only">PLATAFORMA DE INTELIGÊNCIA DE PREÇOS AUTOMOTIVOS</div>
           <div class="project-desc en-only">
-            End-to-end competitive intelligence system scraping 10+ automotive parts websites with Python, orchestrating
-            AI agents via n8n with Claude AI, Google AI Studio, and GCP (Sheets, Drive) to automate price analysis. A
-            conversational AI chatbot lets business users query and refine pricing data via natural language. Fully
-            containerised on Azure.
+            Engineered a distributed web scraping architecture in Python with proxy rotation to extract pricing/metadata
+            from 10+ sites. Orchestrated complex LLM-driven ETL workflows via n8n, utilizing Claude AI and Google AI
+            Studio for unstructured data parsing. Built a RAG-based conversational agent with LangChain to enable
+            natural language querying of SQL datasets. Infrastructure fully containerised using Docker on Azure VMs.
           </div>
           <div class="project-desc pt-only">
-            Sistema completo de inteligência competitiva que coleta dados de 10+ sites automotivos com Python, orquestra
-            agentes de IA via n8n com Claude AI, Google AI Studio e GCP (Sheets, Drive) para automatizar análises de
-            preços. Chatbot de IA permite que usuários consultem dados por linguagem natural. Deploy completo
-            conteinerizado no Azure.
+            Engenhou uma arquitetura de web scraping distribuída em Python com rotação de proxies para extrair preços e
+            metadados de 10+ sites. Orquestrou workflows ETL complexos baseados em LLMs via n8n, utilizando Claude AI e
+            Google AI Studio para parsing de dados não estruturados. Desenvolveu um agente conversacional baseado em RAG
+            (LangChain) para consultas em linguagem natural a bancos SQL. Infraestrutura conteinerizada com Docker em
+            Azure VMs.
           </div>
           <div class="project-stack">
             <span class="stack-tag">Python</span><span class="stack-tag">n8n</span>
             <span class="stack-tag">Claude AI</span><span class="stack-tag">Google AI Studio</span>
-            <span class="stack-tag">GCP APIs</span><span class="stack-tag">Azure</span>
+            <span class="stack-tag">LangChain</span><span class="stack-tag">Azure</span>
             <span class="stack-tag">Docker</span><span class="stack-tag">Web Scraping</span>
-            <span class="stack-tag">LLMs</span>
+            <span class="stack-tag">RAG / LLMs</span>
           </div>
         </div>
 
@@ -1538,14 +1539,20 @@
           <div class="project-tag pt-only">Projeto Pessoal — Jan 2026</div>
           <div class="project-name en-only">MODERN CLOUD DATA PIPELINE</div>
           <div class="project-name pt-only">PIPELINE DE DADOS EM NUVEM</div>
-          <div class="project-desc en-only">End-to-end analytics pipeline with Airflow, Snowflake, and dbt.
-            Containerised dbt with Docker reducing deployment errors by ~50%. Modular tested SQL transformations
-            orchestrated via Airflow DAGs.</div>
-          <div class="project-desc pt-only">Pipeline analítico de ponta a ponta com Airflow, Snowflake e dbt. dbt
-            conteinerizado com Docker reduzindo erros de deploy em ~50%. Transformações SQL modulares orquestradas via
-            DAGs do Airflow.</div>
+          <div class="project-desc en-only">
+            Designed a scalable ELT architecture leveraging Snowflake as a cloud data warehouse. Orchestrated complex
+            DAG dependencies using Apache Airflow to trigger containerised dbt executions via Docker. Implemented
+            incremental materializations and CI/CD data testing in dbt, reducing data anomalies. Configured role-based
+            access control (RBAC) and optimized Snowflake compute warehouses to balance performance and cost.
+          </div>
+          <div class="project-desc pt-only">
+            Projetou uma arquitetura ELT escalável utilizando Snowflake como data warehouse em nuvem. Orquestrou
+            dependências complexas de DAGs usando Apache Airflow para acionar execuções do dbt conteinerizadas via
+            Docker. Implementou materializações incrementais e testes de dados CI/CD no dbt, reduzindo anomalias.
+            Configurou controle de acesso baseado em funções (RBAC) e otimizou os warehouses virtuais do Snowflake.
+          </div>
           <div class="project-stack">
-            <span class="stack-tag">Snowflake</span><span class="stack-tag">dbt</span>
+            <span class="stack-tag">Snowflake</span><span class="stack-tag">dbt Core</span>
             <span class="stack-tag">Apache Airflow</span><span class="stack-tag">Docker</span>
             <span class="stack-tag">Python</span><span class="stack-tag">SQL</span>
           </div>
@@ -1556,15 +1563,23 @@
           <div class="project-tag pt-only">Projeto de Cliente — Fev 2024</div>
           <div class="project-name en-only">IOT DATA LAKEHOUSE ON AWS</div>
           <div class="project-name pt-only">IOT DATA LAKEHOUSE NA AWS</div>
-          <div class="project-desc en-only">Full Medallion Architecture (Bronze/Silver/Gold) lakehouse on AWS S3
-            ingesting from APIs, databases, and CSV. Gold layer virtualised with Trino; insights surfaced via Apache
-            Superset dashboards.</div>
-          <div class="project-desc pt-only">Lakehouse completo com Arquitetura Medallion (Bronze/Prata/Ouro) na AWS S3,
-            ingerindo de APIs, bancos de dados e CSV. Camada Ouro virtualizada com Trino; insights via dashboards Apache
-            Superset.</div>
+          <div class="project-desc en-only">
+            Architected an enterprise-grade AWS S3 Lakehouse processing hundreds of millions of daily IoT and RFID
+            telemetry records from 95,000+ devices. Implemented a Medallion architecture utilizing PySpark for complex
+            distributed transformations and Delta Lake for ACID transactions, upserts (MERGE), and time travel. Enforced
+            strict LGPD compliance through row-level security and data masking. Configured Trino for high-performance
+            federated querying.
+          </div>
+          <div class="project-desc pt-only">
+            Arquitetou um Lakehouse corporativo na AWS S3 processando centenas de milhões de registros diários de
+            telemetria IoT e RFID de 95.000+ dispositivos. Implementou arquitetura Medallion usando PySpark para
+            transformações distribuídas e Delta Lake para transações ACID, upserts e time travel. Garantiu conformidade
+            estrita com a LGPD através de segurança em nível de linha (RLS) e mascaramento de dados. Configurou Trino
+            para consultas federadas.
+          </div>
           <div class="project-stack">
-            <span class="stack-tag">AWS S3</span><span class="stack-tag">Apache Spark</span>
-            <span class="stack-tag">Delta Lake</span><span class="stack-tag">Airflow</span>
+            <span class="stack-tag">AWS S3</span><span class="stack-tag">PySpark</span>
+            <span class="stack-tag">Delta Lake</span><span class="stack-tag">Apache Airflow</span>
             <span class="stack-tag">Trino</span><span class="stack-tag">Apache Superset</span>
             <span class="stack-tag">Docker</span>
           </div>
@@ -1575,19 +1590,23 @@
           <div class="project-tag pt-only">Projeto de Cliente — Jul 2023</div>
           <div class="project-name en-only">PAYMENTS DATA WAREHOUSE</div>
           <div class="project-name pt-only">DATA WAREHOUSE DE PAGAMENTOS</div>
-          <div class="project-desc en-only">Unified financial data platform consolidating multiple payment providers
-            (PagSeguro, Stone, Cielo) into a single data model. Automated ETL pipelines cut manual processing effort by
-            ~50% and improved data freshness from days to hours. Validation checks reduced financial reporting
-            discrepancies by ~20–30%, enabling self-service analytics via Power BI.</div>
-          <div class="project-desc pt-only">Plataforma financeira unificada consolidando dados de múltiplos provedores
-            (PagSeguro, Stone, Cielo) em um único modelo. Pipelines ETL automatizados reduziram o esforço manual em ~50%
-            e a atualização de dados de dias para horas. Checks de validação reduziram discrepâncias em ~20–30%,
-            habilitando analytics self-service via Power BI.</div>
+          <div class="project-desc en-only">
+            Developed a robust data integration framework connecting to multiple REST APIs (PagSeguro, Stone, Cielo)
+            handling pagination, rate limiting, and OAuth authentication. Built Python-based incremental extraction
+            pipelines, loading raw JSON payloads into a staging area before transforming them into a Kimball dimensional
+            model (Star Schema) on SQL Server. Implemented rigorous data quality checks orchestrated via Airflow.
+          </div>
+          <div class="project-desc pt-only">
+            Desenvolveu um framework robusto de integração de dados conectando a múltiplas REST APIs (PagSeguro, Stone,
+            Cielo), lidando com paginação, rate limiting e autenticação OAuth. Construiu pipelines Python de extração
+            incremental, carregando payloads JSON brutos em uma staging area antes da transformação para um modelo
+            dimensional de Kimball (Star Schema) no SQL Server. Implementou verificações de qualidade orquestradas via
+            Airflow.
+          </div>
           <div class="project-stack">
             <span class="stack-tag">Python</span><span class="stack-tag">SQL</span>
-            <span class="stack-tag">SQL Server DW</span><span class="stack-tag">Apache Airflow</span>
-            <span class="stack-tag">Power BI</span><span class="stack-tag">AWS</span><span
-              class="stack-tag">Azure</span>
+            <span class="stack-tag">REST APIs</span><span class="stack-tag">SQL Server DW</span>
+            <span class="stack-tag">Apache Airflow</span><span class="stack-tag">Power BI</span>
           </div>
         </div>
 
@@ -1596,17 +1615,23 @@
           <div class="project-tag pt-only">Projeto de Cliente — Out 2022</div>
           <div class="project-name en-only">JOHN DEERE AGRIBUSINESS DATA PIPELINE</div>
           <div class="project-name pt-only">PIPELINE DE DADOS JOHN DEERE — AGRONEGÓCIO</div>
-          <div class="project-desc en-only">Robust ingestion pipeline consuming the John Deere REST API to monitor
-            agricultural machinery fleet performance. Handles authentication, pagination, and failure scenarios, storing
-            operational data in an Oracle Data Warehouse. Automated daily pipelines with Airflow improved data
-            availability by ~40% vs. manual extraction, with fleet KPIs surfaced via Power BI dashboards.</div>
-          <div class="project-desc pt-only">Pipeline robusto consumindo a REST API da John Deere para monitoramento de
-            frota de máquinas agrícolas. Trata autenticação, paginação e falhas, armazenando dados em Oracle Data
-            Warehouse. Pipelines diários com Airflow aumentaram a disponibilidade de dados em ~40% vs. extração manual,
-            com KPIs de frota via Power BI.</div>
+          <div class="project-desc en-only">
+            Engineered an automated data ingestion pipeline targeting the John Deere Operations Center API. Implemented
+            advanced Python handlers for complex JSON responses, robust error handling with exponential backoff, and
+            secure credential management. Structured the extracted agronomic and telemetry data into optimized tables
+            within an Oracle Autonomous Database, indexing critical dimensions to accelerate heavy analytical queries in
+            Power BI.
+          </div>
+          <div class="project-desc pt-only">
+            Engenhou um pipeline de ingestão automatizado focado na API do John Deere Operations Center. Implementou
+            scripts avançados em Python para o tratamento de respostas JSON complexas, gerenciamento de erros com
+            exponential backoff e gestão segura de credenciais. Estruturou dados agronômicos em tabelas otimizadas no
+            Oracle Autonomous Database, criando índices nas dimensões críticas para acelerar consultas analíticas no
+            Power BI.
+          </div>
           <div class="project-stack">
             <span class="stack-tag">Python</span><span class="stack-tag">John Deere REST API</span>
-            <span class="stack-tag">Oracle Database</span><span class="stack-tag">Apache Airflow</span>
+            <span class="stack-tag">Oracle Cloud (OCI)</span><span class="stack-tag">Apache Airflow</span>
             <span class="stack-tag">Power BI</span><span class="stack-tag">SQL</span>
           </div>
         </div>
