@@ -15,8 +15,8 @@
     --cyan:    #7AFFC4;
     --cyan2:   #1A9962;
     --white:   #F0F4FF;
-    --gray:    #8895B3;
-    --gray2:   #4A5568;
+    --gray:    #C2CCDE;
+    --gray2:   #7A8BA8;
     --border:  rgba(122,255,196,0.15);
     --glow:    0 0 40px rgba(122,255,196,0.12);
   }
@@ -26,7 +26,7 @@
     background: var(--bg);
     color: var(--white);
     font-family: 'Lora', Georgia, serif;
-    line-height: 1.7;
+    line-height: 1.8;
     overflow-x: hidden;
   }
   ::-webkit-scrollbar { width: 4px; }
@@ -207,8 +207,8 @@
   }
   .hero-roles b { color: var(--white); font-weight: 500; }
   .hero-desc {
-    font-size: 1.05rem; color: var(--gray);
-    max-width: 580px; line-height: 1.8; margin: 0 auto 2.5rem;
+    font-size: 1.1rem; color: var(--gray);
+    max-width: 580px; line-height: 1.9; margin: 0 auto 2.5rem;
   }
   .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
   .btn {
@@ -308,7 +308,7 @@
   .job-title { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:0.06em; color:var(--white); line-height:1.1; margin-bottom:0.2rem; }
   .job-company { font-family:'DM Mono',monospace; font-size:0.78rem; color:var(--cyan); letter-spacing:0.1em; margin-bottom:1rem; }
   .job-bullets { list-style:none; }
-  .job-bullets li { font-size:0.9rem; color:var(--gray); padding:0.25rem 0 0.25rem 1.2rem; position:relative; line-height:1.65; }
+  .job-bullets li { font-size:1rem; color:var(--gray); padding:0.3rem 0 0.3rem 1.2rem; position:relative; line-height:1.8; }
   .job-bullets li::before { content:'→'; position:absolute; left:0; color:var(--cyan2); font-family:'DM Mono',monospace; font-size:0.75rem; }
   .job-bullets strong { color:var(--white); font-style:italic; }
 
@@ -337,7 +337,7 @@
   @media(max-width:700px){.project-card.featured{grid-column:span 1;}}
   .project-tag { font-family:'DM Mono',monospace; font-size:0.62rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--cyan); margin-bottom:1rem; }
   .project-name { font-family:'Bebas Neue',sans-serif; font-size:1.45rem; letter-spacing:0.06em; color:var(--white); margin-bottom:0.8rem; line-height:1.1; }
-  .project-desc { font-size:0.88rem; color:var(--gray); line-height:1.7; margin-bottom:1.2rem; flex:1; }
+  .project-desc { font-size:0.95rem; color:var(--gray); line-height:1.85; margin-bottom:1.2rem; flex:1; }
   .project-stack { display:flex; flex-wrap:wrap; gap:0.35rem; margin-top:auto; }
   .stack-tag { font-family:'DM Mono',monospace; font-size:0.62rem; padding:0.2rem 0.5rem; background:rgba(122,255,196,0.06); border:1px solid rgba(122,255,196,0.18); border-radius:2px; color:var(--cyan); letter-spacing:0.06em; }
 
@@ -345,7 +345,7 @@
   .cert-group { margin-bottom:2.5rem; }
   .cert-group-title { font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--cyan); margin-bottom:0.8rem; padding-bottom:0.5rem; border-bottom:1px solid var(--border); }
   .cert-list { list-style:none; }
-  .cert-list li { font-size:0.88rem; color:var(--gray); padding:0.4rem 0 0.4rem 1.2rem; position:relative; line-height:1.5; }
+  .cert-list li { font-size:0.95rem; color:var(--gray); padding:0.5rem 0 0.5rem 1.2rem; position:relative; line-height:1.7; }
   .cert-list li::before { content:'◆'; position:absolute; left:0; color:var(--cyan2); font-size:0.45rem; top:0.55rem; }
   .cert-list a { color:var(--white); text-decoration:none; border-bottom:1px solid var(--border); transition:border-color 0.2s,color 0.2s; }
   .cert-list a:hover { color:var(--cyan); border-color:var(--cyan); }
@@ -355,7 +355,7 @@
   .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
   .contact-headline { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.5rem,5vw,4rem); line-height:1; letter-spacing:0.05em; margin-bottom:1rem; }
   .contact-headline span { color:var(--cyan); }
-  .contact-sub { font-size:0.95rem; color:var(--gray); line-height:1.8; margin-bottom:2rem; }
+  .contact-sub { font-size:1rem; color:var(--gray); line-height:1.85; margin-bottom:2rem; }
   .contact-note { font-family:'DM Mono',monospace; font-size:0.7rem; letter-spacing:0.12em; color:var(--cyan); padding:0.6rem 1rem; border:1px solid var(--border); border-left:3px solid var(--cyan); background:rgba(122,255,196,0.04); }
   .contact-links { display:flex; flex-direction:column; gap:1rem; }
   .contact-link { display:flex; align-items:center; gap:1rem; padding:1rem 1.5rem; border:1px solid var(--border); background:var(--bg3); text-decoration:none; color:var(--white); transition:all 0.25s; border-radius:2px; }
@@ -363,7 +363,7 @@
   .contact-link-icon { font-size:1.1rem; width:28px; text-align:center; }
   .contact-link-info { flex:1; }
   .contact-link-label { font-family:'DM Mono',monospace; font-size:0.6rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--gray); }
-  .contact-link-value { font-size:0.88rem; color:var(--white); }
+  .contact-link-value { font-size:0.95rem; color:var(--white); }
   .contact-link-arrow { font-family:'DM Mono',monospace; color:var(--cyan); font-size:0.9rem; opacity:0; transition:opacity 0.2s; }
   .contact-link:hover .contact-link-arrow { opacity:1; }
 
@@ -396,9 +396,12 @@
     .lang-toggle        { display: none; }
     .cv-dropdown        { display: none; }
     .hamburger          { display: flex; }
-    #hero, .section-wrap, .section-wrap-full { padding:4rem 1.5rem; }
-    .hero-stats         { gap:1.5rem; flex-wrap:wrap; }
+    #hero, .section-wrap, .section-wrap-full { padding:5rem 1.5rem; }
+    .hero-stats         { gap:2rem; flex-wrap:wrap; }
     .contact-grid       { grid-template-columns:1fr; }
+    .job-bullets li     { font-size:1rem; }
+    .project-desc       { font-size:0.95rem; }
+    h1.hero-name        { font-size: clamp(3.5rem, 14vw, 6rem); }
   }
 
   /* ── LANGUAGE TOGGLE ─────────────────────────────────────────────────── */
