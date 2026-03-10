@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,23 +9,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
 <style>
   :root {
-    --bg:       #080C18;
-    --bg2:      #0D1222;
-    --bg3:      #111827;
-    --cyan:     #00D4FF;
-    --cyan2:    #0099CC;
-    --blue:     #1A56A8;
-    --white:    #F0F4FF;
-    --gray:     #8895B3;
-    --gray2:    #4A5568;
-    --border:   rgba(0,212,255,0.15);
-    --glow:     0 0 40px rgba(0,212,255,0.12);
+    --bg:      #080C18;
+    --bg2:     #0D1222;
+    --bg3:     #111827;
+    --cyan:    #00D4FF;
+    --cyan2:   #0099CC;
+    --white:   #F0F4FF;
+    --gray:    #8895B3;
+    --gray2:   #4A5568;
+    --border:  rgba(0,212,255,0.15);
+    --glow:    0 0 40px rgba(0,212,255,0.12);
   }
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; font-size: 16px; }
-
   body {
     background: var(--bg);
     color: var(--white);
@@ -33,22 +29,21 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
-
-  /* SCROLLBAR */
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--cyan2); border-radius: 2px; }
 
-  /* ── NAV ─────────────────────────────────────────────────────────────── */
+  /* ── NAV ──────────────────────────────────────────────────────────────── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0 4rem;
+    padding: 0 3rem;
     height: 64px;
-    background: rgba(8,12,24,0.85);
+    background: rgba(8,12,24,0.88);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
   }
+  .nav-left { display: flex; align-items: center; gap: 2rem; }
   .nav-logo {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
@@ -56,25 +51,74 @@
     color: var(--cyan);
     text-decoration: none;
   }
-  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a {
     font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--gray);
     text-decoration: none;
     transition: color 0.2s;
   }
-  .nav-links a:hover { color: var(--cyan); }
+  .nav-links a:hover, .nav-links a.active { color: var(--cyan); }
 
-  /* ── HERO ─────────────────────────────────────────────────────────────── */
+  /* NAV RIGHT: lang toggle + CV downloads */
+  .nav-right { display: flex; align-items: center; gap: 0.8rem; }
+
+
+
+  /* CV Download dropdown */
+  .cv-dropdown { position: relative; }
+  .cv-btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.38rem 0.9rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--cyan);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex; align-items: center; gap: 0.4rem;
+  }
+  .cv-btn:hover { border-color: var(--cyan); background: rgba(0,212,255,0.07); }
+  .cv-menu {
+    position: absolute; top: calc(100% + 6px); right: 0;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    min-width: 180px;
+    display: none;
+    z-index: 200;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+  .cv-dropdown:hover .cv-menu,
+  .cv-dropdown:focus-within .cv-menu { display: block; }
+  .cv-menu a {
+    display: flex; align-items: center; gap: 0.6rem;
+    padding: 0.65rem 1rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray);
+    text-decoration: none;
+    transition: all 0.18s;
+    border-bottom: 1px solid var(--border);
+  }
+  .cv-menu a:last-child { border-bottom: none; }
+  .cv-menu a:hover { color: var(--cyan); background: rgba(0,212,255,0.06); padding-left: 1.3rem; }
+  .cv-menu-flag { font-size: 0.9rem; }
+
+  /* ── HERO ──────────────────────────────────────────────────────────────── */
   #hero {
     min-height: 100vh;
     display: flex; align-items: center;
     padding: 8rem 4rem 4rem;
-    position: relative;
-    overflow: hidden;
+    position: relative; overflow: hidden;
   }
   .hero-grid-bg {
     position: absolute; inset: 0; z-index: 0;
@@ -93,522 +137,295 @@
   .hero-content { position: relative; z-index: 1; max-width: 900px; }
   .hero-tag {
     font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--cyan);
-    margin-bottom: 1.2rem;
+    font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--cyan); margin-bottom: 1.2rem;
     display: flex; align-items: center; gap: 0.8rem;
   }
-  .hero-tag::before {
-    content: '';
-    display: inline-block;
-    width: 32px; height: 1px;
-    background: var(--cyan);
-  }
+  .hero-tag::before { content:''; display:inline-block; width:32px; height:1px; background:var(--cyan); }
   h1.hero-name {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(5rem, 12vw, 10rem);
-    line-height: 0.92;
-    letter-spacing: 0.04em;
-    color: var(--white);
-    margin-bottom: 0.5rem;
+    line-height: 0.92; letter-spacing: 0.04em;
+    color: var(--white); margin-bottom: 0.5rem;
   }
   h1.hero-name span { color: var(--cyan); }
   .hero-roles {
-    font-family: 'DM Mono', monospace;
-    font-size: 1rem;
-    color: var(--gray);
-    margin-bottom: 2rem;
-    letter-spacing: 0.06em;
+    font-family: 'DM Mono', monospace; font-size: 1rem;
+    color: var(--gray); margin-bottom: 2rem; letter-spacing: 0.06em;
   }
   .hero-roles b { color: var(--white); font-weight: 500; }
   .hero-desc {
-    font-size: 1.05rem;
-    color: var(--gray);
-    max-width: 560px;
-    line-height: 1.8;
-    margin-bottom: 2.5rem;
+    font-size: 1.05rem; color: var(--gray);
+    max-width: 560px; line-height: 1.8; margin-bottom: 2.5rem;
   }
   .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
   .btn {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    padding: 0.75rem 1.8rem;
-    border-radius: 2px;
-    text-decoration: none;
-    transition: all 0.25s;
-    cursor: pointer;
+    font-family: 'DM Mono', monospace; font-size: 0.75rem;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 0.75rem 1.8rem; border-radius: 2px;
+    text-decoration: none; transition: all 0.25s; cursor: pointer; border: none;
   }
-  .btn-primary {
-    background: var(--cyan);
-    color: var(--bg);
-    border: 1px solid var(--cyan);
-    font-weight: 500;
-  }
-  .btn-primary:hover {
-    background: transparent;
-    color: var(--cyan);
-    box-shadow: 0 0 20px rgba(0,212,255,0.3);
-  }
-  .btn-outline {
-    background: transparent;
-    color: var(--cyan);
-    border: 1px solid var(--border);
-  }
-  .btn-outline:hover {
-    border-color: var(--cyan);
-    box-shadow: 0 0 20px rgba(0,212,255,0.15);
-  }
+  .btn-primary { background: var(--cyan); color: var(--bg); border: 1px solid var(--cyan); font-weight: 500; }
+  .btn-primary:hover { background: transparent; color: var(--cyan); box-shadow: 0 0 20px rgba(0,212,255,0.3); }
+  .btn-outline { background: transparent; color: var(--cyan); border: 1px solid var(--border); }
+  .btn-outline:hover { border-color: var(--cyan); box-shadow: 0 0 20px rgba(0,212,255,0.15); }
   .hero-stats {
     display: flex; gap: 3rem; margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
+    padding-top: 2rem; border-top: 1px solid var(--border);
   }
-  .stat-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
-    color: var(--cyan);
-    line-height: 1;
-  }
-  .stat-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--gray);
-    margin-top: 0.2rem;
-  }
+  .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--cyan); line-height: 1; }
+  .stat-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); margin-top: 0.2rem; }
 
-  /* ── SECTIONS ─────────────────────────────────────────────────────────── */
-  section { padding: 6rem 4rem; max-width: 1100px; margin: 0 auto; }
+  /* ── SECTIONS ──────────────────────────────────────────────────────────── */
+  .section-wrap { padding: 6rem 4rem; max-width: 1100px; margin: 0 auto; }
+  .section-wrap-full { padding: 6rem 4rem; background: var(--bg2); }
+  .section-wrap-full > .inner { max-width: 1100px; margin: 0 auto; }
   .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--cyan);
-    margin-bottom: 0.6rem;
+    font-family: 'DM Mono', monospace; font-size: 0.68rem;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--cyan); margin-bottom: 0.6rem;
     display: flex; align-items: center; gap: 0.8rem;
   }
-  .section-label::before {
-    content: '';
-    display: inline-block;
-    width: 24px; height: 1px;
-    background: var(--cyan);
-  }
+  .section-label::before { content:''; display:inline-block; width:24px; height:1px; background:var(--cyan); }
   h2.section-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
-    letter-spacing: 0.05em;
-    color: var(--white);
-    margin-bottom: 3rem;
-    line-height: 1;
+    letter-spacing: 0.05em; color: var(--white);
+    margin-bottom: 3rem; line-height: 1;
   }
 
-  /* ── SKILLS ─────────────────────────────────────────────────────────────*/
-  #skills { background: var(--bg2); max-width: 100%; padding: 6rem 4rem; }
-  #skills > .inner { max-width: 1100px; margin: 0 auto; }
+  /* ── SKILLS GRID ──────────────────────────────────────────────────────── */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1px;
-    border: 1px solid var(--border);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1px; border: 1px solid var(--border);
   }
   .skill-card {
-    padding: 1.6rem 2rem;
-    border: 1px solid transparent;
+    padding: 1.5rem 1.8rem;
     background: var(--bg3);
     transition: all 0.25s;
-    position: relative;
-    overflow: hidden;
+    position: relative; overflow: hidden;
   }
   .skill-card::before {
-    content: '';
-    position: absolute; top: 0; left: 0;
-    width: 3px; height: 100%;
-    background: var(--cyan);
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition: transform 0.3s;
+    content:''; position:absolute; top:0; left:0;
+    width:3px; height:100%; background: var(--cyan);
+    transform: scaleY(0); transform-origin: bottom; transition: transform 0.3s;
   }
   .skill-card:hover::before { transform: scaleY(1); }
   .skill-card:hover { background: rgba(0,212,255,0.04); }
   .skill-cat {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--cyan);
-    margin-bottom: 0.8rem;
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--cyan); margin-bottom: 0.8rem;
   }
-  .skill-items {
-    display: flex; flex-wrap: wrap; gap: 0.4rem;
-  }
+  .skill-items { display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
+    font-family: 'DM Mono', monospace; font-size: 0.68rem;
     padding: 0.25rem 0.65rem;
-    background: rgba(0,212,255,0.07);
-    border: 1px solid var(--border);
-    border-radius: 2px;
-    color: var(--white);
-    letter-spacing: 0.04em;
+    background: rgba(0,212,255,0.07); border: 1px solid var(--border);
+    border-radius: 2px; color: var(--white); letter-spacing: 0.04em;
+  }
+  /* Security card accent – amber */
+  .skill-card.security-card::before { background: #FFB347; }
+  .skill-card.security-card .skill-cat { color: #FFB347; }
+  .skill-card.security-card .tag {
+    background: rgba(255,179,71,0.08); border-color: rgba(255,179,71,0.25); color: #FFD18A;
   }
 
-  /* ── EXPERIENCE ─────────────────────────────────────────────────────────*/
+  /* ── EXPERIENCE TIMELINE ──────────────────────────────────────────────── */
   .timeline { position: relative; padding-left: 2rem; }
   .timeline::before {
-    content: '';
-    position: absolute; left: 0; top: 8px;
-    width: 1px; height: calc(100% - 8px);
+    content:''; position:absolute; left:0; top:8px;
+    width:1px; height:calc(100% - 8px);
     background: linear-gradient(to bottom, var(--cyan), transparent);
   }
   .job {
-    position: relative;
-    padding: 0 0 3rem 2.5rem;
-    opacity: 0;
-    transform: translateY(20px);
+    position: relative; padding: 0 0 3rem 2.5rem;
     transition: opacity 0.5s, transform 0.5s;
   }
-  .job.visible { opacity: 1; transform: translateY(0); }
+  .js-ready .job { opacity:0; transform:translateY(20px); }
+  .job.visible { opacity:1 !important; transform:translateY(0) !important; }
   .job::before {
-    content: '';
-    position: absolute; left: -4px; top: 8px;
-    width: 9px; height: 9px;
-    border-radius: 50%;
-    background: var(--cyan);
-    box-shadow: 0 0 10px rgba(0,212,255,0.5);
+    content:''; position:absolute; left:-4px; top:8px;
+    width:9px; height:9px; border-radius:50%;
+    background: var(--cyan); box-shadow: 0 0 10px rgba(0,212,255,0.5);
   }
-  .job-meta {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--gray);
-    margin-bottom: 0.4rem;
-  }
-  .job-meta span {
-    color: var(--cyan);
-    margin-right: 0.8rem;
-  }
-  .job-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.6rem;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    line-height: 1.1;
-    margin-bottom: 0.2rem;
-  }
-  .job-company {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.78rem;
-    color: var(--cyan);
-    letter-spacing: 0.1em;
-    margin-bottom: 1rem;
-  }
-  .job-bullets { list-style: none; }
-  .job-bullets li {
-    font-size: 0.9rem;
-    color: var(--gray);
-    padding: 0.25rem 0;
-    padding-left: 1.2rem;
-    position: relative;
-    line-height: 1.65;
-  }
-  .job-bullets li::before {
-    content: '→';
-    position: absolute; left: 0;
-    color: var(--cyan2);
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-  }
-  .job-bullets strong { color: var(--white); font-style: italic; }
+  .job-meta { font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gray); margin-bottom:0.4rem; }
+  .job-meta span { color:var(--cyan); margin-right:0.8rem; }
+  .job-title { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:0.06em; color:var(--white); line-height:1.1; margin-bottom:0.2rem; }
+  .job-company { font-family:'DM Mono',monospace; font-size:0.78rem; color:var(--cyan); letter-spacing:0.1em; margin-bottom:1rem; }
+  .job-bullets { list-style:none; }
+  .job-bullets li { font-size:0.9rem; color:var(--gray); padding:0.25rem 0 0.25rem 1.2rem; position:relative; line-height:1.65; }
+  .job-bullets li::before { content:'→'; position:absolute; left:0; color:var(--cyan2); font-family:'DM Mono',monospace; font-size:0.75rem; }
+  .job-bullets strong { color:var(--white); font-style:italic; }
 
   /* ── PROJECTS ─────────────────────────────────────────────────────────── */
-  #projects { background: var(--bg2); max-width: 100%; padding: 6rem 4rem; }
-  #projects > .inner { max-width: 1100px; margin: 0 auto; }
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-  }
+  .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.5rem; }
   .project-card {
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    padding: 2rem;
-    border-radius: 2px;
-    position: relative;
-    overflow: hidden;
+    background: var(--bg3); border:1px solid var(--border);
+    padding:2rem; border-radius:2px;
+    position:relative; overflow:hidden;
     transition: all 0.3s;
-    opacity: 0;
-    transform: translateY(16px);
+    display:flex; flex-direction:column;
   }
-  .project-card.visible { opacity: 1; transform: translateY(0); }
+  .js-ready .project-card { opacity:0; transform:translateY(16px); }
+  .project-card.visible { opacity:1 !important; transform:translateY(0) !important; }
   .project-card::after {
-    content: '';
-    position: absolute; bottom: 0; left: 0; right: 0;
-    height: 2px;
+    content:''; position:absolute; bottom:0; left:0; right:0; height:2px;
     background: linear-gradient(90deg, var(--cyan), transparent);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.35s;
+    transform: scaleX(0); transform-origin:left; transition:transform 0.35s;
   }
-  .project-card:hover::after { transform: scaleX(1); }
-  .project-card:hover {
-    border-color: rgba(0,212,255,0.3);
-    box-shadow: var(--glow);
-    transform: translateY(-3px);
-  }
+  .project-card:hover::after { transform:scaleX(1); }
+  .project-card:hover { border-color:rgba(0,212,255,0.3); box-shadow:var(--glow); transform:translateY(-3px); }
   .project-card.featured {
-    grid-column: span 2;
-    background: linear-gradient(135deg, rgba(0,212,255,0.06), var(--bg3));
+    grid-column:span 2;
+    background:linear-gradient(135deg,rgba(0,212,255,0.06),var(--bg3));
   }
-  @media (max-width: 700px) { .project-card.featured { grid-column: span 1; } }
-  .project-tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--cyan);
-    margin-bottom: 1rem;
-  }
-  .project-name {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.45rem;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    margin-bottom: 0.8rem;
-    line-height: 1.1;
-  }
-  .project-desc {
-    font-size: 0.88rem;
-    color: var(--gray);
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
-  }
-  .project-stack {
-    display: flex; flex-wrap: wrap; gap: 0.35rem;
-    margin-top: auto;
-  }
-  .stack-tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    padding: 0.2rem 0.5rem;
-    background: rgba(0,212,255,0.06);
-    border: 1px solid rgba(0,212,255,0.18);
-    border-radius: 2px;
-    color: var(--cyan);
-    letter-spacing: 0.06em;
-  }
+  @media(max-width:700px){.project-card.featured{grid-column:span 1;}}
+  .project-tag { font-family:'DM Mono',monospace; font-size:0.62rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--cyan); margin-bottom:1rem; }
+  .project-name { font-family:'Bebas Neue',sans-serif; font-size:1.45rem; letter-spacing:0.06em; color:var(--white); margin-bottom:0.8rem; line-height:1.1; }
+  .project-desc { font-size:0.88rem; color:var(--gray); line-height:1.7; margin-bottom:1.2rem; flex:1; }
+  .project-stack { display:flex; flex-wrap:wrap; gap:0.35rem; margin-top:auto; }
+  .stack-tag { font-family:'DM Mono',monospace; font-size:0.62rem; padding:0.2rem 0.5rem; background:rgba(0,212,255,0.06); border:1px solid rgba(0,212,255,0.18); border-radius:2px; color:var(--cyan); letter-spacing:0.06em; }
 
-  /* ── CERTS ─────────────────────────────────────────────────────────────── */
-  .cert-group { margin-bottom: 2.5rem; }
-  .cert-group-title {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--cyan);
-    margin-bottom: 0.8rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
-  }
-  .cert-list { list-style: none; }
-  .cert-list li {
-    font-size: 0.88rem;
-    color: var(--gray);
-    padding: 0.4rem 0;
-    padding-left: 1.2rem;
-    position: relative;
-    line-height: 1.5;
-  }
-  .cert-list li::before {
-    content: '◆';
-    position: absolute; left: 0;
-    color: var(--cyan2);
-    font-size: 0.45rem;
-    top: 0.55rem;
-  }
-  .cert-list a {
-    color: var(--white);
-    text-decoration: none;
-    border-bottom: 1px solid var(--border);
-    transition: border-color 0.2s, color 0.2s;
-  }
-  .cert-list a:hover { color: var(--cyan); border-color: var(--cyan); }
+  /* ── CERTS ────────────────────────────────────────────────────────────── */
+  .cert-group { margin-bottom:2.5rem; }
+  .cert-group-title { font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--cyan); margin-bottom:0.8rem; padding-bottom:0.5rem; border-bottom:1px solid var(--border); }
+  .cert-list { list-style:none; }
+  .cert-list li { font-size:0.88rem; color:var(--gray); padding:0.4rem 0 0.4rem 1.2rem; position:relative; line-height:1.5; }
+  .cert-list li::before { content:'◆'; position:absolute; left:0; color:var(--cyan2); font-size:0.45rem; top:0.55rem; }
+  .cert-list a { color:var(--white); text-decoration:none; border-bottom:1px solid var(--border); transition:border-color 0.2s,color 0.2s; }
+  .cert-list a:hover { color:var(--cyan); border-color:var(--cyan); }
 
-  /* ── CONTACT ─────────────────────────────────────────────────────────── */
-  #contact {
-    background: var(--bg2);
-    max-width: 100%;
-    padding: 6rem 4rem;
-    border-top: 1px solid var(--border);
-  }
-  #contact > .inner {
-    max-width: 1100px; margin: 0 auto;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
-    align-items: center;
-  }
-  .contact-headline {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    line-height: 1;
-    letter-spacing: 0.05em;
-    margin-bottom: 1rem;
-  }
-  .contact-headline span { color: var(--cyan); }
-  .contact-sub {
-    font-size: 0.95rem;
-    color: var(--gray);
-    line-height: 1.8;
-    margin-bottom: 2rem;
-  }
-  .contact-note {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-    color: var(--cyan);
-    padding: 0.6rem 1rem;
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--cyan);
-    background: rgba(0,212,255,0.04);
-  }
-  .contact-links { display: flex; flex-direction: column; gap: 1rem; }
-  .contact-link {
-    display: flex; align-items: center; gap: 1rem;
-    padding: 1rem 1.5rem;
-    border: 1px solid var(--border);
-    background: var(--bg3);
-    text-decoration: none;
-    color: var(--white);
-    transition: all 0.25s;
-    border-radius: 2px;
-  }
-  .contact-link:hover {
-    border-color: var(--cyan);
-    background: rgba(0,212,255,0.06);
-    transform: translateX(4px);
-  }
-  .contact-link-icon {
-    font-size: 1.2rem;
-    width: 32px; text-align: center;
-  }
-  .contact-link-info { flex: 1; }
-  .contact-link-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--gray);
-  }
-  .contact-link-value {
-    font-size: 0.9rem;
-    color: var(--white);
-  }
-  .contact-link-arrow {
-    font-family: 'DM Mono', monospace;
-    color: var(--cyan);
-    font-size: 0.9rem;
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  .contact-link:hover .contact-link-arrow { opacity: 1; }
+  /* ── CONTACT ──────────────────────────────────────────────────────────── */
+  #contact { border-top:1px solid var(--border); }
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
+  .contact-headline { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.5rem,5vw,4rem); line-height:1; letter-spacing:0.05em; margin-bottom:1rem; }
+  .contact-headline span { color:var(--cyan); }
+  .contact-sub { font-size:0.95rem; color:var(--gray); line-height:1.8; margin-bottom:2rem; }
+  .contact-note { font-family:'DM Mono',monospace; font-size:0.7rem; letter-spacing:0.12em; color:var(--cyan); padding:0.6rem 1rem; border:1px solid var(--border); border-left:3px solid var(--cyan); background:rgba(0,212,255,0.04); }
+  .contact-links { display:flex; flex-direction:column; gap:1rem; }
+  .contact-link { display:flex; align-items:center; gap:1rem; padding:1rem 1.5rem; border:1px solid var(--border); background:var(--bg3); text-decoration:none; color:var(--white); transition:all 0.25s; border-radius:2px; }
+  .contact-link:hover { border-color:var(--cyan); background:rgba(0,212,255,0.06); transform:translateX(4px); }
+  .contact-link-icon { font-size:1.1rem; width:28px; text-align:center; }
+  .contact-link-info { flex:1; }
+  .contact-link-label { font-family:'DM Mono',monospace; font-size:0.6rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--gray); }
+  .contact-link-value { font-size:0.88rem; color:var(--white); }
+  .contact-link-arrow { font-family:'DM Mono',monospace; color:var(--cyan); font-size:0.9rem; opacity:0; transition:opacity 0.2s; }
+  .contact-link:hover .contact-link-arrow { opacity:1; }
 
-  /* ── FOOTER ─────────────────────────────────────────────────────────── */
-  footer {
-    text-align: center;
-    padding: 2rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.12em;
-    color: var(--gray2);
-    border-top: 1px solid var(--border);
+  /* CV DOWNLOAD SECTION BUTTONS */
+  .cv-section-btns { display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem; }
+  .cv-dl-btn {
+    display:flex; align-items:center; gap:0.6rem;
+    font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase;
+    padding:0.65rem 1.2rem; border:1px solid var(--border);
+    background:var(--bg3); color:var(--white); text-decoration:none;
+    border-radius:2px; transition:all 0.25s;
   }
+  .cv-dl-btn:hover { border-color:var(--cyan); background:rgba(0,212,255,0.07); color:var(--cyan); }
+  .cv-dl-btn span { font-size:1rem; }
 
-  /* ── FADE IN OBSERVER ─────────────────────────────────────────────────── */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  footer { text-align:center; padding:2rem; font-family:'DM Mono',monospace; font-size:0.65rem; letter-spacing:0.12em; color:var(--gray2); border-top:1px solid var(--border); }
+
+  /* ── FADE IN ──────────────────────────────────────────────────────────── */
+  .fade-in { transition:opacity 0.6s ease, transform 0.6s ease; }
+  .js-ready .fade-in { opacity:0; transform:translateY(20px); }
+  .fade-in.visible { opacity:1 !important; transform:translateY(0) !important; }
 
   /* ── RESPONSIVE ──────────────────────────────────────────────────────── */
-  @media (max-width: 768px) {
-    nav { padding: 0 1.5rem; }
-    .nav-links { display: none; }
-    #hero, section, #skills, #projects, #contact { padding: 4rem 1.5rem; }
-    .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
-    #contact > .inner { grid-template-columns: 1fr; }
+  @media(max-width:900px){
+    nav { padding:0 1.5rem; }
+    .nav-links { display:none; }
+    #hero, .section-wrap, .section-wrap-full { padding:4rem 1.5rem; }
+    .hero-stats { gap:1.5rem; flex-wrap:wrap; }
+    .contact-grid { grid-template-columns:1fr; }
+    .nav-right { gap:0.5rem; }
   }
+
+  /* ── LANG HIDDEN ─────────────────────────────────────────────────────── */
+  .pt-only { display:none !important; }
+  .en-only { display:revert; }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
+<!-- ═══════ NAV ═══════════════════════════════════════════════════════════ -->
 <nav>
-  <a href="#hero" class="nav-logo">LC</a>
-  <ul class="nav-links">
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#certifications">Certs</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <div class="nav-left">
+    <a href="#hero" class="nav-logo">LC</a>
+    <ul class="nav-links">
+      <li><a href="#hero"          data-en="Home"     data-pt="Início">Home</a></li>
+      <li><a href="#skills"        data-en="Skills"   data-pt="Skills">Skills</a></li>
+      <li><a href="#experience"    data-en="Experience" data-pt="Experiência">Experience</a></li>
+      <li><a href="#projects"      data-en="Projects" data-pt="Projetos">Projects</a></li>
+      <li><a href="#certifications" data-en="Certs"   data-pt="Certs">Certs</a></li>
+      <li><a href="#contact"       data-en="Contact"  data-pt="Contato">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <!-- CV Download dropdown -->
+    <div class="cv-dropdown" tabindex="0">
+      <button class="cv-btn">
+        ⬇ <span class="en-only">Download CV</span><span class="pt-only">Baixar CV</span> ▾
+      </button>
+      <div class="cv-menu">
+        <a href="https://devzurc.github.io/assets/files/cv/eng.pdf" target="_blank" download>
+          <span class="cv-menu-flag">🇬🇧</span> English CV
+        </a>
+        <a href="https://devzurc.github.io/assets/files/cv/ptbr.pdf" target="_blank" download>
+          <span class="cv-menu-flag">🇧🇷</span> Currículo PT-BR
+        </a>
+      </div>
+    </div>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section id="hero">
+<!-- ═══════ HERO ══════════════════════════════════════════════════════════ -->
+<section id="hero" style="min-height:100vh;display:flex;align-items:center;padding:8rem 4rem 4rem;position:relative;overflow:hidden;">
   <div class="hero-grid-bg"></div>
   <div class="hero-glow"></div>
   <div class="hero-content">
-    <div class="hero-tag">Available for Europe Relocation</div>
+    <div class="hero-tag en-only">Available for Europe Relocation</div>
+    <div class="hero-tag pt-only">Disponível para Realocação na Europa</div>
     <h1 class="hero-name">LUCAS<br/><span>CRUZ</span></h1>
-    <p class="hero-roles"><b>Data Engineer</b> &nbsp;/&nbsp; <b>Gen. AI Engineer</b></p>
-    <p class="hero-desc">
+    <p class="hero-roles en-only"><b>Data Engineer</b> &nbsp;/&nbsp; <b>Gen. AI Engineer</b></p>
+    <p class="hero-roles pt-only"><b>Engenheiro de Dados</b> &nbsp;/&nbsp; <b>Engenheiro de IA Generativa</b></p>
+    <p class="hero-desc en-only">
       Building scalable data platforms, AI-powered automations, and intelligent agents that turn raw data into real business impact. 5+ years across IoT, fintech, agribusiness &amp; automotive intelligence.
     </p>
+    <p class="hero-desc pt-only">
+      Construindo plataformas de dados escaláveis, automações com IA e agentes inteligentes que transformam dados brutos em impacto real de negócio. 5+ anos em IoT, fintechs, agronegócio e inteligência automotiva.
+    </p>
     <div class="hero-cta">
-      <a href="#contact" class="btn btn-primary">Get in Touch</a>
-      <a href="#experience" class="btn btn-outline">View Experience</a>
+      <a href="#contact" class="btn btn-primary en-only">Get in Touch</a>
+      <a href="#contact" class="btn btn-primary pt-only">Entrar em Contato</a>
+      <a href="#experience" class="btn btn-outline en-only">View Experience</a>
+      <a href="#experience" class="btn btn-outline pt-only">Ver Experiência</a>
       <a href="https://www.linkedin.com/in/lucas-cruz" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
     </div>
     <div class="hero-stats">
-      <div>
-        <div class="stat-num">5+</div>
-        <div class="stat-label">Years Experience</div>
-      </div>
-      <div>
-        <div class="stat-num">95K</div>
-        <div class="stat-label">IoT Devices Supported</div>
-      </div>
-      <div>
-        <div class="stat-num">3</div>
-        <div class="stat-label">Cloud Platforms</div>
-      </div>
-      <div>
-        <div class="stat-num">C1</div>
-        <div class="stat-label">English Level</div>
-      </div>
+      <div><div class="stat-num">5+</div><div class="stat-label en-only">Years Experience</div><div class="stat-label pt-only">Anos de Exp.</div></div>
+      <div><div class="stat-num">95K</div><div class="stat-label en-only">IoT Devices</div><div class="stat-label pt-only">Devices IoT</div></div>
+      <div><div class="stat-num">4</div><div class="stat-label en-only">Cloud Platforms</div><div class="stat-label pt-only">Nuvens</div></div>
+      <div><div class="stat-num">C1</div><div class="stat-label en-only">English Level</div><div class="stat-label pt-only">Nível de Inglês</div></div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<div id="skills">
+<!-- ═══════ SKILLS ════════════════════════════════════════════════════════ -->
+<div id="skills" class="section-wrap-full">
   <div class="inner">
-    <div class="section-label">What I Work With</div>
-    <h2 class="section-title">TECHNICAL SKILLS</h2>
+    <div class="section-label en-only">What I Work With</div>
+    <div class="section-label pt-only">Com o que Trabalho</div>
+    <h2 class="section-title en-only">TECHNICAL SKILLS</h2>
+    <h2 class="section-title pt-only">COMPETÊNCIAS TÉCNICAS</h2>
     <div class="skills-grid">
 
       <div class="skill-card fade-in">
-        <div class="skill-cat">Gen. AI &amp; LLMs</div>
+        <div class="skill-cat en-only">Gen. AI &amp; LLMs</div>
+        <div class="skill-cat pt-only">IA Generativa &amp; LLMs</div>
         <div class="skill-items">
           <span class="tag">Claude AI</span><span class="tag">Google AI Studio</span>
           <span class="tag">LLM Integration</span><span class="tag">AI Agents</span>
@@ -618,7 +435,8 @@
       </div>
 
       <div class="skill-card fade-in">
-        <div class="skill-cat">Data Engineering</div>
+        <div class="skill-cat en-only">Data Engineering</div>
+        <div class="skill-cat pt-only">Engenharia de Dados</div>
         <div class="skill-items">
           <span class="tag">Python</span><span class="tag">SQL</span>
           <span class="tag">Apache Spark (PySpark)</span><span class="tag">Pandas</span>
@@ -629,14 +447,16 @@
       </div>
 
       <div class="skill-card fade-in">
-        <div class="skill-cat">Pipeline Orchestration</div>
+        <div class="skill-cat en-only">Pipeline Orchestration</div>
+        <div class="skill-cat pt-only">Orquestração de Pipelines</div>
         <div class="skill-items">
           <span class="tag">Apache Airflow</span><span class="tag">n8n</span>
         </div>
       </div>
 
       <div class="skill-card fade-in">
-        <div class="skill-cat">Cloud Platforms</div>
+        <div class="skill-cat en-only">Multi-Cloud Platforms</div>
+        <div class="skill-cat pt-only">Plataformas Multi-Cloud</div>
         <div class="skill-items">
           <span class="tag">AWS (S3, EC2, ECS, Lambda, IAM)</span>
           <span class="tag">Microsoft Azure</span>
@@ -646,7 +466,8 @@
       </div>
 
       <div class="skill-card fade-in">
-        <div class="skill-cat">Data Platforms &amp; Lakehouses</div>
+        <div class="skill-cat en-only">Data Platforms &amp; Lakehouses</div>
+        <div class="skill-cat pt-only">Plataformas de Dados</div>
         <div class="skill-items">
           <span class="tag">Snowflake</span><span class="tag">Databricks</span>
           <span class="tag">Amazon Redshift</span><span class="tag">Delta Lake</span>
@@ -655,23 +476,49 @@
       </div>
 
       <div class="skill-card fade-in">
-        <div class="skill-cat">Relational Databases</div>
+        <div class="skill-cat en-only">Relational Databases</div>
+        <div class="skill-cat pt-only">Bancos de Dados Relacionais</div>
         <div class="skill-items">
-          <span class="tag">PostgreSQL</span><span class="tag">SQL Server</span>
-          <span class="tag">MySQL</span>
+          <span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">MySQL</span>
         </div>
       </div>
 
       <div class="skill-card fade-in">
-        <div class="skill-cat">Analytics &amp; BI</div>
+        <div class="skill-cat en-only">Analytics &amp; BI</div>
+        <div class="skill-cat pt-only">Analytics &amp; BI</div>
         <div class="skill-items">
           <span class="tag">Power BI</span><span class="tag">Qlik Sense</span>
           <span class="tag">Apache Superset</span><span class="tag">Looker</span>
         </div>
       </div>
 
+      <!-- SECURITY CARD — amber accent -->
+      <div class="skill-card security-card fade-in">
+        <div class="skill-cat en-only">Security &amp; Data Governance</div>
+        <div class="skill-cat pt-only">Segurança &amp; Governança de Dados</div>
+        <div class="skill-items">
+          <span class="tag en-only">LGPD / GDPR Compliance</span>
+          <span class="tag pt-only">Conformidade LGPD / GDPR</span>
+          <span class="tag en-only">Data Privacy</span>
+          <span class="tag pt-only">Privacidade de Dados</span>
+          <span class="tag">Access Control (IAM)</span>
+          <span class="tag en-only">Data Masking</span>
+          <span class="tag pt-only">Mascaramento de Dados</span>
+          <span class="tag en-only">Encryption at Rest &amp; Transit</span>
+          <span class="tag pt-only">Criptografia em Repouso e Trânsito</span>
+          <span class="tag en-only">Audit Logging</span>
+          <span class="tag pt-only">Logs de Auditoria</span>
+          <span class="tag en-only">Secure API Design</span>
+          <span class="tag pt-only">APIs Seguras</span>
+          <span class="tag">RBAC</span>
+          <span class="tag en-only">Electronic Security Tags (RFID/NFC)</span>
+          <span class="tag pt-only">Tags Eletrônicas (RFID/NFC)</span>
+        </div>
+      </div>
+
       <div class="skill-card fade-in">
-        <div class="skill-cat">DevOps &amp; Infrastructure</div>
+        <div class="skill-cat en-only">DevOps &amp; Infrastructure</div>
+        <div class="skill-cat pt-only">DevOps &amp; Infraestrutura</div>
         <div class="skill-items">
           <span class="tag">Docker</span><span class="tag">Kubernetes</span>
           <span class="tag">Git</span><span class="tag">CI/CD Pipelines</span>
@@ -680,11 +527,12 @@
       </div>
 
       <div class="skill-card fade-in">
-        <div class="skill-cat">Languages</div>
+        <div class="skill-cat en-only">Languages</div>
+        <div class="skill-cat pt-only">Idiomas</div>
         <div class="skill-items">
-          <span class="tag">Portuguese — Native</span>
-          <span class="tag">English — C1 Advanced</span>
-          <span class="tag">Spanish — B1 Intermediate</span>
+          <span class="tag en-only">Portuguese — Native</span><span class="tag pt-only">Português — Nativo</span>
+          <span class="tag en-only">English — C1 Advanced</span><span class="tag pt-only">Inglês — C1 Avançado</span>
+          <span class="tag en-only">Spanish — B1</span><span class="tag pt-only">Espanhol — B1</span>
         </div>
       </div>
 
@@ -692,73 +540,117 @@
   </div>
 </div>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-label">Career History</div>
-  <h2 class="section-title">WORK EXPERIENCE</h2>
-  <div class="timeline">
+<!-- ═══════ EXPERIENCE ════════════════════════════════════════════════════ -->
+<div id="experience">
+  <div class="section-wrap">
+    <div class="section-label en-only">Career History</div>
+    <div class="section-label pt-only">Histórico Profissional</div>
+    <h2 class="section-title en-only">WORK EXPERIENCE</h2>
+    <h2 class="section-title pt-only">EXPERIÊNCIA PROFISSIONAL</h2>
 
-    <div class="job">
-      <div class="job-meta"><span>Feb 2026 — May 2026</span> Curitiba, Brazil · On-site · Contract</div>
-      <div class="job-title">Gen. AI Engineer</div>
-      <div class="job-company">TK Technologies</div>
-      <ul class="job-bullets">
-        <li>Built a <strong>multi-source web scraping pipeline</strong> in Python targeting 10+ automotive parts websites, extracting pricing data and product metadata at scale for competitive market intelligence.</li>
-        <li>Designed <strong>AI-powered n8n automation workflows</strong> (ETL, RPA, chatbot agents) integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich data and boost team productivity.</li>
-        <li>Developed a <strong>conversational AI chatbot</strong> enabling business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.</li>
-        <li>Deployed containerised backend services on <strong>Azure with Docker</strong>, standardising environments and improving deployment reliability by ~25%.</li>
-      </ul>
+    <div class="timeline">
+
+      <!-- TK -->
+      <div class="job">
+        <div class="job-meta"><span>Feb 2026 — May 2026 · <span class="en-only">3-month Contract</span><span class="pt-only">Contrato 3 meses</span></span> &nbsp;·&nbsp; <span class="en-only">Curitiba, Brazil · Hybrid</span><span class="pt-only">Curitiba, PR · Híbrido</span></div>
+        <div class="job-title en-only">Gen. AI Engineer</div>
+        <div class="job-title pt-only">Engenheiro de IA Generativa</div>
+        <div class="job-company">TK Technologies</div>
+        <ul class="job-bullets en-only">
+          <li>Built a <strong>multi-source web scraping pipeline</strong> in Python targeting 10+ automotive parts websites, extracting pricing data and product metadata at scale for competitive market intelligence.</li>
+          <li>Designed <strong>AI-powered n8n automation workflows</strong> (ETL, RPA, chatbot agents) integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich data and boost team productivity.</li>
+          <li>Developed a <strong>conversational AI chatbot</strong> enabling business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.</li>
+          <li>Deployed containerised backend services on <strong>Azure with Docker</strong>, standardising environments and improving deployment reliability by ~25%.</li>
+        </ul>
+        <ul class="job-bullets pt-only">
+          <li>Construiu <strong>pipeline de web scraping multi-fonte</strong> em Python coletando dados de preço e metadados de mais de 10 sites de peças automotivas para inteligência competitiva de mercado.</li>
+          <li>Projetou <strong>workflows de automação com IA no n8n</strong> (ETL, RPA, agentes chatbot) integrando LLMs (Claude AI, Google AI Studio) e APIs do GCP (Sheets, Drive) para enriquecer dados e aumentar produtividade.</li>
+          <li>Desenvolveu <strong>chatbot de IA conversacional</strong> permitindo que usuários de negócio consultem e refinem datasets de preço por linguagem natural, reduzindo o tempo de obtenção de insights.</li>
+          <li>Realizou deploy de serviços backend conteinerizados no <strong>Azure com Docker</strong>, melhorando a confiabilidade das implantações em ~25%.</li>
+        </ul>
+      </div>
+
+      <!-- Spacecom -->
+      <div class="job">
+        <div class="job-meta"><span>Apr 2023 — Jul 2024</span> <span class="en-only">Curitiba, Brazil · On-site</span><span class="pt-only">Curitiba, PR · Presencial</span></div>
+        <div class="job-title">Data Engineer</div>
+        <div class="job-company">Spacecom Monitoramento</div>
+        <ul class="job-bullets en-only">
+          <li>Designed and maintained a <strong>Big Data Lakehouse on AWS S3</strong> using Medallion Architecture (Bronze/Silver/Gold) with Delta Lake, Parquet, PySpark, and Trino.</li>
+          <li>Supported a large-scale <strong>IoT platform with 95,000+ devices</strong>, processing hundreds of millions of records per day with high availability.</li>
+          <li>Worked with <strong>electronic security tags (RFID/NFC)</strong> integrated into an IoT platform serving <strong>government court systems</strong>, gaining deep hands-on experience with <strong>LGPD</strong> (Brazil's GDPR equivalent) — implementing data privacy controls, access governance, and secure handling of sensitive judicial data.</li>
+          <li>Orchestrated ETL pipelines with <strong>Apache Airflow</strong>, reducing failure rates by ~30%; Docker on AWS EC2 cut deployment issues by ~25%.</li>
+          <li>Identified and fixed inconsistent pipeline steps, increasing <strong>analytics accuracy by ~40%</strong>; delivered datasets to Qlik Sense and Apache Superset.</li>
+        </ul>
+        <ul class="job-bullets pt-only">
+          <li>Projetou e manteve <strong>Data Lakehouse de Big Data na AWS S3</strong> com Arquitetura Medallion (Bronze/Prata/Ouro) usando Delta Lake, Parquet, PySpark e Trino.</li>
+          <li>Suportou plataforma <strong>IoT de 95.000+ dispositivos</strong>, processando centenas de milhões de registros por dia com alta disponibilidade.</li>
+          <li>Trabalhou com <strong>tags eletrônicas de segurança (RFID/NFC)</strong> integradas a plataforma IoT do <strong>sistema judiciário governamental</strong>, adquirindo experiência prática aprofundada em conformidade com a <strong>LGPD</strong> — implementando controles de privacidade, governança de acesso e tratamento seguro de dados judiciais sensíveis.</li>
+          <li>Orquestrou pipelines ETL com <strong>Apache Airflow</strong>, reduzindo falhas em ~30%; Docker na AWS EC2 reduziu problemas de deploy em ~25%.</li>
+          <li>Identificou e corrigiu etapas inconsistentes nos pipelines, aumentando a <strong>acurácia dos dados em ~40%</strong>; entregou datasets ao Qlik Sense e Apache Superset.</li>
+        </ul>
+      </div>
+
+      <!-- wDiscover -->
+      <div class="job">
+        <div class="job-meta"><span>Jun 2022 — May 2024</span> <span class="en-only">Curitiba, Brazil · Remote</span><span class="pt-only">Curitiba, PR · Remoto</span></div>
+        <div class="job-title en-only">Data Engineer Consultant</div>
+        <div class="job-title pt-only">Consultor de Engenharia de Dados</div>
+        <div class="job-company">wDiscover</div>
+        <ul class="job-bullets en-only">
+          <li>Delivered end-to-end data projects for <strong>fintech, agribusiness, and operations</strong> clients — integrating PagSeguro, Stone, Cielo, John Deere IoT APIs, REST APIs, and web scraping.</li>
+          <li>Designed <strong>Data Warehouses</strong> on SQL Server and Oracle Autonomous DB; automated ETL with Airflow on Docker/Oracle Cloud, reducing manual effort by ~35%.</li>
+          <li>Built <strong>Power BI dashboards</strong> tracking KPIs, financial metrics, and operational performance across multiple client domains.</li>
+        </ul>
+        <ul class="job-bullets pt-only">
+          <li>Entregou projetos de dados para clientes de <strong>fintechs, agronegócio e operações</strong> — integrando PagSeguro, Stone, Cielo, APIs IoT John Deere, REST APIs e web scraping.</li>
+          <li>Projetou <strong>Data Warehouses</strong> no SQL Server e Oracle Autonomous DB; automatizou ETL com Airflow em Docker/Oracle Cloud, reduzindo esforço manual em ~35%.</li>
+          <li>Criou <strong>dashboards Power BI</strong> monitorando KPIs, métricas financeiras e desempenho operacional para múltiplos clientes.</li>
+        </ul>
+      </div>
+
+      <!-- Itaete -->
+      <div class="job">
+        <div class="job-meta"><span>Jun 2020 — Feb 2023</span> <span class="en-only">Curitiba, Brazil · Hybrid</span><span class="pt-only">Curitiba, PR · Híbrido</span></div>
+        <div class="job-title en-only">Data Analyst</div>
+        <div class="job-title pt-only">Analista de Dados</div>
+        <div class="job-company en-only">Itaete Group</div>
+        <div class="job-company pt-only">Grupo Itaete</div>
+        <ul class="job-bullets en-only">
+          <li>Designed a <strong>SQL Server Data Warehouse</strong> and Python/SQL pipelines with Pandas, integrating IoT devices, PostgreSQL, APIs and CSV sources.</li>
+          <li>Built <strong>Power BI dashboards</strong> and Excel/VBA automated reporting, reducing data processing time by ~50%.</li>
+          <li>Developed internal systems for <strong>inventory management and financial automation</strong>, including invoice generation and automated weekly reports.</li>
+        </ul>
+        <ul class="job-bullets pt-only">
+          <li>Projetou <strong>Data Warehouse no SQL Server</strong> e pipelines Python/SQL com Pandas, integrando IoT, PostgreSQL, APIs e arquivos CSV.</li>
+          <li>Criou <strong>dashboards Power BI</strong> e relatórios automatizados em Excel/VBA, reduzindo o tempo de processamento de dados em ~50%.</li>
+          <li>Desenvolveu sistemas internos de <strong>controle de estoque e automação financeira</strong>, incluindo geração de notas fiscais e relatórios semanais automáticos.</li>
+        </ul>
+      </div>
+
     </div>
-
-    <div class="job">
-      <div class="job-meta"><span>Apr 2023 — Jul 2024</span> Curitiba, Brazil · On-site</div>
-      <div class="job-title">Data Engineer</div>
-      <div class="job-company">Spacecom Monitoramento</div>
-      <ul class="job-bullets">
-        <li>Designed and maintained a <strong>Big Data Lakehouse on AWS S3</strong> using Medallion Architecture (Bronze/Silver/Gold) with Delta Lake, Parquet, PySpark, and Trino.</li>
-        <li>Supported a large-scale <strong>IoT platform with 95,000+ devices</strong>, processing hundreds of millions of records per day with high availability.</li>
-        <li>Orchestrated ETL pipelines with <strong>Apache Airflow</strong>, reducing failure rates by ~30%; Docker on AWS EC2 cut deployment issues by ~25%.</li>
-        <li>Identified and fixed inconsistent pipeline steps, increasing <strong>analytics accuracy by ~40%</strong>; delivered datasets to Qlik Sense and Apache Superset dashboards.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-meta"><span>Jun 2022 — May 2024</span> Curitiba, Brazil · Remote</div>
-      <div class="job-title">Data Engineer Consultant</div>
-      <div class="job-company">wDiscover</div>
-      <ul class="job-bullets">
-        <li>Delivered end-to-end data projects for <strong>fintech, agribusiness, and operations</strong> clients — integrating payment providers (PagSeguro, Stone, Cielo), John Deere IoT APIs, REST APIs, and web scraping.</li>
-        <li>Designed <strong>Data Warehouses</strong> on SQL Server and Oracle Autonomous DB with dimensional modelling; automated ETL with Airflow on Docker/Oracle Cloud, reducing manual effort by ~35%.</li>
-        <li>Built <strong>Power BI dashboards</strong> tracking KPIs, financial metrics, and operational performance for stakeholders across multiple client domains.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-meta"><span>Jun 2020 — Feb 2023</span> Curitiba, Brazil · Hybrid</div>
-      <div class="job-title">Data Analyst</div>
-      <div class="job-company">Itaete Group</div>
-      <ul class="job-bullets">
-        <li>Designed a <strong>SQL Server Data Warehouse</strong> and Python/SQL pipelines with Pandas for cleansing, transformation and enrichment, integrating IoT devices, PostgreSQL, APIs and CSV sources.</li>
-        <li>Built <strong>Power BI dashboards</strong> and automated Excel/VBA reporting, reducing data processing time by ~50%.</li>
-        <li>Developed internal systems for <strong>inventory management and financial automation</strong>, including invoice generation and automated weekly report distribution.</li>
-      </ul>
-    </div>
-
   </div>
-</section>
+</div>
 
-<!-- PROJECTS -->
-<div id="projects">
+<!-- ═══════ PROJECTS ══════════════════════════════════════════════════════ -->
+<div id="projects" class="section-wrap-full">
   <div class="inner">
-    <div class="section-label">Selected Work</div>
-    <h2 class="section-title">NOTABLE PROJECTS</h2>
+    <div class="section-label en-only">Selected Work</div>
+    <div class="section-label pt-only">Trabalhos Selecionados</div>
+    <h2 class="section-title en-only">NOTABLE PROJECTS</h2>
+    <h2 class="section-title pt-only">PROJETOS DE DESTAQUE</h2>
     <div class="projects-grid">
 
       <div class="project-card featured fade-in">
-        <div class="project-tag">★ Latest · Gen. AI · TK Technologies — 2026</div>
-        <div class="project-name">AUTOMOTIVE MARKET PRICE INTELLIGENCE PLATFORM</div>
-        <div class="project-desc">
-          Built an end-to-end competitive intelligence system that scrapes 10+ automotive parts websites with Python, then orchestrates AI agents via n8n integrating Claude AI, Google AI Studio, and GCP (Sheets, Drive) to automate price analysis. A conversational AI chatbot lets business users query and refine pricing data by natural language. Fully containerised and deployed on Azure.
+        <div class="project-tag en-only">★ Latest · Gen. AI · TK Technologies — 2026</div>
+        <div class="project-tag pt-only">★ Mais Recente · IA Generativa · TK Technologies — 2026</div>
+        <div class="project-name en-only">AUTOMOTIVE MARKET PRICE INTELLIGENCE PLATFORM</div>
+        <div class="project-name pt-only">PLATAFORMA DE INTELIGÊNCIA DE PREÇOS AUTOMOTIVOS</div>
+        <div class="project-desc en-only">
+          End-to-end competitive intelligence system scraping 10+ automotive parts websites with Python, orchestrating AI agents via n8n with Claude AI, Google AI Studio, and GCP (Sheets, Drive) to automate price analysis. A conversational AI chatbot lets business users query and refine pricing data via natural language. Fully containerised on Azure.
+        </div>
+        <div class="project-desc pt-only">
+          Sistema completo de inteligência competitiva que coleta dados de 10+ sites automotivos com Python, orquestra agentes de IA via n8n com Claude AI, Google AI Studio e GCP (Sheets, Drive) para automatizar análises de preços. Chatbot de IA permite que usuários consultem dados por linguagem natural. Deploy completo conteinerizado no Azure.
         </div>
         <div class="project-stack">
           <span class="stack-tag">Python</span><span class="stack-tag">n8n</span>
@@ -770,11 +662,12 @@
       </div>
 
       <div class="project-card fade-in">
-        <div class="project-tag">Personal Project — Jan 2026</div>
-        <div class="project-name">MODERN CLOUD DATA PIPELINE</div>
-        <div class="project-desc">
-          End-to-end analytics pipeline with Apache Airflow, Snowflake, and dbt following modern analytics engineering best practices. Containerised dbt with Docker reducing deployment errors by ~50%. Modular, tested SQL transformations orchestrated via Airflow DAGs.
-        </div>
+        <div class="project-tag en-only">Personal Project — Jan 2026</div>
+        <div class="project-tag pt-only">Projeto Pessoal — Jan 2026</div>
+        <div class="project-name en-only">MODERN CLOUD DATA PIPELINE</div>
+        <div class="project-name pt-only">PIPELINE DE DADOS EM NUVEM</div>
+        <div class="project-desc en-only">End-to-end analytics pipeline with Airflow, Snowflake, and dbt. Containerised dbt with Docker reducing deployment errors by ~50%. Modular tested SQL transformations orchestrated via Airflow DAGs.</div>
+        <div class="project-desc pt-only">Pipeline analítico de ponta a ponta com Airflow, Snowflake e dbt. dbt conteinerizado com Docker reduzindo erros de deploy em ~50%. Transformações SQL modulares orquestradas via DAGs do Airflow.</div>
         <div class="project-stack">
           <span class="stack-tag">Snowflake</span><span class="stack-tag">dbt</span>
           <span class="stack-tag">Apache Airflow</span><span class="stack-tag">Docker</span>
@@ -783,11 +676,12 @@
       </div>
 
       <div class="project-card fade-in">
-        <div class="project-tag">Client Project — Feb 2024</div>
-        <div class="project-name">IOT DATA LAKEHOUSE ON AWS</div>
-        <div class="project-desc">
-          Designed a full Medallion Architecture (Bronze/Silver/Gold) lakehouse on AWS S3 ingesting from APIs, databases, and CSV files. Virtualised the Gold layer with Trino and surfaced analytics via Apache Superset dashboards for business consumers.
-        </div>
+        <div class="project-tag en-only">Client Project — Feb 2024</div>
+        <div class="project-tag pt-only">Projeto de Cliente — Fev 2024</div>
+        <div class="project-name en-only">IOT DATA LAKEHOUSE ON AWS</div>
+        <div class="project-name pt-only">IOT DATA LAKEHOUSE NA AWS</div>
+        <div class="project-desc en-only">Full Medallion Architecture (Bronze/Silver/Gold) lakehouse on AWS S3 ingesting from APIs, databases, and CSV. Gold layer virtualised with Trino; insights surfaced via Apache Superset dashboards.</div>
+        <div class="project-desc pt-only">Lakehouse completo com Arquitetura Medallion (Bronze/Prata/Ouro) na AWS S3, ingerindo de APIs, bancos de dados e CSV. Camada Ouro virtualizada com Trino; insights via dashboards Apache Superset.</div>
         <div class="project-stack">
           <span class="stack-tag">AWS S3</span><span class="stack-tag">Apache Spark</span>
           <span class="stack-tag">Delta Lake</span><span class="stack-tag">Airflow</span>
@@ -800,165 +694,182 @@
   </div>
 </div>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="section-label">Credentials</div>
-  <h2 class="section-title">CERTIFICATIONS</h2>
+<!-- ═══════ CERTIFICATIONS ════════════════════════════════════════════════ -->
+<div id="certifications">
+  <div class="section-wrap">
+    <div class="section-label en-only">Credentials</div>
+    <div class="section-label pt-only">Credenciais</div>
+    <h2 class="section-title en-only">CERTIFICATIONS</h2>
+    <h2 class="section-title pt-only">CERTIFICAÇÕES</h2>
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;">
-
-    <div class="cert-group fade-in">
-      <div class="cert-group-title">English Proficiency</div>
-      <ul class="cert-list">
-        <li><a href="https://devzurc.github.io/portfolio/assets/files/ed-certificates/ielts-general-site.pdf" target="_blank">IELTS – International English Language Testing System</a></li>
-        <li><a href="https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec" target="_blank">Udemy – Inglês Extremo (Intermediate)</a></li>
-      </ul>
-    </div>
-
-    <div class="cert-group fade-in">
-      <div class="cert-group-title">Data Engineering</div>
-      <ul class="cert-list">
-        <li><a href="https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X" target="_blank">IBM / Coursera – Introduction to Data Engineering</a></li>
-        <li><a href="https://mycourse.app/mDey2z4xSWzPUS2T7" target="_blank">DS Academy – Fundamentos de Engenharia de Dados</a></li>
-        <li>Alura – ETL with SQL Server Integration Services (SSIS)</li>
-      </ul>
-    </div>
-
-    <div class="cert-group fade-in">
-      <div class="cert-group-title">Python &amp; Data Processing</div>
-      <ul class="cert-list">
-        <li><a href="https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/" target="_blank">Udemy – The Complete Python Developer Certification</a></li>
-        <li><a href="https://mycourse.app/f5pLpS2UcVbZ66iq8" target="_blank">DS Academy – Python for Data Analysis</a></li>
-        <li>Alura – Python for Data Science Track (NumPy, Pandas, Foundations)</li>
-      </ul>
-    </div>
-
-    <div class="cert-group fade-in">
-      <div class="cert-group-title">Cloud Computing</div>
-      <ul class="cert-list">
-        <li><a href="https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD" target="_blank">Coursera – AWS Cloud Practitioner Essentials</a></li>
-        <li><a href="https://ude.my/UC-d6419758-f145-4661-9252-4042381674ee" target="_blank">Udemy – AWS for Beginners</a></li>
-      </ul>
-    </div>
-
-    <div class="cert-group fade-in">
-      <div class="cert-group-title">SQL &amp; Databases</div>
-      <ul class="cert-list">
-        <li>Alura – SQL Server 2017 &amp; 2019 (Intro, Advanced Queries)</li>
-        <li><a href="https://cursos.alura.com.br/certificate/81df51fb-96b1-4897-8ba9-789f0f356776" target="_blank">Alura – SQL with MySQL</a></li>
-      </ul>
-    </div>
-
-    <div class="cert-group fade-in">
-      <div class="cert-group-title">Orchestration &amp; BI</div>
-      <ul class="cert-list">
-        <li>Alura – Apache Airflow (Data Extraction &amp; Pipeline Orchestration)</li>
-        <li>Alura – Qlik Sense Track (6 modules)</li>
-        <li><a href="https://www.credly.com/badges/3c1a2135-0ef4-4af4-9905-f716aa45a520/linked_in_profile" target="_blank">Scrum Foundation Professional Certificate (SFPC™)</a></li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<div id="contact">
-  <div class="inner">
-    <div>
-      <div class="section-label">Let's Talk</div>
-      <div class="contact-headline">OPEN TO<br/><span>OPPORTUNITIES</span></div>
-      <p class="contact-sub">
-        I'm actively seeking Data Engineering and Gen. AI roles in Europe. Whether you have a project, a position, or just want to connect — I'd love to hear from you.
-      </p>
-      <div class="contact-note">
-        📍 Based in Curitiba, Brazil &nbsp;·&nbsp; Open to relocation across Europe &nbsp;·&nbsp; Requires visa sponsorship
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;">
+      <div class="cert-group fade-in">
+        <div class="cert-group-title en-only">English Proficiency</div>
+        <div class="cert-group-title pt-only">Proficiência em Inglês</div>
+        <ul class="cert-list">
+          <li><a href="https://devzurc.github.io/portfolio/assets/files/ed-certificates/ielts-general-site.pdf" target="_blank">IELTS – International English Language Testing System</a></li>
+          <li><a href="https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec" target="_blank">Udemy – Inglês Extremo (Intermediate)</a></li>
+        </ul>
+      </div>
+      <div class="cert-group fade-in">
+        <div class="cert-group-title en-only">Data Engineering</div>
+        <div class="cert-group-title pt-only">Engenharia de Dados</div>
+        <ul class="cert-list">
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X" target="_blank">IBM / Coursera – Introduction to Data Engineering</a></li>
+          <li><a href="https://mycourse.app/mDey2z4xSWzPUS2T7" target="_blank">DS Academy – Fundamentos de Engenharia de Dados</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/b1e3dc95-d65d-4ba7-a422-5914475941eb" target="_blank">Alura – ETL with SSIS: Data Modeling</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/56011c99-ecd5-40f1-8647-56469f4bcee8" target="_blank">Alura – ETL with SSIS: Data Transformation</a></li>
+        </ul>
+      </div>
+      <div class="cert-group fade-in">
+        <div class="cert-group-title en-only">Python &amp; Data Processing</div>
+        <div class="cert-group-title pt-only">Python &amp; Processamento de Dados</div>
+        <ul class="cert-list">
+          <li><a href="https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/" target="_blank">Udemy – The Complete Python Developer Certification</a></li>
+          <li><a href="https://mycourse.app/f5pLpS2UcVbZ66iq8" target="_blank">DS Academy – Python for Data Analysis</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/74d6c51a-2c05-47f7-9776-c59f0c1682a1" target="_blank">Alura – Python &amp; NumPy</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/87802c24-9028-4dba-986d-2b5b96462e37" target="_blank">Alura – Pandas &amp; Data Manipulation</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/66b174ad-2f0f-468b-8318-0f44ec4d9549" target="_blank">Alura – Pandas I/O &amp; File Formats</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/fc1e7983-1a3a-45f2-91a2-ea7a11ef2523" target="_blank">Alura – Pandas Fundamentals</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/44e0fed8-4f87-4824-94b8-bdca55d01843" target="_blank">Alura – Python for Data Science: Foundations</a></li>
+        </ul>
+      </div>
+      <div class="cert-group fade-in">
+        <div class="cert-group-title en-only">Cloud Computing</div>
+        <div class="cert-group-title pt-only">Computação em Nuvem</div>
+        <ul class="cert-list">
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD" target="_blank">Coursera – AWS Cloud Practitioner Essentials</a></li>
+          <li><a href="https://ude.my/UC-d6419758-f145-4661-9252-4042381674ee" target="_blank">Udemy – AWS for Beginners</a></li>
+        </ul>
+      </div>
+      <div class="cert-group fade-in">
+        <div class="cert-group-title en-only">SQL &amp; Databases</div>
+        <div class="cert-group-title pt-only">SQL &amp; Bancos de Dados</div>
+        <ul class="cert-list">
+          <li><a href="https://cursos.alura.com.br/certificate/c045f437-8705-460b-9536-c39f61bb7928" target="_blank">Alura – Introduction to SQL (SQL Server)</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/4fcdf8c2-cd7d-43f4-9da0-2fac68c50f5d" target="_blank">Alura – Advanced SQL Queries (SQL Server)</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/d34e618a-1f0a-44dd-a51c-54467402a53a" target="_blank">Alura – SQL Server 2019</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/81df51fb-96b1-4897-8ba9-789f0f356776" target="_blank">Alura – SQL with MySQL</a></li>
+        </ul>
+      </div>
+      <div class="cert-group fade-in">
+        <div class="cert-group-title en-only">Orchestration &amp; BI</div>
+        <div class="cert-group-title pt-only">Orquestração &amp; BI</div>
+        <ul class="cert-list">
+          <li><a href="https://cursos.alura.com.br/certificate/f3be1257-e150-450f-a670-7fcd94bc6ed0" target="_blank">Alura – Apache Airflow: Data Extraction</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/da8b7956-c3c7-4b2a-945d-8e28ae61239b" target="_blank">Alura – Apache Airflow: Pipeline Orchestration</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/e9d0d2cf-dd27-449f-8f7f-cdb83dbfc2da" target="_blank">Alura – Qlik Sense: Introduction</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/c66a0621-fc9f-4ef1-ab02-e5c27c3a4260" target="_blank">Alura – Qlik Sense: SQL Connections</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/54d08254-3753-4cde-ae60-142e828a3bb6" target="_blank">Alura – Qlik Sense: Data Analysis</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/2cf4822e-a0ef-4342-b081-edab63006522" target="_blank">Alura – Qlik Sense: Data Manipulation</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/ddf46038-66fa-47b7-a763-ea19c6a51dbc" target="_blank">Alura – Qlik Sense: Advanced Expressions</a></li>
+          <li><a href="https://cursos.alura.com.br/certificate/8e1d56d2-d07b-4419-803c-8a89d7459a98" target="_blank">Alura – Qlik Sense: Business Intelligence &amp; Data Warehouse</a></li>
+          <li><a href="https://www.credly.com/badges/3c1a2135-0ef4-4af4-9905-f716aa45a520/linked_in_profile" target="_blank">Scrum Foundation Professional Certificate (SFPC™)</a></li>
+        </ul>
       </div>
     </div>
-    <div class="contact-links">
-      <a href="mailto:dev.lucascruz@gmail.com" class="contact-link">
-        <div class="contact-link-icon">✉</div>
-        <div class="contact-link-info">
-          <div class="contact-link-label">Email</div>
-          <div class="contact-link-value">dev.lucascruz@gmail.com</div>
+  </div>
+</div>
+
+<!-- ═══════ CONTACT ═══════════════════════════════════════════════════════ -->
+<div id="contact" class="section-wrap-full" style="border-top:1px solid var(--border);">
+  <div class="inner">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label en-only">Let's Talk</div>
+        <div class="section-label pt-only">Vamos Conversar</div>
+        <div class="contact-headline en-only">OPEN TO<br/><span>OPPORTUNITIES</span></div>
+        <div class="contact-headline pt-only">ABERTO A<br/><span>OPORTUNIDADES</span></div>
+        <p class="contact-sub en-only">I'm actively seeking Data Engineering and Gen. AI roles in Europe. Whether you have a project, a position, or just want to connect — I'd love to hear from you.</p>
+        <p class="contact-sub pt-only">Busco ativamente vagas de Engenharia de Dados e IA Generativa na Europa. Seja um projeto, uma vaga ou apenas uma conversa — será um prazer falar com você.</p>
+        <div class="contact-note en-only">📍 Curitiba, Brazil &nbsp;·&nbsp; Open to relocation across Europe &nbsp;·&nbsp; Requires visa sponsorship</div>
+        <div class="contact-note pt-only">📍 Curitiba, Brasil &nbsp;·&nbsp; Disponível para realocação na Europa &nbsp;·&nbsp; Necessita de patrocínio de visto</div>
+        <!-- CV DOWNLOADS IN CONTACT -->
+        <div class="cv-section-btns">
+          <a href="https://devzurc.github.io/assets/files/cv/eng.pdf" target="_blank" download class="cv-dl-btn">
+            <span>⬇</span> 🇬🇧 <span class="en-only">Download CV — English</span><span class="pt-only">Baixar CV — Inglês</span>
+          </a>
+          <a href="https://devzurc.github.io/assets/files/cv/ptbr.pdf" target="_blank" download class="cv-dl-btn">
+            <span>⬇</span> 🇧🇷 <span class="en-only">Download CV — PT-BR</span><span class="pt-only">Baixar Currículo — PT-BR</span>
+          </a>
         </div>
-        <div class="contact-link-arrow">→</div>
-      </a>
-      <a href="https://www.linkedin.com/in/lucas-cruz" target="_blank" class="contact-link">
-        <div class="contact-link-icon">in</div>
-        <div class="contact-link-info">
-          <div class="contact-link-label">LinkedIn</div>
-          <div class="contact-link-value">linkedin.com/in/lucas-cruz</div>
-        </div>
-        <div class="contact-link-arrow">→</div>
-      </a>
-      <a href="https://github.com/devzurc" target="_blank" class="contact-link">
-        <div class="contact-link-icon">⌥</div>
-        <div class="contact-link-info">
-          <div class="contact-link-label">GitHub</div>
-          <div class="contact-link-value">github.com/devzurc</div>
-        </div>
-        <div class="contact-link-arrow">→</div>
-      </a>
-      <a href="https://medium.com/@dev.lucascruz" target="_blank" class="contact-link">
-        <div class="contact-link-icon">✍</div>
-        <div class="contact-link-info">
-          <div class="contact-link-label">Blog</div>
-          <div class="contact-link-value">medium.com/@dev.lucascruz</div>
-        </div>
-        <div class="contact-link-arrow">→</div>
-      </a>
+      </div>
+
+      <div class="contact-links">
+        <a href="/cdn-cgi/l/email-protection#f2969784dc9e8791938191808788b2959f939b9edc919d9f" class="contact-link">
+          <div class="contact-link-icon">✉</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-value"><span class="__cf_email__" data-cfemail="6b0f0e1d45071e080a1808191e112b0c060a020745080406">[email&#160;protected]</span></div>
+          </div>
+          <div class="contact-link-arrow">→</div>
+        </a>
+        <a href="https://www.linkedin.com/in/lucas-cruz" target="_blank" class="contact-link">
+          <div class="contact-link-icon">in</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">LinkedIn</div>
+            <div class="contact-link-value">linkedin.com/in/lucas-cruz</div>
+          </div>
+          <div class="contact-link-arrow">→</div>
+        </a>
+        <a href="https://github.com/devzurc" target="_blank" class="contact-link">
+          <div class="contact-link-icon">⌥</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">GitHub</div>
+            <div class="contact-link-value">github.com/devzurc</div>
+          </div>
+          <div class="contact-link-arrow">→</div>
+        </a>
+        <a href="https://medium.com/@dev.lucascruz" target="_blank" class="contact-link">
+          <div class="contact-link-icon">✍</div>
+          <div class="contact-link-info">
+            <div class="contact-link-label">Blog</div>
+            <div class="contact-link-value">medium.com/@dev.lucascruz</div>
+          </div>
+          <div class="contact-link-arrow">→</div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
 
 <footer>
-  © 2026 Lucas Cruz &nbsp;·&nbsp; Data Engineer &amp; Gen. AI Engineer &nbsp;·&nbsp; Curitiba, Brazil
+  <span class="en-only">© 2026 Lucas Cruz · Data Engineer &amp; Gen. AI Engineer · Curitiba, Brazil</span>
+  <span class="pt-only">© 2026 Lucas Cruz · Engenheiro de Dados &amp; IA Generativa · Curitiba, Brasil</span>
 </footer>
 
 <script>
-  // Intersection Observer for fade-in animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, entry.target.dataset.delay || 0);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
+// ── ENABLE ANIMATIONS ONLY WHEN JS IS CONFIRMED RUNNING ───────────────────
+document.documentElement.classList.add('js-ready');
 
-  // Stagger fade-in items
-  document.querySelectorAll('.fade-in').forEach((el, i) => {
-    el.dataset.delay = (i % 4) * 80;
-    observer.observe(el);
+// ── SCROLL ANIMATIONS ──────────────────────────────────────────────────────
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), entry.target.dataset.delay || 0);
+      observer.unobserve(entry.target);
+    }
   });
+}, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
 
-  // Stagger job entries
-  document.querySelectorAll('.job').forEach((el, i) => {
-    el.style.transitionDelay = `${i * 60}ms`;
-    observer.observe(el);
-  });
+document.querySelectorAll('.fade-in').forEach((el, i) => {
+  el.dataset.delay = (i % 4) * 80;
+  observer.observe(el);
+});
+document.querySelectorAll('.job').forEach((el, i) => {
+  el.dataset.delay = i * 60;
+  observer.observe(el);
+});
+document.querySelectorAll('.project-card').forEach((el, i) => {
+  el.dataset.delay = i * 80;
+  observer.observe(el);
+});
 
-  // Project cards
-  document.querySelectorAll('.project-card').forEach((el, i) => {
-    el.style.transitionDelay = `${i * 80}ms`;
-    observer.observe(el);
-  });
-
-  // Active nav link on scroll
-  const sections = document.querySelectorAll('section[id], div[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 120) current = s.id;
-    });
-    navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current
-        ? 'var(--cyan)' : '';
-    });
-  });
-</script>
-</body>
-</html>
+// ── ACTIVE NAV LINK ────────────────────────────────────────────────────────
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = ['hero','skills','experience','projects','certifications','contact'];
+window.addEventListener('scroll', () => {
+  let current = 'hero';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el &
