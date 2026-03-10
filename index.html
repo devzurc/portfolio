@@ -343,9 +343,32 @@
     .nav-right { gap:0.5rem; }
   }
 
-  /* ── LANG HIDDEN ─────────────────────────────────────────────────────── */
+  /* ── LANGUAGE TOGGLE ─────────────────────────────────────────────────── */
+  /* EN is default — always visible without JS */
   .pt-only { display:none !important; }
-  .en-only { display:revert; }
+  /* When body has class .lang-pt, swap visibility */
+  body.lang-pt .pt-only { display:revert !important; }
+  body.lang-pt .en-only { display:none !important; }
+
+  /* Toggle button styles */
+  .lang-toggle {
+    display:flex; align-items:center;
+    background: var(--bg3);
+    border:1px solid var(--border);
+    border-radius:2px; overflow:hidden;
+  }
+  .lang-btn {
+    padding:0.35rem 0.7rem;
+    cursor:pointer; border:none;
+    background:transparent;
+    color:var(--gray);
+    font-family:'DM Mono',monospace;
+    font-size:0.62rem; letter-spacing:0.1em;
+    text-transform:uppercase;
+    transition:all 0.2s;
+  }
+  .lang-btn.active { background:var(--cyan); color:var(--bg); font-weight:500; }
+  .lang-btn:not(.active):hover { color:var(--cyan); }
 </style>
 </head>
 <body>
@@ -365,6 +388,11 @@
   </div>
 
   <div class="nav-right">
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn"        id="btn-pt" onclick="setLang('pt')">PT</button>
+    </div>
     <!-- CV Download dropdown -->
     <div class="cv-dropdown" tabindex="0">
       <button class="cv-btn">
@@ -842,6 +870,28 @@
 // ── ENABLE ANIMATIONS ONLY WHEN JS IS CONFIRMED RUNNING ───────────────────
 document.documentElement.classList.add('js-ready');
 
+// ── LANGUAGE TOGGLE ────────────────────────────────────────────────────────
+// Strategy: EN shows by default in CSS (no JS needed).
+// JS only adds/removes 'lang-pt' class on body to swap language.
+// If JS is blocked or slow → English always visible. No blank page ever.
+function setLang(lang) {
+  const isPT = lang === 'pt';
+  document.body.classList.toggle('lang-pt', isPT);
+  document.getElementById('btn-en').classList.toggle('active', !isPT);
+  document.getElementById('btn-pt').classList.toggle('active',  isPT);
+  document.title = isPT
+    ? 'Lucas Cruz — Engenheiro de Dados & IA Generativa'
+    : 'Lucas Cruz — Data Engineer & Gen. AI Engineer';
+  try { localStorage.setItem('lc-lang', lang); } catch(e) {}
+}
+// Restore saved preference on load
+(function() {
+  try {
+    const saved = localStorage.getItem('lc-lang');
+    if (saved === 'pt') setLang('pt');
+  } catch(e) {}
+})();
+
 // ── SCROLL ANIMATIONS ──────────────────────────────────────────────────────
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -872,4 +922,10 @@ window.addEventListener('scroll', () => {
   let current = 'hero';
   sections.forEach(id => {
     const el = document.getElementById(id);
-    if (el &
+    if (el && window.scrollY >= el.offsetTop - 120) current = id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
+</script>
