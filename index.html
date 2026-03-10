@@ -12,13 +12,13 @@
     --bg:      #080C18;
     --bg2:     #0D1222;
     --bg3:     #111827;
-    --cyan:    #00D4FF;
-    --cyan2:   #0099CC;
+    --cyan:    #7AFFC4;
+    --cyan2:   #1A9962;
     --white:   #F0F4FF;
     --gray:    #8895B3;
     --gray2:   #4A5568;
-    --border:  rgba(0,212,255,0.15);
-    --glow:    0 0 40px rgba(0,212,255,0.12);
+    --border:  rgba(122,255,196,0.15);
+    --glow:    0 0 40px rgba(122,255,196,0.12);
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; font-size: 16px; }
@@ -84,7 +84,7 @@
     transition: all 0.2s;
     display: flex; align-items: center; gap: 0.4rem;
   }
-  .cv-btn:hover { border-color: var(--cyan); background: rgba(0,212,255,0.07); }
+  .cv-btn:hover { border-color: var(--cyan); background: rgba(122,255,196,0.07); }
   .cv-menu {
     position: absolute; top: calc(100% + 6px); right: 0;
     background: var(--bg3);
@@ -110,38 +110,40 @@
     border-bottom: 1px solid var(--border);
   }
   .cv-menu a:last-child { border-bottom: none; }
-  .cv-menu a:hover { color: var(--cyan); background: rgba(0,212,255,0.06); padding-left: 1.3rem; }
+  .cv-menu a:hover { color: var(--cyan); background: rgba(122,255,196,0.06); padding-left: 1.3rem; }
   .cv-menu-flag { font-size: 0.9rem; }
 
   /* ── HERO ──────────────────────────────────────────────────────────────── */
   #hero {
     min-height: 100vh;
-    display: flex; align-items: center;
+    display: flex; align-items: center; justify-content: center;
     padding: 8rem 4rem 4rem;
     position: relative; overflow: hidden;
+    text-align: center;
   }
   .hero-grid-bg {
     position: absolute; inset: 0; z-index: 0;
     background-image:
-      linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(122,255,196,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(122,255,196,0.04) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
   }
   .hero-glow {
-    position: absolute; top: 20%; left: 10%; z-index: 0;
-    width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(0,212,255,0.07) 0%, transparent 70%);
+    position: absolute; top: 20%; left: 50%; transform: translateX(-50%); z-index: 0;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(122,255,196,0.07) 0%, transparent 70%);
     pointer-events: none;
   }
-  .hero-content { position: relative; z-index: 1; max-width: 900px; }
+  .hero-content { position: relative; z-index: 1; max-width: 860px; width: 100%; }
   .hero-tag {
     font-family: 'DM Mono', monospace;
     font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
     color: var(--cyan); margin-bottom: 1.2rem;
-    display: flex; align-items: center; gap: 0.8rem;
+    display: flex; align-items: center; justify-content: center; gap: 0.8rem;
   }
-  .hero-tag::before { content:''; display:inline-block; width:32px; height:1px; background:var(--cyan); }
+  .hero-tag::before { content:''; display:inline-block; width:24px; height:1px; background:var(--cyan); }
+  .hero-tag::after  { content:''; display:inline-block; width:24px; height:1px; background:var(--cyan); }
   h1.hero-name {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(5rem, 12vw, 10rem);
@@ -156,9 +158,9 @@
   .hero-roles b { color: var(--white); font-weight: 500; }
   .hero-desc {
     font-size: 1.05rem; color: var(--gray);
-    max-width: 560px; line-height: 1.8; margin-bottom: 2.5rem;
+    max-width: 580px; line-height: 1.8; margin: 0 auto 2.5rem;
   }
-  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
   .btn {
     font-family: 'DM Mono', monospace; font-size: 0.75rem;
     letter-spacing: 0.14em; text-transform: uppercase;
@@ -166,12 +168,13 @@
     text-decoration: none; transition: all 0.25s; cursor: pointer; border: none;
   }
   .btn-primary { background: var(--cyan); color: var(--bg); border: 1px solid var(--cyan); font-weight: 500; }
-  .btn-primary:hover { background: transparent; color: var(--cyan); box-shadow: 0 0 20px rgba(0,212,255,0.3); }
+  .btn-primary:hover { background: transparent; color: var(--cyan); box-shadow: 0 0 20px rgba(122,255,196,0.3); }
   .btn-outline { background: transparent; color: var(--cyan); border: 1px solid var(--border); }
-  .btn-outline:hover { border-color: var(--cyan); box-shadow: 0 0 20px rgba(0,212,255,0.15); }
+  .btn-outline:hover { border-color: var(--cyan); box-shadow: 0 0 20px rgba(122,255,196,0.15); }
   .hero-stats {
     display: flex; gap: 3rem; margin-top: 4rem;
     padding-top: 2rem; border-top: 1px solid var(--border);
+    justify-content: center; flex-wrap: wrap;
   }
   .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--cyan); line-height: 1; }
   .stat-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); margin-top: 0.2rem; }
@@ -212,7 +215,7 @@
     transform: scaleY(0); transform-origin: bottom; transition: transform 0.3s;
   }
   .skill-card:hover::before { transform: scaleY(1); }
-  .skill-card:hover { background: rgba(0,212,255,0.04); }
+  .skill-card:hover { background: rgba(122,255,196,0.04); }
   .skill-cat {
     font-family: 'DM Mono', monospace; font-size: 0.65rem;
     letter-spacing: 0.18em; text-transform: uppercase;
@@ -222,7 +225,7 @@
   .tag {
     font-family: 'DM Mono', monospace; font-size: 0.68rem;
     padding: 0.25rem 0.65rem;
-    background: rgba(0,212,255,0.07); border: 1px solid var(--border);
+    background: rgba(122,255,196,0.07); border: 1px solid var(--border);
     border-radius: 2px; color: var(--white); letter-spacing: 0.04em;
   }
   /* Security card accent – amber */
@@ -248,7 +251,7 @@
   .job::before {
     content:''; position:absolute; left:-4px; top:8px;
     width:9px; height:9px; border-radius:50%;
-    background: var(--cyan); box-shadow: 0 0 10px rgba(0,212,255,0.5);
+    background: var(--cyan); box-shadow: 0 0 10px rgba(122,255,196,0.5);
   }
   .job-meta { font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gray); margin-bottom:0.4rem; }
   .job-meta span { color:var(--cyan); margin-right:0.8rem; }
@@ -276,17 +279,17 @@
     transform: scaleX(0); transform-origin:left; transition:transform 0.35s;
   }
   .project-card:hover::after { transform:scaleX(1); }
-  .project-card:hover { border-color:rgba(0,212,255,0.3); box-shadow:var(--glow); transform:translateY(-3px); }
+  .project-card:hover { border-color:rgba(122,255,196,0.3); box-shadow:var(--glow); transform:translateY(-3px); }
   .project-card.featured {
     grid-column:span 2;
-    background:linear-gradient(135deg,rgba(0,212,255,0.06),var(--bg3));
+    background:linear-gradient(135deg,rgba(122,255,196,0.06),var(--bg3));
   }
   @media(max-width:700px){.project-card.featured{grid-column:span 1;}}
   .project-tag { font-family:'DM Mono',monospace; font-size:0.62rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--cyan); margin-bottom:1rem; }
   .project-name { font-family:'Bebas Neue',sans-serif; font-size:1.45rem; letter-spacing:0.06em; color:var(--white); margin-bottom:0.8rem; line-height:1.1; }
   .project-desc { font-size:0.88rem; color:var(--gray); line-height:1.7; margin-bottom:1.2rem; flex:1; }
   .project-stack { display:flex; flex-wrap:wrap; gap:0.35rem; margin-top:auto; }
-  .stack-tag { font-family:'DM Mono',monospace; font-size:0.62rem; padding:0.2rem 0.5rem; background:rgba(0,212,255,0.06); border:1px solid rgba(0,212,255,0.18); border-radius:2px; color:var(--cyan); letter-spacing:0.06em; }
+  .stack-tag { font-family:'DM Mono',monospace; font-size:0.62rem; padding:0.2rem 0.5rem; background:rgba(122,255,196,0.06); border:1px solid rgba(122,255,196,0.18); border-radius:2px; color:var(--cyan); letter-spacing:0.06em; }
 
   /* ── CERTS ────────────────────────────────────────────────────────────── */
   .cert-group { margin-bottom:2.5rem; }
@@ -303,10 +306,10 @@
   .contact-headline { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.5rem,5vw,4rem); line-height:1; letter-spacing:0.05em; margin-bottom:1rem; }
   .contact-headline span { color:var(--cyan); }
   .contact-sub { font-size:0.95rem; color:var(--gray); line-height:1.8; margin-bottom:2rem; }
-  .contact-note { font-family:'DM Mono',monospace; font-size:0.7rem; letter-spacing:0.12em; color:var(--cyan); padding:0.6rem 1rem; border:1px solid var(--border); border-left:3px solid var(--cyan); background:rgba(0,212,255,0.04); }
+  .contact-note { font-family:'DM Mono',monospace; font-size:0.7rem; letter-spacing:0.12em; color:var(--cyan); padding:0.6rem 1rem; border:1px solid var(--border); border-left:3px solid var(--cyan); background:rgba(122,255,196,0.04); }
   .contact-links { display:flex; flex-direction:column; gap:1rem; }
   .contact-link { display:flex; align-items:center; gap:1rem; padding:1rem 1.5rem; border:1px solid var(--border); background:var(--bg3); text-decoration:none; color:var(--white); transition:all 0.25s; border-radius:2px; }
-  .contact-link:hover { border-color:var(--cyan); background:rgba(0,212,255,0.06); transform:translateX(4px); }
+  .contact-link:hover { border-color:var(--cyan); background:rgba(122,255,196,0.06); transform:translateX(4px); }
   .contact-link-icon { font-size:1.1rem; width:28px; text-align:center; }
   .contact-link-info { flex:1; }
   .contact-link-label { font-family:'DM Mono',monospace; font-size:0.6rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--gray); }
@@ -323,7 +326,7 @@
     background:var(--bg3); color:var(--white); text-decoration:none;
     border-radius:2px; transition:all 0.25s;
   }
-  .cv-dl-btn:hover { border-color:var(--cyan); background:rgba(0,212,255,0.07); color:var(--cyan); }
+  .cv-dl-btn:hover { border-color:var(--cyan); background:rgba(122,255,196,0.07); color:var(--cyan); }
   .cv-dl-btn span { font-size:1rem; }
 
   footer { text-align:center; padding:2rem; font-family:'DM Mono',monospace; font-size:0.65rem; letter-spacing:0.12em; color:var(--gray2); border-top:1px solid var(--border); }
@@ -715,6 +718,34 @@
           <span class="stack-tag">Delta Lake</span><span class="stack-tag">Airflow</span>
           <span class="stack-tag">Trino</span><span class="stack-tag">Apache Superset</span>
           <span class="stack-tag">Docker</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-tag en-only">Client Project — Jul 2023</div>
+        <div class="project-tag pt-only">Projeto de Cliente — Jul 2023</div>
+        <div class="project-name en-only">PAYMENTS DATA WAREHOUSE</div>
+        <div class="project-name pt-only">DATA WAREHOUSE DE PAGAMENTOS</div>
+        <div class="project-desc en-only">Unified financial data platform consolidating multiple payment providers (PagSeguro, Stone, Cielo) into a single data model. Automated ETL pipelines cut manual processing effort by ~50% and improved data freshness from days to hours. Validation checks reduced financial reporting discrepancies by ~20–30%, enabling self-service analytics via Power BI.</div>
+        <div class="project-desc pt-only">Plataforma financeira unificada consolidando dados de múltiplos provedores (PagSeguro, Stone, Cielo) em um único modelo. Pipelines ETL automatizados reduziram o esforço manual em ~50% e a atualização de dados de dias para horas. Checks de validação reduziram discrepâncias em ~20–30%, habilitando analytics self-service via Power BI.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">SQL</span>
+          <span class="stack-tag">SQL Server DW</span><span class="stack-tag">Apache Airflow</span>
+          <span class="stack-tag">Power BI</span><span class="stack-tag">AWS</span><span class="stack-tag">Azure</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-tag en-only">Client Project — Oct 2022</div>
+        <div class="project-tag pt-only">Projeto de Cliente — Out 2022</div>
+        <div class="project-name en-only">JOHN DEERE AGRIBUSINESS DATA PIPELINE</div>
+        <div class="project-name pt-only">PIPELINE DE DADOS JOHN DEERE — AGRONEGÓCIO</div>
+        <div class="project-desc en-only">Robust ingestion pipeline consuming the John Deere REST API to monitor agricultural machinery fleet performance. Handles authentication, pagination, and failure scenarios, storing operational data in an Oracle Data Warehouse. Automated daily pipelines with Airflow improved data availability by ~40% vs. manual extraction, with fleet KPIs surfaced via Power BI dashboards.</div>
+        <div class="project-desc pt-only">Pipeline robusto consumindo a REST API da John Deere para monitoramento de frota de máquinas agrícolas. Trata autenticação, paginação e falhas, armazenando dados em Oracle Data Warehouse. Pipelines diários com Airflow aumentaram a disponibilidade de dados em ~40% vs. extração manual, com KPIs de frota via Power BI.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">John Deere REST API</span>
+          <span class="stack-tag">Oracle Database</span><span class="stack-tag">Apache Airflow</span>
+          <span class="stack-tag">Power BI</span><span class="stack-tag">SQL</span>
         </div>
       </div>
 
