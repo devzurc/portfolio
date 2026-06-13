@@ -3,8 +3,9 @@ repo: muvstok-api
 github_url: https://github.com/devzurc/cdp-hub/tree/main/muvstok-api
 mirror_url: https://github.com/devzurc/cdp-hub
 visibility: public-safe summary
-status: engagement complete
-period: Feb 2026 - May 2026
+status: active
+period: Feb 2026 - Present
+period_note: "TK Technologies contract extended to 6 months; expected completion in Aug 2026."
 employer: TK Technologies
 role: Backend engineer - FastAPI job API, Redis Streams workers, PostgreSQL persistence, Azure container deployment
 domains: [automotive-parts, api-design, data-ingestion]
@@ -29,7 +30,7 @@ verified_outcomes:
 links:
   demo:
   docs: https://github.com/devzurc/cdp-hub/tree/main/muvstok-api
-last_synced: 2026-06-12
+last_synced: 2026-06-13
 source_readme: readmes/muvstok-api.md
 parent_monorepo: cdp-hub
 related_projects: [cdp-hub]

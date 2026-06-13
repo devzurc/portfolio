@@ -1,12 +1,12 @@
 # Tech stack rollup
 
-> Updated 2026-06-12
+> Updated 2026-06-13
 > Counts are generated from curated `docs/career/projects/*.md` frontmatter, including multiline YAML `stack:` lists. Public-safe service categories are used where exact internal names are not needed.
 
 | Technology | Projects |
 |------------|----------|
 | Python | 10 |
-| n8n | 6 |
+| n8n | 7 |
 | Pandas | 4 |
 | Docker | 3 |
 | FastAPI | 3 |
@@ -21,11 +21,11 @@
 | Node.js | 2 |
 | Openpyxl | 2 |
 | Parquet | 2 |
-| PostgreSQL | 2 |
+| PostgreSQL | 3 |
 | Psycopg2-binary | 2 |
 | python-dotenv | 2 |
 | Redis | 2 |
-| Webhooks | 2 |
+| Webhooks | 3 |
 | XlsxWriter | 2 |
 | Alembic | 1 |
 | Apache Superset | 1 |
@@ -37,9 +37,11 @@
 | dbt | 1 |
 | Delta Lake | 1 |
 | Email automation | 1 |
+| Evolution API | 1 |
 | Gmail | 1 |
 | Google Sheets API | 1 |
 | Instagram Graph API | 1 |
+| JavaScript | 1 |
 | JSON | 1 |
 | JSON Schema | 1 |
 | JSON workflow validation | 1 |
@@ -59,9 +61,11 @@
 | Snowflake | 1 |
 | SQL | 1 |
 | SQLAlchemy 2.x | 1 |
+| Slack | 1 |
 | Stripe API | 1 |
 | Svix webhooks | 1 |
 | Telegram | 1 |
 | Telegram Bot API | 1 |
 | Trino | 1 |
+| WhatsApp automation | 1 |
 | xAI Grok | 1 |

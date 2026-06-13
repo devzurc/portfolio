@@ -5,7 +5,7 @@ mirror_url:
 visibility: private
 status: active
 period: 2025 - ongoing
-period_note: "TK Technologies contract/lifecycle work; automation milestones verified in May 2026."
+period_note: "TK Technologies contract/lifecycle work; automation milestones verified in May 2026. Engagement extended to 6 months, expected through Aug 2026."
 employer: TK Technologies
 role: Automation engineer - Clerk webhook lifecycle, trial email sequences, Gmail raw MIME, idempotency
 domains: [saas, lifecycle-email, auth, private-client-automation]

@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    linear-gradient(180deg, #07101f 0, #0b1222 32rem, var(--paper) 32.1rem),
+    var(--paper);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+summary {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(33, 212, 179, 0.28);
+}
+
+:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 4px;
+}
+
+#hero,
+#projects,
+#skills,
+#experience,
+#certifications,
+#contact {
+  scroll-margin-top: calc(var(--nav-h) + 20px);
+}
+
+.pt-only {
+  display: none !important;
+}
+
+body.lang-pt .en-only {
+  display: none !important;
+}
+
+body.lang-pt .pt-only {
+  display: revert !important;
+}
+
+body.lang-pt .pt-only.btn,
+body.lang-pt .pt-only.section-kicker,
+body.lang-pt .pt-only.hero-kicker,
+body.lang-pt .pt-only.project-label,
+body.lang-pt .pt-only.project-status,
+body.lang-pt .pt-only.contact-note,
+body.lang-pt .pt-only.tag,
+body.lang-pt .pt-only.stack-tag {
+  display: inline-flex !important;
+}
+
+body.lang-pt .pt-only.project-proof {
+  display: grid !important;
+}
+
+.mono {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 300;
+  transform: translateY(-160%);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.65rem 0.9rem;
+  background: var(--surface);
+  color: var(--text);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@keyframes grid-drift {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+
+  100% {
+    background-position: 64px 64px, 0 96px, 0 0;
+  }
+}
+
+@keyframes scan-line {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  18%,
+  55% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+@keyframes border-sweep {
+  0% {
+    transform: translateX(-110%);
+  }
+
+  100% {
+    transform: translateX(110%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

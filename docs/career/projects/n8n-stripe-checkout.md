@@ -5,7 +5,7 @@ mirror_url:
 visibility: private
 status: active
 period: 2025 - ongoing
-period_note: "TK Technologies contract/checkout automation work; implementation and docs tracked as part of Stok IA lifecycle systems."
+period_note: "TK Technologies contract/checkout automation work; implementation and docs tracked as part of Stok IA lifecycle systems. Engagement extended to 6 months, expected through Aug 2026."
 employer: TK Technologies
 role: Automation engineer - Stripe webhook fulfillment, n8n workflow design, transactional email templates
 domains: [saas, e-commerce, automation, private-client-automation]

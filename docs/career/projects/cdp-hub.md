@@ -3,8 +3,9 @@ repo: cdp-hub
 github_url: https://github.com/devzurc/cdp-hub
 mirror_url: https://github.com/devzurc/cdp-hub
 visibility: public-safe summary
-status: engagement complete
-period: Feb 2026 - May 2026
+status: active
+period: Feb 2026 - Present
+period_note: "TK Technologies contract extended to 6 months; expected completion in Aug 2026."
 employer: TK Technologies
 role: Platform engineer - monorepo architecture, dual-pipeline orchestration, Azure deployment, workflow automation
 domains: [automotive-parts, gen-ai, iot-adjacent, procurement-intelligence]
@@ -32,7 +33,7 @@ verified_outcomes:
 links:
   demo:
   docs: https://github.com/devzurc/cdp-hub/tree/main/docs
-last_synced: 2026-06-12
+last_synced: 2026-06-13
 source_readme: readmes/cdp-hub.md
 related_projects: [muvstok-api]
 cv_alignment: Automotive Market Price Intelligence Platform (TK Technologies)
@@ -77,7 +78,7 @@ Python · FastAPI · Celery · Playwright · Redis · PostgreSQL · n8n · Googl
 
 ## Outcomes
 
-- Built and operated during TK Technologies engagement, Feb 2026 - May 2026.
+- Built and operated during the current TK Technologies engagement, Feb 2026 - Present; contract expected through Aug 2026.
 - Parallel public price search and internal stock enrichment per SKU batch.
 - Structured reporting contract distinguishes found-price, no-price, not-found, blocked, timeout, and error outcomes.
 

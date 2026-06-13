@@ -5,7 +5,7 @@ mirror_url:
 visibility: private
 status: active
 period: 2025 - ongoing
-period_note: "TK Technologies contract/social automation work; production comment automation verified in May 2026."
+period_note: "TK Technologies contract/social automation work; production comment automation verified in May 2026. Engagement extended to 6 months, expected through Aug 2026."
 employer: TK Technologies
 role: Automation engineer - Instagram webhook routing, comment keyword automation, profile/media sync workflows
 domains: [social-media, marketing-automation, gen-ai-adjacent, private-client-automation]

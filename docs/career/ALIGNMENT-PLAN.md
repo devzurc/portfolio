@@ -110,5 +110,5 @@ Command: `/improve-section` per section after audit.
 ## Open questions for you
 
 1. Which client names are OK **on the public portfolio** vs anonymized?
-2. Are the `10+` automotive sites and TK hybrid/3-month contract wording approved for final Google Docs?
+2. Are the `10+` automotive sites and TK hybrid/6-month contract wording, expected through Aug 2026, approved for final Google Docs?
 3. Should any learning/lab profiles be expanded with verified evidence before returning to the CV/site?

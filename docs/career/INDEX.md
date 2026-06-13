@@ -1,13 +1,13 @@
 # Career project index
 
-> Updated 2026-06-12. Public-safe portfolio/CV evidence layer.
+> Updated 2026-06-13. Public-safe portfolio/CV evidence layer.
 
 ## Flagship and CV-backed work
 
 | Project | Visibility | Status | Employer | Portfolio | CV | Profile | README |
 |---------|------------|--------|----------|-----------|-----|---------|--------|
-| [cdp-hub](https://github.com/devzurc/cdp-hub) | public-safe summary | engagement complete | TK Technologies | true | true | [profile](projects/cdp-hub.md) | [readme](readmes/cdp-hub.md) |
-| [muvstok-api](https://github.com/devzurc/cdp-hub/tree/main/muvstok-api) | public-safe summary | engagement complete | TK Technologies | false | true | [profile](projects/muvstok-api.md) | [readme](readmes/muvstok-api.md) |
+| [cdp-hub](https://github.com/devzurc/cdp-hub) | public-safe summary | active | TK Technologies | true | true | [profile](projects/cdp-hub.md) | [readme](readmes/cdp-hub.md) |
+| [muvstok-api](https://github.com/devzurc/cdp-hub/tree/main/muvstok-api) | public-safe summary | active | TK Technologies | false | true | [profile](projects/muvstok-api.md) | [readme](readmes/muvstok-api.md) |
 | n8n-stripe-checkout | private | active | TK Technologies | true | true | [profile](projects/n8n-stripe-checkout.md) | [readme](readmes/n8n-stripe-checkout.md) |
 | n8n-telegram-assistant | private | active | TK Technologies | true | true | [profile](projects/n8n-telegram-assistant.md) | [readme](readmes/n8n-telegram-assistant.md) |
 | [project_dashboard_heroby](https://github.com/devzurc/project_dashboard_heroby) | public | client-work | unknown | false | true | [profile](projects/project_dashboard_heroby.md) | [readme](readmes/project_dashboard_heroby.md) |
@@ -20,6 +20,7 @@
 |---------|------------|--------|----------|-----------|-----|---------|--------|
 | n8n-clerk-followup | private | active | TK Technologies | true | false | [profile](projects/n8n-clerk-followup.md) | [readme](readmes/n8n-clerk-followup.md) |
 | n8n-instagram-assistant | private | active | TK Technologies | true | false | [profile](projects/n8n-instagram-assistant.md) | [readme](readmes/n8n-instagram-assistant.md) |
+| n8n-whatsapp-assistant | private | active | TK Technologies | true | false | [profile](projects/n8n-whatsapp-assistant.md) | [readme](readmes/n8n-whatsapp-assistant.md) |
 
 ## Learning, archived, or supporting evidence
 

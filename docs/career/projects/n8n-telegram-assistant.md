@@ -5,7 +5,7 @@ mirror_url:
 visibility: private
 status: active
 period: 2025 - ongoing
-period_note: "TK Technologies contract/conversational AI work; production workflow verified in May 2026."
+period_note: "TK Technologies contract/conversational AI work; production workflow verified in May 2026. Engagement extended to 6 months, expected through Aug 2026."
 employer: TK Technologies
 role: Gen. AI engineer - conversational Telegram bot with internal knowledge, LangChain agent, and CDP demo integration
 domains: [gen-ai, chatbots, automotive-parts, customer-support, private-client-automation]

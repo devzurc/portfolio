@@ -1,0 +1,177 @@
+@media (max-width: 1080px) {
+  nav {
+    grid-template-columns: 1fr auto;
+    padding: 0 1.2rem;
+  }
+
+  .nav-links,
+  nav > .nav-right > .lang-toggle,
+  nav > .nav-right > .cv-dropdown {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    background:
+      linear-gradient(90deg, rgba(11, 18, 34, 0.96) 0%, rgba(11, 18, 34, 0.84) 62%, rgba(11, 18, 34, 0.5) 100%),
+      url("../images/data-ai-systems-hero.png") center right / cover no-repeat;
+  }
+
+  .hero-grid,
+  .section-head,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-proof {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .projects-grid,
+  .skills-grid,
+  .cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-card.featured {
+    grid-column: span 2;
+  }
+
+  .job {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --nav-h: 64px;
+  }
+
+  .container,
+  .hero-inner {
+    width: min(100% - 2rem, var(--max));
+  }
+
+  nav {
+    min-height: var(--nav-h);
+  }
+
+  .nav-logo {
+    min-height: 42px;
+  }
+
+  .nav-mark,
+  .hamburger {
+    width: 42px;
+    height: 42px;
+  }
+
+  .nav-name {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    background:
+      linear-gradient(180deg, rgba(11, 18, 34, 0.96) 0%, rgba(11, 18, 34, 0.9) 100%),
+      url("../images/data-ai-systems-hero.png") 62% center / cover no-repeat;
+  }
+
+  .hero-inner {
+    padding: calc(var(--nav-h) + 2.3rem) 0 4rem;
+  }
+
+  .hero-desc,
+  .contact-sub {
+    font-size: 0.96rem;
+  }
+
+  .section {
+    padding: 4.2rem 0;
+  }
+
+  .hero-proof,
+  .projects-grid,
+  .skills-grid,
+  .cert-grid,
+  .project-proof {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card.featured {
+    grid-column: span 1;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+
+  .timeline::before {
+    left: 0.75rem;
+  }
+
+  .job {
+    padding-left: 2.35rem;
+  }
+
+  .job::before {
+    left: 0.38rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-social a,
+  .project-link,
+  .project-link-muted,
+  .project-status {
+    max-width: 100%;
+  }
+
+  .mobile-menu-controls {
+    flex-direction: column;
+  }
+
+  .mobile-menu .lang-toggle,
+  .mobile-menu .cv-dropdown,
+  .mobile-menu .cv-btn {
+    width: 100%;
+  }
+
+  .mobile-menu .cv-menu {
+    position: static;
+    margin-top: 0.5rem;
+  }
+
+  .contact-link {
+    grid-template-columns: 42px minmax(0, 1fr);
+  }
+
+  .contact-link > span:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .section-title,
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .skill-card,
+  .project-card,
+  .cert-card,
+  .job-body {
+    padding: 1rem;
+  }
+}

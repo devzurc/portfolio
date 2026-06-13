@@ -4,8 +4,8 @@ title: Lucas Cruz — CV (English)
 google_doc: https://docs.google.com/document/d/1O4YsNWyfANs_332ecNZ8fgf-wclyuJCjZpO0LBqX2S8/edit
 pdf: ../pdf/LucasCruz_CV_EN.pdf
 word: ../word/LucasCruz_CV_EN.docx
-last_synced: 2026-06-12
-sync_source: google-docs-export
+last_synced: 2026-06-13
+sync_source: google-docs-export-plus-manual-contract-update
 ---
 
 # LUCAS CRUZ
@@ -25,18 +25,18 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 | Category | Skills |
 |----------|--------|
 | Gen. AI & LLMs | LLM Integration, AI Agents (OpenAI, Claude, Gemini…), RAG, Prompt Engineering, Chatbot Development |
-| Data Engineering & Orchestration | Python, SQL, Apache Spark (PySpark), Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n |
+| Data Engineering, APIs & Orchestration | Python, SQL, FastAPI, SQLAlchemy, Pydantic, Apache Spark (PySpark), Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n, Celery, Redis Streams |
 | Cloud & Lakehouses | Amazon Web Service (AWS), Microsoft Azure, Google Cloud (GCP), Oracle Cloud (OCI), Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database |
-| Relational Databases & BI | PostgreSQL, SQL Server, MySQL, Power BI, Qlik Sense, Apache Superset, Looker |
+| Databases & BI | PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker |
 | Security & Data Governance | LGPD/GDPR Compliance, Data Privacy, IAM, RBAC, Data Masking, Encryption (Rest/Transit), Audit Logging, RFID/NFC Tagging, Firewall |
-| DevOps & Infrastructure | Docker, Kubernetes, Git, CI/CD Pipelines, Linux, Bash Scripting |
+| DevOps & Infrastructure | Docker, Kubernetes, Terraform, Azure Bicep, Azure Container Apps, Git, CI/CD Pipelines, Linux, Bash Scripting |
 | Languages | Portuguese (Native) · English (C1 – Advanced) · Spanish (B1 – Intermediate) |
 
 ## Work Experience
 
 ### Gen. AI Engineer — TK Technologies
 
-**Curitiba, PR – Brazil (Hybrid)** · Feb 2026 – May 2026 · Contract
+**Curitiba, PR – Brazil (Hybrid)** · Feb 2026 – Present · 6-month contract, expected Aug 2026
 
 - Engineered a multi-source web scraping pipeline in Python targeting 10+ automotive parts websites, extracting pricing and product metadata at scale to deliver competitive market intelligence.
 - Architected AI-powered n8n automation workflows (ETL, RPA, and chatbot agents) by integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich datasets and reduce manual analysis work.
@@ -73,13 +73,13 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 
 ### Automotive Market Price Intelligence Platform
 
-*Python, n8n, LLMs, GCP APIs, Azure, Docker · TK Technologies – Feb 2026*
+*Python, n8n, LLMs, GCP APIs, Azure, Docker · TK Technologies – Feb 2026 – Present*
 
 - Scraped 10+ automotive parts sites with Python; orchestrated AI agents via n8n with Claude AI, Google AI Studio, and GCP to automate price analysis. Fully containerised on Azure.
 
 ### Nox TKTech Telegram Assistant
 
-*n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI · TK Technologies – Feb 2026*
+*n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI · TK Technologies – Feb 2026 – Present*
 
 - Built a private conversational automation workflow that answers from curated internal knowledge, logs user/conversation state, and triggers CDP demo jobs through integrated backend APIs.
 

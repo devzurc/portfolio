@@ -113,7 +113,7 @@ Commands: `/sync-github-career`, `/curate-project <repo>`
 
 ## Current snapshot
 
-Current public-safe snapshot: **14 curated project profiles** indexed. Private sync is disabled, and private/client work is represented only through sanitized summaries with no live internal identifiers.
+Current public-safe snapshot: **15 curated project profiles** indexed. Private sync is disabled, and private/client work is represented only through sanitized summaries with no live internal identifiers.
 
 ### TK / Gen. AI projects (curated)
 
@@ -125,5 +125,6 @@ Current public-safe snapshot: **14 curated project profiles** indexed. Private s
 | `n8n-instagram-assistant` | devzurc/instagram-n8n |
 | `n8n-telegram-assistant` | devzurc/nox-telegram-chatbot |
 | `n8n-clerk-followup` | devzurc/clerk-trial-followup |
+| `n8n-whatsapp-assistant` | private/sanitized WhatsApp intake workflow |
 
 Aliases documented in `.repo-manifest.json`.

@@ -28,7 +28,7 @@ Gen. AI & LLMs
 	WORK EXPERIENCE
 
 
-Gen. AI Engineer  –  TK Technologies  |  Curitiba, PR – Brazil (Hybrid)Feb 2026 – May 2026 · Contract
+Gen. AI Engineer  –  TK Technologies  |  Curitiba, PR – Brazil (Hybrid) · Feb 2026 – Present · 6-month contract, expected Aug 2026
 * Engineered a multi-source web scraping pipeline in Python targeting 10+ automotive parts websites, extracting pricing and product metadata at scale to deliver competitive market intelligence.
 * Architected AI-powered n8n automation workflows (ETL, RPA, and chatbot agents) by integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich datasets and boost team productivity.
 * Developed a conversational AI chatbot that empowers business users to query and refine pricing datasets via natural language, significantly reducing time-to-insight for non-technical stakeholders.
@@ -52,7 +52,7 @@ Data Analyst  –  Itaete Group  |  Curitiba, PR – Brazil (Hybrid)Jun 2020 –
 NOTABLE PROJECTS
 
 
-Automotive Market Price Intelligence Platform  · Python, n8n, LLMs, GCP APIs, Azure, Docker  ·  TK Technologies – Feb 2026
+Automotive Market Price Intelligence Platform  · Python, n8n, LLMs, GCP APIs, Azure, Docker  ·  TK Technologies – Feb 2026 – Present
 * Scraped 8+ automotive parts sites with Python; orchestrated AI agents via n8n with Claude AI, Google AI Studio, and GCP to automate price analysis. Fully containerised on Azure
 Modern Cloud Data Pipeline  · Snowflake, dbt, Apache Airflow, Docker  ·  Personal Project – Jan 2026
 * Built an end-to-end analytics pipeline orchestrating Snowflake and dbt with Apache Airflow. Containerised dbt with Docker, reducing deployment errors by ~50% via modular, tested SQL transformation

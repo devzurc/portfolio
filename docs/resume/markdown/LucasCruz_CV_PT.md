@@ -4,8 +4,8 @@ title: Lucas Cruz — CV (Português)
 google_doc: https://docs.google.com/document/d/1oi8mzTJNNTu3CdSuqEgiWCPmiyvGWxrsstU93K0QV0Q/edit
 pdf: ../pdf/LucasCruz_CV_PT.pdf
 word: ../word/LucasCruz_CV_PT.docx
-last_synced: 2026-06-12
-sync_source: google-docs-export
+last_synced: 2026-06-13
+sync_source: google-docs-export-plus-manual-contract-update
 ---
 
 # LUCAS CRUZ
@@ -25,21 +25,19 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 | Categoria | Competências |
 |-----------|--------------|
 | IA Generativa & LLMs | Claude AI, Google AI Studio, Integração com LLMs, Agentes de IA, RAG, Engenharia de Prompt, Chatbots |
-| Engenharia de Dados | Python, SQL, Apache Spark (PySpark), Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet |
-| Orquestração de Pipelines | Apache Airflow, n8n |
+| Engenharia de Dados, APIs & Orquestração | Python, SQL, FastAPI, SQLAlchemy, Pydantic, Apache Spark (PySpark), Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n, Celery, Redis Streams |
 | Plataformas de Nuvem | AWS (S3, EC2, ECS, Lambda, IAM), Microsoft Azure, Google Cloud (GCP), Oracle Cloud (OCI) |
 | Plataformas de Dados | Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database |
-| Bancos de Dados Relacionais | PostgreSQL, SQL Server, MySQL |
-| Analytics & BI | Power BI, Qlik Sense, Apache Superset, Looker |
+| Bancos de Dados & BI | PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker |
 | Segurança & Governança de Dados | Conformidade LGPD/GDPR, Privacidade de Dados, IAM, RBAC, Mascaramento de Dados, Criptografia em Repouso/Trânsito, Logs de Auditoria, RFID/NFC, Firewall |
-| DevOps & Infraestrutura | Docker, Kubernetes, Git, Pipelines CI/CD, Linux, Bash Scripting |
+| DevOps & Infraestrutura | Docker, Kubernetes, Terraform, Azure Bicep, Azure Container Apps, Git, Pipelines CI/CD, Linux, Bash Scripting |
 | Idiomas | Português (Nativo) · Inglês (C1 – Avançado) · Espanhol (B1 – Intermediário) |
 
 ## Experiência Profissional
 
 ### Engenheiro de IA Generativa — TK Technologies
 
-**Curitiba, PR (Híbrido · Contrato 3 meses)** · Fev 2026 – Mai 2026
+**Curitiba, PR (Híbrido)** · Fev 2026 – Atual · Contrato de 6 meses, previsão Ago 2026
 
 - Desenvolveu pipeline de web scraping em Python coletando dados de preço e metadados de mais de 10 sites de peças automotivas, gerando inteligência competitiva de mercado em escala.
 - Projetou workflows de automação com IA no n8n (ETL, RPA e agentes chatbot) integrando LLMs (Claude AI, Google AI Studio) e APIs do GCP (Sheets, Drive) para enriquecer dados e reduzir trabalho manual de análise.
@@ -76,13 +74,13 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 
 ### Plataforma de Inteligência de Preços — Mercado Automotivo
 
-*Python, n8n, LLMs, GCP APIs, Azure, Docker · TK Technologies – Fev 2026*
+*Python, n8n, LLMs, GCP APIs, Azure, Docker · TK Technologies – Fev 2026 – Atual*
 
 - Coletou dados de mais de 10 sites automotivos com Python; orquestrou agentes de IA via n8n com Claude AI, Google AI Studio e GCP (Sheets, Drive) para automatizar análise de preços e gerar insights de compras competitivas. Deploy completo conteinerizado no Azure.
 
 ### Nox TKTech Telegram Assistant
 
-*n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI · TK Technologies – Fev 2026*
+*n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI · TK Technologies – Fev 2026 – Atual*
 
 - Workflow privado de automação conversacional que responde a partir de conhecimento interno curado, registra estado de usuários/conversas e aciona jobs de demonstração da plataforma CDP via APIs backend integradas.
 
