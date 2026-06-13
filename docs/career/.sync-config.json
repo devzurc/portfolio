@@ -1,0 +1,8 @@
+{
+  "github_user": "devzurc",
+  "exclude_repos": ["My-Profile", "portfolio"],
+  "include_private": false,
+  "include_forks": false,
+  "readme_max_chars": 12000,
+  "notes": "Portfolio repo is public on GitHub. Keep include_private false unless syncing into a private workspace; public career docs must be sanitized."
+}

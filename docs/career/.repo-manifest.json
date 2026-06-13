@@ -1,0 +1,46 @@
+{
+  "aliases": {
+    "cdp-hub": {
+      "canonical": "tktechnologies/cdp-hub",
+      "mirror": "devzurc/cdp-hub",
+      "local_path": "/home/devzurc/projects/cdp-app",
+      "knowledge_slug": "cdp-hub"
+    },
+    "muvstok-api": {
+      "canonical": "tktechnologies/cdp-hub",
+      "subpath": "muvstok-api/",
+      "mirror": "devzurc/cdp-hub",
+      "local_path": "/home/devzurc/projects/cdp-app/muvstok-api",
+      "knowledge_slug": "muvstok-api",
+      "note": "Service inside CDP monorepo, not a standalone GitHub repo"
+    },
+    "n8n-stripe-checkout": {
+      "canonical": "tktechnologies/n8n-stripe",
+      "mirror": "devzurc/n8n-stripe-checkout",
+      "local_path": "/home/devzurc/projects/n8n/stokia-welcome-stripe",
+      "knowledge_slug": "n8n-stripe-checkout"
+    },
+    "n8n-instagram-assistant": {
+      "canonical": "devzurc/instagram-n8n",
+      "mirror": "devzurc/n8n-instagram-assistant",
+      "local_path": "/home/devzurc/projects/n8n/instagram",
+      "knowledge_slug": "n8n-instagram-assistant",
+      "note": "GitHub repo name is instagram-n8n; user alias n8n-instagram-assistant"
+    },
+    "n8n-telegram-assistant": {
+      "canonical": "devzurc/nox-telegram-chatbot",
+      "mirror": "devzurc/n8n-telegram-assistant",
+      "local_path": "/home/devzurc/projects/n8n/telegram/noxtktech_bot",
+      "knowledge_slug": "n8n-telegram-assistant"
+    },
+    "n8n-clerk-followup": {
+      "canonical": "devzurc/clerk-trial-followup",
+      "mirror": "devzurc/n8n-clerk-followup",
+      "local_path": "/home/devzurc/projects/n8n/stokia-followup-trial",
+      "knowledge_slug": "n8n-clerk-followup"
+    }
+  },
+  "github_orgs": ["devzurc", "tktechnologies"],
+  "default_employer_context": "TK Technologies",
+  "default_domain": ["automotive-parts", "gen-ai", "automation", "fintech-adjacent"]
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Lucas Cruz — Senior Data Engineer and Gen. AI Automation Engineer</title>
+  <desc id="desc">Social preview image for Lucas Cruz portfolio.</desc>
+  <rect width="1200" height="630" fill="#080C18"/>
+  <path d="M0 490 C220 430 330 560 560 500 C760 448 855 340 1200 400 L1200 630 L0 630 Z" fill="#0D1222"/>
+  <g stroke="#7AFFC4" stroke-opacity="0.13" stroke-width="1">
+    <path d="M0 80 H1200"/>
+    <path d="M0 160 H1200"/>
+    <path d="M0 240 H1200"/>
+    <path d="M0 320 H1200"/>
+    <path d="M0 400 H1200"/>
+    <path d="M0 480 H1200"/>
+    <path d="M120 0 V630"/>
+    <path d="M240 0 V630"/>
+    <path d="M360 0 V630"/>
+    <path d="M480 0 V630"/>
+    <path d="M600 0 V630"/>
+    <path d="M720 0 V630"/>
+    <path d="M840 0 V630"/>
+    <path d="M960 0 V630"/>
+    <path d="M1080 0 V630"/>
+  </g>
+  <text x="92" y="190" fill="#7AFFC4" font-family="monospace" font-size="30" letter-spacing="6">LUCAS CRUZ</text>
+  <text x="88" y="292" fill="#F0F4FF" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="700">Senior Data Engineer</text>
+  <text x="88" y="370" fill="#F0F4FF" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">&amp; Gen. AI Automation</text>
+  <text x="92" y="456" fill="#C2CCDE" font-family="Georgia, serif" font-size="30">Production pipelines · Lakehouses · LLM/n8n workflows · Cloud</text>
+  <text x="92" y="530" fill="#7AFFC4" font-family="monospace" font-size="24">devzurc.github.io/portfolio</text>
+</svg>
