@@ -49,7 +49,7 @@ This is a **GitHub Pages static site**:
 
 - No server-side rendering, databases, or API keys in the repo
 - Keep all CSS/JS compatible with modern browsers without a bundler
-- Prefer inline or co-located styles/scripts in `index.html` to match existing patterns
+- Keep styles in `assets/css/` and behavior in `assets/js/site.js` unless a tiny local exception is clearly justified
 - External links open in new tabs where appropriate (`target="_blank"` + `rel="noopener noreferrer"` when adding new external links)
 
 ---
@@ -88,7 +88,7 @@ Target roles: **Data Engineer**, **Gen. AI Engineer**, **ML/Data platform adjace
 
 ### JavaScript
 
-- Keep scripts at the bottom of `index.html` unless there is a strong reason not to
+- Keep the existing deferred `assets/js/site.js` loading pattern unless there is a strong reason to change it
 - Do not break `setLang`, mobile menu, scroll spy, or IntersectionObserver fade-ins
 - Prefer progressive enhancement; site must remain readable if JS fails
 

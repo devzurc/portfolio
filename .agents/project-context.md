@@ -10,8 +10,8 @@
 |-------|-------|
 | **Owner** | Lucas Cruz |
 | **Public URL** | https://devzurc.github.io/portfolio/ |
-| **Primary file** | `index.html` (single-page application) |
-| **Stack** | Static HTML, embedded CSS, vanilla JavaScript |
+| **Primary file** | `index.html` (single-page portfolio) |
+| **Stack** | Static HTML, modular CSS in `assets/css/`, vanilla JavaScript in `assets/js/site.js` |
 | **Deployment** | GitHub Pages — push to `main` |
 | **Audience** | Recruiters and hiring managers for Data Engineering & Gen. AI roles (Europe-focused) |
 
@@ -42,9 +42,9 @@
 | ID | Purpose |
 |----|---------|
 | `#hero` | Name, roles, value prop, CTAs, headline stats |
+| `#projects` | Project cards with descriptions and links |
 | `#skills` | Skill cards grouped by domain (Gen. AI, Data Eng, Orchestration, Cloud, etc.) |
 | `#experience` | Employment timeline with impact bullets |
-| `#projects` | Project cards with descriptions and links |
 | `#certifications` | Verified certs with external credential URLs |
 | `#contact` | Contact links, location, CV downloads, relocation note |
 
@@ -73,22 +73,27 @@ Fixed top nav + mobile hamburger menu. Nav labels use `data-en` / `data-pt` for 
 
 ### Typography
 
-- **Display:** Bebas Neue (logo, large headings)
-- **UI / labels:** DM Mono (nav, tags, labels)
-- **Body:** Lora (paragraphs)
+- **Body / UI:** Inter
+- **Mono / labels:** IBM Plex Mono
+- **Fallbacks:** system UI and system monospace stacks
 
 ### Colors (CSS variables)
 
 ```css
---bg: #080C18;
---cyan: #7AFFC4;      /* primary accent */
---white: #F0F4FF;     /* primary text */
---gray / --gray2;     /* secondary text */
+--ink: #070b16;
+--paper: #f6f8fc;
+--surface: #ffffff;
+--text: #0d1728;
+--blue: #2563eb;
+--cyan: #21d4b3;
+--amber: #d79222;
+--radius: 8px;
 ```
 
 ### Patterns
 
-- Dark background with cyan accent and subtle glow
+- Light recruiter-facing content bands with dark hero/timeline/contact sections
+- Blue/cyan primary accents with restrained amber/coral secondary accents
 - `.fade-in` + IntersectionObserver for scroll animations
 - `.tag` pills for technologies
 - `.project-card`, `.job`, `.skill-card` component classes
@@ -137,6 +142,8 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 3. Update `markdown/*.md` if agents edited copy in-repo (or paste Google changes into markdown)
 4. Run `/sync-cv-portfolio` to align `index.html` with CV facts
 
+**Current audit note (2026-06-15):** `docs/resume/markdown/`, `docs/resume/word/`, `docs/resume/pdf/`, and `assets/files/cv/` are aligned to the updated Senior Data Engineer / Gen. AI Automation copy. `docs/resume/source/*.txt` still contains older Google export text in places, especially PT-BR relocation/visa wording. Do not run `sync-from-google-docs.py` until the owner confirms the Google Docs have been updated, because it may overwrite the aligned local PDF/DOCX exports with stale Google content.
+
 **CV management skill:** `@.agents/skills/cv-management.md`
 
 ### CV document structure (EN)
@@ -175,12 +182,13 @@ Skill: `@.agents/skills/career-knowledge.md`
 | Email | dev.lucascruz@gmail.com |
 
 Only link to repos, demos, or articles that exist. GitHub username: **devzurc**.
+Flagship TK Technologies CDP links use the organization repository: `https://github.com/tktechnologies/cdp-hub`.
 
 ---
 
 ## Certifications (on-site)
 
-Certs section groups credentials with **real verification URLs** (Credly, AWS Skill Builder, Azure Learn, Oracle, Alura, etc.). When adding a cert:
+Certs section groups credentials with **real verification URLs** or local certificate PDFs. Current groups include IELTS, Udemy, Coursera, Data Science Academy, Alura, and the Dom Bosco education certificate. When adding a cert:
 
 1. Owner must provide certificate URL
 2. Match existing HTML list structure
@@ -192,7 +200,7 @@ Certs section groups credentials with **real verification URLs** (Credly, AWS Sk
 
 - **Title (EN):** Lucas Cruz - Senior Data Engineer & Gen. AI Automation Engineer
 - **Title (PT):** Lucas Cruz - Engenheiro de Dados Senior & Automacao com IA Generativa
-- **Meta description:** References 5+ years, production data pipelines, lakehouses, LLM/n8n automation, and Europe relocation
+- **Meta description:** References production data pipelines, cloud lakehouses, Gen. AI/n8n automation, and Europe relocation
 - **Canonical:** `https://devzurc.github.io/portfolio/`
 - **Open Graph:** `og:title`, `og:description`, `og:type=website`, `og:url`, `og:image`
 - **Twitter:** summary large image metadata
@@ -243,7 +251,8 @@ Suggested Cursor setup: add `@.agents/rules.md` or symlink rules into `.cursor/r
 ## Maintenance Checklist (periodic)
 
 - [ ] Run `python3 docs/resume/scripts/sync-from-google-docs.py` after Google Doc edits
-- [ ] `markdown/*.md` reflects latest CV content (or re-sync from `source/*.txt`)
+- [ ] `markdown/*.md` reflects latest approved CV content before regenerating DOCX/PDF
+- [ ] `source/*.txt` reflects a fresh Google Docs export before treating it as source evidence
 - [ ] Portfolio `#experience`, `#projects`, `#skills`, hero stats align with CV facts
 - [ ] Cert links still resolve
 - [ ] GitHub project links are public and representative

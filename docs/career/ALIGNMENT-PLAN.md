@@ -1,6 +1,6 @@
 # Alignment plan - CV · Portfolio · Career knowledge
 
-> **Status:** Implemented in repo on 2026-06-12. Google Docs/PDF CV exports still need a source-of-truth sync after owner review.
+> **Status:** Implemented in repo on 2026-06-12. Local markdown, DOCX, PDF, and website CV downloads are aligned as of 2026-06-15. Google Docs/raw text exports still need owner-side confirmation before the next pull.
 
 This plan connects three surfaces:
 
@@ -102,8 +102,9 @@ Command: `/improve-section` per section after audit.
 
 1. Review the EN/PT markdown CV changes.
 2. Apply approved copy to the canonical Google Docs.
-3. Run `python3 docs/resume/scripts/sync-from-google-docs.py` to refresh Word/PDF/source snapshots and live CV PDFs.
-4. Run `/pre-commit-review` before committing.
+3. Only after Google Docs match the approved copy, run `python3 docs/resume/scripts/sync-from-google-docs.py` to refresh Word/PDF/source snapshots and live CV PDFs.
+4. Re-run `/sync-cv-portfolio audit` after the export because the current `docs/resume/source/*.txt` snapshots still contain older Google text in places.
+5. Run `/pre-commit-review` before committing.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 repo: muvstok-api
-github_url: https://github.com/devzurc/cdp-hub/tree/main/muvstok-api
-mirror_url: https://github.com/devzurc/cdp-hub
+github_url: https://github.com/tktechnologies/cdp-hub/tree/main/muvstok-api
+mirror_url: https://github.com/tktechnologies/cdp-hub
 visibility: public-safe summary
 status: active
 period: Feb 2026 - Present
@@ -29,7 +29,7 @@ verified_outcomes:
   - Deployed as separate containerized API and worker services on Azure
 links:
   demo:
-  docs: https://github.com/devzurc/cdp-hub/tree/main/muvstok-api
+  docs: https://github.com/tktechnologies/cdp-hub/tree/main/muvstok-api
 last_synced: 2026-06-13
 source_readme: readmes/muvstok-api.md
 parent_monorepo: cdp-hub

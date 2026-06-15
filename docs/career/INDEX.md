@@ -6,8 +6,8 @@
 
 | Project | Visibility | Status | Employer | Portfolio | CV | Profile | README |
 |---------|------------|--------|----------|-----------|-----|---------|--------|
-| [cdp-hub](https://github.com/devzurc/cdp-hub) | public-safe summary | active | TK Technologies | true | true | [profile](projects/cdp-hub.md) | [readme](readmes/cdp-hub.md) |
-| [muvstok-api](https://github.com/devzurc/cdp-hub/tree/main/muvstok-api) | public-safe summary | active | TK Technologies | false | true | [profile](projects/muvstok-api.md) | [readme](readmes/muvstok-api.md) |
+| [cdp-hub](https://github.com/tktechnologies/cdp-hub) | public-safe summary | active | TK Technologies | true | true | [profile](projects/cdp-hub.md) | [readme](readmes/cdp-hub.md) |
+| [muvstok-api](https://github.com/tktechnologies/cdp-hub/tree/main/muvstok-api) | public-safe summary | active | TK Technologies | false | true | [profile](projects/muvstok-api.md) | [readme](readmes/muvstok-api.md) |
 | n8n-stripe-checkout | private | active | TK Technologies | true | true | [profile](projects/n8n-stripe-checkout.md) | [readme](readmes/n8n-stripe-checkout.md) |
 | n8n-telegram-assistant | private | active | TK Technologies | true | true | [profile](projects/n8n-telegram-assistant.md) | [readme](readmes/n8n-telegram-assistant.md) |
 | [project_dashboard_heroby](https://github.com/devzurc/project_dashboard_heroby) | public | client-work | unknown | false | true | [profile](projects/project_dashboard_heroby.md) | [readme](readmes/project_dashboard_heroby.md) |
