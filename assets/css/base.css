@@ -51,6 +51,7 @@ summary {
 #projects,
 #skills,
 #experience,
+#job-fit,
 #certifications,
 #contact {
   scroll-margin-top: calc(var(--nav-h) + 20px);
@@ -74,6 +75,7 @@ body.lang-pt .pt-only.hero-kicker,
 body.lang-pt .pt-only.project-label,
 body.lang-pt .pt-only.project-status,
 body.lang-pt .pt-only.contact-note,
+body.lang-pt .pt-only.fit-label,
 body.lang-pt .pt-only.tag,
 body.lang-pt .pt-only.stack-tag {
   display: inline-flex !important;

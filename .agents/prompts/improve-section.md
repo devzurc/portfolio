@@ -15,7 +15,7 @@ Context files:
 @.agents/skills/copywriting-linkedin.md
 
 Section ID: {{SECTION_ID}}
-<!-- Valid: hero | skills | experience | projects | certifications | contact -->
+<!-- Valid: hero | projects | skills | experience | job-fit | certifications | contact -->
 
 My goal for this section:
 {{GOAL}}
@@ -57,6 +57,11 @@ Do not add tools unless owner confirms production use.
 
 Focus: impact bullets (outcome + action + tech), reverse chronological integrity.  
 Never change dates/titles/companies without explicit owner input.
+
+### `job-fit`
+
+Focus: target role clarity, growth environment, role-search filters, and public-safe evidence.
+Do not add customer-facing or sprint-process claims unless they are backed by owner notes or `docs/career/tktech-sprint-knowledge.md`.
 
 ### `projects`
 

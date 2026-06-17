@@ -77,7 +77,7 @@ Target roles: **Data Engineer**, **Gen. AI Engineer**, **ML/Data platform adjace
 - Use `<section>`, `<nav>`, `<footer>`, headings in logical order (`h1` → `h2` → `h3`)
 - Every interactive control needs an accessible name (`aria-label` or visible text)
 - Images require meaningful `alt` text; decorative images use `alt=""`
-- Anchor links must match existing section IDs: `#hero`, `#skills`, `#experience`, `#projects`, `#certifications`, `#contact`
+- Anchor links must match existing section IDs: `#hero`, `#projects`, `#skills`, `#experience`, `#job-fit`, `#certifications`, `#contact`
 
 ### CSS
 

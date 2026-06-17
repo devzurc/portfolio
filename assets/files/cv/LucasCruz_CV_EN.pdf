@@ -13,7 +13,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
 endobj
 5 0 obj
-<< /Length 5144 >>
+<< /Length 5181 >>
 stream
 BT /F2 18.0 Tf 252.5 796.0 Td (LUCAS CRUZ) Tj ET
 BT /F2 9.6 Tf 42.0 765.9 Td (Senior Data Engineer | Gen. AI Automation Engineer) Tj ET
@@ -24,8 +24,8 @@ BT /F2 11.0 Tf 42.0 690.2 Td (PROFESSIONAL SUMMARY) Tj ET
 BT /F2 9.6 Tf 42.0 668.3 Td (Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production) Tj ET
 BT /F2 9.6 Tf 42.0 654.4 Td (data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and) Tj ET
 BT /F2 9.6 Tf 42.0 640.4 Td (automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics) Tj ET
-BT /F2 9.6 Tf 42.0 626.5 Td (datasets, conversational AI workflows, and automated reporting systems. Fluent in English \(C1\); open) Tj ET
-BT /F2 9.6 Tf 42.0 612.6 Td (to relocation across Europe.) Tj ET
+BT /F2 9.6 Tf 42.0 626.5 Td (datasets, conversational AI workflows, automated reporting systems, and customer-facing product) Tj ET
+BT /F2 9.6 Tf 42.0 612.6 Td (implementation. Fluent in English \(C1\); open to relocation across Europe.) Tj ET
 BT /F2 11.0 Tf 42.0 586.7 Td (TECHNICAL SKILLS) Tj ET
 BT /F1 9.6 Tf 42.0 564.7 Td (|----------|--------|) Tj ET
 BT /F1 8.8 Tf 42.0 550.8 Td (Gen. AI & LLMs: LLM Integration, AI Agents \(OpenAI, Claude, Gemini\205\), RAG, Prompt Engineering, Chatbot) Tj ET
@@ -52,61 +52,63 @@ BT /F1 9.4 Tf 52.0 254.4 Td (- Developed a conversational AI chatbot that empowe
 BT /F1 9.4 Tf 52.0 240.8 Td (  datasets via natural language, reducing time-to-insight for non-technical stakeholders.) Tj ET
 BT /F1 9.4 Tf 52.0 227.2 Td (- Deployed containerised backend services on Azure using Docker, standardising infrastructure) Tj ET
 BT /F1 9.4 Tf 52.0 213.5 Td (  environments and improving deployment reliability.) Tj ET
-BT /F2 10.5 Tf 42.0 191.9 Td (Data Engineer \227 Spacecom Monitoramento) Tj ET
-BT /F1 9.6 Tf 42.0 172.7 Td (Curitiba, PR \226 Brazil \(On-site\) \267 Apr 2023 \226 Jul 2024) Tj ET
-BT /F1 9.4 Tf 52.0 154.8 Td (- Designed and maintained an enterprise Big Data Lakehouse on AWS S3 leveraging Medallion Architecture) Tj ET
-BT /F1 9.4 Tf 52.0 141.1 Td (  \(Bronze/Silver/Gold\) alongside Delta Lake, Parquet, PySpark, and Trino to support heavy analytics) Tj ET
-BT /F1 9.4 Tf 52.0 127.5 Td (  workloads.) Tj ET
-BT /F1 9.4 Tf 52.0 113.9 Td (- Supported a high-availability IoT platform scaling to 95,000+ devices, efficiently processing) Tj ET
-BT /F1 9.4 Tf 52.0 100.3 Td (  hundreds of millions of telemetry records per day.) Tj ET
-BT /F1 9.4 Tf 52.0 86.6 Td (- Managed electronic security tag \(RFID/NFC\) data for government court systems, applying LGPD/GDPR-) Tj ET
-BT /F1 9.4 Tf 52.0 73.0 Td (  aligned privacy controls, access governance, and secure handling of sensitive judicial data.) Tj ET
-BT /F1 9.4 Tf 52.0 59.4 Td (- Orchestrated and optimised ETL pipelines with Apache Airflow to improve pipeline reliability;) Tj ET
+BT /F1 9.4 Tf 52.0 199.9 Td (- Coordinated Notion-based delivery sprints, customer-facing demos, product training, sales support,) Tj ET
+BT /F1 9.4 Tf 52.0 186.3 Td (  and post-launch support while preparing Play Store/EAS/DUNS mobile launch readiness.) Tj ET
+BT /F2 10.5 Tf 42.0 164.7 Td (Data Engineer \227 Spacecom Monitoramento) Tj ET
+BT /F1 9.6 Tf 42.0 145.4 Td (Curitiba, PR \226 Brazil \(On-site\) \267 Apr 2023 \226 Jul 2024) Tj ET
+BT /F1 9.4 Tf 52.0 127.5 Td (- Designed and maintained an enterprise Big Data Lakehouse on AWS S3 leveraging Medallion Architecture) Tj ET
+BT /F1 9.4 Tf 52.0 113.9 Td (  \(Bronze/Silver/Gold\) alongside Delta Lake, Parquet, PySpark, and Trino to support heavy analytics) Tj ET
+BT /F1 9.4 Tf 52.0 100.3 Td (  workloads.) Tj ET
+BT /F1 9.4 Tf 52.0 86.6 Td (- Supported a high-availability IoT platform scaling to 95,000+ devices, efficiently processing) Tj ET
+BT /F1 9.4 Tf 52.0 73.0 Td (  hundreds of millions of telemetry records per day.) Tj ET
+BT /F1 9.4 Tf 52.0 59.4 Td (- Managed electronic security tag \(RFID/NFC\) data for government court systems, applying LGPD/GDPR-) Tj ET
 endstream
 endobj
 6 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
 endobj
 7 0 obj
-<< /Length 4020 >>
+<< /Length 4283 >>
 stream
-BT /F1 9.4 Tf 52.0 800.0 Td (  utilised Docker on AWS EC2 to reduce deployment issues.) Tj ET
-BT /F1 9.4 Tf 52.0 786.4 Td (- Remediated inconsistencies in pipeline steps to improve downstream analytics consistency, delivering) Tj ET
-BT /F1 9.4 Tf 52.0 772.7 Td (  reliable datasets to Qlik Sense and Apache Superset dashboards.) Tj ET
-BT /F2 10.5 Tf 42.0 751.1 Td (Data Engineer Consultant \227 wDiscover) Tj ET
-BT /F1 9.6 Tf 42.0 731.9 Td (Curitiba, PR \226 Brazil \(Remote\) \267 Jun 2022 \226 May 2024) Tj ET
-BT /F1 9.4 Tf 52.0 714.0 Td (- Delivered end-to-end data projects across the fintech, agribusiness, and operations sectors by) Tj ET
-BT /F1 9.4 Tf 52.0 700.3 Td (  integrating high-volume payment providers \(PagSeguro, Stone, Cielo\), John Deere IoT APIs, and REST) Tj ET
-BT /F1 9.4 Tf 52.0 686.7 Td (  APIs.) Tj ET
-BT /F1 9.4 Tf 52.0 673.1 Td (- Designed dimensional Data Warehouses on SQL Server and Oracle Autonomous Database; automated complex) Tj ET
-BT /F1 9.4 Tf 52.0 659.4 Td (  ETL workflows with Airflow on Docker/Oracle Cloud to reduce recurring manual effort.) Tj ET
-BT /F1 9.4 Tf 52.0 645.8 Td (- Built dynamic Power BI dashboards to track critical KPIs, financial metrics, and operational) Tj ET
-BT /F1 9.4 Tf 52.0 632.2 Td (  performance for diverse client domains.) Tj ET
-BT /F2 10.5 Tf 42.0 610.6 Td (Data Analyst \227 Itaete Group) Tj ET
-BT /F1 9.6 Tf 42.0 591.3 Td (Curitiba, PR \226 Brazil \(Hybrid\) \267 Jun 2020 \226 Feb 2023) Tj ET
-BT /F1 9.4 Tf 52.0 573.4 Td (- Designed a SQL Server Data Warehouse and robust Python/SQL pipelines using Pandas to cleanse,) Tj ET
-BT /F1 9.4 Tf 52.0 559.8 Td (  transform, and enrich data from IoT devices, PostgreSQL, APIs, and CSV sources.) Tj ET
-BT /F1 9.4 Tf 52.0 546.2 Td (- Built Power BI dashboards and automated legacy Excel/VBA reporting workflows, shortening data) Tj ET
-BT /F1 9.4 Tf 52.0 532.5 Td (  processing time and reducing manual operational workloads.) Tj ET
-BT /F1 9.4 Tf 52.0 518.9 Td (- Developed internal systems for inventory management and financial automation, streamlining invoice) Tj ET
-BT /F1 9.4 Tf 52.0 505.3 Td (  generation and automated weekly report distribution.) Tj ET
-BT /F2 11.0 Tf 42.0 479.6 Td (NOTABLE PROJECTS) Tj ET
-BT /F2 10.5 Tf 42.0 453.7 Td (Automotive Market Price Intelligence Platform) Tj ET
-BT /F1 9.6 Tf 42.0 434.5 Td (Python, n8n, LLMs, GCP APIs, Azure, Docker \267 TK Technologies \226 Feb 2026 \226 Present) Tj ET
-BT /F1 9.4 Tf 52.0 416.5 Td (- Scraped 10+ automotive parts sites with Python; orchestrated AI agents via n8n with Claude AI, Google) Tj ET
-BT /F1 9.4 Tf 52.0 402.9 Td (  AI Studio, and GCP to automate price analysis. Fully containerised on Azure.) Tj ET
-BT /F2 10.5 Tf 42.0 381.3 Td (Nox TKTech Telegram Assistant) Tj ET
-BT /F1 9.6 Tf 42.0 362.1 Td (n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI \267 TK Technologies \226 Feb 2026 \226 Present) Tj ET
-BT /F1 9.4 Tf 52.0 344.1 Td (- Built a private conversational automation workflow that answers from curated internal knowledge, logs) Tj ET
-BT /F1 9.4 Tf 52.0 330.5 Td (  user/conversation state, and triggers CDP demo jobs through integrated backend APIs.) Tj ET
-BT /F2 10.5 Tf 42.0 308.9 Td (IoT Data Lakehouse on AWS \226 Medallion Architecture) Tj ET
-BT /F1 9.6 Tf 42.0 289.6 Td (AWS S3, Apache Spark, Delta Lake, Airflow, Trino, Apache Superset \267 Client Project \226 Feb 2024) Tj ET
-BT /F1 9.4 Tf 52.0 271.7 Td (- Designed a Bronze/Silver/Gold lakehouse on AWS S3 ingesting from APIs and databases. Virtualised the) Tj ET
-BT /F1 9.4 Tf 52.0 258.1 Td (  Gold layer with Trino and surfaced governed datasets through BI dashboards.) Tj ET
-BT /F2 11.0 Tf 42.0 232.5 Td (EDUCATION) Tj ET
-BT /F1 9.6 Tf 42.0 210.5 Td (Bachelor of Systems Analysis and Development \227 Dom Bosco University, Curitiba, Brazil \267 Jun 2023) Tj ET
-BT /F1 9.6 Tf 42.0 192.6 Td (Majors: Information Systems \267 Business Analytics \267 Data Analysis \267 Database Systems \267 Software) Tj ET
-BT /F1 9.6 Tf 42.0 178.7 Td (Engineering) Tj ET
+BT /F1 9.4 Tf 52.0 800.0 Td (  aligned privacy controls, access governance, and secure handling of sensitive judicial data.) Tj ET
+BT /F1 9.4 Tf 52.0 786.4 Td (- Orchestrated and optimised ETL pipelines with Apache Airflow to improve pipeline reliability;) Tj ET
+BT /F1 9.4 Tf 52.0 772.7 Td (  utilised Docker on AWS EC2 to reduce deployment issues.) Tj ET
+BT /F1 9.4 Tf 52.0 759.1 Td (- Remediated inconsistencies in pipeline steps to improve downstream analytics consistency, delivering) Tj ET
+BT /F1 9.4 Tf 52.0 745.5 Td (  reliable datasets to Qlik Sense and Apache Superset dashboards.) Tj ET
+BT /F2 10.5 Tf 42.0 723.9 Td (Data Engineer Consultant \227 wDiscover) Tj ET
+BT /F1 9.6 Tf 42.0 704.6 Td (Curitiba, PR \226 Brazil \(Remote\) \267 Jun 2022 \226 May 2024) Tj ET
+BT /F1 9.4 Tf 52.0 686.7 Td (- Delivered end-to-end data projects across the fintech, agribusiness, and operations sectors by) Tj ET
+BT /F1 9.4 Tf 52.0 673.1 Td (  integrating high-volume payment providers \(PagSeguro, Stone, Cielo\), John Deere IoT APIs, and REST) Tj ET
+BT /F1 9.4 Tf 52.0 659.4 Td (  APIs.) Tj ET
+BT /F1 9.4 Tf 52.0 645.8 Td (- Designed dimensional Data Warehouses on SQL Server and Oracle Autonomous Database; automated complex) Tj ET
+BT /F1 9.4 Tf 52.0 632.2 Td (  ETL workflows with Airflow on Docker/Oracle Cloud to reduce recurring manual effort.) Tj ET
+BT /F1 9.4 Tf 52.0 618.6 Td (- Built dynamic Power BI dashboards to track critical KPIs, financial metrics, and operational) Tj ET
+BT /F1 9.4 Tf 52.0 604.9 Td (  performance for diverse client domains.) Tj ET
+BT /F2 10.5 Tf 42.0 583.3 Td (Data Analyst \227 Itaete Group) Tj ET
+BT /F1 9.6 Tf 42.0 564.1 Td (Curitiba, PR \226 Brazil \(Hybrid\) \267 Jun 2020 \226 Feb 2023) Tj ET
+BT /F1 9.4 Tf 52.0 546.2 Td (- Designed a SQL Server Data Warehouse and robust Python/SQL pipelines using Pandas to cleanse,) Tj ET
+BT /F1 9.4 Tf 52.0 532.5 Td (  transform, and enrich data from IoT devices, PostgreSQL, APIs, and CSV sources.) Tj ET
+BT /F1 9.4 Tf 52.0 518.9 Td (- Built Power BI dashboards and automated legacy Excel/VBA reporting workflows, shortening data) Tj ET
+BT /F1 9.4 Tf 52.0 505.3 Td (  processing time and reducing manual operational workloads.) Tj ET
+BT /F1 9.4 Tf 52.0 491.6 Td (- Developed internal systems for inventory management and financial automation, streamlining invoice) Tj ET
+BT /F1 9.4 Tf 52.0 478.0 Td (  generation and automated weekly report distribution.) Tj ET
+BT /F2 11.0 Tf 42.0 452.4 Td (NOTABLE PROJECTS) Tj ET
+BT /F2 10.5 Tf 42.0 426.4 Td (Automotive Market Price Intelligence Platform) Tj ET
+BT /F1 9.6 Tf 42.0 407.2 Td (Python, n8n, LLMs, GCP APIs, Azure, Docker \267 TK Technologies \226 Feb 2026 \226 Present) Tj ET
+BT /F1 9.4 Tf 52.0 389.3 Td (- Scraped 10+ automotive parts sites with Python; orchestrated AI agents via n8n with Claude AI, Google) Tj ET
+BT /F1 9.4 Tf 52.0 375.6 Td (  AI Studio, and GCP to automate price analysis. Fully containerised on Azure.) Tj ET
+BT /F2 10.5 Tf 42.0 354.0 Td (Nox TKTech Telegram Assistant) Tj ET
+BT /F1 9.6 Tf 42.0 334.8 Td (n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI \267 TK Technologies \226 Feb 2026 \226 Present) Tj ET
+BT /F1 9.4 Tf 52.0 316.9 Td (- Built a private conversational automation workflow that answers from curated internal knowledge, logs) Tj ET
+BT /F1 9.4 Tf 52.0 303.2 Td (  user/conversation state, and triggers CDP demo jobs through integrated backend APIs.) Tj ET
+BT /F2 10.5 Tf 42.0 281.6 Td (IoT Data Lakehouse on AWS \226 Medallion Architecture) Tj ET
+BT /F1 9.6 Tf 42.0 262.4 Td (AWS S3, Apache Spark, Delta Lake, Airflow, Trino, Apache Superset \267 Client Project \226 Feb 2024) Tj ET
+BT /F1 9.4 Tf 52.0 244.5 Td (- Designed a Bronze/Silver/Gold lakehouse on AWS S3 ingesting from APIs and databases. Virtualised the) Tj ET
+BT /F1 9.4 Tf 52.0 230.8 Td (  Gold layer with Trino and surfaced governed datasets through BI dashboards.) Tj ET
+BT /F2 11.0 Tf 42.0 205.2 Td (EDUCATION) Tj ET
+BT /F1 9.6 Tf 42.0 183.3 Td (Bachelor of Systems Analysis and Development \227 Dom Bosco University, Curitiba, Brazil \267 Jun 2023) Tj ET
+BT /F1 9.6 Tf 42.0 165.3 Td (Majors: Information Systems \267 Business Analytics \267 Data Analysis \267 Database Systems \267 Software) Tj ET
+BT /F1 9.6 Tf 42.0 151.4 Td (Engineering) Tj ET
 endstream
 endobj
 8 0 obj
@@ -120,11 +122,11 @@ xref
 0000000127 00000 n 
 0000000224 00000 n 
 0000000326 00000 n 
-0000005522 00000 n 
-0000005658 00000 n 
-0000009730 00000 n 
+0000005559 00000 n 
+0000005695 00000 n 
+0000010030 00000 n 
 trailer
 << /Size 9 /Root 1 0 R >>
 startxref
-9866
+10166
 %%EOF

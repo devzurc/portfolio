@@ -254,6 +254,7 @@
 .project-card::before,
 .skill-card::before,
 .cert-card::before,
+.fit-card::before,
 .job-body::before {
   content: "";
   position: absolute;
@@ -272,6 +273,7 @@
 .project-card::after,
 .skill-card::after,
 .cert-card::after,
+.fit-card::after,
 .job-body::after {
   content: "";
   position: absolute;
@@ -288,6 +290,7 @@
 .project-card > *,
 .skill-card > *,
 .cert-card > *,
+.fit-card > *,
 .job-body > * {
   position: relative;
   z-index: 1;
@@ -302,6 +305,7 @@
 .project-card:hover::after,
 .skill-card:hover::after,
 .cert-card:hover::after,
+.fit-card:hover::after,
 .job-body:hover::after {
   opacity: 1;
   animation: border-sweep 0.85s ease both;
@@ -607,6 +611,94 @@
 
 .dark .job-bullets strong {
   color: var(--text-on-dark);
+}
+
+.job-fit-section {
+  background:
+    linear-gradient(180deg, rgba(37, 99, 235, 0.05), rgba(33, 212, 179, 0.04)),
+    var(--paper);
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.fit-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(13, 23, 40, 0.1);
+  border-radius: var(--radius);
+  padding: 1.15rem;
+  background:
+    radial-gradient(circle at var(--spot-x, 50%) var(--spot-y, 0%), rgba(33, 212, 179, 0.12), transparent 36%),
+    var(--surface);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.fit-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 140, 116, 0.24);
+  box-shadow: var(--shadow-sm);
+}
+
+.fit-label {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.8rem;
+  color: var(--teal);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.fit-label::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.fit-title {
+  margin: 0 0 0.75rem;
+  color: var(--text);
+  font-size: 1.18rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.fit-desc {
+  margin: 0 0 1rem;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
+.fit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+}
+
+.fit-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
+.fit-list li + li {
+  margin-top: 0.45rem;
 }
 
 .cert-grid {

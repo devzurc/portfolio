@@ -27,6 +27,8 @@ docs/career/
 ├── readmes/<repo>.md     # GitHub README mirror
 ├── projects/<repo>.md    # Curated profile (edit these)
 ├── ALIGNMENT-PLAN.md     # CV ↔ portfolio roadmap
+├── JOB-SEARCH-STRATEGY.md # Role-fit, job filters, interview story bank
+├── tktech-sprint-knowledge.md # Public-safe Notion sprint/process evidence
 └── scripts/sync-github-projects.py
 ```
 
@@ -86,8 +88,13 @@ Template: `projects/_template.md`
 | Notable Projects | `cv_worthy: true` profiles |
 | Skills | Union of `stack` from active profiles + CV |
 | Portfolio `#projects` | `portfolio_worthy: true` (max 4–6) |
+| Portfolio `#job-fit` | `JOB-SEARCH-STRATEGY.md` + owner-confirmed sprint/customer-facing evidence |
 
 Cross-check: `@docs/career/ALIGNMENT-PLAN.md`
+
+### Notion sprint and job-fit evidence
+
+Use `docs/career/tktech-sprint-knowledge.md` when the owner asks to map current Notion tasks into career knowledge. Keep it sanitized: do not publish raw ticket names, customer/person identifiers, workflow secrets, endpoints, internal URLs, or app-store account details. Use `docs/career/JOB-SEARCH-STRATEGY.md` to turn that evidence into target role filters, interview stories, and next sprint tasks for the job search.
 
 ---
 

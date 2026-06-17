@@ -10,6 +10,8 @@ Private-to-you working area for AI agents to understand **what you built**, **wi
 | **Curated truth** | `projects/` | One profile per repo — problem, your role, stack, verified outcomes |
 | **Rollups** | `INDEX.md`, `tech-stack-rollup.md` | Generated indexes for agents and alignment work |
 | **Next phase** | `ALIGNMENT-PLAN.md` | Checklist to sync CV ↔ portfolio ↔ projects |
+| **Job strategy** | `JOB-SEARCH-STRATEGY.md` | Role-fit thinking, search filters, interview story bank |
+| **Sprint/process knowledge** | `tktech-sprint-knowledge.md` | Public-safe Notion sprint/task mapping for TKTech delivery work |
 
 **Do not** mirror entire codebases. README + curated profiles are enough for AI and recruiters.
 
@@ -32,6 +34,8 @@ Edit `projects/<repo>.md` manually. The sync script creates stubs with `status: 
 docs/career/
 ├── README.md                 ← you are here
 ├── ALIGNMENT-PLAN.md         ← portfolio + CV alignment (next step)
+├── JOB-SEARCH-STRATEGY.md    ← target roles, filters, and role-fit strategy
+├── tktech-sprint-knowledge.md ← Notion sprint/process evidence, sanitized
 ├── INDEX.md                  ← generated repo table
 ├── tech-stack-rollup.md      ← generated stack frequency
 ├── .sync-config.json         ← sync rules
@@ -114,6 +118,8 @@ Commands: `/sync-github-career`, `/curate-project <repo>`
 ## Current snapshot
 
 Current public-safe snapshot: **15 curated project profiles** indexed. Private sync is disabled, and private/client work is represented only through sanitized summaries with no live internal identifiers.
+
+Current process snapshot: Notion sprint work and customer-facing TKTech delivery evidence is summarized in `tktech-sprint-knowledge.md`. Use it for role-fit and CV/portfolio suggestions only after checking public-safety notes.
 
 ### TK / Gen. AI projects (curated)
 

@@ -4,8 +4,8 @@ title: Lucas Cruz — CV (English)
 google_doc: https://docs.google.com/document/d/1O4YsNWyfANs_332ecNZ8fgf-wclyuJCjZpO0LBqX2S8/edit
 pdf: ../pdf/LucasCruz_CV_EN.pdf
 word: ../word/LucasCruz_CV_EN.docx
-last_synced: 2026-06-13
-sync_source: google-docs-export-plus-manual-contract-update
+last_synced: 2026-06-17
+sync_source: local-markdown-public-safe-tktech-delivery-update
 ---
 
 # LUCAS CRUZ
@@ -18,7 +18,7 @@ Curitiba, Brazil · Open to relocation across Europe · Requires visa sponsorshi
 
 ## Professional Summary
 
-Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics datasets, conversational AI workflows, and automated reporting systems. Fluent in English (C1); open to relocation across Europe.
+Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics datasets, conversational AI workflows, automated reporting systems, and customer-facing product implementation. Fluent in English (C1); open to relocation across Europe.
 
 ## Technical Skills
 
@@ -42,6 +42,7 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 - Architected AI-powered n8n automation workflows (ETL, RPA, and chatbot agents) by integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich datasets and reduce manual analysis work.
 - Developed a conversational AI chatbot that empowers business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.
 - Deployed containerised backend services on Azure using Docker, standardising infrastructure environments and improving deployment reliability.
+- Coordinated Notion-based delivery sprints, customer-facing demos, product training, sales support, and post-launch support while preparing Play Store/EAS/DUNS mobile launch readiness.
 
 ### Data Engineer — Spacecom Monitoramento
 

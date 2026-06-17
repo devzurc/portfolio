@@ -33,6 +33,7 @@
 
   .projects-grid,
   .skills-grid,
+  .fit-grid,
   .cert-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -98,6 +99,7 @@
   .hero-proof,
   .projects-grid,
   .skills-grid,
+  .fit-grid,
   .cert-grid,
   .project-proof {
     grid-template-columns: 1fr;
@@ -170,6 +172,7 @@
 
   .skill-card,
   .project-card,
+  .fit-card,
   .cert-card,
   .job-body {
     padding: 1rem;

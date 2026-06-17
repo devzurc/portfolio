@@ -35,6 +35,7 @@ Score each section **1–5** (5 = excellent for target roles):
 | Skills | Grouping logic, relevance to DE + Gen. AI, not a laundry list |
 | Experience | Reverse chronological, impact bullets, tech keywords |
 | Projects | Real links, architecture clarity, outcome honesty |
+| Job fit | Target roles, growth environment, search filters, evidence alignment |
 | Certifications | Verifiable URLs, relevant to target roles |
 | Contact | Location/relocation/visa clarity, link prominence |
 | Footer | Professional, consistent |

@@ -4,8 +4,8 @@ title: Lucas Cruz — CV (Português)
 google_doc: https://docs.google.com/document/d/1oi8mzTJNNTu3CdSuqEgiWCPmiyvGWxrsstU93K0QV0Q/edit
 pdf: ../pdf/LucasCruz_CV_PT.pdf
 word: ../word/LucasCruz_CV_PT.docx
-last_synced: 2026-06-13
-sync_source: google-docs-export-plus-manual-contract-update
+last_synced: 2026-06-17
+sync_source: local-markdown-public-safe-tktech-delivery-update
 ---
 
 # LUCAS CRUZ
@@ -18,7 +18,7 @@ Curitiba, PR · Disponível para realocação na Europa · Necessita de patrocí
 
 ## Resumo Profissional
 
-Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva utilizando AWS, Azure e GCP. Inglês fluente (C1); disponível para realocação na Europa.
+Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva utilizando AWS, Azure e GCP, com implementação de produto voltada a clientes. Inglês fluente (C1); disponível para realocação na Europa.
 
 ## Competências Técnicas
 
@@ -43,6 +43,7 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 - Projetou workflows de automação com IA no n8n (ETL, RPA e agentes chatbot) integrando LLMs (Claude AI, Google AI Studio) e APIs do GCP (Sheets, Drive) para enriquecer dados e reduzir trabalho manual de análise.
 - Desenvolveu chatbot de IA conversacional permitindo que usuários de negócio consultassem e refinassem datasets de preço por linguagem natural, reduzindo o tempo de obtenção de insights.
 - Realizou deploy de serviços backend conteinerizados no Azure com Docker, padronizando ambientes e melhorando a confiabilidade das implantações.
+- Coordenou sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial e suporte pós-lançamento enquanto preparava o lançamento mobile com Play Store/EAS/DUNS.
 
 ### Engenheiro de Dados — Spacecom Monitoramento
 

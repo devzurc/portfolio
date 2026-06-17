@@ -24,11 +24,32 @@ Scope: entire site (index.html).
 Output:
 1. Executive summary (3 sentences max)
 2. Top 5 fixes ranked by recruiter impact
-3. Section-by-section notes (hero, skills, experience, projects, certs, contact)
+3. Section-by-section notes (hero, projects, skills, experience, job-fit, certs, contact)
 4. Red flags: unverified claims, broken patterns, EN/PT mismatches
 5. Quick wins vs. larger refactors
 
 Do not edit files unless I ask you to implement fixes.
+```
+
+---
+
+## `/start-audit-sync`
+
+Start a new session with a full project, portfolio, CV, career knowledge, and job-fit alignment audit.
+
+```
+/start-audit-sync
+
+Use @.agents/prompts/start-audit-sync.md.
+
+Read the required context files, audit the repo, verify local integrity, map any pasted Notion sprint tasks into public-safe career knowledge, and return:
+1. Alignment status
+2. Issues ranked by severity
+3. Fixes applied or proposed
+4. Next sprint tasks
+5. Job-fit and role-search suggestions
+
+Do not commit unless I explicitly ask.
 ```
 
 ---
@@ -41,7 +62,7 @@ Targeted copy and structure improvement for one section.
 /improve-section <section-id>
 
 Use @.agents/prompts/improve-section.md with section: <section-id>
-Valid IDs: hero | skills | experience | projects | certifications | contact
+Valid IDs: hero | projects | skills | experience | job-fit | certifications | contact
 
 Before editing:
 - Read @.agents/rules.md and @.agents/project-context.md

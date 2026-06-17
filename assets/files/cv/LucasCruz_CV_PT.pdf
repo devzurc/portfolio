@@ -13,7 +13,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
 endobj
 5 0 obj
-<< /Length 5400 >>
+<< /Length 5435 >>
 stream
 BT /F2 18.0 Tf 252.5 796.0 Td (LUCAS CRUZ) Tj ET
 BT /F2 9.6 Tf 42.0 765.9 Td (Engenheiro de Dados S\352nior | Engenheiro de Automa\347\343o com IA Generativa) Tj ET
@@ -24,90 +24,93 @@ BT /F2 11.0 Tf 42.0 690.2 Td (RESUMO PROFISSIONAL) Tj ET
 BT /F2 9.6 Tf 42.0 668.3 Td (Engenheiro de Dados S\352nior e Engenheiro de Automa\347\343o com IA Generativa com mais de 5 anos de) Tj ET
 BT /F2 9.6 Tf 42.0 654.4 Td (experi\352ncia construindo pipelines de dados em produ\347\343o, lakehouses em nuvem e automa\347\365es com LLMs/n8n.) Tj ET
 BT /F2 9.6 Tf 42.0 640.4 Td (Atua\347\343o comprovada em IoT, fintechs, agroneg\363cio e intelig\352ncia automotiva utilizando AWS, Azure e) Tj ET
-BT /F2 9.6 Tf 42.0 626.5 Td (GCP. Ingl\352s fluente \(C1\); dispon\355vel para realoca\347\343o na Europa.) Tj ET
-BT /F2 11.0 Tf 42.0 600.6 Td (COMPET\312NCIAS T\311CNICAS) Tj ET
-BT /F1 9.6 Tf 42.0 578.6 Td (|-----------|--------------|) Tj ET
-BT /F1 8.8 Tf 42.0 564.7 Td (IA Generativa & LLMs: Claude AI, Google AI Studio, Integra\347\343o com LLMs, Agentes de IA, RAG, Engenharia de) Tj ET
-BT /F1 8.8 Tf 42.0 552.0 Td (Prompt, Chatbots) Tj ET
-BT /F1 8.8 Tf 42.0 539.2 Td (Engenharia de Dados, APIs & Orquestra\347\343o: Python, SQL, FastAPI, SQLAlchemy, Pydantic, Apache Spark \(PySpark\),) Tj ET
-BT /F1 8.8 Tf 42.0 526.4 Td (Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n, Celery, Redis Streams) Tj ET
-BT /F1 8.8 Tf 42.0 513.7 Td (Plataformas de Nuvem: AWS \(S3, EC2, ECS, Lambda, IAM\), Microsoft Azure, Google Cloud \(GCP\), Oracle Cloud \(OCI\)) Tj ET
-BT /F1 8.8 Tf 42.0 500.9 Td (Plataformas de Dados: Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database) Tj ET
-BT /F1 8.8 Tf 42.0 488.2 Td (Bancos de Dados & BI: PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker) Tj ET
-BT /F1 8.8 Tf 42.0 475.4 Td (Seguran\347a & Governan\347a de Dados: Conformidade LGPD/GDPR, Privacidade de Dados, IAM, RBAC, Mascaramento de) Tj ET
-BT /F1 8.8 Tf 42.0 462.6 Td (Dados, Criptografia em Repouso/Tr\342nsito, Logs de Auditoria, RFID/NFC, Firewall) Tj ET
-BT /F1 8.8 Tf 42.0 449.9 Td (DevOps & Infraestrutura: Docker, Kubernetes, Terraform, Azure Bicep, Azure Container Apps, Git, Pipelines) Tj ET
-BT /F1 8.8 Tf 42.0 437.1 Td (CI/CD, Linux, Bash Scripting) Tj ET
-BT /F1 8.8 Tf 42.0 424.4 Td (Idiomas: Portugu\352s \(Nativo\) \267 Ingl\352s \(C1 \226 Avan\347ado\) \267 Espanhol \(B1 \226 Intermedi\341rio\)) Tj ET
-BT /F2 11.0 Tf 42.0 399.6 Td (EXPERI\312NCIA PROFISSIONAL) Tj ET
-BT /F2 10.5 Tf 42.0 373.7 Td (Engenheiro de IA Generativa \227 TK Technologies) Tj ET
-BT /F1 9.6 Tf 42.0 354.4 Td (Curitiba, PR \(H\355brido\) \267 Fev 2026 \226 Atual \267 Contrato de 6 meses, previs\343o Ago 2026) Tj ET
-BT /F1 9.4 Tf 52.0 336.5 Td (- Desenvolveu pipeline de web scraping em Python coletando dados de pre\347o e metadados de mais de 10) Tj ET
-BT /F1 9.4 Tf 52.0 322.9 Td (  sites de pe\347as automotivas, gerando intelig\352ncia competitiva de mercado em escala.) Tj ET
-BT /F1 9.4 Tf 52.0 309.2 Td (- Projetou workflows de automa\347\343o com IA no n8n \(ETL, RPA e agentes chatbot\) integrando LLMs \(Claude) Tj ET
-BT /F1 9.4 Tf 52.0 295.6 Td (  AI, Google AI Studio\) e APIs do GCP \(Sheets, Drive\) para enriquecer dados e reduzir trabalho manual) Tj ET
-BT /F1 9.4 Tf 52.0 282.0 Td (  de an\341lise.) Tj ET
-BT /F1 9.4 Tf 52.0 268.4 Td (- Desenvolveu chatbot de IA conversacional permitindo que usu\341rios de neg\363cio consultassem e refinassem) Tj ET
-BT /F1 9.4 Tf 52.0 254.7 Td (  datasets de pre\347o por linguagem natural, reduzindo o tempo de obten\347\343o de insights.) Tj ET
-BT /F1 9.4 Tf 52.0 241.1 Td (- Realizou deploy de servi\347os backend conteinerizados no Azure com Docker, padronizando ambientes e) Tj ET
-BT /F1 9.4 Tf 52.0 227.5 Td (  melhorando a confiabilidade das implanta\347\365es.) Tj ET
-BT /F2 10.5 Tf 42.0 205.8 Td (Engenheiro de Dados \227 Spacecom Monitoramento) Tj ET
-BT /F1 9.6 Tf 42.0 186.6 Td (Curitiba, PR \(Presencial\) \267 Abr 2023 \226 Jul 2024) Tj ET
-BT /F1 9.4 Tf 52.0 168.7 Td (- Projetou e manteve um Data Lakehouse de Big Data na AWS S3 com Arquitetura Medallion) Tj ET
-BT /F1 9.4 Tf 52.0 155.1 Td (  \(Bronze/Prata/Ouro\) utilizando Delta Lake, Parquet, PySpark e Trino, suportando cargas de trabalho) Tj ET
-BT /F1 9.4 Tf 52.0 141.4 Td (  anal\355ticas e de reportes.) Tj ET
-BT /F1 9.4 Tf 52.0 127.8 Td (- Suportou plataforma IoT de grande escala processando dados de mais de 95.000 dispositivos, com) Tj ET
-BT /F1 9.4 Tf 52.0 114.2 Td (  centenas de milh\365es de registros por dia em alta disponibilidade.) Tj ET
-BT /F1 9.4 Tf 52.0 100.5 Td (- Gerenciou dados de tags eletr\364nicas de seguran\347a \(RFID/NFC\) para sistemas do judici\341rio, aplicando) Tj ET
-BT /F1 9.4 Tf 52.0 86.9 Td (  controles de privacidade, governan\347a de acesso e manuseio seguro de dados sens\355veis em conformidade) Tj ET
-BT /F1 9.4 Tf 52.0 73.3 Td (  com LGPD/GDPR.) Tj ET
-BT /F1 9.4 Tf 52.0 59.7 Td (- Orquestrou e otimizou pipelines ETL com Apache Airflow para melhorar a confiabilidade; realizou) Tj ET
+BT /F2 9.6 Tf 42.0 626.5 Td (GCP, com implementa\347\343o de produto voltada a clientes. Ingl\352s fluente \(C1\); dispon\355vel para realoca\347\343o) Tj ET
+BT /F2 9.6 Tf 42.0 612.6 Td (na Europa.) Tj ET
+BT /F2 11.0 Tf 42.0 586.7 Td (COMPET\312NCIAS T\311CNICAS) Tj ET
+BT /F1 9.6 Tf 42.0 564.7 Td (|-----------|--------------|) Tj ET
+BT /F1 8.8 Tf 42.0 550.8 Td (IA Generativa & LLMs: Claude AI, Google AI Studio, Integra\347\343o com LLMs, Agentes de IA, RAG, Engenharia de) Tj ET
+BT /F1 8.8 Tf 42.0 538.0 Td (Prompt, Chatbots) Tj ET
+BT /F1 8.8 Tf 42.0 525.3 Td (Engenharia de Dados, APIs & Orquestra\347\343o: Python, SQL, FastAPI, SQLAlchemy, Pydantic, Apache Spark \(PySpark\),) Tj ET
+BT /F1 8.8 Tf 42.0 512.5 Td (Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n, Celery, Redis Streams) Tj ET
+BT /F1 8.8 Tf 42.0 499.8 Td (Plataformas de Nuvem: AWS \(S3, EC2, ECS, Lambda, IAM\), Microsoft Azure, Google Cloud \(GCP\), Oracle Cloud \(OCI\)) Tj ET
+BT /F1 8.8 Tf 42.0 487.0 Td (Plataformas de Dados: Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database) Tj ET
+BT /F1 8.8 Tf 42.0 474.2 Td (Bancos de Dados & BI: PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker) Tj ET
+BT /F1 8.8 Tf 42.0 461.5 Td (Seguran\347a & Governan\347a de Dados: Conformidade LGPD/GDPR, Privacidade de Dados, IAM, RBAC, Mascaramento de) Tj ET
+BT /F1 8.8 Tf 42.0 448.7 Td (Dados, Criptografia em Repouso/Tr\342nsito, Logs de Auditoria, RFID/NFC, Firewall) Tj ET
+BT /F1 8.8 Tf 42.0 436.0 Td (DevOps & Infraestrutura: Docker, Kubernetes, Terraform, Azure Bicep, Azure Container Apps, Git, Pipelines) Tj ET
+BT /F1 8.8 Tf 42.0 423.2 Td (CI/CD, Linux, Bash Scripting) Tj ET
+BT /F1 8.8 Tf 42.0 410.4 Td (Idiomas: Portugu\352s \(Nativo\) \267 Ingl\352s \(C1 \226 Avan\347ado\) \267 Espanhol \(B1 \226 Intermedi\341rio\)) Tj ET
+BT /F2 11.0 Tf 42.0 385.7 Td (EXPERI\312NCIA PROFISSIONAL) Tj ET
+BT /F2 10.5 Tf 42.0 359.7 Td (Engenheiro de IA Generativa \227 TK Technologies) Tj ET
+BT /F1 9.6 Tf 42.0 340.5 Td (Curitiba, PR \(H\355brido\) \267 Fev 2026 \226 Atual \267 Contrato de 6 meses, previs\343o Ago 2026) Tj ET
+BT /F1 9.4 Tf 52.0 322.6 Td (- Desenvolveu pipeline de web scraping em Python coletando dados de pre\347o e metadados de mais de 10) Tj ET
+BT /F1 9.4 Tf 52.0 309.0 Td (  sites de pe\347as automotivas, gerando intelig\352ncia competitiva de mercado em escala.) Tj ET
+BT /F1 9.4 Tf 52.0 295.3 Td (- Projetou workflows de automa\347\343o com IA no n8n \(ETL, RPA e agentes chatbot\) integrando LLMs \(Claude) Tj ET
+BT /F1 9.4 Tf 52.0 281.7 Td (  AI, Google AI Studio\) e APIs do GCP \(Sheets, Drive\) para enriquecer dados e reduzir trabalho manual) Tj ET
+BT /F1 9.4 Tf 52.0 268.1 Td (  de an\341lise.) Tj ET
+BT /F1 9.4 Tf 52.0 254.4 Td (- Desenvolveu chatbot de IA conversacional permitindo que usu\341rios de neg\363cio consultassem e refinassem) Tj ET
+BT /F1 9.4 Tf 52.0 240.8 Td (  datasets de pre\347o por linguagem natural, reduzindo o tempo de obten\347\343o de insights.) Tj ET
+BT /F1 9.4 Tf 52.0 227.2 Td (- Realizou deploy de servi\347os backend conteinerizados no Azure com Docker, padronizando ambientes e) Tj ET
+BT /F1 9.4 Tf 52.0 213.5 Td (  melhorando a confiabilidade das implanta\347\365es.) Tj ET
+BT /F1 9.4 Tf 52.0 199.9 Td (- Coordenou sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial) Tj ET
+BT /F1 9.4 Tf 52.0 186.3 Td (  e suporte p\363s-lan\347amento enquanto preparava o lan\347amento mobile com Play Store/EAS/DUNS.) Tj ET
+BT /F2 10.5 Tf 42.0 164.7 Td (Engenheiro de Dados \227 Spacecom Monitoramento) Tj ET
+BT /F1 9.6 Tf 42.0 145.4 Td (Curitiba, PR \(Presencial\) \267 Abr 2023 \226 Jul 2024) Tj ET
+BT /F1 9.4 Tf 52.0 127.5 Td (- Projetou e manteve um Data Lakehouse de Big Data na AWS S3 com Arquitetura Medallion) Tj ET
+BT /F1 9.4 Tf 52.0 113.9 Td (  \(Bronze/Prata/Ouro\) utilizando Delta Lake, Parquet, PySpark e Trino, suportando cargas de trabalho) Tj ET
+BT /F1 9.4 Tf 52.0 100.3 Td (  anal\355ticas e de reportes.) Tj ET
+BT /F1 9.4 Tf 52.0 86.6 Td (- Suportou plataforma IoT de grande escala processando dados de mais de 95.000 dispositivos, com) Tj ET
+BT /F1 9.4 Tf 52.0 73.0 Td (  centenas de milh\365es de registros por dia em alta disponibilidade.) Tj ET
+BT /F1 9.4 Tf 52.0 59.4 Td (- Gerenciou dados de tags eletr\364nicas de seguran\347a \(RFID/NFC\) para sistemas do judici\341rio, aplicando) Tj ET
 endstream
 endobj
 6 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
 endobj
 7 0 obj
-<< /Length 4432 >>
+<< /Length 4763 >>
 stream
-BT /F1 9.4 Tf 52.0 800.0 Td (  deploy de servi\347os com Docker na AWS EC2, diminuindo problemas de implanta\347\343o.) Tj ET
-BT /F1 9.4 Tf 52.0 786.4 Td (- Identificou e corrigiu etapas inconsistentes nos pipelines, melhorando a consist\352ncia anal\355tica dos) Tj ET
-BT /F1 9.4 Tf 52.0 772.7 Td (  dados; entregou datasets consumidos por dashboards no Qlik Sense e Apache Superset.) Tj ET
-BT /F2 10.5 Tf 42.0 751.1 Td (Consultor de Engenharia de Dados \227 wDiscover) Tj ET
-BT /F1 9.6 Tf 42.0 731.9 Td (Curitiba, PR \(Remoto\) \267 Jun 2022 \226 Mai 2024) Tj ET
-BT /F1 9.4 Tf 52.0 714.0 Td (- Entregou projetos completos de dados para clientes de fintechs, agroneg\363cio e opera\347\365es, integrando) Tj ET
-BT /F1 9.4 Tf 52.0 700.3 Td (  provedores de pagamento \(PagSeguro, Stone, Cielo\), API IoT John Deere, REST APIs e web scraping.) Tj ET
-BT /F1 9.4 Tf 52.0 686.7 Td (- Projetou Data Warehouses no SQL Server e Oracle Autonomous Database com modelagem dimensional;) Tj ET
-BT /F1 9.4 Tf 52.0 673.1 Td (  automatizou ETL com Airflow em Docker/Oracle Cloud, reduzindo esfor\347o manual recorrente.) Tj ET
-BT /F1 9.4 Tf 52.0 659.4 Td (- Construiu dashboards no Power BI para monitoramento de KPIs, m\351tricas financeiras e desempenho) Tj ET
-BT /F1 9.4 Tf 52.0 645.8 Td (  operacional, habilitando decis\365es orientadas a dados para stakeholders.) Tj ET
-BT /F2 10.5 Tf 42.0 624.2 Td (Analista de Dados \227 Grupo Itaet\351) Tj ET
-BT /F1 9.6 Tf 42.0 605.0 Td (Curitiba, PR \(H\355brido\) \267 Jun 2020 \226 Fev 2023) Tj ET
-BT /F1 9.4 Tf 52.0 587.0 Td (- Projetou Data Warehouse no SQL Server e pipelines Python/SQL com Pandas para limpeza, transforma\347\343o e) Tj ET
-BT /F1 9.4 Tf 52.0 573.4 Td (  enriquecimento de dados, integrando dispositivos IoT, PostgreSQL, APIs e arquivos CSV.) Tj ET
-BT /F1 9.4 Tf 52.0 559.8 Td (- Criou dashboards no Power BI e workflows automatizados de relat\363rios em Excel/VBA, reduzindo o tempo) Tj ET
-BT /F1 9.4 Tf 52.0 546.2 Td (  de processamento de dados e o volume de trabalho manual operacional.) Tj ET
-BT /F1 9.4 Tf 52.0 532.5 Td (- Desenvolveu sistemas internos de controle de estoque e automa\347\343o financeira, incluindo gera\347\343o de) Tj ET
-BT /F1 9.4 Tf 52.0 518.9 Td (  notas fiscais e distribui\347\343o autom\341tica de relat\363rios semanais.) Tj ET
-BT /F2 11.0 Tf 42.0 493.3 Td (PROJETOS DE DESTAQUE) Tj ET
-BT /F2 10.5 Tf 42.0 467.3 Td (Plataforma de Intelig\352ncia de Pre\347os \227 Mercado Automotivo) Tj ET
-BT /F1 9.6 Tf 42.0 448.1 Td (Python, n8n, LLMs, GCP APIs, Azure, Docker \267 TK Technologies \226 Fev 2026 \226 Atual) Tj ET
-BT /F1 9.4 Tf 52.0 430.2 Td (- Coletou dados de mais de 10 sites automotivos com Python; orquestrou agentes de IA via n8n com Claude) Tj ET
-BT /F1 9.4 Tf 52.0 416.5 Td (  AI, Google AI Studio e GCP \(Sheets, Drive\) para automatizar an\341lise de pre\347os e gerar insights de) Tj ET
-BT /F1 9.4 Tf 52.0 402.9 Td (  compras competitivas. Deploy completo conteinerizado no Azure.) Tj ET
-BT /F2 10.5 Tf 42.0 381.3 Td (Nox TKTech Telegram Assistant) Tj ET
-BT /F1 9.6 Tf 42.0 362.1 Td (n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI \267 TK Technologies \226 Fev 2026 \226 Atual) Tj ET
-BT /F1 9.4 Tf 52.0 344.1 Td (- Workflow privado de automa\347\343o conversacional que responde a partir de conhecimento interno curado,) Tj ET
-BT /F1 9.4 Tf 52.0 330.5 Td (  registra estado de usu\341rios/conversas e aciona jobs de demonstra\347\343o da plataforma CDP via APIs) Tj ET
-BT /F1 9.4 Tf 52.0 316.9 Td (  backend integradas.) Tj ET
-BT /F2 10.5 Tf 42.0 295.2 Td (Data Lakehouse IoT na AWS \227 Arquitetura Medallion) Tj ET
-BT /F1 9.6 Tf 42.0 276.0 Td (AWS S3, Apache Spark, Delta Lake, Airflow, Trino, Apache Superset \267 Projeto de Cliente \226 Fev 2024) Tj ET
-BT /F1 9.4 Tf 52.0 258.1 Td (- Projetou lakehouse Bronze/Prata/Ouro na AWS S3 com ingest\343o via APIs, bancos de dados e CSV;) Tj ET
-BT /F1 9.4 Tf 52.0 244.5 Td (  virtualizou a camada Ouro com Trino; entregou datasets governados para dashboards de BI.) Tj ET
-BT /F2 11.0 Tf 42.0 218.8 Td (FORMA\307\303O ACAD\312MICA) Tj ET
-BT /F1 9.6 Tf 42.0 196.9 Td (Tecn\363logo em An\341lise e Desenvolvimento de Sistemas \227 Universidade Dom Bosco, Curitiba, PR \267 Jun 2023) Tj ET
-BT /F1 9.6 Tf 42.0 179.0 Td (\312nfase em: Sistemas de Informa\347\343o, Business Analytics, An\341lise de Dados, Banco de Dados, Engenharia de) Tj ET
-BT /F1 9.6 Tf 42.0 165.0 Td (Software) Tj ET
+BT /F1 9.4 Tf 52.0 800.0 Td (  controles de privacidade, governan\347a de acesso e manuseio seguro de dados sens\355veis em conformidade) Tj ET
+BT /F1 9.4 Tf 52.0 786.4 Td (  com LGPD/GDPR.) Tj ET
+BT /F1 9.4 Tf 52.0 772.7 Td (- Orquestrou e otimizou pipelines ETL com Apache Airflow para melhorar a confiabilidade; realizou) Tj ET
+BT /F1 9.4 Tf 52.0 759.1 Td (  deploy de servi\347os com Docker na AWS EC2, diminuindo problemas de implanta\347\343o.) Tj ET
+BT /F1 9.4 Tf 52.0 745.5 Td (- Identificou e corrigiu etapas inconsistentes nos pipelines, melhorando a consist\352ncia anal\355tica dos) Tj ET
+BT /F1 9.4 Tf 52.0 731.9 Td (  dados; entregou datasets consumidos por dashboards no Qlik Sense e Apache Superset.) Tj ET
+BT /F2 10.5 Tf 42.0 710.2 Td (Consultor de Engenharia de Dados \227 wDiscover) Tj ET
+BT /F1 9.6 Tf 42.0 691.0 Td (Curitiba, PR \(Remoto\) \267 Jun 2022 \226 Mai 2024) Tj ET
+BT /F1 9.4 Tf 52.0 673.1 Td (- Entregou projetos completos de dados para clientes de fintechs, agroneg\363cio e opera\347\365es, integrando) Tj ET
+BT /F1 9.4 Tf 52.0 659.4 Td (  provedores de pagamento \(PagSeguro, Stone, Cielo\), API IoT John Deere, REST APIs e web scraping.) Tj ET
+BT /F1 9.4 Tf 52.0 645.8 Td (- Projetou Data Warehouses no SQL Server e Oracle Autonomous Database com modelagem dimensional;) Tj ET
+BT /F1 9.4 Tf 52.0 632.2 Td (  automatizou ETL com Airflow em Docker/Oracle Cloud, reduzindo esfor\347o manual recorrente.) Tj ET
+BT /F1 9.4 Tf 52.0 618.6 Td (- Construiu dashboards no Power BI para monitoramento de KPIs, m\351tricas financeiras e desempenho) Tj ET
+BT /F1 9.4 Tf 52.0 604.9 Td (  operacional, habilitando decis\365es orientadas a dados para stakeholders.) Tj ET
+BT /F2 10.5 Tf 42.0 583.3 Td (Analista de Dados \227 Grupo Itaet\351) Tj ET
+BT /F1 9.6 Tf 42.0 564.1 Td (Curitiba, PR \(H\355brido\) \267 Jun 2020 \226 Fev 2023) Tj ET
+BT /F1 9.4 Tf 52.0 546.2 Td (- Projetou Data Warehouse no SQL Server e pipelines Python/SQL com Pandas para limpeza, transforma\347\343o e) Tj ET
+BT /F1 9.4 Tf 52.0 532.5 Td (  enriquecimento de dados, integrando dispositivos IoT, PostgreSQL, APIs e arquivos CSV.) Tj ET
+BT /F1 9.4 Tf 52.0 518.9 Td (- Criou dashboards no Power BI e workflows automatizados de relat\363rios em Excel/VBA, reduzindo o tempo) Tj ET
+BT /F1 9.4 Tf 52.0 505.3 Td (  de processamento de dados e o volume de trabalho manual operacional.) Tj ET
+BT /F1 9.4 Tf 52.0 491.6 Td (- Desenvolveu sistemas internos de controle de estoque e automa\347\343o financeira, incluindo gera\347\343o de) Tj ET
+BT /F1 9.4 Tf 52.0 478.0 Td (  notas fiscais e distribui\347\343o autom\341tica de relat\363rios semanais.) Tj ET
+BT /F2 11.0 Tf 42.0 452.4 Td (PROJETOS DE DESTAQUE) Tj ET
+BT /F2 10.5 Tf 42.0 426.4 Td (Plataforma de Intelig\352ncia de Pre\347os \227 Mercado Automotivo) Tj ET
+BT /F1 9.6 Tf 42.0 407.2 Td (Python, n8n, LLMs, GCP APIs, Azure, Docker \267 TK Technologies \226 Fev 2026 \226 Atual) Tj ET
+BT /F1 9.4 Tf 52.0 389.3 Td (- Coletou dados de mais de 10 sites automotivos com Python; orquestrou agentes de IA via n8n com Claude) Tj ET
+BT /F1 9.4 Tf 52.0 375.6 Td (  AI, Google AI Studio e GCP \(Sheets, Drive\) para automatizar an\341lise de pre\347os e gerar insights de) Tj ET
+BT /F1 9.4 Tf 52.0 362.0 Td (  compras competitivas. Deploy completo conteinerizado no Azure.) Tj ET
+BT /F2 10.5 Tf 42.0 340.4 Td (Nox TKTech Telegram Assistant) Tj ET
+BT /F1 9.6 Tf 42.0 321.2 Td (n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI \267 TK Technologies \226 Fev 2026 \226 Atual) Tj ET
+BT /F1 9.4 Tf 52.0 303.2 Td (- Workflow privado de automa\347\343o conversacional que responde a partir de conhecimento interno curado,) Tj ET
+BT /F1 9.4 Tf 52.0 289.6 Td (  registra estado de usu\341rios/conversas e aciona jobs de demonstra\347\343o da plataforma CDP via APIs) Tj ET
+BT /F1 9.4 Tf 52.0 276.0 Td (  backend integradas.) Tj ET
+BT /F2 10.5 Tf 42.0 254.4 Td (Data Lakehouse IoT na AWS \227 Arquitetura Medallion) Tj ET
+BT /F1 9.6 Tf 42.0 235.1 Td (AWS S3, Apache Spark, Delta Lake, Airflow, Trino, Apache Superset \267 Projeto de Cliente \226 Fev 2024) Tj ET
+BT /F1 9.4 Tf 52.0 217.2 Td (- Projetou lakehouse Bronze/Prata/Ouro na AWS S3 com ingest\343o via APIs, bancos de dados e CSV;) Tj ET
+BT /F1 9.4 Tf 52.0 203.6 Td (  virtualizou a camada Ouro com Trino; entregou datasets governados para dashboards de BI.) Tj ET
+BT /F2 11.0 Tf 42.0 177.9 Td (FORMA\307\303O ACAD\312MICA) Tj ET
+BT /F1 9.6 Tf 42.0 156.0 Td (Tecn\363logo em An\341lise e Desenvolvimento de Sistemas \227 Universidade Dom Bosco, Curitiba, PR \267 Jun 2023) Tj ET
+BT /F1 9.6 Tf 42.0 138.1 Td (\312nfase em: Sistemas de Informa\347\343o, Business Analytics, An\341lise de Dados, Banco de Dados, Engenharia de) Tj ET
+BT /F1 9.6 Tf 42.0 124.2 Td (Software) Tj ET
 endstream
 endobj
 8 0 obj
@@ -121,11 +124,11 @@ xref
 0000000127 00000 n 
 0000000224 00000 n 
 0000000326 00000 n 
-0000005778 00000 n 
-0000005914 00000 n 
-0000010398 00000 n 
+0000005813 00000 n 
+0000005949 00000 n 
+0000010764 00000 n 
 trailer
 << /Size 9 /Root 1 0 R >>
 startxref
-10534
+10900
 %%EOF

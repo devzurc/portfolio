@@ -4,7 +4,7 @@
   const menu = document.getElementById("mobile-menu");
   const burger = document.querySelector("[data-menu-toggle]");
   const nav = document.querySelector("nav");
-  const sections = ["hero", "projects", "skills", "experience", "certifications", "contact"];
+  const sections = ["hero", "projects", "skills", "experience", "job-fit", "certifications", "contact"];
 
   function closeMenu() {
     if (!menu || !burger) return;
@@ -110,7 +110,7 @@
 
   const navLinks = document.querySelectorAll(".nav-links a, .mobile-menu a[href^='#']");
 
-  document.querySelectorAll(".project-card, .skill-card, .cert-card, .job-body, .contact-link").forEach((card) => {
+  document.querySelectorAll(".project-card, .skill-card, .fit-card, .cert-card, .job-body, .contact-link").forEach((card) => {
     card.addEventListener("pointermove", (event) => {
       const rect = card.getBoundingClientRect();
       card.style.setProperty("--spot-x", `${event.clientX - rect.left}px`);

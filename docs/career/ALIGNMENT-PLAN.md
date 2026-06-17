@@ -1,6 +1,6 @@
 # Alignment plan - CV · Portfolio · Career knowledge
 
-> **Status:** Implemented in repo on 2026-06-12. Local markdown, DOCX, PDF, and website CV downloads are aligned as of 2026-06-15. Google Docs/raw text exports still need owner-side confirmation before the next pull.
+> **Status:** Implemented in repo on 2026-06-12. Local markdown, DOCX, PDF, and website CV downloads are aligned as of 2026-06-17, including public-safe TKTech sprint/customer-facing delivery and mobile launch readiness wording. Google Docs/raw text exports still need owner-side confirmation before the next pull.
 
 This plan connects three surfaces:
 
@@ -9,6 +9,8 @@ This plan connects three surfaces:
 | **Career knowledge** | `docs/career/` | You + AI (full detail) |
 | **CV** | Google Docs + `docs/resume/` | Recruiters, ATS |
 | **Portfolio** | `index.html` | Recruiters, quick scan |
+| **Job search strategy** | `docs/career/JOB-SEARCH-STRATEGY.md` | Role targeting, filters, interview prep |
+| **Sprint/process knowledge** | `docs/career/tktech-sprint-knowledge.md` | Public-safe current delivery context |
 
 **Rule:** Public copy (CV + portfolio) only uses facts backed by `docs/career/projects/*.md` with `verified_outcomes` or CV text.
 
@@ -81,6 +83,7 @@ Map CV + career profiles → `index.html` sections:
 | `#skills` | `tech-stack-rollup.md` + CV skills (deduped) |
 | `#experience` | CV work experience (shortened for web) |
 | `#projects` | `portfolio_worthy: true` profiles only (max 4–6 cards) |
+| `#job-fit` | `JOB-SEARCH-STRATEGY.md` + owner-confirmed sprint/customer-facing evidence |
 
 Command: `/improve-section` per section after audit.
 
@@ -95,6 +98,8 @@ Command: `/improve-section` per section after audit.
 | New GitHub repo | `sync-github-projects.py` → curate profile |
 | CV edit in Google Doc | `sync-from-google-docs.py` → `/sync-cv-portfolio` |
 | New job / contract | Update CV first → career profile → portfolio |
+| New Notion sprint/task batch | Update `tktech-sprint-knowledge.md` → map to `JOB-SEARCH-STRATEGY.md` → propose CV/portfolio wording |
+| New target role type | Update `JOB-SEARCH-STRATEGY.md` → audit hero/job-fit/CV summary |
 
 ---
 
