@@ -1,34 +1,37 @@
 # Tech stack rollup
 
-> Updated 2026-06-13
+> Updated 2026-06-17
 > Counts are generated from curated `docs/career/projects/*.md` frontmatter, including multiline YAML `stack:` lists. Public-safe service categories are used where exact internal names are not needed.
 
 | Technology | Projects |
 |------------|----------|
-| Python | 10 |
-| n8n | 7 |
-| Pandas | 4 |
-| Docker | 3 |
-| FastAPI | 3 |
+| Python | 13 |
+| n8n | 9 |
+| Docker | 5 |
+| Pandas | 5 |
+| PostgreSQL | 5 |
+| FastAPI | 4 |
+| Redis | 4 |
+| AWS CLI | 3 |
+| Boto3 | 3 |
 | n8n Data Tables | 3 |
+| Webhooks | 3 |
+| XlsxWriter | 3 |
 | Apache Airflow | 2 |
-| AWS CLI | 2 |
+| Azure | 2 |
 | Azure Container Apps | 2 |
-| Boto3 | 2 |
 | Excel | 2 |
 | Gmail API | 2 |
 | HTML email templates | 2 |
 | Node.js | 2 |
 | Openpyxl | 2 |
 | Parquet | 2 |
-| PostgreSQL | 3 |
+| Playwright | 2 |
 | Psycopg2-binary | 2 |
 | python-dotenv | 2 |
-| Redis | 2 |
-| Webhooks | 3 |
-| XlsxWriter | 2 |
 | Alembic | 1 |
 | Apache Superset | 1 |
+| AWS DynamoDB | 1 |
 | AWS S3 | 1 |
 | Azure Bicep | 1 |
 | Celery | 1 |
@@ -51,17 +54,17 @@
 | Medallion Architecture | 1 |
 | n8n LangChain Agent | 1 |
 | Notion | 1 |
-| Playwright | 1 |
+| PL/pgSQL | 1 |
 | PyArrow | 1 |
 | Pydantic v2 | 1 |
 | PySpark | 1 |
 | Python 3.12 | 1 |
 | Qlik Sense | 1 |
 | Redis Streams | 1 |
+| Slack | 1 |
 | Snowflake | 1 |
 | SQL | 1 |
 | SQLAlchemy 2.x | 1 |
-| Slack | 1 |
 | Stripe API | 1 |
 | Svix webhooks | 1 |
 | Telegram | 1 |

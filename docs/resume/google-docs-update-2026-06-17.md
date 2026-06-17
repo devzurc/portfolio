@@ -27,3 +27,5 @@ python3 docs/resume/scripts/sync-from-google-docs.py
 ```
 
 Then verify the synced `docs/resume/source/*.txt`, `docs/resume/pdf/*.pdf`, `docs/resume/word/*.docx`, and `assets/files/cv/*.pdf` still match the approved local wording.
+
+**Status 2026-06-17:** Google Docs PT export is still stale (3-month contract, missing Europe relocation). Local markdown remains canonical until Google Docs are updated; use `build-word.py` and `build-basic-pdf.py` to regenerate exports.

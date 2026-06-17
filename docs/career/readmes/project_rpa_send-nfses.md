@@ -1,4 +1,4 @@
-<!-- synced from https://github.com/devzurc/project_rpa_send-nfses on 2026-06-12 -->
+<!-- synced from https://github.com/devzurc/project_rpa_send-nfses on 2026-06-17 -->
 
 # send_emails
 

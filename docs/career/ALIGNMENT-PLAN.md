@@ -96,6 +96,7 @@ Command: `/improve-section` per section after audit.
 | Trigger | Action |
 |---------|--------|
 | New GitHub repo | `sync-github-projects.py` → curate profile |
+| GitHub README or stack changed | `/continuous-career-sync` → inspect `github-sync-report.md` → update curated profile before public copy |
 | CV edit in Google Doc | `sync-from-google-docs.py` → `/sync-cv-portfolio` |
 | New job / contract | Update CV first → career profile → portfolio |
 | New Notion sprint/task batch | Update `tktech-sprint-knowledge.md` → map to `JOB-SEARCH-STRATEGY.md` → propose CV/portfolio wording |
@@ -105,16 +106,16 @@ Command: `/improve-section` per section after audit.
 
 ## Remaining manual follow-up
 
-1. Review the EN/PT markdown CV changes.
-2. Apply approved copy to the canonical Google Docs.
-3. Only after Google Docs match the approved copy, run `python3 docs/resume/scripts/sync-from-google-docs.py` to refresh Word/PDF/source snapshots and live CV PDFs.
-4. Re-run `/sync-cv-portfolio audit` after the export because the current `docs/resume/source/*.txt` snapshots still contain older Google text in places.
+1. ~~Review the EN/PT markdown CV changes.~~ Done 2026-06-17.
+2. Apply approved copy to the canonical Google Docs, then run `python3 docs/resume/scripts/sync-from-google-docs.py`.
+3. Re-run `/sync-cv-portfolio audit` after Google export if wording diverges from markdown.
+4. Run `/continuous-career-sync` when GitHub activity or learning signals change.
 5. Run `/pre-commit-review` before committing.
 
 ---
 
 ## Open questions for you
 
-1. Which client names are OK **on the public portfolio** vs anonymized?
-2. Are the `10+` automotive sites and TK hybrid/6-month contract wording, expected through Aug 2026, approved for final Google Docs?
+1. ~~Which client names are OK on the public portfolio vs anonymized?~~ No product/client names on portfolio; employer TK Technologies OK.
+2. ~~Are the `10+` automotive sites and TK hybrid/6-month contract wording approved?~~ Confirmed 2026-06-17.
 3. Should any learning/lab profiles be expanded with verified evidence before returning to the CV/site?

@@ -78,7 +78,7 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 
 - Scraped 10+ automotive parts sites with Python; orchestrated AI agents via n8n with Claude AI, Google AI Studio, and GCP to automate price analysis. Fully containerised on Azure.
 
-### Nox TKTech Telegram Assistant
+### Telegram Conversational Assistant
 
 *n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI · TK Technologies – Feb 2026 – Present*
 

@@ -79,7 +79,7 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 
 - Coletou dados de mais de 10 sites automotivos com Python; orquestrou agentes de IA via n8n com Claude AI, Google AI Studio e GCP (Sheets, Drive) para automatizar análise de preços e gerar insights de compras competitivas. Deploy completo conteinerizado no Azure.
 
-### Nox TKTech Telegram Assistant
+### Assistente Conversacional Telegram
 
 *n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI · TK Technologies – Fev 2026 – Atual*
 

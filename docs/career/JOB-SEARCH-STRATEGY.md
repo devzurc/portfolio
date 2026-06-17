@@ -78,5 +78,5 @@ Use combinations of:
 ## Confirmation status
 
 - Approved for public-safe wording on 2026-06-17: customer demos, product training, sales support, post-launch support, and mobile launch readiness through Play Store/EAS/DUNS preparation.
-- Which TKTech product/client names can be public.
-- Any measured outcomes from current automations.
+- Confirmed 2026-06-17: no TKTech product or client names on the public portfolio; employer name TK Technologies remains on CV/site where verified.
+- Any measured outcomes from current automations still need owner-supplied metrics before public use.

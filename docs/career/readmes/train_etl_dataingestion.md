@@ -1,6 +1,4 @@
-<!-- synced from https://github.com/devzurc/train_etl_dataingestion on 2026-06-12 -->
-
-<!-- career curation note: treat this as an introductory ETL learning exercise. No employer, production deployment, ownership claim, business metric, or client outcome is verified from this README. -->
+<!-- synced from https://github.com/devzurc/train_etl_dataingestion on 2026-06-17 -->
 
 # ETL-Pipeline
 

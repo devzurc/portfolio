@@ -12,18 +12,23 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / ".sync-config.json"
+MANIFEST_PATH = ROOT / ".repo-manifest.json"
 READMES_DIR = ROOT / "readmes"
 PROJECTS_DIR = ROOT / "projects"
 INDEX_PATH = ROOT / "INDEX.md"
 STACK_PATH = ROOT / "tech-stack-rollup.md"
+REPORT_PATH = ROOT / "github-sync-report.md"
 
 
 def load_config() -> dict:
     defaults = {
         "github_user": "devzurc",
+        "github_orgs": [],
         "exclude_repos": ["My-Profile"],
+        "exclude_private_repos": [],
         "include_private": False,
         "include_forks": False,
+        "private_sync_mode": "sanitized",
         "readme_max_chars": 12000,
     }
     if CONFIG_PATH.exists():
@@ -31,10 +36,133 @@ def load_config() -> dict:
     return defaults
 
 
+def load_manifest() -> dict:
+    if MANIFEST_PATH.exists():
+        return json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    return {}
+
+
+def build_alias_map(manifest: dict) -> dict[str, str]:
+    """Map owner/repo or bare repo name to knowledge_slug.
+
+    Monorepo subpaths (entries with `subpath`) do not claim the parent repo name
+    during GitHub list sync — only the primary slug maps the repo.
+    """
+    mapping: dict[str, str] = {}
+    for slug, info in manifest.get("aliases", {}).items():
+        if info.get("subpath"):
+            continue
+        knowledge_slug = info.get("knowledge_slug", slug)
+        for ref in (info.get("canonical"), info.get("mirror"), slug):
+            if not ref:
+                continue
+            mapping[ref.lower()] = knowledge_slug
+            if "/" in ref:
+                mapping[ref.split("/")[-1].lower()] = knowledge_slug
+    return mapping
+
+
+def resolve_slug(repo: dict, alias_map: dict[str, str]) -> str:
+    owner = repo.get("owner") or ""
+    name = repo["name"]
+    for key in (f"{owner}/{name}".lower(), name.lower()):
+        if key in alias_map:
+            return alias_map[key]
+    return name
+
+
+def viewer_login() -> str | None:
+    try:
+        payload = gh_json(["api", "graphql", "-f", "query={viewer{login}}"])
+        return payload["data"]["viewer"]["login"]
+    except (subprocess.CalledProcessError, KeyError, TypeError):
+        return None
+
+
+def fetch_all_repos(cfg: dict, manifest: dict) -> list[dict]:
+    target = cfg["github_user"]
+    viewer = viewer_login()
+    json_fields = "name,description,isPrivate,isFork,primaryLanguage,updatedAt,pushedAt,url"
+    repos: list[dict] = []
+
+    if viewer and viewer.lower() == target.lower():
+        batch = gh_json([
+            "repo", "list",
+            "--limit", "200",
+            "--json", json_fields,
+        ])
+        for repo in batch:
+            repo = dict(repo)
+            repo["owner"] = target
+            repos.append(repo)
+    else:
+        batch = gh_json([
+            "repo", "list", target,
+            "--limit", "200",
+            "--json", json_fields,
+        ])
+        for repo in batch:
+            repo = dict(repo)
+            repo["owner"] = target
+            repos.append(repo)
+
+    return repos
+
+
+def sanitize_private_readme(text: str) -> str:
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = "\n".join(line.rstrip() for line in text.split("\n"))
+    text = re.sub(r"https?://[^\s<>\"'\])]+", "[REDACTED_URL]", text)
+    text = re.sub(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b", "[REDACTED_EMAIL]", text)
+    text = re.sub(
+        r"(?i)\b(?:api[_-]?key|secret|token|password|webhook|bearer)\s*[=:]\s*\S+",
+        "[REDACTED_CREDENTIAL]",
+        text,
+    )
+    text = re.sub(r"(?i)\b(?:sk|pk)_[A-Za-z0-9]{10,}", "[REDACTED_TOKEN]", text)
+    text = re.sub(r"(?i)\bghp_[A-Za-z0-9]{20,}", "[REDACTED_TOKEN]", text)
+    return text
+
+
+def is_curated_readme(path: Path) -> bool:
+    if not path.exists():
+        return False
+    text = path.read_text(encoding="utf-8").lower()
+    markers = (
+        "sanitized private",
+        "public-safe excerpt",
+        "local career note",
+        "career curation note",
+        "intentionally omits",
+        "private tk technologies",
+    )
+    return any(marker in text for marker in markers)
+
+
 def gh_json(args: list[str]):
     cmd = ["gh"] + args
     result = subprocess.run(cmd, capture_output=True, text=True, check=True)
     return json.loads(result.stdout)
+
+
+def warn_if_wrong_gh_account(cfg: dict) -> None:
+    expected = cfg.get("github_user", "")
+    if not expected:
+        return
+    try:
+        login = gh_json(["api", "user"]).get("login", "")
+    except (subprocess.CalledProcessError, json.JSONDecodeError):
+        return
+    if login.lower() != expected.lower():
+        print(
+            f"WARNING: gh CLI is logged in as '{login}', but github_user is '{expected}'.",
+            file=sys.stderr,
+        )
+        print(
+            f"         Only public repos under {expected} will sync (~10). Private repos need:",
+            file=sys.stderr,
+        )
+        print("         gh auth login -h github.com   # sign in as devzurc", file=sys.stderr)
 
 
 def fetch_readme(full_name: str) -> str | None:
@@ -50,6 +178,62 @@ def fetch_readme(full_name: str) -> str | None:
 
 def slugify(name: str) -> str:
     return re.sub(r"[^a-zA-Z0-9._-]+", "-", name).strip("-").lower()
+
+
+def repo_language(repo: dict) -> str | None:
+    language = repo.get("primaryLanguage") or repo.get("language")
+    if isinstance(language, dict):
+        return language.get("name")
+    if isinstance(language, str):
+        return language
+    return None
+
+
+def strip_sync_header(text: str) -> str:
+    return re.sub(r"^<!-- synced from .*? on \d{4}-\d{2}-\d{2} -->\n\n", "", text, count=1)
+
+
+def split_local_notes(text: str) -> tuple[list[str], str]:
+    """Keep local career notes in README mirrors while comparing raw README bodies."""
+    body = strip_sync_header(text)
+    notes: list[str] = []
+    pattern = re.compile(r"\A<!--\s*(?:career curation note|local career note):.*?-->\s*", re.DOTALL)
+    while True:
+        match = pattern.match(body)
+        if not match:
+            break
+        notes.append(match.group(0).strip())
+        body = body[match.end():]
+    return notes, body
+
+
+def build_readme_mirror(header: str, notes: list[str], readme: str) -> str:
+    parts = [header.strip()]
+    parts.extend(notes)
+    parts.append(readme)
+    return "\n\n".join(parts)
+
+
+def normalize_readme_body(text: str) -> str:
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    return "\n".join(line.rstrip() for line in text.split("\n"))
+
+
+def normalize_generated_dates(text: str) -> str:
+    return re.sub(r"Updated \d{4}-\d{2}-\d{2}", "Updated <date>", text)
+
+
+def write_if_changed(path: Path, content: str, *, normalizer=None) -> bool:
+    if path.exists():
+        previous = path.read_text(encoding="utf-8")
+        if normalizer:
+            if normalizer(previous) == normalizer(content):
+                return False
+        elif previous == content:
+            return False
+
+    path.write_text(content, encoding="utf-8")
+    return True
 
 
 def infer_stack(text: str, language: str | None) -> list[str]:
@@ -73,20 +257,23 @@ def infer_stack(text: str, language: str | None) -> list[str]:
     return out
 
 
-def ensure_project_stub(repo: dict, readme: str | None, today: str) -> None:
+def ensure_project_stub(repo: dict, readme: str | None, today: str, slug: str) -> bool:
     name = repo["name"]
-    path = PROJECTS_DIR / f"{name}.md"
+    path = PROJECTS_DIR / f"{slug}.md"
     if path.exists():
-        return
+        return False
 
-    language = (repo.get("primaryLanguage") or {}).get("name")
+    language = repo_language(repo)
     stack = infer_stack(readme or repo.get("description") or "", language)
     visibility = "private" if repo.get("isPrivate") else "public"
     description = (repo.get("description") or "").replace('"', "'")
+    owner = repo.get("owner") or ""
+    github_ref = f"{owner}/{name}" if owner else name
 
     content = f"""---
-repo: {name}
+repo: {slug}
 github_url: {repo['url']}
+github_ref: {github_ref}
 visibility: {visibility}
 status: needs-review
 period: unknown
@@ -101,12 +288,12 @@ links:
   demo:
   docs:
 last_synced: {today}
-source_readme: readmes/{name}.md
+source_readme: readmes/{slug}.md
 ---
 
-# {name}
+# {slug}
 
-> Auto-generated stub — **curate this file**. Raw README: `readmes/{name}.md`
+> Auto-generated stub — **curate this file**. Raw README: `readmes/{slug}.md`
 
 ## One-liner
 
@@ -135,7 +322,7 @@ _TODO: verified only_
 ## Evidence
 
 - GitHub: {repo['url']}
-- README: `readmes/{name}.md`
+- README: `readmes/{slug}.md`
 
 ## Notes for AI / alignment
 
@@ -143,6 +330,7 @@ _TODO: verified only_
 - [ ] Mark portfolio_worthy / cv_worthy in frontmatter when ready
 """
     path.write_text(content, encoding="utf-8")
+    return True
 
 
 def parse_frontmatter(text: str) -> dict[str, str]:
@@ -239,8 +427,8 @@ def build_index(repos: list[dict], today: str) -> str:
         "## Manifest and sync",
         "",
         "- GitHub sync: `python3 docs/career/scripts/sync-github-projects.py`",
-        "- Public repo safety: `.sync-config.json` keeps `include_private: false` by default.",
-        "- Private project details are represented only through sanitized summaries.",
+        "- Account: `devzurc` only — authenticate `gh` as **devzurc** (`gh auth login`) to include private repos.",
+        "- Public repo safety: private README mirrors are sanitized; curated snapshots are never overwritten.",
         "",
     ])
     return "\n".join(lines)
@@ -302,19 +490,150 @@ def build_stack_rollup() -> str:
     return "\n".join(lines)
 
 
+def parse_stack_rollup_techs(text: str) -> set[str]:
+    techs: set[str] = set()
+    for line in text.splitlines():
+        if not line.startswith("| ") or line.startswith("| Technology") or line.startswith("|---"):
+            continue
+        parts = [part.strip() for part in line.strip("|").split("|")]
+        if len(parts) >= 2 and parts[0]:
+            techs.add(parts[0])
+    return techs
+
+
+def list_needs_review_projects() -> list[str]:
+    projects = []
+    for path in sorted(PROJECTS_DIR.glob("*.md")):
+        if path.name.startswith("_"):
+            continue
+        meta = parse_frontmatter(path.read_text(encoding="utf-8"))
+        if (meta.get("status") or "").strip() == "needs-review":
+            projects.append(path.stem)
+    return projects
+
+
+def md_list(items: list[str], empty: str) -> list[str]:
+    if not items:
+        return [f"- {empty}"]
+    return [f"- {item}" for item in items]
+
+
+def format_recent_repo(repo: dict) -> str:
+    language = repo_language(repo) or "unknown"
+    visibility = "private" if repo.get("isPrivate") else "public"
+    pushed = repo.get("pushedAt") or repo.get("updatedAt") or "unknown"
+    return f"{repo['name']} - pushed {pushed} - {language} - {visibility}"
+
+
+def build_sync_report(
+    *,
+    repos: list[dict],
+    cfg: dict,
+    today: str,
+    readme_created: list[str],
+    readme_updated: list[str],
+    readme_missing: list[str],
+    new_stubs: list[str],
+    index_changed: bool,
+    stack_changed: bool,
+    new_techs: list[str],
+    removed_techs: list[str],
+    needs_review: list[str],
+) -> str:
+    recent = sorted(
+        repos,
+        key=lambda repo: repo.get("pushedAt") or repo.get("updatedAt") or "",
+        reverse=True,
+    )[:10]
+
+    lines = [
+        "# GitHub career sync report",
+        "",
+        f"> Last checked: {today}. Generated by `python3 docs/career/scripts/sync-github-projects.py`.",
+        "",
+        "## Scope",
+        "",
+        f"- GitHub user: `{cfg['github_user']}` (devzurc personal account only)",
+        f"- gh CLI viewer: `{viewer_login() or 'unknown'}`",
+        f"- Repos scanned after filters: {len(repos)}",
+        f"- Include private repos: `{str(cfg.get('include_private', False)).lower()}`",
+        f"- Private sync mode: `{cfg.get('private_sync_mode', 'sanitized')}`",
+        f"- Include forks: `{str(cfg.get('include_forks', False)).lower()}`",
+        "- Public safety: raw private repo details must stay out of this public portfolio workspace.",
+        "",
+        "## Change summary",
+        "",
+        f"- README mirrors created: {len(readme_created)}",
+        f"- README mirrors updated: {len(readme_updated)}",
+        f"- Repos without README: {len(readme_missing)}",
+        f"- Project stubs created: {len(new_stubs)}",
+        f"- `INDEX.md` changed: `{str(index_changed).lower()}`",
+        f"- `tech-stack-rollup.md` changed: `{str(stack_changed).lower()}`",
+        "",
+        "## GitHub updates to review",
+        "",
+        "### New README mirrors",
+        "",
+        *md_list(readme_created, "None"),
+        "",
+        "### Updated README mirrors",
+        "",
+        *md_list(readme_updated, "None"),
+        "",
+        "### New project stubs",
+        "",
+        *md_list(new_stubs, "None"),
+        "",
+        "### Recently pushed repos",
+        "",
+        *md_list([format_recent_repo(repo) for repo in recent], "None"),
+        "",
+        "## Tech signal changes",
+        "",
+        "### Newly seen in curated project stack",
+        "",
+        *md_list(new_techs, "None"),
+        "",
+        "### No longer present in curated project stack",
+        "",
+        *md_list(removed_techs, "None"),
+        "",
+        "## Project profiles needing owner review",
+        "",
+        *md_list(needs_review, "None"),
+        "",
+        "## Agent propagation checklist",
+        "",
+        "- Curate each new or changed `docs/career/projects/*.md` profile before public use.",
+        "- Treat GitHub README text as evidence, not final CV or portfolio copy.",
+        "- Update `docs/career/JOB-SEARCH-STRATEGY.md` when a new project changes role-fit positioning.",
+        "- Draft CV, cover letter, and `index.html` changes only from curated profiles or confirmed CV facts.",
+        "- Ask Lucas before adding employers, dates, metrics, client names, private URLs, or outcome claims.",
+        "",
+        "## Safe automation boundary",
+        "",
+        "- Safe to auto-update: README mirrors, generated index, tech rollup, this report, and `status: needs-review` stubs.",
+        "- Draft only: CV bullets, cover letter wording, project cards, hero stats, experience copy, and job-fit claims.",
+        "- Never publish: workflow IDs, webhook URLs, secrets, internal URLs, raw Notion ticket names, phone numbers, or private client details.",
+        "",
+    ]
+    return "\n".join(lines)
+
+
 def main() -> int:
     cfg = load_config()
-    user = cfg["github_user"]
+    manifest = load_manifest()
+    alias_map = build_alias_map(manifest)
+    warn_if_wrong_gh_account(cfg)
     today = date.today().isoformat()
 
     READMES_DIR.mkdir(parents=True, exist_ok=True)
     PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    repos = gh_json([
-        "repo", "list", user,
-        "--limit", "200",
-        "--json", "name,description,isPrivate,isFork,primaryLanguage,updatedAt,pushedAt,url",
-    ])
+    previous_stack = STACK_PATH.read_text(encoding="utf-8") if STACK_PATH.exists() else ""
+    previous_techs = parse_stack_rollup_techs(previous_stack)
+
+    repos = fetch_all_repos(cfg, manifest)
 
     filtered = []
     for repo in repos:
@@ -324,38 +643,106 @@ def main() -> int:
             continue
         if repo.get("isPrivate") and not cfg.get("include_private"):
             continue
+        if repo.get("isPrivate") and repo["name"] in cfg.get("exclude_private_repos", []):
+            continue
         filtered.append(repo)
 
-    print(f"Syncing {len(filtered)} repos for {user}…")
+    owners = sorted({repo.get("owner", cfg["github_user"]) for repo in filtered})
+    print(f"Syncing {len(filtered)} repos across {', '.join(owners)}…")
+    readme_created: list[str] = []
+    readme_updated: list[str] = []
+    readme_missing: list[str] = []
+    readme_curated: list[str] = []
+    new_stubs: list[str] = []
 
     for repo in filtered:
-        name = repo["name"]
-        full_name = f"{user}/{name}"
-        readme = fetch_readme(full_name)
-        readme_path = READMES_DIR / f"{name}.md"
+        slug = resolve_slug(repo, alias_map)
+        owner = repo.get("owner") or cfg["github_user"]
+        full_name = f"{owner}/{repo['name']}"
+        is_private = bool(repo.get("isPrivate"))
+        readme_path = READMES_DIR / f"{slug}.md"
+
+        readme = None
+        if not (is_private and cfg.get("private_sync_mode") == "metadata-only"):
+            readme = fetch_readme(full_name)
 
         if readme:
+            readme = normalize_readme_body(readme)
+            if is_private:
+                readme = sanitize_private_readme(readme)
             if len(readme) > cfg.get("readme_max_chars", 12000):
                 readme = readme[: cfg["readme_max_chars"]] + "\n\n<!-- truncated by sync script -->\n"
-            header = f"<!-- synced from {repo['url']} on {today} -->\n\n"
-            readme_path.write_text(header + readme, encoding="utf-8")
-            print(f"  readme: {name}")
-        else:
-            if readme_path.exists():
-                print(f"  readme: {name} (kept existing, none on GitHub)")
+            header = (
+                f"<!-- PRIVATE REPO: sanitized from {repo['url']} on {today} -->\n\n"
+                if is_private
+                else f"<!-- synced from {repo['url']} on {today} -->\n\n"
+            )
+            if is_curated_readme(readme_path):
+                readme_curated.append(slug)
+                print(f"  readme: {slug} (kept curated snapshot)")
             else:
-                readme_path.write_text(
-                    f"<!-- no README on GitHub as of {today} -->\n\n_No README found. Add notes in projects/{name}.md._\n",
-                    encoding="utf-8",
+                previous = readme_path.read_text(encoding="utf-8") if readme_path.exists() else ""
+                local_notes, previous_readme = split_local_notes(previous)
+                changed = previous_readme != readme
+                if changed:
+                    readme_path.write_text(build_readme_mirror(header, local_notes, readme), encoding="utf-8")
+                    if previous:
+                        readme_updated.append(slug)
+                        print(f"  readme: {slug} (updated)")
+                    else:
+                        readme_created.append(slug)
+                        print(f"  readme: {slug} (created)")
+                else:
+                    print(f"  readme: {slug} (unchanged)")
+        else:
+            readme_missing.append(slug)
+            if is_curated_readme(readme_path):
+                readme_curated.append(slug)
+                print(f"  readme: {slug} (kept curated snapshot, none on GitHub)")
+            elif readme_path.exists():
+                print(f"  readme: {slug} (kept existing, none on GitHub)")
+            else:
+                placeholder = (
+                    f"<!-- no README on GitHub as of {today} -->\n\n"
+                    f"_No README found. Add notes in projects/{slug}.md._\n"
                 )
-                print(f"  readme: {name} (placeholder)")
+                if is_private:
+                    placeholder = (
+                        f"<!-- PRIVATE REPO: no README on GitHub as of {today} -->\n\n"
+                        f"_No README found. Curate sanitized notes in projects/{slug}.md._\n"
+                    )
+                readme_path.write_text(placeholder, encoding="utf-8")
+                print(f"  readme: {slug} (placeholder)")
 
-        ensure_project_stub(repo, readme, today)
+        if ensure_project_stub(repo, readme, today, slug):
+            new_stubs.append(slug)
 
-    INDEX_PATH.write_text(build_index(filtered, today), encoding="utf-8")
-    STACK_PATH.write_text(build_stack_rollup(), encoding="utf-8")
-    print(f"Wrote {INDEX_PATH.relative_to(ROOT.parents[1])}")
-    print(f"Wrote {STACK_PATH.relative_to(ROOT.parents[1])}")
+    index_content = build_index(filtered, today)
+    stack_content = build_stack_rollup()
+    index_changed = write_if_changed(INDEX_PATH, index_content, normalizer=normalize_generated_dates)
+    stack_changed = write_if_changed(STACK_PATH, stack_content, normalizer=normalize_generated_dates)
+    current_techs = parse_stack_rollup_techs(stack_content)
+    new_techs = sorted(current_techs - previous_techs, key=str.lower)
+    removed_techs = sorted(previous_techs - current_techs, key=str.lower)
+    needs_review = list_needs_review_projects()
+    report = build_sync_report(
+        repos=filtered,
+        cfg=cfg,
+        today=today,
+        readme_created=readme_created,
+        readme_updated=readme_updated,
+        readme_missing=readme_missing,
+        new_stubs=new_stubs,
+        index_changed=index_changed,
+        stack_changed=stack_changed,
+        new_techs=new_techs,
+        removed_techs=removed_techs,
+        needs_review=needs_review,
+    )
+    REPORT_PATH.write_text(report, encoding="utf-8")
+    print(f"{'Wrote' if index_changed else 'Checked'} {INDEX_PATH.relative_to(ROOT.parents[1])}")
+    print(f"{'Wrote' if stack_changed else 'Checked'} {STACK_PATH.relative_to(ROOT.parents[1])}")
+    print(f"Wrote {REPORT_PATH.relative_to(ROOT.parents[1])}")
     print("Next: curate docs/career/projects/*.md (employer, outcomes, portfolio_worthy).")
     return 0
 

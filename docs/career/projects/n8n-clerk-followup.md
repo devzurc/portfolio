@@ -17,7 +17,7 @@ stack:
   - n8n Data Tables
   - Node.js
   - HTML email templates
-portfolio_worthy: true
+portfolio_worthy: false
 cv_worthy: false
 verified_outcomes:
   - Clerk/Svix trial-event intake with idempotent lifecycle tracking

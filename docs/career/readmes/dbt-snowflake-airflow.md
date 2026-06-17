@@ -1,4 +1,4 @@
-<!-- synced from https://github.com/devzurc/dbt-snowflake-airflow on 2026-06-12 -->
+<!-- synced from https://github.com/devzurc/dbt-snowflake-airflow on 2026-06-17 -->
 
 <!-- career curation note: treat this as a personal learning/tutorial repo based on an external Snowflake/Airflow/dbt guide. No employer, production deployment, ownership claim, business metric, or client outcome is verified from this README. -->
 

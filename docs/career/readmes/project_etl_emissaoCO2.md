@@ -1,6 +1,4 @@
-<!-- synced from https://github.com/devzurc/project_etl_emissaoCO2 on 2026-06-12 -->
-
-<!-- career curation note: treat this as a personal learning/lab repo. Scenario language below about a company/team is not verified employer or client evidence; no production deployment, ownership claim, business metric, or client outcome is verified from this README. -->
+<!-- synced from https://github.com/devzurc/project_etl_emissaoCO2 on 2026-06-17 -->
 
 # ETL Pipeline - Análise de Emissões de CO2
 

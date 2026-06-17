@@ -1,8 +1,8 @@
 ---
 repo: cdp-hub
-github_url: https://github.com/tktechnologies/cdp-hub
-mirror_url: https://github.com/tktechnologies/cdp-hub
-visibility: public-safe summary
+github_url: https://github.com/devzurc/cdp-hub
+mirror_url: https://github.com/devzurc/cdp-hub
+visibility: private
 status: active
 period: Feb 2026 - Present
 period_note: "TK Technologies contract extended to 6 months; expected completion in Aug 2026."
@@ -32,7 +32,7 @@ verified_outcomes:
   - Monorepo with contracts, infrastructure, scraping, internal API, and automation components
 links:
   demo:
-  docs: https://github.com/tktechnologies/cdp-hub/tree/main/docs
+  docs: https://github.com/devzurc/cdp-hub
 last_synced: 2026-06-13
 source_readme: readmes/cdp-hub.md
 related_projects: [muvstok-api]
@@ -84,7 +84,7 @@ Python · FastAPI · Celery · Playwright · Redis · PostgreSQL · n8n · Googl
 
 ## Evidence
 
-- Mirror: https://github.com/tktechnologies/cdp-hub
+- Mirror: https://github.com/devzurc/cdp-hub
 - README: `readmes/cdp-hub.md`
 
 ## Notes for AI / alignment

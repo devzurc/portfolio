@@ -35,9 +35,9 @@ cv_alignment: TK Technologies conversational AI chatbot bullet
 repo_access: "Private/sanitized; no public repository link."
 ---
 
-# Nox TKTech Telegram Assistant
+# Telegram Conversational Assistant
 
-> Private production Telegram chatbot for TK Technologies - internal knowledge answers, Grok-backed n8n agent, Redis debounce, and CDP demo triggers.
+> Private production Telegram chatbot — internal knowledge answers, Grok-backed n8n agent, Redis debounce, and CDP demo triggers.
 
 ## One-liner
 
@@ -45,7 +45,7 @@ n8n-powered Telegram assistant that answers from curated internal knowledge, deb
 
 ## Problem
 
-Prospects and users need quick, accurate Portuguese-first answers about TK/Stok products, with safe fallback to human handoff and optional live demo automation.
+Prospects and users need quick, accurate Portuguese-first answers about internal product knowledge, with safe fallback to human handoff and optional live demo automation.
 
 ## What I built
 

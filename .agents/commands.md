@@ -286,6 +286,32 @@ Run @.agents/skills/career-knowledge.md workflow:
 
 ---
 
+## `/continuous-career-sync`
+
+Watch GitHub and keep the career workspace ready to sync into CV, cover letter, docs, portfolio, and job-search strategy.
+
+```
+/continuous-career-sync
+
+Use @.agents/prompts/continuous-career-sync.md and @.agents/skills/continuous-career-sync.md.
+
+Run the GitHub sync script, inspect docs/career/github-sync-report.md, and:
+1. Apply safe evidence-layer updates only:
+   - docs/career/readmes/*.md
+   - docs/career/INDEX.md
+   - docs/career/tech-stack-rollup.md
+   - docs/career/github-sync-report.md
+   - new docs/career/projects/*.md stubs with status: needs-review
+2. Rank new GitHub signals by career value.
+3. List projects that need owner curation.
+4. Draft CV, cover letter, portfolio, and job-strategy updates without applying them unless I explicitly ask.
+5. Preserve EN/PT parity and public-safety rules.
+
+Do not commit unless I explicitly ask.
+```
+
+---
+
 ## `/curate-project`
 
 Fill in a curated project profile from README + owner input.
@@ -316,6 +342,7 @@ Propose updated projects/<repo-name>.md content; wait for approval before writin
 | `/cv-sync` | `/sync-cv-portfolio` |
 | `/cv-pull` | `/sync-cv-from-google` |
 | `/career-sync` | `/sync-github-career` |
+| `/career-watch` | `/continuous-career-sync` |
 | `/curate` | `/curate-project` |
 
 ---

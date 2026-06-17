@@ -16,7 +16,7 @@ stack:
   - Python
   - JSON workflow validation
   - Notion
-portfolio_worthy: true
+portfolio_worthy: false
 cv_worthy: false
 verified_outcomes:
   - Production Instagram comment keyword automation verified in May 2026

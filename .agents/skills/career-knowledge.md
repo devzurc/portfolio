@@ -24,6 +24,7 @@ Use when curating GitHub projects, syncing career data, or preparing portfolio/C
 docs/career/
 ├── INDEX.md              # Repo manifest (generated)
 ├── tech-stack-rollup.md  # Stack frequency (generated)
+├── github-sync-report.md # Latest GitHub change report (generated)
 ├── readmes/<repo>.md     # GitHub README mirror
 ├── projects/<repo>.md    # Curated profile (edit these)
 ├── ALIGNMENT-PLAN.md     # CV ↔ portfolio roadmap
@@ -45,9 +46,10 @@ Behavior:
 - Pulls READMEs into `readmes/`
 - Creates `projects/<repo>.md` stub only if missing (**never overwrites** curated profiles)
 - Regenerates `INDEX.md` and `tech-stack-rollup.md`
+- Writes `github-sync-report.md` with new/updated README mirrors, recent pushes, new stack signals, and profiles needing owner review
 - Respects `.sync-config.json` (excludes, private repos)
 
-After sync: review new stubs with `status: needs-review`.
+After sync: read `github-sync-report.md`, then review new stubs with `status: needs-review`.
 
 ---
 
@@ -115,6 +117,7 @@ If adding sensitive private work, redact in `projects/*.md` or use a separate pr
 | Command | Action |
 |---------|--------|
 | `/sync-github-career` | Run sync script + summarize new/changed readmes |
+| `/continuous-career-sync` | Run GitHub sync, inspect report, curate signals, and draft CV/portfolio/cover letter propagation |
 | `/curate-project <repo>` | Interview owner, fill `projects/<repo>.md` |
 | `/sync-cv-portfolio audit` | Compare CV, career profiles, index.html |
 

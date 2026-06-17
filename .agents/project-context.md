@@ -121,6 +121,7 @@ Fixed top nav + mobile hamburger menu. Nav labels use `data-en` / `data-pt` for 
 | **PDF** | `pdf/LucasCruz_CV_EN.pdf`, `pdf/LucasCruz_CV_PT.pdf` | Repo snapshot / archive |
 | **Plain text** | `source/LucasCruz_CV_EN.txt`, `source/LucasCruz_CV_PT.txt` | Raw Google export for diffing |
 | **Google update note** | `google-docs-update-2026-06-17.md` | Paste-ready changes needed before next Google Docs pull |
+| **Cover letter** | `markdown/LucasCruz_Cover_Letter_Europe_EN.md` | Europe-focused cover letter draft aligned from CV/career knowledge |
 
 **Sync command (pulls latest from Google Docs):**
 
@@ -144,7 +145,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 3. Update `markdown/*.md` if agents edited copy in-repo (or paste Google changes into markdown)
 4. Run `/sync-cv-portfolio` to align `index.html` with CV facts
 
-**Current audit note (2026-06-17):** `docs/resume/markdown/`, `docs/resume/word/`, `docs/resume/pdf/`, and `assets/files/cv/` are aligned to the updated Senior Data Engineer / Gen. AI Automation copy, including public-safe TKTech sprint/customer-facing delivery and mobile launch readiness wording. `docs/resume/source/*.txt` still contains older Google export text in places, especially PT-BR relocation/visa wording. Do not run `sync-from-google-docs.py` until the owner confirms the Google Docs have been updated, because it may overwrite the aligned local PDF/DOCX exports with stale Google content.
+**Current audit note (2026-06-17):** Local markdown, Word, PDF, and site CV downloads are aligned. Product/client names are excluded from the public portfolio; employer TK Technologies remains where verified. Run `sync-from-google-docs.py` after Google Docs are updated to match local markdown.
 
 **CV management skill:** `@.agents/skills/cv-management.md`
 
@@ -171,9 +172,11 @@ Use the CV as the **factual authority** for employers, dates, metrics, projects,
 | Alignment roadmap | `docs/career/ALIGNMENT-PLAN.md` |
 | Job search strategy | `docs/career/JOB-SEARCH-STRATEGY.md` |
 | TKTech sprint knowledge | `docs/career/tktech-sprint-knowledge.md` |
+| GitHub sync report | `docs/career/github-sync-report.md` |
 | Sync script | `python3 docs/career/scripts/sync-github-projects.py` |
 
 Skill: `@.agents/skills/career-knowledge.md`
+Continuous sync skill: `@.agents/skills/continuous-career-sync.md`
 
 Current sprint/process note: Lucas is working through Notion sprints at TKTech. Public-safe career knowledge lives in `docs/career/tktech-sprint-knowledge.md`; use it for customer-facing delivery, sprint ownership, mobile launch readiness, and role-fit mapping without exposing raw ticket names or private identifiers.
 
@@ -247,8 +250,10 @@ Certs section groups credentials with **real verification URLs** or local certif
 | `skills/*.md` | Task-specific playbooks |
 | `skills/cv-management.md` | CV edit, add, remove, export, portfolio sync |
 | `skills/career-knowledge.md` | GitHub project sync, curated career profiles |
+| `skills/continuous-career-sync.md` | Watch GitHub signals and draft safe propagation into CV, cover letter, portfolio, and strategy |
 | `prompts/*.md` | Copy-paste prompt templates |
 | `prompts/update-cv.md` | CV change requests (add/edit/remove) |
+| `prompts/continuous-career-sync.md` | Full GitHub-to-career sync pass |
 
 Suggested Cursor setup: add `@.agents/rules.md` or symlink rules into `.cursor/rules/` if using Cursor Project Rules.
 
@@ -262,6 +267,7 @@ Suggested Cursor setup: add `@.agents/rules.md` or symlink rules into `.cursor/r
 - [ ] Portfolio `#experience`, `#projects`, `#skills`, hero stats align with CV facts
 - [ ] Cert links still resolve
 - [ ] GitHub project links are public and representative
+- [ ] `docs/career/github-sync-report.md` reviewed for new repos, README changes, new tech signals, and `needs-review` profiles
 - [ ] EN/PT copy stays in sync
 - [ ] Meta description reflects current job search focus
 - [ ] Copyright year in footer is current

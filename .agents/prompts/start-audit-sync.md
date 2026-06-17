@@ -13,10 +13,12 @@ Context to read first:
 @.agents/skills/seo-accessibility.md
 @.agents/skills/career-knowledge.md
 @.agents/skills/cv-management.md
+@.agents/skills/continuous-career-sync.md
 @docs/career/README.md
 @docs/career/ALIGNMENT-PLAN.md
 @docs/career/JOB-SEARCH-STRATEGY.md
 @docs/career/tktech-sprint-knowledge.md
+@docs/career/github-sync-report.md
 
 Audit goals:
 1. Inspect tracked project files and important ignored/local generated areas safely.
@@ -27,6 +29,7 @@ Audit goals:
 6. Flag stale Google Docs/source export drift before running any sync script.
 7. Preserve privacy: do not publish workflow IDs, webhook URLs, private client names, phone numbers, secrets, internal URLs, or raw Notion ticket names.
 8. If I paste Notion sprint tasks, map them into public-safe career evidence and job-search strategy notes.
+9. Check the continuous career sync loop: latest GitHub report, needs-review project profiles, new tech signals, and whether CV/cover letter/portfolio drafts are waiting on owner confirmation.
 
 Expected output:
 - Executive summary of alignment status.
@@ -36,6 +39,7 @@ Expected output:
 - Tasks for next sprint.
 - Suggestions to improve portfolio/CV/job search positioning.
 - Role-fit recommendations using `docs/career/JOB-SEARCH-STRATEGY.md`.
+- Continuous sync health: GitHub signals, curation backlog, and public-surface drafts needed.
 
 Implementation rules:
 - Make minimal, focused edits when the issue is clear.
