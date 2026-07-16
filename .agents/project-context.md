@@ -44,16 +44,16 @@
 | ID | Purpose |
 |----|---------|
 | `#hero` | Name, roles, value prop, CTAs, headline stats |
-| `#projects` | Project cards with descriptions and links |
-| `#skills` | Skill cards grouped by domain (Gen. AI, Data Eng, Orchestration, Cloud, etc.) |
-| `#experience` | Employment timeline with impact bullets |
-| `#job-fit` | Role-fit guidance and search filters for target opportunities |
-| `#certifications` | Verified certs with external credential URLs |
-| `#contact` | Contact links, location, CV downloads, relocation note |
+| `#projects` | Selected work list items with rolling text and cursor follow preview |
+| `#experience` | Employment timeline cards with impact bullets |
+| `#skills` | Service discipline cards (Data, Gen. AI, Cloud, Governance) |
+| `#certifications` | Google AI badges and verified certifications list |
+| `#job-fit` | Role-fit guidance cards |
+| `#contact` | Contact actions, location, CV download, relocation |
 
 ### Navigation
 
-Fixed top nav + mobile hamburger menu. Nav labels use `data-en` / `data-pt` for dynamic translation on language switch.
+Fixed top nav + full-screen mobile menu overlay. Nav labels use `data-en` / `data-pt` for dynamic translation on language switch.
 
 ---
 
@@ -76,29 +76,26 @@ Fixed top nav + mobile hamburger menu. Nav labels use `data-en` / `data-pt` for 
 
 ### Typography
 
-- **Body / UI:** Inter (Weights: 400, 500)
-- **Mono / labels / UI controls:** IBM Plex Mono (Weights: 400, 500)
-- **Scale discipline:** Limit font weights strictly to 400 (regular) and 500 (medium) for display and headings.
+- **Body:** Inter (Weights: 400, 500, 600)
+- **Headings:** Instrument Serif (Weights: 400)
+- **Mono / labels / UI controls:** JetBrains Mono (Weights: 400, 500)
 
 ### Colors (CSS variables)
 
 ```css
---color-obsidian-shell: #132322; /* Primary page background */
---color-pure-white: #ffffff;      /* Contrast text on dark, card BGs */
---color-mint-frost: #edf7f5;      /* Light card panels */
---color-deep-abyss: #0e1a19;      /* Nested dark cards / surfaces */
---color-slate-text: #828786;      /* Muted text on dark */
---color-neon-pulse: #3ddc91;      /* 🟢 Green live accent for active/CTA states */
---color-signal-yellow: #ffcd48;   /* Isometric/warning accents */
+--bg-primary: #0A0A0B;   /* Page background (near-black) */
+--bg-elevated: #111113;  /* Elevated surfaces */
+--bg-card: #161618;      /* Card backgrounds */
+--accent: #00E5FF;       /* Electric cyan primary accent */
+--accent-amber: #FFB800; /* Warm amber highlights / stats */
 ```
 
 ### Patterns
 
-- **Dark/Light Rhythm:** The page is dominant obsidian dark canvas (`#132322`). Selected feature areas float as large light Mint Frost cards (`#edf7f5`, 60px radius) to break up sections.
-- **Rationed Accent:** Neon Pulse green `#3ddc91` is used exclusively for primary CTAs, active states, active tab indicators, and live numbers. Never used decoratively.
-- **Signature Radius:** Buttons and tabs are fully pill-shaped (`56px`). Standard cards are `20px` radius. Large cards are `60px` radius.
-- **Scroll Animations:** `.fade-in` + IntersectionObserver.
-- **Components:** `.project-card`, `.job`, `.skills-card-panel`, `.skills-tab`, `.badge-card`.
+- **Minimalist Dark Canvas:** Jet-black backdrop (`#0A0A0B`) featuring a repeating vector grid line layer and localized glowing spotlights.
+- **Accents:** Electric cyan is used for key links, active page tags, buttons, and hover boundaries. Warm amber marks verified metrics and certification IDs.
+- **Cursor Follow Preview:** Hovering on work items shows floating thumbnail boxes tracking client pointer movement.
+- **Components:** `.work-link` lists, `.job` timeline cards, `.skill-card` service grid, `.badge-card`.
 
 ---
 
@@ -224,13 +221,11 @@ Certs section groups credentials with **real verification URLs** or local certif
 
 | Feature | Function |
 |---------|----------|
-| Mobile menu | `toggleMenu()`, `closeMenu()` |
-| Language | `setLang(lang)` |
-| CV menus | Native `<details>` dropdowns with Escape close |
-| Scroll animations | IntersectionObserver on `.fade-in`, `.job`, `.project-card` |
+| Full-screen mobile menu | `toggleMenu()`, `closeMenu()` overlay |
+| Language toggle | `setLang(lang)` updates elements and attributes |
+| Cursor follow preview | Floating project preview moves with client mouse movements |
+| Scroll animations | IntersectionObserver on reveals (`.fade-in`, `.job`, `.work-item`) |
 | Active nav | Scroll listener highlights current section |
-
-**Do not break these** when editing markup structure.
 
 ---
 

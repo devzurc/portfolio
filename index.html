@@ -11,7 +11,7 @@
     data-meta-desc-en="Lucas Cruz builds production data pipelines, cloud lakehouses, and Gen. AI/n8n automation for data engineering teams. Open to Europe relocation."
     data-meta-desc-pt="Lucas Cruz constrói pipelines de dados em produção, lakehouses em nuvem e automações com IA Generativa. Disponível para realocação na Europa." />
   <meta name="author" content="Lucas Cruz" />
-  <meta name="theme-color" content="#132322" />
+  <meta name="theme-color" content="#0A0A0B" />
   <link rel="canonical" href="https://devzurc.github.io/portfolio/" />
   <link rel="alternate" hreflang="en" href="https://devzurc.github.io/portfolio/" />
   <link rel="alternate" hreflang="pt-BR" href="https://devzurc.github.io/portfolio/" />
@@ -56,9 +56,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap"
-    rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
@@ -70,9 +67,12 @@
 </head>
 
 <body>
+  <div class="grain" aria-hidden="true"></div>
+
   <a href="#main-content" class="skip-link en-only">Skip to content</a>
   <a href="#main-content" class="skip-link pt-only">Pular para o conteúdo</a>
 
+  <!-- ─── Primary Header Navigation ─── -->
   <nav aria-label="Primary navigation">
     <div class="nav-left">
       <a href="#hero" class="nav-logo" aria-label="Lucas Cruz home">
@@ -82,12 +82,9 @@
     </div>
 
     <ul class="nav-links">
-      <li><a href="#hero" data-en="Home" data-pt="Início">Home</a></li>
-      <li><a href="#projects" data-en="Projects" data-pt="Projetos">Projects</a></li>
-      <li><a href="#skills" data-en="Skills" data-pt="Skills">Skills</a></li>
+      <li><a href="#projects" data-en="Work" data-pt="Projetos">Work</a></li>
       <li><a href="#experience" data-en="Experience" data-pt="Experiência">Experience</a></li>
-      <li><a href="#job-fit" data-en="Roles" data-pt="Vagas">Roles</a></li>
-      <li><a href="#certifications" data-en="Certs" data-pt="Certs">Certs</a></li>
+      <li><a href="#skills" data-en="Skills" data-pt="Skills">Skills</a></li>
       <li><a href="#contact" data-en="Contact" data-pt="Contato">Contact</a></li>
     </ul>
 
@@ -96,6 +93,7 @@
         <button class="lang-btn active" data-lang-button="en" type="button" aria-pressed="true">EN</button>
         <button class="lang-btn" data-lang-button="pt" type="button" aria-pressed="false">PT</button>
       </div>
+
       <details class="cv-dropdown">
         <summary class="cv-btn" aria-label="Download CV">CV</summary>
         <div class="cv-menu">
@@ -105,24 +103,30 @@
             download="LucasCruz_CV_PT.pdf">Currículo PT-BR</a>
         </div>
       </details>
-      <button class="hamburger" data-menu-toggle type="button" aria-label="Toggle menu" aria-controls="mobile-menu"
-        aria-expanded="false"><span></span></button>
+
+      <button type="button" id="burgerBtn" class="burger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
     </div>
   </nav>
 
+  <!-- ─── Full-Screen Menu Overlay ─── -->
   <div class="mobile-menu" id="mobile-menu">
-    <a href="#hero" data-en="Home" data-pt="Início" data-menu-close>Home</a>
-    <a href="#projects" data-en="Projects" data-pt="Projetos" data-menu-close>Projects</a>
-    <a href="#skills" data-en="Skills" data-pt="Skills" data-menu-close>Skills</a>
-    <a href="#experience" data-en="Experience" data-pt="Experiência" data-menu-close>Experience</a>
-    <a href="#job-fit" data-en="Roles" data-pt="Vagas" data-menu-close>Roles</a>
-    <a href="#certifications" data-en="Certs" data-pt="Certs" data-menu-close>Certs</a>
-    <a href="#contact" data-en="Contact" data-pt="Contato" data-menu-close>Contact</a>
+    <div class="mobile-menu-links">
+      <a href="#projects" data-en="Work" data-pt="Projetos" data-menu-close>Work</a>
+      <a href="#experience" data-en="Experience" data-pt="Experiência" data-menu-close>Experience</a>
+      <a href="#skills" data-en="Skills" data-pt="Skills" data-menu-close>Skills</a>
+      <a href="#contact" data-en="Contact" data-pt="Contato" data-menu-close>Contact</a>
+    </div>
+
     <div class="mobile-menu-controls">
       <div class="lang-toggle" aria-label="Mobile language selector">
         <button class="lang-btn active" data-lang-button="en" type="button" aria-pressed="true">EN</button>
         <button class="lang-btn" data-lang-button="pt" type="button" aria-pressed="false">PT</button>
       </div>
+
       <details class="cv-dropdown">
         <summary class="cv-btn">
           <span class="en-only">Download CV</span><span class="pt-only">Baixar CV</span>
@@ -138,384 +142,296 @@
   </div>
 
   <main id="main-content" tabindex="-1">
+    <!-- ──────────────────────────────────────────────────────── -->
+    <!-- ─── Hero Section ─── -->
+    <!-- ──────────────────────────────────────────────────────── -->
     <section id="hero" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-bg-glow" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-grid">
           <div class="hero-copy fade-in">
             <div class="hero-kicker en-only">Available for Europe relocation</div>
             <div class="hero-kicker pt-only">Disponível para realocação na Europa</div>
 
-            <h1>Lucas Cruz</h1>
+            <div class="hero-role en-only">Senior Data Engineer & AI Platform Specialist</div>
+            <div class="hero-role pt-only">Engenheiro de Dados Sênior & Especialista de IA</div>
 
-            <p class="hero-role en-only">
-              Senior Data Engineer <span>/</span> Gen. AI Automation Engineer
-            </p>
-            <p class="hero-role pt-only">
-              Engenheiro de Dados Sênior <span>/</span> Automação com IA Generativa
-            </p>
+            <h1 class="en-only">
+              <span class="word" style="--i:0">I</span>
+              <span class="word" style="--i:1">build</span>
+              <span class="word" style="--i:2">production</span>
+              <span class="word" style="--i:3">
+                <em class="hero-word-em">
+                  data pipelines
+                  <svg class="hero-word-underline" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M3 9 Q 45 2 95 7 T 197 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" pathLength="100"></path>
+                  </svg>
+                </em>
+              </span>
+              <span class="word" style="--i:4">and</span>
+              <span class="word" style="--i:5">
+                <em class="hero-word-em">
+                  AI automation
+                  <svg class="hero-word-underline" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M3 9 Q 45 2 95 7 T 197 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" pathLength="100"></path>
+                  </svg>
+                </em>
+              </span>
+              <span class="word" style="--i:6">systems.</span>
+            </h1>
+
+            <h1 class="pt-only">
+              <span class="word" style="--i:0">Eu</span>
+              <span class="word" style="--i:1">construo</span>
+              <span class="word" style="--i:2">
+                <em class="hero-word-em">
+                  pipelines de dados
+                  <svg class="hero-word-underline" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M3 9 Q 45 2 95 7 T 197 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" pathLength="100"></path>
+                  </svg>
+                </em>
+              </span>
+              <span class="word" style="--i:3">e</span>
+              <span class="word" style="--i:4">sistemas de</span>
+              <span class="word" style="--i:5">
+                <em class="hero-word-em">
+                  automação de IA
+                  <svg class="hero-word-underline" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M3 9 Q 45 2 95 7 T 197 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" pathLength="100"></path>
+                  </svg>
+                </em>
+              </span>
+              <span class="word" style="--i:6">em produção.</span>
+            </h1>
 
             <p class="hero-desc en-only">
-              I build production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech,
-              agribusiness, and automotive intelligence. I am extending that into production AI platforms over
-              enterprise data: ingestion, retrieval, agents, evaluation, observability, and deployment.
+              Designing governed big data lakehouses, multi-cloud scraping systems, and agents linked to enterprise databases. Moving data from raw ingestion to production-grade automation.
             </p>
             <p class="hero-desc pt-only">
-              Construo pipelines de dados em produção, lakehouses em nuvem e automações com LLMs/n8n para IoT,
-              fintechs, agronegócio e inteligência automotiva. Estou evoluindo para plataformas de IA em produção
-              sobre dados empresariais: ingestão, recuperação, agentes, avaliação, observabilidade e deploy.
+              Projetando lakehouses de big data governados, scrapers multi-nuvem e agentes integrados a bancos corporativos. Levando dados da ingestão bruta à automação em nível de produção.
             </p>
 
             <div class="hero-cta">
-              <a href="#contact" class="btn btn-primary en-only">Let’s talk</a>
-              <a href="#contact" class="btn btn-primary pt-only">Vamos conversar</a>
-              <a href="assets/files/cv/LucasCruz_CV_EN.pdf" target="_blank" rel="noopener noreferrer"
-                download="LucasCruz_CV_EN.pdf" class="btn btn-secondary en-only">Download CV</a>
-              <a href="assets/files/cv/LucasCruz_CV_PT.pdf" target="_blank" rel="noopener noreferrer"
-                download="LucasCruz_CV_PT.pdf" class="btn btn-secondary pt-only">Baixar CV</a>
-              <a href="#projects" class="btn btn-secondary en-only">Selected work</a>
-              <a href="#projects" class="btn btn-secondary pt-only">Projetos</a>
+              <button type="button" onclick="location.href='#contact'" class="shiny-cta">
+                <span class="en-only">Start a conversation →</span>
+                <span class="pt-only">Vamos conversar →</span>
+              </button>
+              <a href="#projects" class="btn btn-secondary">
+                <span class="en-only">Selected work</span>
+                <span class="pt-only">Projetos</span>
+              </a>
             </div>
 
             <div class="hero-social" aria-label="Professional links">
-              <a href="https://www.linkedin.com/in/lucas-cruz" target="_blank" rel="noopener noreferrer">IN LinkedIn</a>
-              <a href="https://github.com/devzurc" target="_blank" rel="noopener noreferrer">GH GitHub</a>
-              <a href="mailto:dev.lucascruz@gmail.com">EM Email</a>
-              <a href="https://medium.com/@dev.lucascruz" target="_blank" rel="noopener noreferrer">MD Blog</a>
+              <a href="https://www.linkedin.com/in/lucas-cruz" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/devzurc" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="mailto:dev.lucascruz@gmail.com">Email</a>
+              <a href="https://medium.com/@dev.lucascruz" target="_blank" rel="noopener noreferrer">Medium Blog</a>
             </div>
           </div>
 
-          <div class="hero-proof fade-in" aria-label="Portfolio proof points">
+          <div class="hero-proof fade-in" aria-label="Key highlights">
             <div class="proof-item">
               <div class="proof-value">5+</div>
-              <div class="proof-label en-only">Years in data</div>
-              <div class="proof-label pt-only">Anos em dados</div>
-              <div class="proof-note en-only">Production pipelines, analytics, automation, and cloud platforms.</div>
-              <div class="proof-note pt-only">Pipelines, analytics, automação e plataformas cloud em produção.</div>
+              <div class="proof-label en-only">Years in data platforms</div>
+              <div class="proof-label pt-only">Anos em plataformas de dados</div>
+              <div class="proof-note en-only">Production pipelines, automation models, and scalable lakehouse designs.</div>
+              <div class="proof-note pt-only">Pipelines em produção, modelos de automação e designs escaláveis.</div>
             </div>
             <div class="proof-item">
               <div class="proof-value">95K+</div>
               <div class="proof-label en-only">IoT devices supported</div>
               <div class="proof-label pt-only">Dispositivos IoT suportados</div>
-              <div class="proof-note en-only">CV-backed Spacecom lakehouse scale.</div>
-              <div class="proof-note pt-only">Escala do lakehouse Spacecom validada pelo CV.</div>
+              <div class="proof-note en-only">CV-backed AWS lakehouse scale at Spacecom.</div>
+              <div class="proof-note pt-only">Escala do lakehouse AWS na Spacecom validada em CV.</div>
             </div>
             <div class="proof-item">
               <div class="proof-value">10+</div>
               <div class="proof-label en-only">Automotive sources</div>
               <div class="proof-label pt-only">Fontes automotivas</div>
-              <div class="proof-note en-only">Python scraping and AI workflows for price intelligence.</div>
-              <div class="proof-note pt-only">Scraping Python e workflows de IA para inteligência de preços.</div>
+              <div class="proof-note en-only">Python multi-source scrapers and AI extraction pipelines.</div>
+              <div class="proof-note pt-only">Scrapers multi-fonte Python e pipelines de extração por IA.</div>
             </div>
             <div class="proof-item">
               <div class="proof-value">C1</div>
-              <div class="proof-label en-only">Advanced English</div>
-              <div class="proof-label pt-only">Inglês avançado</div>
-              <div class="proof-note en-only">IELTS-backed, Europe relocation ready.</div>
-              <div class="proof-note pt-only">Validado por IELTS, pronto para realocação na Europa.</div>
+              <div class="proof-label en-only">IELTS english</div>
+              <div class="proof-label pt-only">IELTS inglês</div>
+              <div class="proof-note en-only">Relocation ready, fluent professional communication.</div>
+              <div class="proof-note pt-only">Pronto para realocação, fluência profissional comprovada.</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ──────────────────────────────────────────────────────── -->
+    <!-- ─── Selected Work Section (Wibify List) ─── -->
+    <!-- ──────────────────────────────────────────────────────── -->
     <section id="projects" class="section">
       <div class="container">
         <div class="section-head fade-in">
           <div>
-            <div class="section-kicker en-only">Selected work</div>
-            <div class="section-kicker pt-only">Projetos selecionados</div>
-            <h2 class="section-title en-only">Proof first: systems recruiters can scan quickly.</h2>
-            <h2 class="section-title pt-only">Evidência primeiro: sistemas fáceis de escanear.</h2>
+            <div class="section-kicker en-only">[01] Selected work</div>
+            <div class="section-kicker pt-only">[01] Projetos selecionados</div>
+            <h2 class="section-title en-only">What I've <em>built</em>.</h2>
+            <h2 class="section-title pt-only">O que eu <em>construí</em>.</h2>
           </div>
           <p class="section-copy en-only">
-            Each card keeps the recruiter view tight: what was built, where proof exists, and which stack matters.
-            Private client work stays clearly labeled.
+            Production-scale platforms, AI agents, and integrations. Hover over items to preview.
           </p>
           <p class="section-copy pt-only">
-            Cada card vai direto ao ponto: o que foi construído, onde há prova e qual stack importa. Trabalhos privados
-            continuam claramente sinalizados.
+            Plataformas de nível de produção, agentes de IA e integrações. Passe o mouse para visualizar.
           </p>
         </div>
 
-        <div class="projects-grid">
-          <article class="project-card featured">
-            <div class="project-label en-only">Flagship · TK Technologies · 2026</div>
-            <div class="project-label pt-only">Destaque · TK Technologies · 2026</div>
-            <h3 class="project-name en-only">CDP Platform: automotive pricing intelligence</h3>
-            <h3 class="project-name pt-only">CDP Platform: inteligência de preços automotivos</h3>
-            <p class="project-desc en-only">
-              End-to-end platform that ingests SKU requests from chat, email, schedules, or spreadsheets; runs parallel
-              public pricing search and internal stock lookup; and delivers structured reports through workflow
-              automation.
-            </p>
-            <p class="project-desc pt-only">
-              Plataforma end-to-end que recebe SKUs via chat, email, agenda ou planilhas; executa busca pública de
-              preços e consulta interna de estoque em paralelo; e entrega relatórios estruturados via automação.
-            </p>
-            <div class="project-proof en-only">
-              <span>Dual pipeline dispatch for public pricing and internal stock lookup.</span>
-              <span>Workflow automation for chat, email, scheduling, polling, and reporting.</span>
-              <span>Azure deployment model with containerized services and contracts.</span>
+        <ul class="works-list">
+          <li class="work-item fade-in">
+            <a class="work-link" data-preview="assets/images/data-ai-systems-hero.png" href="https://github.com/tktechnologies/cdp-hub" target="_blank" rel="noopener noreferrer">
+              <span class="work-num">01</span>
+              <h3 class="work-name">
+                <span class="text-roll" aria-label="Automotive CDP Hub">
+                  <span class="text-roll-row">
+                    <span class="text-roll-letter">Automotive CDP Hub</span>
+                  </span>
+                  <span class="text-roll-row text-roll-clone" aria-hidden="true">
+                    <span class="text-roll-letter">Automotive CDP Hub</span>
+                  </span>
+                </span>
+              </h3>
+              <span class="work-tag">Pricing intelligence & n8n</span>
+              <span class="work-year">2026</span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <!-- Extra info hidden inside list for mobile/recruiter convenience -->
+            <div style="display: none;">
+              <p class="en-only">End-to-end platform that ingests SKU requests, runs parallel public pricing searches and stock lookups, and delivers automated reports.</p>
+              <p class="pt-only">Plataforma ponta a ponta que ingere SKUs, executa buscas de preços públicos e estoque em paralelo, e envia relatórios automáticos.</p>
             </div>
-            <div class="project-proof pt-only">
-              <span>Disparo de pipelines paralelos para preços públicos e estoque interno.</span>
-              <span>Automação de chat, email, agenda, polling e relatórios.</span>
-              <span>Modelo de deploy no Azure com serviços conteinerizados e contratos.</span>
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="https://github.com/tktechnologies/cdp-hub" target="_blank"
-                rel="noopener noreferrer">GitHub</a>
-              <a class="project-link" href="https://github.com/tktechnologies/cdp-hub/tree/main/docs" target="_blank"
-                rel="noopener noreferrer">Docs</a>
-            </div>
-            <div class="project-stack">
-              <span class="stack-tag">Python</span><span class="stack-tag">FastAPI</span>
-              <span class="stack-tag">Celery</span><span class="stack-tag">Playwright</span>
-              <span class="stack-tag">Redis</span><span class="stack-tag">PostgreSQL</span>
-              <span class="stack-tag">n8n</span><span class="stack-tag">Azure</span>
-            </div>
-          </article>
+          </li>
 
-          <article class="project-card">
-            <div class="project-label en-only">Production · Multi-channel CRM · 2026</div>
-            <div class="project-label pt-only">Produção · CRM Multi-canal · 2026</div>
-            <h3 class="project-name en-only">WhatsApp CRM & Automation Platform</h3>
-            <h3 class="project-name pt-only">Plataforma CRM & Automação WhatsApp</h3>
-            <p class="project-desc en-only">
-              Production CRM that receives official Meta Cloud API webhooks for WhatsApp, Instagram, and Messenger; routes conversations through PostgreSQL logic; and delivers an agent inbox with tickets, leads, and automated customer flows. Deployed via Azure ACA.
-            </p>
-            <p class="project-desc pt-only">
-              CRM em produção que recebe webhooks oficiais da Meta Cloud API para WhatsApp, Instagram e Messenger; roteia conversas por lógica de negócio em PostgreSQL; e entrega inbox de agentes com tickets, leads e fluxos automatizados. Deploy via Azure ACA.
-            </p>
-            <span class="project-status en-only">Private client work · sanitized</span>
-            <span class="project-status pt-only">Projeto privado · sanitizado</span>
-            <div class="project-stack">
-              <span class="stack-tag">NestJS</span><span class="stack-tag">Next.js</span>
-              <span class="stack-tag">PostgreSQL</span><span class="stack-tag">n8n</span>
-              <span class="stack-tag">Azure</span><span class="stack-tag">Meta Cloud API</span>
-              <span class="stack-tag">Docker</span>
-            </div>
-          </article>
+          <li class="work-item fade-in">
+            <a class="work-link" data-preview="assets/images/data-ai-systems-hero.png" href="https://github.com/devzurc" target="_blank" rel="noopener noreferrer">
+              <span class="work-num">02</span>
+              <h3 class="work-name">
+                <span class="text-roll" aria-label="WhatsApp CRM Platforms">
+                  <span class="text-roll-row">
+                    <span class="text-roll-letter">WhatsApp CRM Platforms</span>
+                  </span>
+                  <span class="text-roll-row text-roll-clone" aria-hidden="true">
+                    <span class="text-roll-letter">WhatsApp CRM Platforms</span>
+                  </span>
+                </span>
+              </h3>
+              <span class="work-tag">Meta Cloud API & NestJS</span>
+              <span class="work-year">2026</span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-status en-only">Private client work · Sanitized</div>
+            <div class="project-status pt-only">Projeto privado · Sanitizado</div>
+          </li>
 
-          <article class="project-card">
-            <div class="project-label en-only">Private production · Conversational AI</div>
-            <div class="project-label pt-only">Produção privada · IA conversacional</div>
-            <h3 class="project-name en-only">Telegram Conversational Assistant</h3>
-            <h3 class="project-name pt-only">Assistente Conversacional Telegram</h3>
-            <p class="project-desc en-only">
-              n8n-powered Telegram assistant that answers from curated internal knowledge, debounces messages, logs
-              conversations, and can trigger private CDP demo workflows.
-            </p>
-            <p class="project-desc pt-only">
-              Assistente Telegram com n8n que responde a partir de conhecimento interno curado, aplica debounce, registra
-              conversas e aciona demonstrações privadas do CDP.
-            </p>
-            <span class="project-status en-only">Private client work · sanitized</span>
-            <span class="project-status pt-only">Projeto privado · sanitizado</span>
-            <div class="project-stack">
-              <span class="stack-tag">n8n</span><span class="stack-tag">LangChain Agent</span>
-              <span class="stack-tag">Telegram Bot API</span><span class="stack-tag">Redis</span>
-              <span class="stack-tag">FastAPI</span>
-            </div>
-          </article>
+          <li class="work-item fade-in">
+            <a class="work-link" data-preview="assets/images/data-ai-systems-hero.png" href="https://github.com/devzurc" target="_blank" rel="noopener noreferrer">
+              <span class="work-num">03</span>
+              <h3 class="work-name">
+                <span class="text-roll" aria-label="Telegram AI Assistant">
+                  <span class="text-roll-row">
+                    <span class="text-roll-letter">Telegram AI Assistant</span>
+                  </span>
+                  <span class="text-roll-row text-roll-clone" aria-hidden="true">
+                    <span class="text-roll-letter">Telegram AI Assistant</span>
+                  </span>
+                </span>
+              </h3>
+              <span class="work-tag">n8n, LangChain & Redis</span>
+              <span class="work-year">2026</span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-status en-only">Private client work</div>
+            <div class="project-status pt-only">Projeto de cliente</div>
+          </li>
 
-          <article class="project-card">
-            <div class="project-label en-only">Private production · WhatsApp intake</div>
-            <div class="project-label pt-only">Produção privada · Intake via WhatsApp</div>
-            <h3 class="project-name en-only">WhatsApp Support & Sales Intake</h3>
-            <h3 class="project-name pt-only">Intake de Suporte e Vendas via WhatsApp</h3>
-            <p class="project-desc en-only">
-              n8n workflow that receives WhatsApp events through Evolution API, normalizes customer messages, records
-              interaction state, sends first-contact welcomes, and routes actionable requests to staff.
-            </p>
-            <p class="project-desc pt-only">
-              Workflow n8n que recebe eventos do WhatsApp via Evolution API, normaliza mensagens de clientes, registra o
-              estado do atendimento, envia boas-vindas no primeiro contato e roteia pedidos acionáveis para a equipe.
-            </p>
-            <span class="project-status en-only">Private client work · sanitized</span>
-            <span class="project-status pt-only">Projeto privado · sanitizado</span>
-            <div class="project-stack">
-              <span class="stack-tag">n8n</span><span class="stack-tag">Evolution API</span>
-              <span class="stack-tag">WhatsApp</span><span class="stack-tag">Webhooks</span>
-              <span class="stack-tag">PostgreSQL</span><span class="stack-tag">Slack</span>
-            </div>
-          </article>
+          <li class="work-item fade-in">
+            <a class="work-link" data-preview="assets/images/data-ai-systems-hero.png" href="https://github.com/devzurc" target="_blank" rel="noopener noreferrer">
+              <span class="work-num">04</span>
+              <h3 class="work-name">
+                <span class="text-roll" aria-label="AWS IoT Data Lakehouse">
+                  <span class="text-roll-row">
+                    <span class="text-roll-letter">AWS IoT Data Lakehouse</span>
+                  </span>
+                  <span class="text-roll-row text-roll-clone" aria-hidden="true">
+                    <span class="text-roll-letter">AWS IoT Data Lakehouse</span>
+                  </span>
+                </span>
+              </h3>
+              <span class="work-tag">AWS S3, PySpark & Airflow</span>
+              <span class="work-year">2024</span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-status en-only">Spacecom · CV-backed</div>
+            <div class="project-status pt-only">Spacecom · Validado em CV</div>
+          </li>
 
-          <article class="project-card">
-            <div class="project-label en-only">Client project · Data lakehouse</div>
-            <div class="project-label pt-only">Projeto de cliente · Data lakehouse</div>
-            <h3 class="project-name en-only">IoT Data Lakehouse on AWS</h3>
-            <h3 class="project-name pt-only">Lakehouse IoT na AWS</h3>
-            <p class="project-desc en-only">
-              AWS S3 lakehouse for a high-volume IoT platform, organized with Medallion Architecture and delivered to
-              governed BI datasets under LGPD/GDPR-aware handling.
-            </p>
-            <p class="project-desc pt-only">
-              Lakehouse na AWS S3 para plataforma IoT de alto volume, organizado com Arquitetura Medallion e datasets
-              governados para BI com atenção à LGPD/GDPR.
-            </p>
-            <span class="project-status en-only">Private client work · CV-backed</span>
-            <span class="project-status pt-only">Projeto privado · validado pelo CV</span>
-            <div class="project-stack">
-              <span class="stack-tag">AWS S3</span><span class="stack-tag">PySpark</span>
-              <span class="stack-tag">Delta Lake</span><span class="stack-tag">Airflow</span>
-              <span class="stack-tag">Trino</span><span class="stack-tag">Superset</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-label en-only">SaaS automation · Checkout</div>
-            <div class="project-label pt-only">Automação SaaS · Checkout</div>
-            <h3 class="project-name en-only">Stripe Checkout Fulfillment</h3>
-            <h3 class="project-name pt-only">Fulfillment de Checkout Stripe</h3>
-            <p class="project-desc en-only">
-              Production n8n workflow that turns paid Stripe checkout events into branded transactional emails with
-              template selection, line-item enrichment, and idempotent event logging.
-            </p>
-            <p class="project-desc pt-only">
-              Workflow n8n em produção que transforma eventos pagos do Stripe em emails transacionais com templates,
-              enriquecimento de itens e log idempotente.
-            </p>
-            <span class="project-status en-only">Private client work · sanitized</span>
-            <span class="project-status pt-only">Projeto privado · sanitizado</span>
-            <div class="project-stack">
-              <span class="stack-tag">n8n</span><span class="stack-tag">Stripe API</span>
-              <span class="stack-tag">Gmail API</span><span class="stack-tag">HTML Email</span>
-              <span class="stack-tag">Node.js</span>
-            </div>
-          </article>
-        </div>
+          <li class="work-item fade-in">
+            <a class="work-link" data-preview="assets/images/data-ai-systems-hero.png" href="https://github.com/devzurc" target="_blank" rel="noopener noreferrer">
+              <span class="work-num">05</span>
+              <h3 class="work-name">
+                <span class="text-roll" aria-label="Stripe Fulfilment Flow">
+                  <span class="text-roll-row">
+                    <span class="text-roll-letter">Stripe Fulfilment Flow</span>
+                  </span>
+                  <span class="text-roll-row text-roll-clone" aria-hidden="true">
+                    <span class="text-roll-letter">Stripe Fulfilment Flow</span>
+                  </span>
+                </span>
+              </h3>
+              <span class="work-tag">Stripe API & n8n</span>
+              <span class="work-year">2024</span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-status en-only">Private client work</div>
+            <div class="project-status pt-only">Projeto de cliente</div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="skills-card-panel fade-in">
-          <div class="skills-card-head">
-            <div class="section-kicker en-only">Technical range</div>
-            <div class="section-kicker pt-only">Amplitude técnica</div>
-            <h2 class="section-title en-only">Skills grouped by the systems I build.</h2>
-            <h2 class="section-title pt-only">Skills agrupadas pelos sistemas que construo.</h2>
-            <p class="section-copy en-only" style="margin-top: 0.8rem;">
-              A compact view for recruiters: AI workflows, data platforms, orchestration, cloud, governance, and delivery.
-            </p>
-            <p class="section-copy pt-only" style="margin-top: 0.8rem;">
-              Uma visão compacta para recrutadores: IA, plataformas de dados, orquestração, cloud, governança e entrega.
-            </p>
-          </div>
-
-          <!-- Tab Pill Navigation -->
-          <div class="skills-tabs-container" role="tablist" aria-label="Skill categories">
-            <button class="skills-tab active" type="button" role="tab" aria-selected="true" aria-controls="skills-panel-1" data-tab-target="1">
-              <span class="en-only">Gen. AI & LLMs</span><span class="pt-only">IA Generativa & LLMs</span>
-            </button>
-            <button class="skills-tab" type="button" role="tab" aria-selected="false" aria-controls="skills-panel-2" data-tab-target="2">
-              <span class="en-only">Data Eng & APIs</span><span class="pt-only">Engenharia de Dados & APIs</span>
-            </button>
-            <button class="skills-tab" type="button" role="tab" aria-selected="false" aria-controls="skills-panel-3" data-tab-target="3">
-              <span class="en-only">Orchestration</span><span class="pt-only">Orquestração</span>
-            </button>
-            <button class="skills-tab" type="button" role="tab" aria-selected="false" aria-controls="skills-panel-4" data-tab-target="4">
-              <span class="en-only">Cloud & Lakehouses</span><span class="pt-only">Cloud & Lakehouses</span>
-            </button>
-            <button class="skills-tab" type="button" role="tab" aria-selected="false" aria-controls="skills-panel-5" data-tab-target="5">
-              <span class="en-only">Governance & BI</span><span class="pt-only">Governança & BI</span>
-            </button>
-            <button class="skills-tab" type="button" role="tab" aria-selected="false" aria-controls="skills-panel-6" data-tab-target="6">
-              <span class="en-only">Delivery & Web</span><span class="pt-only">Entrega & Web</span>
-            </button>
-          </div>
-
-          <!-- Tab Content Panels -->
-          <div class="skills-panels">
-            <div class="skills-panel active" id="skills-panel-1" role="tabpanel">
-              <div class="skill-items">
-                <span class="tag">LLM Integration</span><span class="tag">AI Agents</span>
-                <span class="tag">RAG</span><span class="tag">Prompt Engineering</span>
-                <span class="tag">Chatbots</span><span class="tag">Claude</span><span class="tag">Gemini</span>
-              </div>
-            </div>
-
-            <div class="skills-panel" id="skills-panel-2" role="tabpanel">
-              <div class="skill-items">
-                <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">NestJS</span><span class="tag">FastAPI</span>
-                <span class="tag">SQLAlchemy</span><span class="tag">Pydantic</span><span class="tag">PySpark</span>
-                <span class="tag">Pandas</span><span class="tag">dbt</span><span class="tag">REST APIs</span>
-                <span class="tag">Parquet</span>
-              </div>
-            </div>
-
-            <div class="skills-panel" id="skills-panel-3" role="tabpanel">
-              <div class="skill-items">
-                <span class="tag">Apache Airflow</span><span class="tag">n8n</span><span class="tag">Celery</span>
-                <span class="tag">Redis Streams</span><span class="tag">Webhooks</span>
-                <span class="tag">Scheduled Jobs</span><span class="tag">WhatsApp APIs</span><span class="tag">ETL / RPA</span>
-              </div>
-            </div>
-
-            <div class="skills-panel" id="skills-panel-4" role="tabpanel">
-              <div class="skill-items">
-                <span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">GCP</span>
-                <span class="tag">OCI</span><span class="tag">Snowflake</span><span class="tag">Databricks</span>
-                <span class="tag">Delta Lake</span><span class="tag">Redshift</span><span class="tag">Trino</span>
-              </div>
-            </div>
-
-            <div class="skills-panel" id="skills-panel-5" role="tabpanel">
-              <div class="skill-items">
-                <span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">MySQL</span>
-                <span class="tag">Redis</span><span class="tag">Power BI</span><span class="tag">Qlik Sense</span>
-                <span class="tag">Superset</span><span class="tag">Looker</span><span class="tag">LGPD/GDPR</span>
-                <span class="tag">IAM</span><span class="tag">RBAC</span>
-              </div>
-            </div>
-
-            <div class="skills-panel" id="skills-panel-6" role="tabpanel">
-              <div class="skill-items">
-                <span class="tag">Next.js</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Git</span>
-                <span class="tag">CI/CD</span><span class="tag">Linux</span><span class="tag">Terraform</span>
-                <span class="tag en-only">Senior HTML/CSS</span><span class="tag pt-only">HTML/CSS Sênior</span>
-                <span class="tag">Accessibility</span><span class="tag">SEO</span>
-                <span class="tag en-only">English · C1</span><span class="tag pt-only">Inglês · C1</span>
-                <span class="tag en-only">Portuguese · Native</span><span class="tag pt-only">Português · Nativo</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section dark timeline-section">
+    <!-- ──────────────────────────────────────────────────────── -->
+    <!-- ─── Experience Section ─── -->
+    <!-- ──────────────────────────────────────────────────────── -->
+    <section id="experience" class="section alt">
       <div class="container">
         <div class="section-head fade-in">
           <div>
-            <div class="section-kicker en-only">Experience</div>
-            <div class="section-kicker pt-only">Experiência</div>
-            <h2 class="section-title en-only">Production work, reverse chronological.</h2>
-            <h2 class="section-title pt-only">Trabalho em produção, do mais recente ao mais antigo.</h2>
+            <div class="section-kicker en-only">[02] Experience</div>
+            <div class="section-kicker pt-only">[02] Experiência</div>
+            <h2 class="section-title en-only">Where I've <em>delivered</em>.</h2>
+            <h2 class="section-title pt-only">Onde eu <em>entreguei</em>.</h2>
           </div>
           <p class="section-copy en-only">
-            Condensed bullets keep the same employers, dates, role positioning, and verified scale while making the work
-            easier to scan.
+            Proven roles in Big Data teams, Gen. AI engineering agencies, and consulting environments.
           </p>
           <p class="section-copy pt-only">
-            Bullets condensados mantêm empregadores, datas, posicionamento e escala validada, com leitura mais rápida.
+            Funções consolidadas em times de Big Data, agências de IA e ambientes de consultoria.
           </p>
         </div>
 
         <div class="timeline">
-          <article class="job">
-            <div class="job-meta en-only">Feb 2026 - Present · 6-month contract, expected Aug 2026 · Curitiba, Brazil · Hybrid</div>
-            <div class="job-meta pt-only">Fev 2026 - Atual · Contrato de 6 meses, previsão Ago 2026 · Curitiba, Brasil · Híbrido</div>
+          <article class="job fade-in">
+            <div class="job-meta">
+              <span class="job-date" data-en="Feb 2026 - Present" data-pt="Fev 2026 - Presente">Feb 2026 - Present</span>
+              <span class="job-location" data-en="Curitiba, Brazil · Hybrid" data-pt="Curitiba, Brasil · Híbrido">Curitiba, Brazil · Hybrid</span>
+            </div>
             <div class="job-body">
               <h3 class="job-title en-only">Gen. AI Engineer</h3>
               <h3 class="job-title pt-only">Engenheiro de IA Generativa</h3>
-              <p class="job-company">TK Technologies</p>
+              <div class="job-company">TK Technologies</div>
               <ul class="job-bullets en-only">
                 <li>Engineered a <strong>multi-source Python scraping pipeline</strong> for 10+ automotive parts websites.</li>
                 <li>Architected <strong>AI-powered n8n workflows</strong> integrating LLMs and GCP APIs for ETL, RPA, and chatbot agents.</li>
                 <li>Deployed containerized backend services on <strong>Azure with Docker</strong> to standardize delivery.</li>
-                <li>Ran <strong>Notion-based delivery sprints</strong>, customer demos, training, sales support, and mobile launch readiness work.</li>
+                <li>Ran <strong>Notion-based delivery sprints</strong>, customer demos, training, sales support, and mobile launch readiness.</li>
               </ul>
               <ul class="job-bullets pt-only">
                 <li>Desenvolveu um <strong>pipeline Python de scraping multi-fonte</strong> para mais de 10 sites de peças automotivas.</li>
@@ -526,12 +442,15 @@
             </div>
           </article>
 
-          <article class="job">
-            <div class="job-meta en-only">Apr 2023 - Jul 2024 · Curitiba, Brazil · On-site</div>
-            <div class="job-meta pt-only">Abr 2023 - Jul 2024 · Curitiba, Brasil · Presencial</div>
+          <article class="job fade-in">
+            <div class="job-meta">
+              <span class="job-date" data-en="Apr 2023 - Jul 2024" data-pt="Abr 2023 - Jul 2024">Apr 2023 - Jul 2024</span>
+              <span class="job-location" data-en="Curitiba, Brazil · On-site" data-pt="Curitiba, Brasil · Presencial">Curitiba, Brazil · On-site</span>
+            </div>
             <div class="job-body">
-              <h3 class="job-title">Data Engineer</h3>
-              <p class="job-company">Spacecom Monitoramento</p>
+              <h3 class="job-title en-only">Data Engineer</h3>
+              <h3 class="job-title pt-only">Engenheiro de Dados</h3>
+              <div class="job-company">Spacecom Monitoramento</div>
               <ul class="job-bullets en-only">
                 <li>Designed and maintained an <strong>AWS S3 Big Data Lakehouse</strong> with Bronze/Silver/Gold layers.</li>
                 <li>Supported an IoT platform scaling to <strong>95,000+ devices</strong> and hundreds of millions of records per day.</li>
@@ -545,13 +464,15 @@
             </div>
           </article>
 
-          <article class="job">
-            <div class="job-meta en-only">Jun 2022 - May 2024 · Curitiba, Brazil · Remote</div>
-            <div class="job-meta pt-only">Jun 2022 - Mai 2024 · Curitiba, Brasil · Remoto</div>
+          <article class="job fade-in">
+            <div class="job-meta">
+              <span class="job-date" data-en="Jun 2022 - May 2024" data-pt="Jun 2022 - Mai 2024">Jun 2022 - May 2024</span>
+              <span class="job-location" data-en="Curitiba, Brazil · Remote" data-pt="Curitiba, Brasil · Remoto">Curitiba, Brazil · Remote</span>
+            </div>
             <div class="job-body">
               <h3 class="job-title en-only">Data Engineer Consultant</h3>
-              <h3 class="job-title pt-only">Consultor de Engenharia de Dados</h3>
-              <p class="job-company">wDiscover</p>
+              <h3 class="job-title pt-only">Consultor de Eng. de Dados</h3>
+              <div class="job-company">wDiscover</div>
               <ul class="job-bullets en-only">
                 <li>Delivered data projects across fintech, agribusiness, and operations through APIs, SQL, and Python pipelines.</li>
                 <li>Designed dimensional Data Warehouses on <strong>SQL Server</strong> and <strong>Oracle Autonomous Database</strong>.</li>
@@ -565,14 +486,15 @@
             </div>
           </article>
 
-          <article class="job">
-            <div class="job-meta en-only">Jun 2020 - Feb 2023 · Curitiba, Brazil · Hybrid</div>
-            <div class="job-meta pt-only">Jun 2020 - Fev 2023 · Curitiba, Brasil · Híbrido</div>
+          <article class="job fade-in">
+            <div class="job-meta">
+              <span class="job-date" data-en="Jun 2020 - Feb 2023" data-pt="Jun 2020 - Fev 2023">Jun 2020 - Feb 2023</span>
+              <span class="job-location" data-en="Curitiba, Brazil · Hybrid" data-pt="Curitiba, Brasil · Híbrido">Curitiba, Brazil · Hybrid</span>
+            </div>
             <div class="job-body">
               <h3 class="job-title en-only">Data Analyst</h3>
               <h3 class="job-title pt-only">Analista de Dados</h3>
-              <p class="job-company en-only">Itaete Group</p>
-              <p class="job-company pt-only">Grupo Itaete</p>
+              <div class="job-company" data-en="Itaete Group" data-pt="Grupo Itaete">Itaete Group</div>
               <ul class="job-bullets en-only">
                 <li>Designed SQL Server warehouse models and Python/SQL pipelines using Pandas.</li>
                 <li>Built Power BI dashboards and automated legacy Excel/VBA reporting workflows.</li>
@@ -589,148 +511,120 @@
       </div>
     </section>
 
-    <section id="job-fit" class="section job-fit-section">
+    <!-- ──────────────────────────────────────────────────────── -->
+    <!-- ─── Skills Section (Service Discipline Pattern) ─── -->
+    <!-- ──────────────────────────────────────────────────────── -->
+    <section id="skills" class="section">
       <div class="container">
         <div class="section-head fade-in">
           <div>
-            <div class="section-kicker en-only">Role fit</div>
-            <div class="section-kicker pt-only">Fit de vagas</div>
-            <h2 class="section-title en-only">Where I can create leverage and keep growing.</h2>
-            <h2 class="section-title pt-only">Onde posso gerar impacto e continuar crescendo.</h2>
+            <div class="section-kicker en-only">[03] Skills</div>
+            <div class="section-kicker pt-only">[03] Habilidades</div>
+            <h2 class="section-title en-only">Four <em>disciplines</em>. One developer.</h2>
+            <h2 class="section-title pt-only">Quatro <em>disciplinas</em>. Um desenvolvedor.</h2>
           </div>
           <p class="section-copy en-only">
-            The strongest match is a team that needs data platforms, AI workflow automation, and production delivery in
-            the same person.
+            Core specializations aligned directly with modern cloud platforms and data systems.
           </p>
           <p class="section-copy pt-only">
-            O melhor encaixe é um time que precisa de plataformas de dados, automação com IA e entrega em produção na
-            mesma pessoa.
+            Principais especializações alinhadas diretamente com plataformas modernas de nuvem e dados.
           </p>
         </div>
 
-        <div class="fit-grid">
-          <article class="fit-card fade-in">
-            <div class="fit-label en-only">Best-fit track</div>
-            <div class="fit-label pt-only">Trilha ideal</div>
-            <h3 class="fit-title en-only">Senior Data Engineer / Data Platform Engineer</h3>
-            <h3 class="fit-title pt-only">Engenheiro de Dados Sênior / Data Platform Engineer</h3>
-            <p class="fit-desc en-only">
-              Strong fit for teams building Python/SQL pipelines, orchestration, lakehouse layers, cloud deployment, and
-              governed datasets for analytics.
-            </p>
-            <p class="fit-desc pt-only">
-              Forte encaixe para times construindo pipelines Python/SQL, orquestração, camadas lakehouse, deploy em
-              cloud e datasets governados para analytics.
-            </p>
-            <div class="fit-tags">
-              <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Airflow</span>
-              <span class="tag">PySpark</span><span class="tag">AWS/Azure</span><span class="tag">Governance</span>
+        <div class="skills-grid">
+          <article class="skill-card fade-in">
+            <span class="skill-watermark" aria-hidden="true">01</span>
+            <div class="skill-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="skill-card-title en-only">Data Engineering</h3>
+            <h3 class="skill-card-title pt-only">Eng. de Dados</h3>
+            <p class="skill-card-desc en-only">Ingesting raw sources, building dimensional warehouses, and designing scalable medallion-structured AWS S3 lakehouses.</p>
+            <p class="skill-card-desc pt-only">Ingestão de fontes brutas, modelagem de Data Warehouses dimensionais e estruturação de lakehouses AWS S3 em arquitetura medallion.</p>
+            <div class="skill-tags">
+              <span class="stack-tag">Python</span><span class="stack-tag">SQL</span>
+              <span class="stack-tag">PySpark</span><span class="stack-tag">dbt</span>
+              <span class="stack-tag">Delta Lake</span>
             </div>
           </article>
 
-          <article class="fit-card fade-in">
-            <div class="fit-label en-only">AI + ops track</div>
-            <div class="fit-label pt-only">Trilha IA + ops</div>
-            <h3 class="fit-title en-only">Gen. AI Automation Engineer</h3>
-            <h3 class="fit-title pt-only">Engenheiro de Automação com IA Generativa</h3>
-            <p class="fit-desc en-only">
-              Strong fit when LLM work connects to APIs, RAG/chat agents, n8n workflows, internal systems, and business
-              operations instead of isolated demos.
-            </p>
-            <p class="fit-desc pt-only">
-              Forte encaixe quando LLMs conectam APIs, RAG/agentes de chat, workflows n8n, sistemas internos e operações
-              de negócio, não apenas demos isoladas.
-            </p>
-            <div class="fit-tags">
-              <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">n8n</span>
-              <span class="tag">FastAPI</span><span class="tag">Webhooks</span><span class="tag">Automation</span>
+          <article class="skill-card fade-in">
+            <span class="skill-watermark" aria-hidden="true">02</span>
+            <div class="skill-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            </div>
+            <h3 class="skill-card-title en-only">Gen. AI & Automation</h3>
+            <h3 class="skill-card-title pt-only">IA Generativa</h3>
+            <p class="skill-card-desc en-only">Developing custom LLM workflows, context retrieval (RAG), LangChain agents, and integrations via n8n automation loops.</p>
+            <p class="skill-card-desc pt-only">Construção de workflows LLM personalizados, recuperação por contexto (RAG), agentes LangChain e integrações em loops n8n.</p>
+            <div class="skill-tags">
+              <span class="stack-tag">n8n</span><span class="stack-tag">LangChain</span>
+              <span class="stack-tag">RAG</span><span class="stack-tag">FastAPI</span>
+              <span class="stack-tag">LLMs</span>
             </div>
           </article>
 
-          <article class="fit-card fade-in">
-            <div class="fit-label en-only">Platform track</div>
-            <div class="fit-label pt-only">Trilha plataforma</div>
-            <h3 class="fit-title en-only">Senior / Applied AI Platform Engineer</h3>
-            <h3 class="fit-title pt-only">Engenheiro de Plataforma de IA Sênior / Aplicado</h3>
-            <p class="fit-desc en-only">
-              Strong fit for teams shipping RAG over real data, LangGraph agent workflows, MCP tool integration,
-              evaluation harnesses, and observability — not isolated LLM demos.
-            </p>
-            <p class="fit-desc pt-only">
-              Forte encaixe para times entregando RAG sobre dados reais, workflows com LangGraph, integração MCP,
-              harnesses de avaliação e observabilidade — não apenas demos isoladas de LLM.
-            </p>
-            <div class="fit-tags">
-              <span class="tag">RAG</span><span class="tag">LangGraph</span><span class="tag">pgvector</span>
-              <span class="tag">MCP</span><span class="tag">Eval</span><span class="tag">FastAPI</span>
+          <article class="skill-card fade-in">
+            <span class="skill-watermark" aria-hidden="true">03</span>
+            <div class="skill-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M5 17V5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v12"/></svg>
+            </div>
+            <h3 class="skill-card-title en-only">Cloud Infrastructure</h3>
+            <h3 class="skill-card-title pt-only">Infraestrutura Cloud</h3>
+            <p class="skill-card-desc en-only">Orchestrating containerized services on multi-cloud backends using Azure, AWS, and GCP with full Docker configurations.</p>
+            <p class="skill-card-desc pt-only">Orquestração de serviços conteinerizados em ambientes multi-nuvem na Azure, AWS e GCP com configurações Docker.</p>
+            <div class="skill-tags">
+              <span class="stack-tag">Azure</span><span class="stack-tag">AWS</span>
+              <span class="stack-tag">GCP</span><span class="stack-tag">Docker</span>
+              <span class="stack-tag">Airflow</span>
             </div>
           </article>
 
-          <article class="fit-card fade-in">
-            <div class="fit-label en-only">Growth environment</div>
-            <div class="fit-label pt-only">Ambiente de crescimento</div>
-            <h3 class="fit-title en-only">Product-minded data teams</h3>
-            <h3 class="fit-title pt-only">Times de dados com mentalidade de produto</h3>
-            <p class="fit-desc en-only">
-              I grow fastest where one engineer can own ingestion through reporting, work close to stakeholders, support
-              customer adoption, and mature reliability, privacy, and deployment practices.
-            </p>
-            <p class="fit-desc pt-only">
-              Cresço mais rápido onde um engenheiro pode assumir da ingestão ao reporting, atuar perto de stakeholders,
-              apoiar adoção por clientes e evoluir confiabilidade, privacidade e deploy.
-            </p>
-            <div class="fit-tags">
-              <span class="tag">Ownership</span><span class="tag">Stakeholders</span><span class="tag">Customer demos</span>
-              <span class="tag">Reliability</span><span class="tag">Privacy</span><span class="tag">Delivery</span>
+          <article class="skill-card fade-in">
+            <span class="skill-watermark" aria-hidden="true">04</span>
+            <div class="skill-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
             </div>
-          </article>
-
-          <article class="fit-card fade-in">
-            <div class="fit-label en-only">Search filters</div>
-            <div class="fit-label pt-only">Filtros de busca</div>
-            <h3 class="fit-title en-only">Prioritize roles with clear technical ownership</h3>
-            <h3 class="fit-title pt-only">Priorizar vagas com ownership técnico claro</h3>
-            <ul class="fit-list en-only">
-              <li>Data platform, lakehouse, or orchestration ownership.</li>
-              <li>LLM automation tied to real internal systems.</li>
-              <li>Product implementation with demos, training, and launch support.</li>
-              <li>Europe-based teams open to visa sponsorship.</li>
-            </ul>
-            <ul class="fit-list pt-only">
-              <li>Ownership de plataforma de dados, lakehouse ou orquestração.</li>
-              <li>Automação com LLM conectada a sistemas internos reais.</li>
-              <li>Implementação de produto com demos, treinamento e suporte de lançamento.</li>
-              <li>Times na Europa abertos a patrocínio de visto.</li>
-            </ul>
+            <h3 class="skill-card-title en-only">Delivery & Governance</h3>
+            <h3 class="skill-card-title pt-only">Governança & Entrega</h3>
+            <p class="skill-card-desc en-only">Managing relational databases, securing data lines under LGPD/GDPR, and shipping clean code through web standard pipelines.</p>
+            <p class="skill-card-desc pt-only">Gestão de bancos relacionais, segurança e governança sob LGPD/GDPR, e deploy contínuo via pipelines padrão web.</p>
+            <div class="skill-tags">
+              <span class="stack-tag">PostgreSQL</span><span class="stack-tag">Git</span>
+              <span class="stack-tag">Next.js</span><span class="stack-tag">LGPD / GDPR</span>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- ──────────────────────────────────────────────────────── -->
+    <!-- ─── Certifications Section ─── -->
+    <!-- ──────────────────────────────────────────────────────── -->
     <section id="certifications" class="section alt">
       <div class="container">
         <div class="section-head fade-in">
           <div>
-            <div class="section-kicker en-only">Credentials</div>
-            <div class="section-kicker pt-only">Credenciais</div>
-            <h2 class="section-title en-only">Certifications and education.</h2>
-            <h2 class="section-title pt-only">Certificações e formação.</h2>
+            <div class="section-kicker en-only">[04] Credentials</div>
+            <div class="section-kicker pt-only">[04] Credenciais</div>
+            <h2 class="section-title en-only">Verified <em>credentials</em>.</h2>
+            <h2 class="section-title pt-only">Credenciais <em>verificadas</em>.</h2>
           </div>
           <p class="section-copy en-only">
-            Dense and verifiable for recruiters who want a fast credibility check. View all credentials on my <a href="https://www.credly.com/users/devzurc" target="_blank" rel="noopener noreferrer" class="text-link">Credly Profile</a>.
+            Google AI series and formal data qualifications. View all items on my <a href="https://www.credly.com/users/devzurc" target="_blank" rel="noopener noreferrer" class="text-link">Credly Profile</a>.
           </p>
           <p class="section-copy pt-only">
-            Compacto e verificável para recrutadores validarem rapidamente. Veja todas as credenciais no meu <a href="https://www.credly.com/users/devzurc" target="_blank" rel="noopener noreferrer" class="text-link">Perfil Credly</a>.
+            Série Google AI e qualificações formais em engenharia de dados. Ver tudo no <a href="https://www.credly.com/users/devzurc" target="_blank" rel="noopener noreferrer" class="text-link">Perfil Credly</a>.
           </p>
         </div>
 
-        <div class="badge-section-title en-only">Verified Google AI Credentials</div>
-        <div class="badge-section-title pt-only">Credenciais Verificadas de IA do Google</div>
+        <div class="cert-section-title en-only">Verified Google AI Credentials</div>
+        <div class="cert-section-title pt-only">Credenciais Verificadas de IA do Google</div>
 
         <div class="badge-grid">
           <article class="badge-card fade-in">
-            <div class="badge-icon">
-              <svg viewBox="0 0 24 24" width="36" height="36">
+            <div class="badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28">
                 <path d="M21.35 11.1h-9.17v2.73h6.51c-.33 1.56-1.56 2.95-3.18 3.5v2.88h5.08c2.97-2.74 4.68-6.78 4.68-11.11 0-.68-.06-1.34-.14-2Z" fill="#4285F4"/>
                 <path d="M12.18 20.25c2.7 0 4.96-.9 6.62-2.42l-5.08-2.88c-.8.54-1.85.9-3.04.9-2.34 0-4.33-1.57-5.04-3.71H.38v2.98c1.74 3.46 5.3 5.76 9.4 5.76Z" fill="#34A853"/>
                 <path d="M7.14 12.14c-.18-.54-.29-1.11-.29-1.7s.11-1.16.29-1.7V5.76H.38C-.22 6.96-.56 8.35-.56 9.8s.34 2.84.94 4.04l6.2-4.7Z" fill="#FBBC05"/>
@@ -740,18 +634,18 @@
             <div class="badge-content">
               <h4 class="en-only">AI for Writing and Communicating</h4>
               <h4 class="pt-only">IA para Escrita e Comunicação</h4>
-              <p class="badge-issuer">Google · Coursera · CIEE</p>
+              <span class="badge-issuer">Google · Coursera · CIEE</span>
               <div class="badge-meta">
-                <span class="badge-date">Issued Jul 2026</span>
-                <span class="badge-id">ID: HE8YE5IS7WVW</span>
+                <span class="badge-date">Jul 2026</span>
+                <span class="badge-id">HE8YE5IS7WVW</span>
               </div>
-              <a href="https://www.coursera.org/account/accomplishments/records/HE8YE5IS7WVW" target="_blank" rel="noopener noreferrer" class="badge-verify">Verify Credential</a>
+              <a href="https://www.coursera.org/account/accomplishments/records/HE8YE5IS7WVW" target="_blank" rel="noopener noreferrer" class="badge-verify">Verify</a>
             </div>
           </article>
 
           <article class="badge-card fade-in">
-            <div class="badge-icon">
-              <svg viewBox="0 0 24 24" width="36" height="36">
+            <div class="badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28">
                 <path d="M21.35 11.1h-9.17v2.73h6.51c-.33 1.56-1.56 2.95-3.18 3.5v2.88h5.08c2.97-2.74 4.68-6.78 4.68-11.11 0-.68-.06-1.34-.14-2Z" fill="#4285F4"/>
                 <path d="M12.18 20.25c2.7 0 4.96-.9 6.62-2.42l-5.08-2.88c-.8.54-1.85.9-3.04.9-2.34 0-4.33-1.57-5.04-3.71H.38v2.98c1.74 3.46 5.3 5.76 9.4 5.76Z" fill="#34A853"/>
                 <path d="M7.14 12.14c-.18-.54-.29-1.11-.29-1.7s.11-1.16.29-1.7V5.76H.38C-.22 6.96-.56 8.35-.56 9.8s.34 2.84.94 4.04l6.2-4.7Z" fill="#FBBC05"/>
@@ -761,18 +655,18 @@
             <div class="badge-content">
               <h4 class="en-only">AI for Research and Insights</h4>
               <h4 class="pt-only">IA para Pesquisas e Insights</h4>
-              <p class="badge-issuer">Google · Coursera · CIEE</p>
+              <span class="badge-issuer">Google · Coursera · CIEE</span>
               <div class="badge-meta">
-                <span class="badge-date">Issued Jul 2026</span>
-                <span class="badge-id">ID: 4PZDF3XQOF55</span>
+                <span class="badge-date">Jul 2026</span>
+                <span class="badge-id">4PZDF3XQOF55</span>
               </div>
-              <a href="https://www.coursera.org/account/accomplishments/records/4PZDF3XQOF55" target="_blank" rel="noopener noreferrer" class="badge-verify">Verify Credential</a>
+              <a href="https://www.coursera.org/account/accomplishments/records/4PZDF3XQOF55" target="_blank" rel="noopener noreferrer" class="badge-verify">Verify</a>
             </div>
           </article>
 
           <article class="badge-card fade-in">
-            <div class="badge-icon">
-              <svg viewBox="0 0 24 24" width="36" height="36">
+            <div class="badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28">
                 <path d="M21.35 11.1h-9.17v2.73h6.51c-.33 1.56-1.56 2.95-3.18 3.5v2.88h5.08c2.97-2.74 4.68-6.78 4.68-11.11 0-.68-.06-1.34-.14-2Z" fill="#4285F4"/>
                 <path d="M12.18 20.25c2.7 0 4.96-.9 6.62-2.42l-5.08-2.88c-.8.54-1.85.9-3.04.9-2.34 0-4.33-1.57-5.04-3.71H.38v2.98c1.74 3.46 5.3 5.76 9.4 5.76Z" fill="#34A853"/>
                 <path d="M7.14 12.14c-.18-.54-.29-1.11-.29-1.7s.11-1.16.29-1.7V5.76H.38C-.22 6.96-.56 8.35-.56 9.8s.34 2.84.94 4.04l6.2-4.7Z" fill="#FBBC05"/>
@@ -782,18 +676,18 @@
             <div class="badge-content">
               <h4 class="en-only">AI for Brainstorming and Planning</h4>
               <h4 class="pt-only">IA para Brainstorming e Planejamento</h4>
-              <p class="badge-issuer">Google · Coursera · CIEE</p>
+              <span class="badge-issuer">Google · Coursera · CIEE</span>
               <div class="badge-meta">
-                <span class="badge-date">Issued Jul 2026</span>
-                <span class="badge-id">ID: 7SFW2HGOKIU5</span>
+                <span class="badge-date">Jul 2026</span>
+                <span class="badge-id">7SFW2HGOKIU5</span>
               </div>
-              <a href="https://www.coursera.org/account/accomplishments/records/7SFW2HGOKIU5" target="_blank" rel="noopener noreferrer" class="badge-verify">Verify Credential</a>
+              <a href="https://www.coursera.org/account/accomplishments/records/7SFW2HGOKIU5" target="_blank" rel="noopener noreferrer" class="badge-verify">Verify</a>
             </div>
           </article>
 
           <article class="badge-card fade-in">
-            <div class="badge-icon">
-              <svg viewBox="0 0 24 24" width="36" height="36">
+            <div class="badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28">
                 <path d="M21.35 11.1h-9.17v2.73h6.51c-.33 1.56-1.56 2.95-3.18 3.5v2.88h5.08c2.97-2.74 4.68-6.78 4.68-11.11 0-.68-.06-1.34-.14-2Z" fill="#4285F4"/>
                 <path d="M12.18 20.25c2.7 0 4.96-.9 6.62-2.42l-5.08-2.88c-.8.54-1.85.9-3.04.9-2.34 0-4.33-1.57-5.04-3.71H.38v2.98c1.74 3.46 5.3 5.76 9.4 5.76Z" fill="#34A853"/>
                 <path d="M7.14 12.14c-.18-.54-.29-1.11-.29-1.7s.11-1.16.29-1.7V5.76H.38C-.22 6.96-.56 8.35-.56 9.8s.34 2.84.94 4.04l6.2-4.7Z" fill="#FBBC05"/>
@@ -803,170 +697,155 @@
             <div class="badge-content">
               <h4 class="en-only">AI Fundamentals</h4>
               <h4 class="pt-only">Fundamentos de IA</h4>
-              <p class="badge-issuer">Google · Coursera · CIEE</p>
+              <span class="badge-issuer">Google · Coursera · CIEE</span>
               <div class="badge-meta">
-                <span class="badge-date">Issued Jul 2026</span>
-                <span class="badge-id">ID: UKBGM0AZUIS2</span>
+                <span class="badge-date">Jul 2026</span>
+                <span class="badge-id">UKBGM0AZUIS2</span>
               </div>
-              <a href="https://www.coursera.org/account/accomplishments/records/UKBGM0AZUIS2" target="_blank" rel="noopener noreferrer" class="badge-verify">Verify Credential</a>
+              <a href="https://www.coursera.org/account/accomplishments/records/UKBGM0AZUIS2" target="_blank" rel="noopener noreferrer" class="badge-verify">Verify</a>
             </div>
           </article>
         </div>
 
-        <div class="badge-section-title en-only" style="margin-top: 3rem;">Other Certifications</div>
-        <div class="badge-section-title pt-only" style="margin-top: 3rem;">Outras Certificações</div>
+        <div class="cert-section-title en-only">Other Certifications</div>
+        <div class="cert-section-title pt-only">Outras Certificações</div>
 
         <div class="cert-grid">
-          <article class="cert-card">
+          <article class="cert-card fade-in">
             <h3 class="en-only">English Proficiency</h3>
             <h3 class="pt-only">Proficiência em Inglês</h3>
             <ul>
-              <li><a href="assets/files/ed-certificates/ielts-general-site.pdf" target="_blank"
-                  rel="noopener noreferrer">IELTS - International English Language Testing System</a></li>
-              <li><a href="https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec" target="_blank"
-                  rel="noopener noreferrer">Udemy - Inglês Extremo (Intermediate)</a></li>
+              <li><a href="assets/files/ed-certificates/ielts-general-site.pdf" target="_blank" rel="noopener noreferrer">IELTS General Certificate</a></li>
+              <li><a href="https://ude.my/UC-9a9535a4-c479-408a-acd8-1d06318c5eec" target="_blank" rel="noopener noreferrer">Udemy - Inglês Extremo</a></li>
             </ul>
           </article>
 
-          <article class="cert-card">
+          <article class="cert-card fade-in">
             <h3 class="en-only">Data Engineering</h3>
             <h3 class="pt-only">Engenharia de Dados</h3>
             <ul>
-              <li><a href="https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X" target="_blank"
-                  rel="noopener noreferrer">IBM / Coursera - Introduction to Data Engineering</a></li>
-              <li><a href="https://mycourse.app/mDey2z4xSWzPUS2T7" target="_blank" rel="noopener noreferrer">DS Academy
-                  - Fundamentos de Engenharia de Dados</a></li>
-              <li><a href="https://cursos.alura.com.br/certificate/b1e3dc95-d65d-4ba7-a422-5914475941eb"
-                  target="_blank" rel="noopener noreferrer">Alura - ETL with SSIS: Data Modeling</a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/verify/BEJ3LNDRHD9X" target="_blank" rel="noopener noreferrer">IBM - Intro to Data Engineering</a></li>
+              <li><a href="https://mycourse.app/mDey2z4xSWzPUS2T7" target="_blank" rel="noopener noreferrer">DS Academy - Data Eng Fundamentals</a></li>
+              <li><a href="https://cursos.alura.com.br/certificate/b1e3dc95-d65d-4ba7-a422-5914475941eb" target="_blank" rel="noopener noreferrer">Alura - ETL Modeling (SSIS)</a></li>
             </ul>
           </article>
 
-          <article class="cert-card">
-            <h3 class="en-only">Python & Data Processing</h3>
-            <h3 class="pt-only">Python & Processamento</h3>
+          <article class="cert-card fade-in">
+            <h3 class="en-only">Python & Cloud</h3>
+            <h3 class="pt-only">Python & Cloud</h3>
             <ul>
-              <li><a href="https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/"
-                  target="_blank" rel="noopener noreferrer">Udemy - Complete Python Developer</a></li>
-              <li><a href="https://mycourse.app/f5pLpS2UcVbZ66iq8" target="_blank" rel="noopener noreferrer">DS Academy
-                  - Python for Data Analysis</a></li>
-              <li><a href="https://cursos.alura.com.br/certificate/74d6c51a-2c05-47f7-9776-c59f0c1682a1"
-                  target="_blank" rel="noopener noreferrer">Alura - Python & Pandas Track</a></li>
-            </ul>
-          </article>
-
-          <article class="cert-card">
-            <h3 class="en-only">Cloud Computing</h3>
-            <h3 class="pt-only">Computação em Nuvem</h3>
-            <ul>
-              <li><a href="https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD" target="_blank"
-                  rel="noopener noreferrer">Coursera - AWS Cloud Practitioner Essentials</a></li>
-              <li><a href="https://ude.my/UC-d6419758-f145-4661-9252-4042381674ee" target="_blank"
-                  rel="noopener noreferrer">Udemy - AWS for Beginners</a></li>
-            </ul>
-          </article>
-
-          <article class="cert-card">
-            <h3 class="en-only">SQL, Databases & BI</h3>
-            <h3 class="pt-only">SQL, Bancos & BI</h3>
-            <ul>
-              <li><a href="https://cursos.alura.com.br/certificate/c045f437-8705-460b-9536-c39f61bb7928"
-                  target="_blank" rel="noopener noreferrer">Alura - Introduction to SQL Server</a></li>
-              <li><a href="https://cursos.alura.com.br/certificate/f3be1257-e150-450f-a670-7fcd94bc6ed0"
-                  target="_blank" rel="noopener noreferrer">Alura - Apache Airflow Pipeline Automation</a></li>
-              <li><a href="https://cursos.alura.com.br/certificate/e9d0d2cf-dd27-449f-8f7f-cdb83dbfc2da"
-                  target="_blank" rel="noopener noreferrer">Alura - Qlik Sense Data Analytics & BI Track</a></li>
-            </ul>
-          </article>
-
-          <article class="cert-card">
-            <h3 class="en-only">Education</h3>
-            <h3 class="pt-only">Formação</h3>
-            <ul>
-              <li><a href="assets/files/ed-certificates/bachelor-systems-analysis-development-certificate.pdf"
-                  target="_blank" rel="noopener noreferrer">Bachelor of Systems Analysis and Development</a></li>
-              <li>Dom Bosco University, Curitiba, Brazil · Jun 2023</li>
-              <li>Information Systems · Business Analytics · Database Systems</li>
+              <li><a href="https://www.coursera.org/account/accomplishments/verify/GR33NJ7P5QAD" target="_blank" rel="noopener noreferrer">AWS Cloud Practitioner Essentials</a></li>
+              <li><a href="https://www.udemy.com/certificate/UC-13089b31-ad1b-4532-8d04-ac378596960b/" target="_blank" rel="noopener noreferrer">Complete Python Developer</a></li>
+              <li><a href="https://cursos.alura.com.br/certificate/f3be1257-e150-450f-a670-7fcd94bc6ed0" target="_blank" rel="noopener noreferrer">Apache Airflow Pipeline Automation</a></li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- ──────────────────────────────────────────────────────── -->
+    <!-- ─── Role Fit Section ─── -->
+    <!-- ──────────────────────────────────────────────────────── -->
+    <section id="job-fit" class="section">
+      <div class="container">
+        <div class="section-head fade-in">
+          <div>
+            <div class="section-kicker en-only">[05] Role Fit</div>
+            <div class="section-kicker pt-only">[05] Encaixe de Vagas</div>
+            <h2 class="section-title en-only">Where I can create <em>leverage</em>.</h2>
+            <h2 class="section-title pt-only">Onde posso gerar <em>impacto</em>.</h2>
+          </div>
+          <p class="section-copy en-only">
+            Aligning my background with your team's immediate pipeline needs.
+          </p>
+          <p class="section-copy pt-only">
+            Alinhando minha experiência com as necessidades de pipeline imediatas do seu time.
+          </p>
+        </div>
+
+        <div class="fit-grid">
+          <article class="fit-card fade-in">
+            <div class="fit-label en-only">Data Track</div>
+            <div class="fit-label pt-only">Trilha de Dados</div>
+            <h3 class="fit-title en-only">Senior Data Engineer</h3>
+            <h3 class="fit-title pt-only">Engenheiro de Dados Sênior</h3>
+            <p class="fit-desc en-only">Highly competent in constructing Python/SQL orchestration routes, lakehouses, and governing dataset exports.</p>
+            <p class="fit-desc pt-only">Especialista em construir rotas de orquestração Python/SQL, lakehouses e exportação de datasets governados.</p>
+            <div class="fit-tags">
+              <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Airflow</span><span class="tag">AWS/Azure</span>
+            </div>
+          </article>
+
+          <article class="fit-card fade-in">
+            <div class="fit-label en-only">AI Track</div>
+            <div class="fit-label pt-only">Trilha de IA</div>
+            <h3 class="fit-title en-only">Gen. AI Automation Engineer</h3>
+            <h3 class="fit-title pt-only">Engenheiro de Automação de IA</h3>
+            <p class="fit-desc en-only">Excellent match for teams shifting RAG services, connecting LangChain, n8n, and web API hooks directly to databases.</p>
+            <p class="fit-desc pt-only">Ideal para times implantando serviços RAG, conectando LangChain, n8n e ganchos de API web diretamente a bancos de dados.</p>
+            <div class="fit-tags">
+              <span class="tag">LLMs</span><span class="tag">n8n</span><span class="tag">LangChain</span><span class="tag">FastAPI</span>
+            </div>
+          </article>
+
+          <article class="fit-card fade-in">
+            <div class="fit-label en-only">Platform Track</div>
+            <div class="fit-label pt-only">Trilha de Plataforma</div>
+            <h3 class="fit-title en-only">Applied AI Platform Engineer</h3>
+            <h3 class="fit-title pt-only">Eng. de Plataforma de IA</h3>
+            <p class="fit-desc en-only">Building vector layers, evaluating workflows with observability platforms, and deploying via containerized ACA/Docker environments.</p>
+            <p class="fit-desc pt-only">Construção de camadas de vetores, avaliação de workflows com plataformas de observabilidade e deploy via ACA/Docker.</p>
+            <div class="fit-tags">
+              <span class="tag">Docker</span><span class="tag">pgvector</span><span class="tag">observability</span><span class="tag">Azure ACA</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────── -->
+    <!-- ─── Contact Section ─── -->
+    <!-- ──────────────────────────────────────────────────────── -->
     <section id="contact" class="section dark">
       <div class="container">
-        <div class="contact-panel">
-          <div class="fade-in">
-            <div class="section-kicker en-only">Contact</div>
-            <div class="section-kicker pt-only">Contato</div>
-            <h2 class="contact-title en-only">Open to Data Engineering and Gen. AI roles in Europe.</h2>
-            <h2 class="contact-title pt-only">Aberto a vagas de Engenharia de Dados e IA Generativa na Europa.</h2>
-            <p class="contact-sub en-only">
-              If your team needs a builder who can connect pipelines, cloud infrastructure, AI workflows, and stakeholder
-              reporting, I would be glad to talk.
-            </p>
-            <p class="contact-sub pt-only">
-              Se o seu time precisa de alguém que conecte pipelines, infraestrutura cloud, workflows de IA e reporting
-              para stakeholders, será um prazer conversar.
-            </p>
-            <div class="contact-note en-only">Curitiba, Brazil · Open to relocation across Europe · Requires visa sponsorship</div>
-            <div class="contact-note pt-only">Curitiba, Brasil · Disponível para realocação na Europa · Necessita de patrocínio de visto</div>
-            <div class="cta-row contact-cv">
-              <a href="assets/files/cv/LucasCruz_CV_EN.pdf" target="_blank" rel="noopener noreferrer"
-                download="LucasCruz_CV_EN.pdf" class="btn btn-primary en-only">Download English CV</a>
-              <a href="assets/files/cv/LucasCruz_CV_PT.pdf" target="_blank" rel="noopener noreferrer"
-                download="LucasCruz_CV_PT.pdf" class="btn btn-primary pt-only">Baixar CV em PT-BR</a>
-              <a href="assets/files/cv/LucasCruz_CV_PT.pdf" target="_blank" rel="noopener noreferrer"
-                download="LucasCruz_CV_PT.pdf" class="btn btn-secondary en-only">PT-BR CV</a>
-              <a href="assets/files/cv/LucasCruz_CV_EN.pdf" target="_blank" rel="noopener noreferrer"
-                download="LucasCruz_CV_EN.pdf" class="btn btn-secondary pt-only">CV em Inglês</a>
-            </div>
+        <div class="contact-panel fade-in">
+          <div class="section-kicker en-only">[06] Contact</div>
+          <div class="section-kicker pt-only">[06] Contato</div>
+
+          <h2 class="contact-title en-only">Open to Data &amp; AI Engineer roles in Europe.</h2>
+          <h2 class="contact-title pt-only">Aberto a vagas de Eng. de Dados e IA na Europa.</h2>
+
+          <p class="contact-sub en-only">
+            Let's build reliable platforms together. If your team needs someone to own raw ingestion, secure database layers, and integrate LLM agents, drop me a line.
+          </p>
+          <p class="contact-sub pt-only">
+            Vamos construir plataformas confiáveis juntos. Se o seu time precisa de alguém para assumir ingestão bruta, segurança de dados e integração de agentes LLM, fale comigo.
+          </p>
+
+          <div class="contact-note en-only">
+            Curitiba, Brazil · Relocation ready · Visa sponsorship required
+          </div>
+          <div class="contact-note pt-only">
+            Curitiba, Brasil · Disponível para realocação · Necessita de visto patrocinado
           </div>
 
-          <div class="contact-actions fade-in">
-            <a href="mailto:dev.lucascruz@gmail.com" class="contact-link" aria-label="Send an email">
-              <span class="contact-icon">EM</span>
-              <span>
-                <span class="contact-label">Email</span>
-                <span class="contact-value">dev.lucascruz@gmail.com</span>
-              </span>
-              <span aria-hidden="true">+</span>
+          <div class="contact-cv">
+            <a href="assets/files/cv/LucasCruz_CV_EN.pdf" target="_blank" rel="noopener noreferrer" download="LucasCruz_CV_EN.pdf" class="shiny-cta">
+              <span class="en-only">Download English CV</span>
+              <span class="pt-only">Baixar CV em Inglês</span>
             </a>
-            <a href="https://www.linkedin.com/in/lucas-cruz" target="_blank" rel="noopener noreferrer"
-              class="contact-link" aria-label="Visit LinkedIn">
-              <span class="contact-icon">IN</span>
-              <span>
-                <span class="contact-label">LinkedIn</span>
-                <span class="contact-value">linkedin.com/in/lucas-cruz</span>
-              </span>
-              <span aria-hidden="true">+</span>
+            <a href="assets/files/cv/LucasCruz_CV_PT.pdf" target="_blank" rel="noopener noreferrer" download="LucasCruz_CV_PT.pdf" class="btn btn-secondary">
+              <span class="en-only">PT-BR Resume</span>
+              <span class="pt-only">Currículo em Português</span>
             </a>
-            <a href="https://www.credly.com/users/devzurc" target="_blank" rel="noopener noreferrer"
-              class="contact-link" aria-label="Visit Credly Profile">
-              <span class="contact-icon">CR</span>
-              <span>
-                <span class="contact-label">Credly</span>
-                <span class="contact-value">credly.com/users/devzurc</span>
-              </span>
-              <span aria-hidden="true">+</span>
-            </a>
-            <a href="https://github.com/devzurc" target="_blank" rel="noopener noreferrer" class="contact-link"
-              aria-label="Visit GitHub">
-              <span class="contact-icon">GH</span>
-              <span>
-                <span class="contact-label">GitHub</span>
-                <span class="contact-value">github.com/devzurc</span>
-              </span>
-              <span aria-hidden="true">+</span>
-            </a>
-            <a href="https://medium.com/@dev.lucascruz" target="_blank" rel="noopener noreferrer" class="contact-link"
-              aria-label="Visit Medium Blog">
-              <span class="contact-icon">MD</span>
-              <span>
-                <span class="contact-label">Blog</span>
-                <span class="contact-value">medium.com/@dev.lucascruz</span>
-              </span>
-              <span aria-hidden="true">+</span>
-            </a>
+          </div>
+
+          <div class="contact-links-row">
+            <a href="mailto:dev.lucascruz@gmail.com" class="contact-link-item">Email</a>
+            <a href="https://www.linkedin.com/in/lucas-cruz" target="_blank" rel="noopener noreferrer" class="contact-link-item">LinkedIn</a>
+            <a href="https://github.com/devzurc" target="_blank" rel="noopener noreferrer" class="contact-link-item">GitHub</a>
+            <a href="https://www.credly.com/users/devzurc" target="_blank" rel="noopener noreferrer" class="contact-link-item">Credly</a>
+            <a href="https://medium.com/@dev.lucascruz" target="_blank" rel="noopener noreferrer" class="contact-link-item">Medium</a>
           </div>
         </div>
       </div>
@@ -974,9 +853,16 @@
   </main>
 
   <footer>
-    <span class="en-only">© 2026 Lucas Cruz · Senior Data Engineer &amp; Gen. AI Automation Engineer · Curitiba, Brazil</span>
-    <span class="pt-only">© 2026 Lucas Cruz · Engenheiro de Dados Sênior &amp; Automação com IA Generativa · Curitiba, Brasil</span>
+    <div class="container">
+      <span class="en-only">© 2026 Lucas Cruz · Senior Data Engineer &amp; Gen. AI Automation Specialist</span>
+      <span class="pt-only">© 2026 Lucas Cruz · Engenheiro de Dados Sênior &amp; Especialista em IA</span>
+    </div>
   </footer>
+
+  <!-- Cursor-follow project preview element -->
+  <div id="cursorPreview" class="cursor-preview" aria-hidden="true">
+    <img src="" alt="" />
+  </div>
 </body>
 
 </html>

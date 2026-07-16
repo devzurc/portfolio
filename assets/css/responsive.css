@@ -1,196 +1,147 @@
-@media (max-width: 1080px) {
+@media (max-width: 1100px) {
   nav {
-    grid-template-columns: 1fr auto;
-    padding: 0 1.2rem;
+    padding: 0 var(--spacing-24);
   }
 
-  .nav-links,
-  nav > .nav-right > .lang-toggle,
-  nav > .nav-right > .cv-dropdown {
+  .nav-links {
     display: none;
   }
 
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero {
-    background:
-      linear-gradient(90deg, var(--color-obsidian-shell) 0%, rgba(19, 35, 34, 0.96) 62%, rgba(19, 35, 34, 0.6) 100%),
-      url("../images/data-ai-systems-hero.png") center right / cover no-repeat;
-  }
-
-  .hero-grid,
-  .section-head,
-  .contact-panel {
+  .hero-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-40);
   }
 
   .hero-proof {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .projects-grid,
-  .skills-grid,
-  .fit-grid,
-  .cert-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .work-link {
+    grid-template-columns: 60px 1.5fr 1fr 60px;
   }
 
-  .project-card.featured {
-    grid-column: span 2;
+  .work-year {
+    display: none;
   }
 
   .job {
     grid-template-columns: 1fr;
-    gap: 0.7rem;
+    gap: var(--spacing-16);
+    padding: var(--spacing-24);
+  }
+
+  .job-meta {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   :root {
     --nav-h: 64px;
   }
 
-  .container,
-  .hero-inner {
-    width: min(100% - 2rem, var(--max));
+  .section {
+    padding: var(--spacing-64) 0;
   }
 
-  nav {
-    min-height: var(--nav-h);
-  }
-
-  .nav-logo {
-    min-height: 42px;
-  }
-
-  .nav-mark,
-  .hamburger {
-    width: 42px;
-    height: 42px;
-  }
-
-  .nav-name {
-    display: none;
+  .section-head {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-12);
   }
 
   .hero {
     min-height: auto;
-    background:
-      linear-gradient(180deg, var(--color-obsidian-shell) 0%, rgba(19, 35, 34, 0.9) 100%),
-      url("../images/data-ai-systems-hero.png") 62% center / cover no-repeat;
+    padding-top: calc(var(--nav-h) + var(--spacing-32));
+    padding-bottom: var(--spacing-64);
   }
 
-  .skills-card-panel,
-  .project-card.featured {
-    border-radius: var(--radius-cards) !important;
-    padding: 24px !important;
+  .hero h1 {
+    font-size: clamp(2.8rem, 10vw, 4.5rem);
+    line-height: 0.95;
   }
 
-  .skills-tabs-container {
-    margin-top: 16px;
-    gap: 6px;
+  .hero-proof {
+    grid-template-columns: 1fr;
+    padding: var(--spacing-20);
   }
 
-  .skills-tab {
-    padding: 8px 16px;
+  .work-link {
+    grid-template-columns: 40px 1fr auto;
+    padding: var(--spacing-24) 0;
   }
 
-  .hero-inner {
-    padding: calc(var(--nav-h) + 2.3rem) 0 4rem;
+  .work-tag {
+    display: none;
   }
 
-  .hero-desc,
-  .contact-sub {
-    font-size: 0.96rem;
-  }
-
-  .section {
-    padding: 4.2rem 0;
-  }
-
-  .hero-proof,
-  .projects-grid,
   .skills-grid,
-  .fit-grid,
   .cert-grid,
   .badge-grid,
-  .project-proof {
+  .fit-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-16);
   }
 
-  .project-card.featured {
-    grid-column: span 1;
+  .badge-card {
+    padding: var(--spacing-16);
   }
 
-  .project-card {
-    min-height: auto;
-  }
-
-  .timeline::before {
-    left: 0.75rem;
-  }
-
-  .job {
-    padding-left: 2.35rem;
-  }
-
-  .job::before {
-    left: 0.38rem;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .hero-social a,
-  .project-link,
-  .project-link-muted,
-  .project-status {
-    max-width: 100%;
-  }
-
-  .mobile-menu-controls {
+  .contact-cv {
     flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
-  .mobile-menu .lang-toggle,
-  .mobile-menu .cv-dropdown,
-  .mobile-menu .cv-btn {
+  .contact-cv .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contact-links-row {
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
-  .mobile-menu .cv-menu {
-    position: static;
-    margin-top: 0.5rem;
-  }
-
-  .contact-link {
-    grid-template-columns: 42px minmax(0, 1fr);
-  }
-
-  .contact-link > span:last-child {
-    display: none;
+  .contact-link-item {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .hero h1 {
     font-size: 3rem;
   }
 
-  .section-title,
-  .contact-title {
-    font-size: 2rem;
+  .section-title {
+    font-size: 2.2rem;
   }
 
-  .skills-card-panel,
-  .project-card,
-  .fit-card,
-  .cert-card,
-  .job-body {
-    padding: 1.25rem 1rem !important;
+  .proof-value {
+    font-size: 2.8rem;
+  }
+
+  .work-name {
+    font-size: 1.6rem;
+  }
+
+  .job-title {
+    font-size: 1.6rem;
+  }
+
+  .skill-card-title {
+    font-size: 1.5rem;
+  }
+
+  .fit-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
   }
 }

@@ -2,9 +2,11 @@
   document.documentElement.classList.add("js-ready");
 
   const menu = document.getElementById("mobile-menu");
-  const burger = document.querySelector("[data-menu-toggle]");
+  const burger = document.getElementById("burgerBtn");
   const nav = document.querySelector("nav");
-  const sections = ["hero", "projects", "skills", "experience", "job-fit", "certifications", "contact"];
+  const cursorPreview = document.getElementById("cursorPreview");
+  const previewImg = cursorPreview ? cursorPreview.querySelector("img") : null;
+  const sections = ["hero", "projects", "skills", "experience", "certifications", "job-fit", "contact"];
 
   function closeMenu() {
     if (!menu || !burger) return;
@@ -95,6 +97,7 @@
     }
   })();
 
+  /* ─── Scroll Intersection Reveals ─── */
   const observer = "IntersectionObserver" in window
     ? new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -103,11 +106,11 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.06, rootMargin: "0px 0px -40px 0px" })
+    }, { threshold: 0.05, rootMargin: "0px 0px -40px 0px" })
     : null;
 
-  document.querySelectorAll(".fade-in, .job, .project-card, .skills-card-panel, .cert-card, .contact-link").forEach((el, index) => {
-    el.dataset.delay = String((index % 5) * 60);
+  document.querySelectorAll(".fade-in, .job, .skill-card, .cert-card, .badge-card, .fit-card, .contact-link-item, .work-item").forEach((el, index) => {
+    el.dataset.delay = String((index % 4) * 80);
     if (observer) {
       observer.observe(el);
     } else {
@@ -115,45 +118,34 @@
     }
   });
 
-  const navLinks = document.querySelectorAll(".nav-links a, .mobile-menu a[href^='#']");
-
-  document.querySelectorAll(".project-card, .skills-card-panel, .fit-card, .cert-card, .job-body, .contact-link").forEach((card) => {
-    card.addEventListener("pointermove", (event) => {
-      const rect = card.getBoundingClientRect();
-      card.style.setProperty("--spot-x", `${event.clientX - rect.left}px`);
-      card.style.setProperty("--spot-y", `${event.clientY - rect.top}px`);
-    });
-  });
-
-  // Setup tab switcher logic
-  document.querySelectorAll("[data-tab-target]").forEach((tabBtn) => {
-    tabBtn.addEventListener("click", () => {
-      const parent = tabBtn.closest(".skills-card-panel");
-      if (!parent) return;
-
-      // Deactivate other tabs
-      parent.querySelectorAll("[data-tab-target]").forEach((btn) => {
-        btn.classList.remove("active");
-        btn.setAttribute("aria-selected", "false");
+  /* ─── Work Cursor Follow Preview ─── */
+  const workLinks = document.querySelectorAll(".work-link");
+  if (cursorPreview && previewImg) {
+    workLinks.forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        const previewUrl = link.dataset.preview;
+        if (previewUrl) {
+          previewImg.src = previewUrl;
+          cursorPreview.classList.add("active");
+        }
       });
 
-      // Deactivate other panels
-      parent.querySelectorAll(".skills-panel").forEach((panel) => {
-        panel.classList.remove("active");
+      link.addEventListener("mouseleave", () => {
+        cursorPreview.classList.remove("active");
       });
 
-      // Activate clicked tab
-      tabBtn.classList.add("active");
-      tabBtn.setAttribute("aria-selected", "true");
-
-      // Activate target panel
-      const targetId = tabBtn.getAttribute("aria-controls");
-      const targetPanel = document.getElementById(targetId);
-      if (targetPanel) {
-        targetPanel.classList.add("active");
-      }
+      link.addEventListener("mousemove", (event) => {
+        // Move the preview relative to viewport coordinate with offset
+        const x = event.clientX + 24;
+        const y = event.clientY + 24;
+        cursorPreview.style.left = `${x}px`;
+        cursorPreview.style.top = `${y}px`;
+      });
     });
-  });
+  }
+
+  /* ─── Active Scroll Menu Indicators ─── */
+  const navLinks = document.querySelectorAll(".nav-links a, .mobile-menu-links a");
 
   function updateActiveNav() {
     let current = "hero";
@@ -164,7 +156,7 @@
 
     sections.forEach((id) => {
       const el = document.getElementById(id);
-      if (el && window.scrollY >= el.offsetTop - 130) current = id;
+      if (el && window.scrollY >= el.offsetTop - 140) current = id;
     });
 
     navLinks.forEach((link) => {
@@ -175,4 +167,3 @@
   updateActiveNav();
   window.addEventListener("scroll", updateActiveNav, { passive: true });
 })();
-

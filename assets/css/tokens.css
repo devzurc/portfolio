@@ -1,48 +1,40 @@
 :root {
-  /* --- Sauce Labs Color Palette --- */
-  --color-obsidian-shell: #132322;
-  --color-pure-white: #ffffff;
-  --color-mint-frost: #edf7f5;
-  --color-deep-abyss: #0e1a19;
-  --color-charcoal: #070f0f;
-  --color-fog-border: #d0d3d3;
-  --color-stone-border: #b2b6b4;
-  --color-slate-text: #828786;
-  --color-graphite-fill: #424f4f;
-  --color-pure-black: #000000;
-  --color-neon-pulse: #3ddc91;
-  --color-mint-whisper: #97ddbc;
-  --color-signal-yellow: #ffcd48;
+  /* ─── Core Palette ─── */
+  --bg-primary: #0A0A0B;
+  --bg-elevated: #111113;
+  --bg-card: #161618;
+  --bg-subtle: #1C1C1F;
+  --bg-hover: #202024;
 
-  /* --- Backward Compatibility Mapping --- */
-  --ink: var(--color-obsidian-shell);
-  --ink-2: var(--color-deep-abyss);
-  --ink-3: var(--color-charcoal);
-  --paper: var(--color-obsidian-shell);
-  --surface: var(--color-deep-abyss);
-  --surface-2: var(--color-mint-frost);
-  --surface-glass: rgba(255, 255, 255, 0.04);
-  
-  --text: var(--color-obsidian-shell);
-  --text-soft: var(--color-slate-text);
-  --text-muted: var(--color-slate-text);
-  --text-on-dark: var(--color-pure-white);
-  --text-on-dark-soft: rgba(255, 255, 255, 0.64);
-  
-  --line: var(--color-stone-border);
-  --line-dark: rgba(255, 255, 255, 0.12);
-  
-  /* Single accent remapping */
-  --blue: var(--color-neon-pulse);
-  --blue-dark: #4efca2; /* Hover bright green */
-  --cyan: var(--color-neon-pulse);
-  --violet: var(--color-mint-whisper);
-  --teal: var(--color-neon-pulse);
-  --amber: var(--color-signal-yellow);
-  --coral: var(--color-signal-yellow);
+  /* ─── Text ─── */
+  --text-primary: #F5F5F7;
+  --text-secondary: #8E8E93;
+  --text-tertiary: #636366;
+  --text-inverse: #0A0A0B;
 
-  /* --- Spacing --- */
+  /* ─── Accents ─── */
+  --accent: #00E5FF;
+  --accent-hover: #33ECFF;
+  --accent-glow: rgba(0, 229, 255, 0.15);
+  --accent-glow-strong: rgba(0, 229, 255, 0.25);
+  --accent-amber: #FFB800;
+  --accent-amber-soft: rgba(255, 184, 0, 0.15);
+
+  /* ─── Borders ─── */
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --border-accent: rgba(0, 229, 255, 0.40);
+
+  /* ─── Typography ─── */
+  --font-display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ─── Spacing ─── */
+  --spacing-4: 4px;
   --spacing-8: 8px;
+  --spacing-12: 12px;
   --spacing-16: 16px;
   --spacing-24: 24px;
   --spacing-32: 32px;
@@ -50,24 +42,61 @@
   --spacing-48: 48px;
   --spacing-56: 56px;
   --spacing-64: 64px;
-  --spacing-72: 72px;
   --spacing-80: 80px;
   --spacing-96: 96px;
+  --spacing-120: 120px;
 
-  /* --- Radius Scale --- */
-  --radius-tabs: 56px;
-  --radius-cards: 20px;
-  --radius-buttons: 56px;
-  --radius-largecards: 60px;
-  --radius-smallelements: 10px;
-  --radius: var(--radius-cards);
+  /* ─── Radius ─── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 40px;
+  --radius-pill: 999px;
 
-  /* --- Shadows & Bounds --- */
-  --shadow-sm: rgba(0, 0, 0, 0.02) 1px 0px 5px 1px;
-  --shadow-md: rgba(0, 0, 0, 0.04) 1px 0px 9px 2px;
-  --shadow-glow: 0 0 20px rgba(61, 220, 145, 0.15);
-  
-  --max: 1200px;
+  /* ─── Shadows ─── */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 24px var(--accent-glow), 0 0 48px rgba(0, 229, 255, 0.08);
+  --shadow-amber: 0 0 24px var(--accent-amber-soft);
+
+  /* ─── Animation ─── */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
+  --duration-reveal: 600ms;
+
+  /* ─── Layout ─── */
+  --max: 1280px;
   --nav-h: 72px;
-}
+  --section-py: clamp(80px, 10vw, 120px);
 
+  /* ─── Backward Compat Aliases (for any missed references) ─── */
+  --color-obsidian-shell: var(--bg-primary);
+  --color-pure-white: var(--text-primary);
+  --color-neon-pulse: var(--accent);
+  --color-slate-text: var(--text-secondary);
+  --color-deep-abyss: var(--bg-elevated);
+  --color-mint-frost: var(--bg-subtle);
+  --color-signal-yellow: var(--accent-amber);
+  --color-stone-border: var(--border-default);
+  --line-dark: var(--border-subtle);
+  --surface-deep-card: var(--bg-card);
+  --text-on-dark: var(--text-primary);
+  --text-on-dark-soft: var(--text-secondary);
+  --blue: var(--accent);
+  --blue-dark: var(--accent-hover);
+  --surface-2: var(--bg-subtle);
+  --ink: var(--bg-primary);
+  --text: var(--text-primary);
+  --text-soft: var(--text-secondary);
+  --radius-tabs: var(--radius-pill);
+  --radius-cards: var(--radius-lg);
+  --radius-buttons: var(--radius-pill);
+  --radius-largecards: var(--radius-xl);
+  --radius-smallelements: var(--radius-md);
+  --radius: var(--radius-lg);
+}
