@@ -501,6 +501,17 @@ def parse_stack_rollup_techs(text: str) -> set[str]:
     return techs
 
 
+def tech_diff(current: set[str], previous: set[str]) -> tuple[list[str], list[str]]:
+    """Case-insensitive stack diff to avoid false positives (e.g. Python vs python)."""
+    current_by_key = {item.strip().lower(): item for item in current if item.strip()}
+    previous_by_key = {item.strip().lower(): item for item in previous if item.strip()}
+    new_keys = set(current_by_key) - set(previous_by_key)
+    removed_keys = set(previous_by_key) - set(current_by_key)
+    new_items = sorted((current_by_key[key] for key in new_keys), key=str.lower)
+    removed_items = sorted((previous_by_key[key] for key in removed_keys), key=str.lower)
+    return new_items, removed_items
+
+
 def list_needs_review_projects() -> list[str]:
     projects = []
     for path in sorted(PROJECTS_DIR.glob("*.md")):
@@ -722,8 +733,7 @@ def main() -> int:
     index_changed = write_if_changed(INDEX_PATH, index_content, normalizer=normalize_generated_dates)
     stack_changed = write_if_changed(STACK_PATH, stack_content, normalizer=normalize_generated_dates)
     current_techs = parse_stack_rollup_techs(stack_content)
-    new_techs = sorted(current_techs - previous_techs, key=str.lower)
-    removed_techs = sorted(previous_techs - current_techs, key=str.lower)
+    new_techs, removed_techs = tech_diff(current_techs, previous_techs)
     needs_review = list_needs_review_projects()
     report = build_sync_report(
         repos=filtered,

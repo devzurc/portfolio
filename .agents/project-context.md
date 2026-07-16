@@ -13,15 +13,17 @@
 | **Primary file** | `index.html` (single-page portfolio) |
 | **Stack** | Static HTML, modular CSS in `assets/css/`, vanilla JavaScript in `assets/js/site.js` |
 | **Deployment** | GitHub Pages — push to `main` |
-| **Audience** | Recruiters and hiring managers for Data Engineering & Gen. AI roles (Europe-focused) |
+| **Audience** | Recruiters and hiring managers for Data Engineering, Gen. AI, and AI Platform roles (Europe/US English-first) |
 
 ---
 
 ## Professional Positioning
 
-**Headline roles:** Senior Data Engineer · Gen. AI Automation Engineer
+**Headline roles:** Senior Data Engineer · Gen. AI Automation Engineer · AI Platform Engineer (roadmap)
 
-**Core narrative:** Building production data pipelines, lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence contexts.
+**Core narrative:** Building production data pipelines, lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence contexts. Extending into production AI platforms over enterprise data (RAG, agents, evaluation, MCP, observability).
+
+**Niche statement:** I build production AI systems over real enterprise data: ingestion, retrieval, agents, tools, evaluation, observability, and deployment.
 
 **Differentiators to preserve:**
 
@@ -74,30 +76,29 @@ Fixed top nav + mobile hamburger menu. Nav labels use `data-en` / `data-pt` for 
 
 ### Typography
 
-- **Body / UI:** Inter
-- **Mono / labels:** IBM Plex Mono
-- **Fallbacks:** system UI and system monospace stacks
+- **Body / UI:** Inter (Weights: 400, 500)
+- **Mono / labels / UI controls:** IBM Plex Mono (Weights: 400, 500)
+- **Scale discipline:** Limit font weights strictly to 400 (regular) and 500 (medium) for display and headings.
 
 ### Colors (CSS variables)
 
 ```css
---ink: #070b16;
---paper: #f6f8fc;
---surface: #ffffff;
---text: #0d1728;
---blue: #2563eb;
---cyan: #21d4b3;
---amber: #d79222;
---radius: 8px;
+--color-obsidian-shell: #132322; /* Primary page background */
+--color-pure-white: #ffffff;      /* Contrast text on dark, card BGs */
+--color-mint-frost: #edf7f5;      /* Light card panels */
+--color-deep-abyss: #0e1a19;      /* Nested dark cards / surfaces */
+--color-slate-text: #828786;      /* Muted text on dark */
+--color-neon-pulse: #3ddc91;      /* 🟢 Green live accent for active/CTA states */
+--color-signal-yellow: #ffcd48;   /* Isometric/warning accents */
 ```
 
 ### Patterns
 
-- Light recruiter-facing content bands with dark hero/timeline/contact sections
-- Blue/cyan primary accents with restrained amber/coral secondary accents
-- `.fade-in` + IntersectionObserver for scroll animations
-- `.tag` pills for technologies
-- `.project-card`, `.job`, `.skill-card` component classes
+- **Dark/Light Rhythm:** The page is dominant obsidian dark canvas (`#132322`). Selected feature areas float as large light Mint Frost cards (`#edf7f5`, 60px radius) to break up sections.
+- **Rationed Accent:** Neon Pulse green `#3ddc91` is used exclusively for primary CTAs, active states, active tab indicators, and live numbers. Never used decoratively.
+- **Signature Radius:** Buttons and tabs are fully pill-shaped (`56px`). Standard cards are `20px` radius. Large cards are `60px` radius.
+- **Scroll Animations:** `.fade-in` + IntersectionObserver.
+- **Components:** `.project-card`, `.job`, `.skills-card-panel`, `.skills-tab`, `.badge-card`.
 
 ---
 
@@ -172,6 +173,7 @@ Use the CV as the **factual authority** for employers, dates, metrics, projects,
 | Alignment roadmap | `docs/career/ALIGNMENT-PLAN.md` |
 | Job search strategy | `docs/career/JOB-SEARCH-STRATEGY.md` |
 | TKTech sprint knowledge | `docs/career/tktech-sprint-knowledge.md` |
+| AI roadmap & goals | `docs/career/goals/` (see `AGENTS.md`) |
 | GitHub sync report | `docs/career/github-sync-report.md` |
 | Sync script | `python3 docs/career/scripts/sync-github-projects.py` |
 
@@ -187,6 +189,7 @@ Current sprint/process note: Lucas is working through Notion sprints at TKTech. 
 | Portfolio | https://devzurc.github.io/portfolio/ |
 | LinkedIn | https://www.linkedin.com/in/lucas-cruz |
 | GitHub | https://github.com/devzurc |
+| Credly | https://www.credly.com/users/devzurc |
 | Medium | https://medium.com/@dev.lucascruz |
 | Email | dev.lucascruz@gmail.com |
 
@@ -197,7 +200,7 @@ Flagship TK Technologies CDP links use the organization repository: `https://git
 
 ## Certifications (on-site)
 
-Certs section groups credentials with **real verification URLs** or local certificate PDFs. Current groups include IELTS, Udemy, Coursera, Data Science Academy, Alura, and the Dom Bosco education certificate. When adding a cert:
+Certs section groups credentials with **real verification URLs** or local certificate PDFs. Current groups include IELTS, Udemy, Coursera, Data Science Academy, Alura, the Dom Bosco education certificate, and the Google AI series (4 certificates: AI for Writing and Communicating, AI for Research and Insights, AI for Brainstorming and Planning, AI Fundamentals). When adding a cert:
 
 1. Owner must provide certificate URL
 2. Match existing HTML list structure

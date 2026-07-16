@@ -1,0 +1,110 @@
+---
+description: Binding rules for all agents working on Lucas Cruz's portfolio — factual integrity, bilingual EN/PT parity, static-site constraints, and hiring positioning.
+alwaysApply: true
+---
+
+# Portfolio Agent Rules
+
+These rules apply to **every AI agent** working in this repository. Read `AGENTS.md` and `.agents/project-context.md` before making changes.
+
+**Canonical skills:** `.cursor/skills/` (Cursor-native). `.agents/` holds stable `@` references for commands and legacy paths.
+
+---
+
+## Mission
+
+Help maintain and improve Lucas Cruz's personal portfolio for **Data Engineering**, **Gen. AI Engineering**, and **AI Platform Engineering** hiring audiences. Every change should increase clarity, credibility, and recruiter scan-ability — not visual noise.
+
+---
+
+## Non-Negotiables
+
+### 1. Never fabricate credentials
+
+Do **not** invent or embellish:
+
+- Job titles, employers, dates, or responsibilities
+- Project outcomes, metrics, or scale claims
+- Certifications, badges, or credential URLs
+- GitHub repos, demos, papers, or blog posts
+- Skills the owner has not demonstrated elsewhere in the repo or CV
+
+When information is missing, **ask the user** or leave a clearly marked placeholder (`<!-- TODO: confirm metric with owner -->`). Prefer under-stating over over-claiming.
+
+**CV authority:** Local markdown in `docs/resume/markdown/*.md` is canonical until Google Docs are updated (see `docs/career/ALIGNMENT-PLAN.md`). Portfolio copy must not contradict the CV. For CV edits, use `.cursor/skills/cv-management/SKILL.md` — never change the CV in isolation without considering portfolio sync.
+
+### 2. Preserve bilingual content (EN / PT-BR)
+
+The site uses a dual-language pattern:
+
+- `.en-only` and `.pt-only` blocks for section copy
+- `data-en` / `data-pt` on nav links
+- `setLang('en' | 'pt')` toggles visibility and updates `document.title` and meta description
+
+**Every user-facing text change must exist in both languages** unless the user explicitly requests a single-language edit.
+
+### 3. Scope discipline
+
+- **Default scope:** `index.html`, files under `assets/`, CV workflow under `docs/resume/`, career knowledge under `docs/career/`
+- Do not refactor unrelated sections when fixing one issue
+- Do not introduce frameworks, build tools, or npm unless the user explicitly requests a stack change
+
+### 4. Static-site constraints
+
+This is a **GitHub Pages static site**:
+
+- No server-side rendering, databases, or API keys in the repo
+- Keep all CSS/JS compatible with modern browsers without a bundler
+- External links: `target="_blank"` + `rel="noopener noreferrer"`
+
+### 5. Styling & Design Constraints (Sauce Labs Theme)
+
+- **Default background:** Flat `#132322` (Obsidian Shell) as the dominant page canvas. No color gradients or heavy shadows.
+- **Surface layers:**
+  - Level 1: Obsidian Shell (`#132322`) for page background.
+  - Level 2: Deep Abyss (`#0e1a19`) for nested cards (timeline, cert cards, standard project cards).
+  - Level 3: Mint Frost (`#edf7f5`) for light content cards (Skills container panel, featured project card).
+- **Signature radius scale:**
+  - Buttons & Tabs: `56px` (fully pill-shaped — non-negotiable).
+  - Cards: `20px` border-radius.
+  - Large panels: `60px` border-radius.
+  - Small elements: `10px` border-radius.
+- **Rationed green accent:** Use Neon Pulse Green (`#3ddc91`) EXCLUSIVELY for live signals (primary actions, active navigation/tab states, stats highlights). Do not apply it to non-interactive elements like tags or decorative bars.
+- **Typography discipline:** Limit font weights strictly to `400` (regular) and `500` (medium). Use IBM Plex Mono for tags, labels, and small UI text; Inter for body and display headings.
+
+---
+
+## Positioning Guidelines
+
+Lead with **production-ready systems**, not buzzwords.
+
+Target roles: **Data Engineer**, **Gen. AI Engineer**, **AI Platform Engineer**, **ML/Data platform** roles with automation focus.
+
+Niche statement: *I build production AI systems over real enterprise data: ingestion, retrieval, agents, tools, evaluation, observability, and deployment.*
+
+---
+
+## AI roadmap integration
+
+- Strategy lives in `docs/career/goals/`
+- Monthly capstone repos sync via `docs/career/scripts/sync-github-projects.py`
+- Use `.cursor/skills/ai-roadmap-tracking/SKILL.md` for weekly progress and `/weekly-review`
+- Do not claim roadmap skills on public surfaces until a curated project profile proves them
+
+---
+
+## Git & Commits
+
+- **Never commit** unless the user explicitly asks
+- Do not commit secrets, `.env` files, or draft copy with unverified claims
+
+---
+
+## Escalation
+
+Stop and ask the user when:
+
+- Adding a new project without repo/demo links
+- Changing employment dates, titles, or employers
+- Adding certifications or stats not present in current content
+- Copy changes that could affect visa/relocation messaging

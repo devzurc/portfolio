@@ -1,6 +1,6 @@
 # Career project index
 
-> Updated 2026-06-17. Public-safe portfolio/CV evidence layer.
+> Updated 2026-07-16. Public-safe portfolio/CV evidence layer.
 
 ## Flagship and CV-backed work
 
@@ -13,6 +13,7 @@
 | [project_dashboard_heroby](https://github.com/devzurc/project_dashboard_heroby) | public | client-work | unknown | false | true | [profile](projects/project_dashboard_heroby.md) | [readme](readmes/project_dashboard_heroby.md) |
 | [project_rpa_send-nfses](https://github.com/devzurc/project_rpa_send-nfses) | public | client-work | unknown | false | true | [profile](projects/project_rpa_send-nfses.md) | [readme](readmes/project_rpa_send-nfses.md) |
 | spacecom-iot-lakehouse | private | client-work | Spacecom Monitoramento | true | true | [profile](projects/spacecom-iot-lakehouse.md) | CV-backed |
+| whatsapp-automation-platform | private | active | TK Technologies | true | true | [profile](projects/whatsapp-crm-platform.md) | CV-backed |
 
 ## Sanitized private automation
 

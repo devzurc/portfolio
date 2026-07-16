@@ -11,15 +11,18 @@ Use this skill for `/seo-check`, `/a11y-pass`, or when editing metadata, heading
 | Item | Current pattern | Action |
 |------|-----------------|--------|
 | `<title>` | Dynamic via `setLang()` | EN + PT titles must stay aligned with hero |
-| `<meta name="description">` | Static in `<head>` | Update when value prop changes; ~150–160 chars |
+| `<meta name="description">` | EN static + PT via `data-meta-desc` (updated by `setLang()`) | Update both when value prop changes; ~150–160 chars |
 | `<meta name="author">` | Lucas Cruz | Keep |
 | `og:title` | Matches EN positioning | Sync with title changes |
 | `og:description` | Shorter social summary | Compelling, not duplicate of meta description |
 | `og:type` | `website` | Keep |
-| `og:url` | Often missing | Recommend canonical URL if owner provides domain |
-| `og:image` | Often missing | Recommend 1200×630 preview image |
-| `twitter:card` | Often missing | Add `summary_large_image` if og:image added |
-| `<link rel="canonical">` | Often missing | Add when custom domain confirmed |
+| `og:url` | `https://devzurc.github.io/portfolio/` | Keep aligned with canonical |
+| `og:image` | `assets/images/data-ai-systems-hero.png` (1200×630-class hero asset) | Keep; verify asset exists before deploy |
+| `twitter:card` | `summary_large_image` | Keep |
+| `<link rel="canonical">` | `https://devzurc.github.io/portfolio/` | Keep |
+| `<link rel="alternate" hreflang>` | `en` + `pt-BR` pointing to same URL | Client-side i18n on single page |
+| JSON-LD `Person` | In `<head>` | Keep fields aligned with CV facts only |
+| Favicon | `assets/images/favicon.svg` | Keep |
 
 ### Content SEO
 

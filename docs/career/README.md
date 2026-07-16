@@ -12,6 +12,7 @@ Private-to-you working area for AI agents to understand **what you built**, **wi
 | **Next phase** | `ALIGNMENT-PLAN.md` | Checklist to sync CV ↔ portfolio ↔ projects |
 | **Job strategy** | `JOB-SEARCH-STRATEGY.md` | Role-fit thinking, search filters, interview story bank |
 | **Sprint/process knowledge** | `tktech-sprint-knowledge.md` | Public-safe Notion sprint/task mapping for TKTech delivery work |
+| **AI roadmap & goals** | `goals/` | Senior AI Platform Specialist roadmap, skill matrix, progress log, job tracker |
 
 **Do not** mirror entire codebases. README + curated profiles are enough for AI and recruiters.
 
@@ -44,6 +45,13 @@ docs/career/
 ├── projects/                 ← curated career profiles
 │   ├── _template.md
 │   └── <repo>.md
+├── goals/                    ← AI platform roadmap, skill matrix, progress log
+│   ├── README.md
+│   ├── senior-ai-roadmap.md
+│   ├── skill-matrix.md
+│   ├── projects-pipeline.md
+│   ├── progress-log.md
+│   └── job-applications.md
 └── scripts/
     └── sync-github-projects.py
 ```
@@ -141,7 +149,7 @@ Current process snapshot: Notion sprint work and customer-facing TKTech delivery
 
 | Slug | GitHub mirror (`devzurc`) |
 |------|---------------------------|
-| `cdp-hub` | devzurc/cdp-hub |
+| `cdp-hub` | devzurc/cdp-hub (private mirror) · [tktechnologies/cdp-hub](https://github.com/tktechnologies/cdp-hub) (public) |
 | `muvstok-api` | devzurc/muvstok-api (also inside CDP monorepo) |
 | `carparts-price-webscraper` | devzurc/carparts-price-webscraper |
 | `marketing-socialmedia-app` | devzurc/marketing-socialmedia-app |

@@ -18,14 +18,14 @@ Curitiba, Brazil · Open to relocation across Europe · Requires visa sponsorshi
 
 ## Professional Summary
 
-Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics datasets, conversational AI workflows, automated reporting systems, and customer-facing product implementation. Fluent in English (C1); open to relocation across Europe.
+Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics datasets, conversational AI workflows, automated reporting systems, and customer-facing product implementation. Building a public portfolio of production AI platform systems (RAG, agents, evaluation, MCP, observability) over enterprise data through 2026. Fluent in English (C1); open to relocation across Europe.
 
 ## Technical Skills
 
 | Category | Skills |
 |----------|--------|
 | Gen. AI & LLMs | LLM Integration, AI Agents (OpenAI, Claude, Gemini…), RAG, Prompt Engineering, Chatbot Development |
-| Data Engineering, APIs & Orchestration | Python, SQL, FastAPI, SQLAlchemy, Pydantic, Apache Spark (PySpark), Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n, Celery, Redis Streams |
+| Data Engineering, APIs & Orchestration | Python, SQL, NestJS, Next.js, FastAPI, SQLAlchemy, Pydantic, Apache Spark (PySpark), Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n, Celery, Redis Streams, Meta Cloud API |
 | Cloud & Lakehouses | Amazon Web Service (AWS), Microsoft Azure, Google Cloud (GCP), Oracle Cloud (OCI), Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database |
 | Databases & BI | PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker |
 | Security & Data Governance | LGPD/GDPR Compliance, Data Privacy, IAM, RBAC, Data Masking, Encryption (Rest/Transit), Audit Logging, RFID/NFC Tagging, Firewall |
@@ -38,6 +38,7 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 
 **Curitiba, PR – Brazil (Hybrid)** · Feb 2026 – Present · 6-month contract, expected Aug 2026
 
+- Architected a multi-channel CRM platform (WhatsApp, Instagram, Messenger) using NestJS, Next.js, and PostgreSQL logic, deploying to Azure Container Apps with Bicep IaC.
 - Engineered a multi-source web scraping pipeline in Python targeting 10+ automotive parts websites, extracting pricing and product metadata at scale to deliver competitive market intelligence.
 - Architected AI-powered n8n automation workflows (ETL, RPA, and chatbot agents) by integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich datasets and reduce manual analysis work.
 - Developed a conversational AI chatbot that empowers business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.
@@ -72,6 +73,12 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 
 ## Notable Projects
 
+### WhatsApp CRM & Automation Platform
+
+*NestJS, Next.js, PostgreSQL, n8n, Azure Container Apps, Meta Cloud API, Docker · TK Technologies – Jun 2026 – Present*
+
+- Developed a production CRM receiving Meta Cloud API webhooks for WhatsApp, Instagram, and Messenger; integrated dynamic welcome/cooldown flows via PostgreSQL and Next.js agent inbox. Deployed on Azure ACA.
+
 ### Automotive Market Price Intelligence Platform
 
 *Python, n8n, LLMs, GCP APIs, Azure, Docker · TK Technologies – Feb 2026 – Present*
@@ -90,8 +97,21 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 
 - Designed a Bronze/Silver/Gold lakehouse on AWS S3 ingesting from APIs and databases. Virtualised the Gold layer with Trino and surfaced governed datasets through BI dashboards.
 
+### AI Platform Engineering Portfolio (in progress — 2026)
+
+*FastAPI · PostgreSQL/pgvector · LangGraph · MCP · RAGAS · Docker · OpenTelemetry*
+
+- Building public, production-grade AI systems over enterprise data: RAG with hybrid retrieval and evaluation gates, LangGraph agent orchestration with human approval, MCP tool servers, and observability. Milestones shipping Jul–Dec 2026 on github.com/devzurc.
+
 ## Education
 
 **Bachelor of Systems Analysis and Development** — Dom Bosco University, Curitiba, Brazil · Jun 2023
 
 Majors: Information Systems · Business Analytics · Data Analysis · Database Systems · Software Engineering
+
+## Licenses & Certifications
+
+- **AI for Writing and Communicating** — Google (Credential ID: HE8YE5IS7WVW) · Jul 2026
+- **AI for Research and Insights** — Google (Credential ID: 4PZDF3XQOF55) · Jul 2026
+- **AI for Brainstorming and Planning** — Google (Credential ID: 7SFW2HGOKIU5) · Jul 2026
+- **AI Fundamentals** — Google (Credential ID: UKBGM0AZUIS2) · Jul 2026

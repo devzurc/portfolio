@@ -1,6 +1,6 @@
 # Alignment plan - CV · Portfolio · Career knowledge
 
-> **Status:** Implemented in repo on 2026-06-12. Local markdown, DOCX, PDF, and website CV downloads are aligned as of 2026-06-17, including public-safe TKTech sprint/customer-facing delivery and mobile launch readiness wording. Google Docs/raw text exports still need owner-side confirmation before the next pull.
+> **Status:** Mega-update implemented in repo on 2026-07-16. Added NestJS/Next.js CRM Automation Platform, integrated Credly profile link, and designed Google AI certifications badge section in index.html and both EN/PT CVs. Local markdown, PDF, Word, and website CV downloads are in-sync. Google Docs updates are pending owner-side paste and sync script trigger.
 
 This plan connects three surfaces:
 
@@ -11,8 +11,11 @@ This plan connects three surfaces:
 | **Portfolio** | `index.html` | Recruiters, quick scan |
 | **Job search strategy** | `docs/career/JOB-SEARCH-STRATEGY.md` | Role targeting, filters, interview prep |
 | **Sprint/process knowledge** | `docs/career/tktech-sprint-knowledge.md` | Public-safe current delivery context |
+| **AI roadmap & goals** | `docs/career/goals/` | Senior AI Platform Specialist roadmap and progress tracking |
 
 **Rule:** Public copy (CV + portfolio) only uses facts backed by `docs/career/projects/*.md` with `verified_outcomes` or CV text.
+
+**CV source of truth (2026-06-24):** Local markdown in `docs/resume/markdown/*.md` is **canonical** until Google Docs are updated from `docs/resume/google-docs-update-2026-06-17.md`. Do **not** run `sync-from-google-docs.py` before that — it would regress PT wording (Europe relocation / visa sponsorship). After Google Docs are updated, re-sync and run `/sync-cv-portfolio audit`.
 
 ---
 
@@ -54,7 +57,7 @@ For each repo in `INDEX.md`:
 | `project_etl_emissaoCO2` | Medallion / ETL practice |
 | Others | Training or client ops — curate honestly |
 
-See `.repo-manifest.json` for GitHub name aliases (e.g. `instagram-n8n` → `n8n-instagram-assistant`).
+See `.repo-manifest.json` for GitHub name aliases (e.g. `n8n-instagram-assistant` canonical mirror under `devzurc`).
 
 ---
 
@@ -107,7 +110,7 @@ Command: `/improve-section` per section after audit.
 ## Remaining manual follow-up
 
 1. ~~Review the EN/PT markdown CV changes.~~ Done 2026-06-17.
-2. Apply approved copy to the canonical Google Docs, then run `python3 docs/resume/scripts/sync-from-google-docs.py`.
+2. **Open (2026-06-24):** Apply approved copy to canonical Google Docs using `docs/resume/google-docs-update-2026-06-17.md`, then run `python3 docs/resume/scripts/sync-from-google-docs.py`. Until then, edit `docs/resume/markdown/*.md` only.
 3. Re-run `/sync-cv-portfolio audit` after Google export if wording diverges from markdown.
 4. Run `/continuous-career-sync` when GitHub activity or learning signals change.
 5. Run `/pre-commit-review` before committing.

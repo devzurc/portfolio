@@ -39,6 +39,13 @@
       ? "Lucas Cruz - Engenheiro de Dados Sênior & Automação com IA Generativa"
       : "Lucas Cruz - Senior Data Engineer & Gen. AI Automation Engineer";
 
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      const enDesc = metaDesc.dataset.metaDescEn || metaDesc.content;
+      const ptDesc = metaDesc.dataset.metaDescPt || metaDesc.content;
+      metaDesc.setAttribute("content", isPT ? ptDesc : enDesc);
+    }
+
     document.querySelectorAll("[data-en][data-pt]").forEach((el) => {
       el.textContent = isPT ? el.dataset.pt : el.dataset.en;
     });
@@ -99,7 +106,7 @@
     }, { threshold: 0.06, rootMargin: "0px 0px -40px 0px" })
     : null;
 
-  document.querySelectorAll(".fade-in, .job, .project-card, .skill-card, .cert-card, .contact-link").forEach((el, index) => {
+  document.querySelectorAll(".fade-in, .job, .project-card, .skills-card-panel, .cert-card, .contact-link").forEach((el, index) => {
     el.dataset.delay = String((index % 5) * 60);
     if (observer) {
       observer.observe(el);
@@ -110,11 +117,41 @@
 
   const navLinks = document.querySelectorAll(".nav-links a, .mobile-menu a[href^='#']");
 
-  document.querySelectorAll(".project-card, .skill-card, .fit-card, .cert-card, .job-body, .contact-link").forEach((card) => {
+  document.querySelectorAll(".project-card, .skills-card-panel, .fit-card, .cert-card, .job-body, .contact-link").forEach((card) => {
     card.addEventListener("pointermove", (event) => {
       const rect = card.getBoundingClientRect();
       card.style.setProperty("--spot-x", `${event.clientX - rect.left}px`);
       card.style.setProperty("--spot-y", `${event.clientY - rect.top}px`);
+    });
+  });
+
+  // Setup tab switcher logic
+  document.querySelectorAll("[data-tab-target]").forEach((tabBtn) => {
+    tabBtn.addEventListener("click", () => {
+      const parent = tabBtn.closest(".skills-card-panel");
+      if (!parent) return;
+
+      // Deactivate other tabs
+      parent.querySelectorAll("[data-tab-target]").forEach((btn) => {
+        btn.classList.remove("active");
+        btn.setAttribute("aria-selected", "false");
+      });
+
+      // Deactivate other panels
+      parent.querySelectorAll(".skills-panel").forEach((panel) => {
+        panel.classList.remove("active");
+      });
+
+      // Activate clicked tab
+      tabBtn.classList.add("active");
+      tabBtn.setAttribute("aria-selected", "true");
+
+      // Activate target panel
+      const targetId = tabBtn.getAttribute("aria-controls");
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add("active");
+      }
     });
   });
 
@@ -138,3 +175,4 @@
   updateActiveNav();
   window.addEventListener("scroll", updateActiveNav, { passive: true });
 })();
+

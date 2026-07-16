@@ -33,8 +33,9 @@ The agent should be proactive, but not reckless. GitHub can prove that a repo, R
 | Cover letter | `docs/resume/markdown/LucasCruz_Cover_Letter_Europe_EN.md` | Keep aligned with strongest current narrative |
 | Portfolio | `index.html` | Public subset of curated and CV-backed facts |
 | Agent context | `.agents/project-context.md`, `.agents/prompts/start-audit-sync.md` | Keep workflow discoverable |
+| AI roadmap | `docs/career/goals/` | Senior AI Platform Specialist tracking — use `@.cursor/skills/ai-roadmap-tracking/SKILL.md` |
 
-Use `@.agents/skills/career-knowledge.md` for project curation and `@.agents/skills/cv-management.md` before changing CV-related content.
+Use `@.cursor/skills/career-knowledge/SKILL.md` for project curation and `@.cursor/skills/cv-management/SKILL.md` before changing CV-related content.
 
 ---
 
@@ -106,6 +107,13 @@ Use `@.agents/skills/career-knowledge.md` for project curation and `@.agents/ski
 | Project becomes mature | Propose CV notable project and portfolio card |
 | Current work changes | Update `tktech-sprint-knowledge.md` or project profile first, then draft CV/site wording |
 | Target role shifts | Update `JOB-SEARCH-STRATEGY.md`, then propose hero/CV summary changes |
+| AI platform repo appears or updates | Route to `docs/career/goals/projects-pipeline.md` via `@.cursor/skills/ai-roadmap-tracking/SKILL.md`; update skill matrix when proven |
+
+### AI platform repo slugs
+
+When sync detects these repos, flag for goals pipeline (not generic career flow only):
+
+`raw-llm-systems`, `data-engineering-knowledge-rag`, `analytics-agent-orchestrator`, `mcp-data-catalog-server`, `mcp-warehouse-assistant`, `ai-data-operations-platform`
 
 ---
 

@@ -329,6 +329,28 @@ Propose updated projects/<repo-name>.md content; wait for approval before writin
 
 ---
 
+## `/weekly-review`
+
+Friday ritual: update AI roadmap progress, check projects pipeline, propose CV/portfolio deltas.
+
+```
+/weekly-review
+
+Use @.cursor/skills/ai-roadmap-tracking/SKILL.md and @docs/career/goals/.
+
+1. Confirm current month focus from senior-ai-roadmap.md
+2. Run python3 docs/career/scripts/sync-github-projects.py if GitHub activity since last review
+3. Read github-sync-report.md for AI platform repo signals
+4. Update docs/career/goals/progress-log.md with this week's entry
+5. Update projects-pipeline.md and skill-matrix.md if warranted
+6. Prompt me to log applications in job-applications.md
+7. Draft CV/portfolio/cover letter deltas — do not apply without approval
+
+Do not commit unless I explicitly ask.
+```
+
+---
+
 ## Command Aliases (optional)
 
 | Alias | Maps to |
@@ -343,6 +365,7 @@ Propose updated projects/<repo-name>.md content; wait for approval before writin
 | `/cv-pull` | `/sync-cv-from-google` |
 | `/career-sync` | `/sync-github-career` |
 | `/career-watch` | `/continuous-career-sync` |
+| `/weekly` | `/weekly-review` |
 | `/curate` | `/curate-project` |
 
 ---

@@ -2,8 +2,10 @@
   "aliases": {
     "cdp-hub": {
       "canonical": "devzurc/cdp-hub",
+      "public_url": "https://github.com/tktechnologies/cdp-hub",
       "local_path": "/home/devzurc/projects/cdp-app",
-      "knowledge_slug": "cdp-hub"
+      "knowledge_slug": "cdp-hub",
+      "note": "Public portfolio links use tktechnologies/cdp-hub; private mirror under devzurc"
     },
     "muvstok-api": {
       "canonical": "devzurc/muvstok-api",

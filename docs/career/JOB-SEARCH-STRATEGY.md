@@ -10,12 +10,15 @@ The strongest story is not only "I build pipelines" or "I build AI agents." It i
 
 > I can own a real business workflow from intake to data/API/backend automation, deploy it in cloud infrastructure, connect it to users through chat/email/spreadsheets/customer demos, and keep improving it through sprint work and stakeholder feedback.
 
+Google AI certifications (4 verified credentials on Credly) validate his solid foundation in Applied AI/Gen. AI systems.
+
 ## Best-fit role families
 
 | Priority | Role family | Why it fits |
 |----------|-------------|-------------|
 | 1 | Senior Data Engineer / Data Platform Engineer | Backed by Python, SQL, Airflow, PySpark, AWS lakehouse, APIs, orchestration, governed datasets |
 | 1 | Gen. AI Automation Engineer / AI Workflow Engineer | Backed by n8n, LLM integrations, chatbots, RAG/internal knowledge, webhooks, customer operations automation |
+| 1 | Senior / Applied AI Engineer / AI Platform Engineer | Backed by roadmap repos: FastAPI, pgvector RAG, LangGraph agents, MCP, RAGAS/DeepEval, observability — see `goals/senior-ai-roadmap.md` |
 | 2 | Data/AI Solutions Engineer | Strong fit if the role values demos, training, stakeholder discovery, implementation, and post-launch support |
 | 2 | Automation Platform Engineer | Strong fit for companies scaling internal operations through APIs, n8n, backend services, cloud, and reporting |
 | 3 | Technical Implementation Engineer, AI/Data Products | Good growth path when hands-on engineering remains central and the role is not pure account management |
@@ -27,6 +30,7 @@ The strongest story is not only "I build pipelines" or "I build AI agents." It i
 - SaaS or B2B teams that need a builder who can also run demos, train customers, gather feedback, and support adoption.
 - Europe-based companies open to visa sponsorship, especially teams comfortable with English-first collaboration.
 - Roles mentioning Python, SQL, Airflow, FastAPI, Azure/AWS/GCP, Docker, n8n, LLMs, RAG, webhooks, data platform, or workflow automation.
+- Roles mentioning LangGraph, pgvector, MCP, RAGAS, DeepEval, LangSmith, OpenTelemetry, agent orchestration, or AI platform engineering.
 
 ## Roles to be careful with
 
@@ -49,6 +53,10 @@ Use combinations of:
 - `Data Engineer LLM RAG pipelines`
 - `Automation Engineer FastAPI webhooks`
 - `Data Engineer relocation sponsorship`
+- `Senior AI Engineer RAG LangGraph visa sponsorship`
+- `AI Platform Engineer pgvector evaluation production`
+- `Applied AI Engineer FastAPI observability Europe`
+- `GenAI Systems Engineer MCP agent orchestration`
 
 ## Resume and portfolio angles by role
 
@@ -59,12 +67,15 @@ Use combinations of:
 | Gen. AI Automation Engineer | n8n, LLM workflows, chatbots, internal knowledge, RAG | Telegram assistant, WhatsApp intake, CDP automation |
 | AI/Data Solutions Engineer | Customer demos, training, product support, stakeholder feedback | TKTech sprint knowledge and customer-facing delivery notes |
 | Automation Platform Engineer | Webhooks, payments, lifecycle email, messaging integrations | Stripe, Clerk, WhatsApp, Instagram, n8n callback/security work |
+| Senior / Applied AI Engineer / AI Platform Engineer | Production RAG, agent orchestration, evaluation harnesses, MCP tools, observability over enterprise data | Roadmap repos (`goals/projects-pipeline.md`) + CDP Platform + lakehouse background |
 
 ## Interview story bank
 
 - Built an automotive pricing intelligence platform that receives requests from chat/email/schedule/spreadsheets and dispatches public pricing plus internal stock lookup.
-- Designed backend services with FastAPI, Redis/Celery/Streams, PostgreSQL, Docker, and Azure deployment patterns.
+- Designed backend services with FastAPI, NestJS, Next.js, Redis/Celery/Streams, PostgreSQL, Docker, and Azure deployment patterns (Azure Container Apps, Bicep IaC).
+- Architected a multi-channel WhatsApp/Instagram/Messenger CRM platform receiving official Meta Cloud API webhooks and executing robust customer welcome/cooldown flows.
 - Delivered private n8n automations for Telegram, WhatsApp, Instagram, Stripe, Clerk, and reporting workflows.
+- Obtained 4 Google AI certifications validating expertise in AI writing, communication, brainstorming, planning, and research tools.
 - Operated work through Notion sprints, turning blocked items, architecture decisions, migrations, and customer feedback into delivery tasks.
 - Moved beyond "developer only" work by demoing products, training customers, selling/supporting adoption, and feeding discoveries back into the backlog.
 

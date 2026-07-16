@@ -17,7 +17,7 @@
 
   .hero {
     background:
-      linear-gradient(90deg, rgba(11, 18, 34, 0.96) 0%, rgba(11, 18, 34, 0.84) 62%, rgba(11, 18, 34, 0.5) 100%),
+      linear-gradient(90deg, var(--color-obsidian-shell) 0%, rgba(19, 35, 34, 0.96) 62%, rgba(19, 35, 34, 0.6) 100%),
       url("../images/data-ai-systems-hero.png") center right / cover no-repeat;
   }
 
@@ -79,8 +79,23 @@
   .hero {
     min-height: auto;
     background:
-      linear-gradient(180deg, rgba(11, 18, 34, 0.96) 0%, rgba(11, 18, 34, 0.9) 100%),
+      linear-gradient(180deg, var(--color-obsidian-shell) 0%, rgba(19, 35, 34, 0.9) 100%),
       url("../images/data-ai-systems-hero.png") 62% center / cover no-repeat;
+  }
+
+  .skills-card-panel,
+  .project-card.featured {
+    border-radius: var(--radius-cards) !important;
+    padding: 24px !important;
+  }
+
+  .skills-tabs-container {
+    margin-top: 16px;
+    gap: 6px;
+  }
+
+  .skills-tab {
+    padding: 8px 16px;
   }
 
   .hero-inner {
@@ -101,6 +116,7 @@
   .skills-grid,
   .fit-grid,
   .cert-grid,
+  .badge-grid,
   .project-proof {
     grid-template-columns: 1fr;
   }
@@ -170,11 +186,11 @@
     font-size: 2rem;
   }
 
-  .skill-card,
+  .skills-card-panel,
   .project-card,
   .fit-card,
   .cert-card,
   .job-body {
-    padding: 1rem;
+    padding: 1.25rem 1rem !important;
   }
 }

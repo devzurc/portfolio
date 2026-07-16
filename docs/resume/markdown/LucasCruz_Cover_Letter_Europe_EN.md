@@ -17,7 +17,7 @@ What I bring is a practical engineering profile: I can work close to business st
 
 I am based in Curitiba, Brazil, and I am open to relocating across Europe. Working in Europe and in an English-speaking environment has been a long-term personal and professional goal, and I have prepared for it seriously through continuous study, international communication practice, and English certification at C1 level. I would welcome visa sponsorship where required.
 
-I would be glad to bring my data engineering and AI automation experience to [Company], especially if your team needs someone who can connect data platforms, cloud infrastructure, AI workflows, and business-facing reporting.
+I would be glad to bring my data engineering and AI automation experience to [Company], especially if your team needs someone who can connect data platforms, cloud infrastructure, AI workflows, and business-facing reporting. In 2026 I am building a public portfolio of production AI platform systems (RAG, agents, evaluation, MCP, observability) over enterprise data.
 
 Sincerely,
 

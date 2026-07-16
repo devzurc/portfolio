@@ -18,14 +18,14 @@ Curitiba, PR · Disponível para realocação na Europa · Necessita de patrocí
 
 ## Resumo Profissional
 
-Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva utilizando AWS, Azure e GCP, com implementação de produto voltada a clientes. Inglês fluente (C1); disponível para realocação na Europa.
+Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva utilizando AWS, Azure e GCP, com implementação de produto voltada a clientes. Construindo portfólio público de plataformas de IA em produção (RAG, agentes, avaliação, MCP, observabilidade) sobre dados empresariais ao longo de 2026. Inglês fluente (C1); disponível para realocação na Europa.
 
 ## Competências Técnicas
 
 | Categoria | Competências |
 |-----------|--------------|
 | IA Generativa & LLMs | Claude AI, Google AI Studio, Integração com LLMs, Agentes de IA, RAG, Engenharia de Prompt, Chatbots |
-| Engenharia de Dados, APIs & Orquestração | Python, SQL, FastAPI, SQLAlchemy, Pydantic, Apache Spark (PySpark), Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n, Celery, Redis Streams |
+| Engenharia de Dados, APIs & Orquestração | Python, SQL, NestJS, Next.js, FastAPI, SQLAlchemy, Pydantic, Apache Spark (PySpark), Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n, Celery, Redis Streams, Meta Cloud API |
 | Plataformas de Nuvem | AWS (S3, EC2, ECS, Lambda, IAM), Microsoft Azure, Google Cloud (GCP), Oracle Cloud (OCI) |
 | Plataformas de Dados | Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database |
 | Bancos de Dados & BI | PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker |
@@ -39,6 +39,7 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 
 **Curitiba, PR (Híbrido)** · Fev 2026 – Atual · Contrato de 6 meses, previsão Ago 2026
 
+- Projetou uma plataforma de CRM multi-canal (WhatsApp, Instagram, Messenger) usando NestJS, Next.js e lógica de negócio em PostgreSQL, realizando deploy no Azure Container Apps com Bicep IaC.
 - Desenvolveu pipeline de web scraping em Python coletando dados de preço e metadados de mais de 10 sites de peças automotivas, gerando inteligência competitiva de mercado em escala.
 - Projetou workflows de automação com IA no n8n (ETL, RPA e agentes chatbot) integrando LLMs (Claude AI, Google AI Studio) e APIs do GCP (Sheets, Drive) para enriquecer dados e reduzir trabalho manual de análise.
 - Desenvolveu chatbot de IA conversacional permitindo que usuários de negócio consultassem e refinassem datasets de preço por linguagem natural, reduzindo o tempo de obtenção de insights.
@@ -73,6 +74,12 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 
 ## Projetos de Destaque
 
+### Plataforma CRM & Automação WhatsApp
+
+*NestJS, Next.js, PostgreSQL, n8n, Azure Container Apps, Meta Cloud API, Docker · TK Technologies – Jun 2026 – Atual*
+
+- Desenvolveu um CRM em produção para processamento de webhooks oficiais da Meta Cloud API (WhatsApp, Instagram, Messenger) integrado a fluxos de auto-reply/cooldown em PostgreSQL e inbox de agentes em Next.js. Deploy via ACA.
+
 ### Plataforma de Inteligência de Preços — Mercado Automotivo
 
 *Python, n8n, LLMs, GCP APIs, Azure, Docker · TK Technologies – Fev 2026 – Atual*
@@ -91,8 +98,21 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 
 - Projetou lakehouse Bronze/Prata/Ouro na AWS S3 com ingestão via APIs, bancos de dados e CSV; virtualizou a camada Ouro com Trino; entregou datasets governados para dashboards de BI.
 
+### Portfólio de Engenharia de Plataforma de IA (em andamento — 2026)
+
+*FastAPI · PostgreSQL/pgvector · LangGraph · MCP · RAGAS · Docker · OpenTelemetry*
+
+- Construindo sistemas públicos de IA em produção sobre dados empresariais: RAG com recuperação híbrida e gates de avaliação, orquestração de agentes com LangGraph e aprovação humana, servidores MCP e observabilidade. Marcos previstos Jul–Dez 2026 em github.com/devzurc.
+
 ## Formação Acadêmica
 
 **Tecnólogo em Análise e Desenvolvimento de Sistemas** — Universidade Dom Bosco, Curitiba, PR · Jun 2023
 
 Ênfase em: Sistemas de Informação, Business Analytics, Análise de Dados, Banco de Dados, Engenharia de Software
+
+## Licenças & Certificações
+
+- **AI for Writing and Communicating** — Google (ID da Credencial: HE8YE5IS7WVW) · Jul 2026
+- **AI for Research and Insights** — Google (ID da Credencial: 4PZDF3XQOF55) · Jul 2026
+- **AI for Brainstorming and Planning** — Google (ID da Credencial: 7SFW2HGOKIU5) · Jul 2026
+- **AI Fundamentals** — Google (ID da Credencial: UKBGM0AZUIS2) · Jul 2026

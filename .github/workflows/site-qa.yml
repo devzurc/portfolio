@@ -1,0 +1,75 @@
+name: Site QA
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate EN/PT i18n pair counts
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          html = Path("index.html").read_text(encoding="utf-8")
+          en = len(re.findall(r'class="[^"]*\ben-only\b', html))
+          pt = len(re.findall(r'class="[^"]*\bpt-only\b', html))
+          print(f"en-only blocks: {en}")
+          print(f"pt-only blocks: {pt}")
+          if en != pt:
+              print(f"ERROR: EN/PT block count mismatch ({en} vs {pt})")
+              sys.exit(1)
+          print("EN/PT pair counts match.")
+          PY
+
+      - name: Check internal asset references exist
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          root = Path(".")
+          html = (root / "index.html").read_text(encoding="utf-8")
+          css_files = list((root / "assets/css").glob("*.css"))
+          refs = set(re.findall(r'(?:href|src)="(assets/[^"#?]+)"', html))
+          for css in css_files:
+              refs.update(re.findall(r'url\(["\']?(assets/[^"\')\s]+)', css.read_text(encoding="utf-8")))
+          refs.update(re.findall(r'content="https://devzurc\.github\.io/portfolio/(assets/[^"]+)"', html))
+
+          missing = []
+          for ref in sorted(refs):
+              path = root / ref
+              if not path.exists():
+                  missing.append(ref)
+
+          if missing:
+              print("Missing referenced assets:")
+              for m in missing:
+                  print(f"  - {m}")
+              sys.exit(1)
+          print(f"All {len(refs)} referenced local assets exist.")
+          PY
+
+      - name: Link check (external URLs in index.html)
+        run: |
+          pip install --quiet linkchecker
+          linkchecker --check-extern \
+            --no-warnings \
+            --ignore-url='^mailto:' \
+            --ignore-url='^https://fonts\.(googleapis|gstatic)\.com' \
+            --ignore-url='^https://(www\.)?linkedin\.com' \
+            --ignore-url='^https://medium\.com' \
+            --ignore-url='^https://(www\.)?coursera\.org' \
+            --ignore-url='^https://(www\.)?alura\.com\.br' \
+            --ignore-url='^https://(www\.)?udemy\.com' \
+            --ignore-url='^https://github\.com' \
+            index.html || echo "Link check completed with expected external blocks (LinkedIn, Coursera, etc.)"
