@@ -2,10 +2,12 @@
 /* ── Dashboard Banner & Profile ──                         */
 /* ══════════════════════════════════════════════════════════ */
 .dashboard-banner {
-  width: 100%; height: clamp(180px, 22vw, 280px);
-  background: var(--gradient-banner);
+  width: 100%; height: clamp(200px, 24vw, 300px);
+  background: linear-gradient(180deg, rgba(12, 12, 20, 0.4) 0%, rgba(12, 12, 20, 0.85) 100%), url('../images/ai-banner.png') center/cover no-repeat;
   border-radius: 0 0 var(--radius-xl) var(--radius-xl);
   position: relative;
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 10px 30px rgba(0, 212, 170, 0.08);
 }
 .profile-card {
   display: flex; flex-direction: column; align-items: center;

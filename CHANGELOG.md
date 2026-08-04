@@ -7,6 +7,8 @@ All notable changes to the Lucas Cruz portfolio project will be documented in th
 ## [3.0.0] - 2026-08-04
 
 ### Added
+- **Real Profile Photo:** Updated `assets/images/profile-avatar.png` with Lucas Cruz's official headshot.
+- **AI Engineering Banner Image:** Added futuristic high-tech AI & Data Engineering banner background (`assets/images/ai-banner.png`) to `.dashboard-banner`.
 - **Complete Dashboard Layout Redesign:**
   - Ground-up layout shift from full-width vertical scroll to **sidebar + main content dashboard** inspired by modern developer portfolios.
   - Fixed left sidebar with icon-based vertical navigation (Home, Projects, Experience, Skills, Contact), external links (GitHub, LinkedIn, Medium), language toggle, and CV download.
