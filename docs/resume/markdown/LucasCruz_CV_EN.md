@@ -5,6 +5,7 @@ google_doc: https://docs.google.com/document/d/1O4YsNWyfANs_332ecNZ8fgf-wclyuJCj
 pdf: ../pdf/LucasCruz_CV_EN.pdf
 word: ../word/LucasCruz_CV_EN.docx
 last_synced: 2026-06-17
+last_updated: 2026-07-31
 sync_source: local-markdown-public-safe-tktech-delivery-update
 ---
 
@@ -38,11 +39,10 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 
 **Curitiba, PR – Brazil (Hybrid)** · Feb 2026 – Present · 6-month contract, expected Aug 2026
 
-- Architected a multi-channel CRM platform (WhatsApp, Instagram, Messenger) using NestJS, Next.js, and PostgreSQL logic, deploying to Azure Container Apps with Bicep IaC.
+- Architected an omnichannel AI CRM platform (integrating WhatsApp, Instagram, Facebook, Telegram, and Email) with role-based data governance, Meta/Google Ads tracking, and LLM-powered auto-replies, deploying to Azure Container Apps with Bicep IaC.
 - Engineered a multi-source web scraping pipeline in Python targeting 10+ automotive parts websites, extracting pricing and product metadata at scale to deliver competitive market intelligence.
 - Architected AI-powered n8n automation workflows (ETL, RPA, and chatbot agents) by integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich datasets and reduce manual analysis work.
 - Developed a conversational AI chatbot that empowers business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.
-- Deployed containerised backend services on Azure using Docker, standardising infrastructure environments and improving deployment reliability.
 - Coordinated Notion-based delivery sprints, customer-facing demos, product training, sales support, and post-launch support while preparing Play Store/EAS/DUNS mobile launch readiness.
 
 ### Data Engineer — Spacecom Monitoramento
@@ -73,11 +73,13 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 
 ## Notable Projects
 
-### WhatsApp CRM & Automation Platform
+### Omnichannel AI CRM Platform
 
-*NestJS, Next.js, PostgreSQL, n8n, Azure Container Apps, Meta Cloud API, Docker · TK Technologies – Jun 2026 – Present*
+*NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Present*
 
-- Developed a production CRM receiving Meta Cloud API webhooks for WhatsApp, Instagram, and Messenger; integrated dynamic welcome/cooldown flows via PostgreSQL and Next.js agent inbox. Deployed on Azure ACA.
+- Built a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
+- Connected Meta and Google Ads performance data to a unified marketing view.
+- Layered LLMs (Claude/Google AI Studio) for smart auto-replies, outbound messaging assistance, and automated ad campaign analysis.
 
 ### Automotive Market Price Intelligence Platform
 

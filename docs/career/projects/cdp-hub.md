@@ -1,7 +1,7 @@
 ---
 repo: cdp-hub
 github_url: https://github.com/tktechnologies/cdp-hub
-mirror_url: https://github.com/devzurc/cdp-hub
+mirror_url:
 visibility: private
 status: active
 period: Feb 2026 - Present
@@ -84,7 +84,6 @@ Python · FastAPI · Celery · Playwright · Redis · PostgreSQL · n8n · Googl
 
 ## Evidence
 
-- Mirror (private): https://github.com/devzurc/cdp-hub
 - Public org repo: https://github.com/tktechnologies/cdp-hub
 - README: `readmes/cdp-hub.md`
 

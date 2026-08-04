@@ -33,6 +33,7 @@ Instructions:
 3. Show before → after for edits
 4. List portfolio sync items (index.html) separately
 5. Do not edit index.html until I approve
+6. If the approved draft changes Markdown first, create or update one dated Google Docs update note; do not treat Word/PDF/site download assets as aligned until the owner applies the Google Docs changes and the export sync completes.
 
 Output using the deliverable format in cv-management.md.
 ```

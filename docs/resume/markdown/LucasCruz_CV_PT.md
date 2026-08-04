@@ -5,6 +5,7 @@ google_doc: https://docs.google.com/document/d/1oi8mzTJNNTu3CdSuqEgiWCPmiyvGWxrs
 pdf: ../pdf/LucasCruz_CV_PT.pdf
 word: ../word/LucasCruz_CV_PT.docx
 last_synced: 2026-06-17
+last_updated: 2026-07-31
 sync_source: local-markdown-public-safe-tktech-delivery-update
 ---
 
@@ -39,11 +40,10 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 
 **Curitiba, PR (Híbrido)** · Fev 2026 – Atual · Contrato de 6 meses, previsão Ago 2026
 
-- Projetou uma plataforma de CRM multi-canal (WhatsApp, Instagram, Messenger) usando NestJS, Next.js e lógica de negócio em PostgreSQL, realizando deploy no Azure Container Apps com Bicep IaC.
+- Projetou uma plataforma de CRM de IA omnichannel (WhatsApp, Instagram, Facebook, Telegram e e-mail) com governança de acesso (RBAC), rastreamento de Meta/Google Ads e auto-respostas por LLMs, realizando deploy no Azure Container Apps com Bicep IaC.
 - Desenvolveu pipeline de web scraping em Python coletando dados de preço e metadados de mais de 10 sites de peças automotivas, gerando inteligência competitiva de mercado em escala.
 - Projetou workflows de automação com IA no n8n (ETL, RPA e agentes chatbot) integrando LLMs (Claude AI, Google AI Studio) e APIs do GCP (Sheets, Drive) para enriquecer dados e reduzir trabalho manual de análise.
 - Desenvolveu chatbot de IA conversacional permitindo que usuários de negócio consultassem e refinassem datasets de preço por linguagem natural, reduzindo o tempo de obtenção de insights.
-- Realizou deploy de serviços backend conteinerizados no Azure com Docker, padronizando ambientes e melhorando a confiabilidade das implantações.
 - Coordenou sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial e suporte pós-lançamento enquanto preparava o lançamento mobile com Play Store/EAS/DUNS.
 
 ### Engenheiro de Dados — Spacecom Monitoramento
@@ -74,11 +74,13 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 
 ## Projetos de Destaque
 
-### Plataforma CRM & Automação WhatsApp
+### Plataforma de CRM de IA Omnichannel
 
-*NestJS, Next.js, PostgreSQL, n8n, Azure Container Apps, Meta Cloud API, Docker · TK Technologies – Jun 2026 – Atual*
+*NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Atual*
 
-- Desenvolveu um CRM em produção para processamento de webhooks oficiais da Meta Cloud API (WhatsApp, Instagram, Messenger) integrado a fluxos de auto-reply/cooldown em PostgreSQL e inbox de agentes em Next.js. Deploy via ACA.
+- Desenvolveu um CRM omnichannel seguro que centraliza WhatsApp, Instagram, Facebook, Telegram e e-mails em uma caixa de entrada unificada com controle de acesso baseado em funções (RBAC).
+- Conectou dados de desempenho de Meta e Google Ads a uma visão unificada de marketing.
+- Implementou camada de LLMs (Claude/Google AI Studio) para auto-respostas, redação de mensagens outbound e análise automatizada de campanhas publicitárias.
 
 ### Plataforma de Inteligência de Preços — Mercado Automotivo
 

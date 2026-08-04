@@ -3,10 +3,7 @@
 
   const menu = document.getElementById("mobile-menu");
   const burger = document.getElementById("burgerBtn");
-  const nav = document.querySelector("nav");
-  const cursorPreview = document.getElementById("cursorPreview");
-  const previewImg = cursorPreview ? cursorPreview.querySelector("img") : null;
-  const sections = ["hero", "projects", "skills", "experience", "certifications", "job-fit", "contact"];
+  const sections = ["hero", "projects", "experience", "skills", "certifications", "job-fit", "contact"];
 
   function closeMenu() {
     if (!menu || !burger) return;
@@ -109,8 +106,8 @@
     }, { threshold: 0.05, rootMargin: "0px 0px -40px 0px" })
     : null;
 
-  document.querySelectorAll(".fade-in, .job, .skill-card, .cert-card, .badge-card, .fit-card, .contact-link-item, .work-item").forEach((el, index) => {
-    el.dataset.delay = String((index % 4) * 80);
+  document.querySelectorAll(".fade-in, .job, .skill-card, .cert-card, .badge-card, .fit-card, .contact-link-item, .work-item, .profile-card").forEach((el, index) => {
+    el.dataset.delay = String((index % 5) * 60);
     if (observer) {
       observer.observe(el);
     } else {
@@ -118,52 +115,23 @@
     }
   });
 
-  /* ─── Work Cursor Follow Preview ─── */
-  const workLinks = document.querySelectorAll(".work-link");
-  if (cursorPreview && previewImg) {
-    workLinks.forEach((link) => {
-      link.addEventListener("mouseenter", () => {
-        const previewUrl = link.dataset.preview;
-        if (previewUrl) {
-          previewImg.src = previewUrl;
-          cursorPreview.classList.add("active");
-        }
-      });
-
-      link.addEventListener("mouseleave", () => {
-        cursorPreview.classList.remove("active");
-      });
-
-      link.addEventListener("mousemove", (event) => {
-        // Move the preview relative to viewport coordinate with offset
-        const x = event.clientX + 24;
-        const y = event.clientY + 24;
-        cursorPreview.style.left = `${x}px`;
-        cursorPreview.style.top = `${y}px`;
-      });
-    });
-  }
-
-  /* ─── Active Scroll Menu Indicators ─── */
-  const navLinks = document.querySelectorAll(".nav-links a, .mobile-menu-links a");
+  /* ─── Active Scroll — Sidebar + Mobile Menu ─── */
+  const sidebarLinks = document.querySelectorAll(".sidebar-nav a, .mobile-menu-links a");
 
   function updateActiveNav() {
     let current = "hero";
 
-    if (nav) {
-      nav.classList.toggle("is-scrolled", window.scrollY > 36);
-    }
-
     sections.forEach((id) => {
       const el = document.getElementById(id);
-      if (el && window.scrollY >= el.offsetTop - 140) current = id;
+      if (el && window.scrollY >= el.offsetTop - 160) current = id;
     });
 
-    navLinks.forEach((link) => {
+    sidebarLinks.forEach((link) => {
       link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
     });
   }
 
+  /* Scope scroll listener to the main-content scrollable area or window */
   updateActiveNav();
   window.addEventListener("scroll", updateActiveNav, { passive: true });
 })();

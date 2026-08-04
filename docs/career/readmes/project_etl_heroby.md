@@ -1,4 +1,4 @@
-<!-- PRIVATE REPO: sanitized from https://github.com/devzurc/project_etl_heroby on 2026-06-17 -->
+<!-- PRIVATE REPO: sanitized from https://github.com/devzurc/project_etl_heroby on 2026-07-31 -->
 
 ## Consulta dos dados da plataforma
 ----

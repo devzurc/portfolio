@@ -1,7 +1,7 @@
 ---
 repo: project_etl_heroby
-github_url: https://github.com/devzurc/project_etl_heroby
-github_ref: devzurc/project_etl_heroby
+github_url:
+github_ref:
 visibility: private
 status: archived
 period: unknown

@@ -1,7 +1,7 @@
 ---
 repo: project-bigdatapipeline
-github_url: https://github.com/devzurc/project-bigdatapipeline
-github_ref: devzurc/project-bigdatapipeline
+github_url:
+github_ref:
 visibility: private
 status: archived
 period: unknown

@@ -20,7 +20,7 @@
 | Repo / project | Status | GitHub | portfolio_worthy | cv_worthy | Notes |
 |----------------|--------|--------|------------------|-----------|-------|
 | `cdp-hub` | active | [tktechnologies/cdp-hub](https://github.com/tktechnologies/cdp-hub) (public) · devzurc mirror (private) | true | true | Flagship DE + GenAI platform |
-| `whatsapp-automation-platform` | active | private mirror | true | true | Multi-channel CRM & WhatsApp automation |
+| `whatsapp-automation-platform` | active | private mirror | true | true | Omnichannel AI CRM Platform |
 | `n8n-telegram-assistant` | active | private mirror | true | true | Conversational AI + RAG-adjacent |
 | `n8n-whatsapp-assistant` | active | no mirror | true | false | Sanitized profile only |
 | `n8n-stripe-checkout` | active | private mirror | true | true | Automation platform proof |

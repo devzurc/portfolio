@@ -21,12 +21,12 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 - Add `NestJS` and `Next.js` to **Data Engineering, APIs & Orchestration**.
 - Add `Meta Cloud API` to the end of the list in **Data Engineering, APIs & Orchestration**.
 
-### Work Experience — TK Technologies Bullets (Add to top of list)
+### Work Experience — TK Technologies Bullets (Replace the generic Azure/Docker bullet)
 
-Insert this bullet at the top of the TK Technologies list:
+Replace the generic Azure/Docker deployment bullet with this scoped CRM bullet. Do not add a sixth bullet:
 
 ```text
-- Architected a multi-channel CRM platform (WhatsApp, Instagram, Messenger) using NestJS, Next.js, and PostgreSQL logic, deploying to Azure Container Apps with Bicep IaC.
+- Architected an omnichannel AI CRM platform (integrating WhatsApp, Instagram, Facebook, Telegram, and Email) with role-based data governance, Meta/Google Ads tracking, and LLM-powered auto-replies, deploying to Azure Container Apps with Bicep IaC.
 ```
 
 ### Notable Projects (Add new entry at top)
@@ -34,11 +34,13 @@ Insert this bullet at the top of the TK Technologies list:
 Add this entry at the top of the Notable Projects section:
 
 ```text
-### WhatsApp CRM & Automation Platform
+### Omnichannel AI CRM Platform
 
-*NestJS, Next.js, PostgreSQL, n8n, Azure Container Apps, Meta Cloud API, Docker · TK Technologies – Jun 2026 – Present*
+*NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Present*
 
-- Developed a production CRM receiving Meta Cloud API webhooks for WhatsApp, Instagram, and Messenger; integrated dynamic welcome/cooldown flows via PostgreSQL and Next.js agent inbox. Deployed on Azure ACA.
+- Built a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
+- Connected Meta and Google Ads performance data to a unified marketing view.
+- Layered LLMs (Claude/Google AI Studio) for smart auto-replies, outbound messaging assistance, and automated ad campaign analysis.
 ```
 
 Also, add the **AI Platform Engineering Portfolio** entry at the bottom of Notable Projects:
@@ -81,12 +83,12 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 - Add `NestJS` and `Next.js` to **Engenharia de Dados, APIs & Orquestração**.
 - Add `Meta Cloud API` to the end of the list in **Engenharia de Dados, APIs & Orquestração**.
 
-### Experiência Profissional — TK Technologies Bullets (Add to top of list)
+### Experiência Profissional — TK Technologies Bullets (Substitua o bullet genérico de Azure/Docker)
 
-Insert this bullet at the top of the TK Technologies list:
+Substitua o bullet genérico de deploy Azure/Docker por este bullet específico de CRM. Não adicione um sexto bullet:
 
 ```text
-- Projetou uma plataforma de CRM multi-canal (WhatsApp, Instagram, Messenger) usando NestJS, Next.js e lógica de negócio em PostgreSQL, realizando deploy no Azure Container Apps com Bicep IaC.
+- Projetou uma plataforma de CRM de IA omnichannel (WhatsApp, Instagram, Facebook, Telegram e e-mail) com governança de acesso (RBAC), rastreamento de Meta/Google Ads e auto-respostas por LLMs, realizando deploy no Azure Container Apps com Bicep IaC.
 ```
 
 ### Projetos de Destaque (Add new entry at top)
@@ -94,11 +96,13 @@ Insert this bullet at the top of the TK Technologies list:
 Add this entry at the top of the Projetos de Destaque section:
 
 ```text
-### Plataforma CRM & Automação WhatsApp
+### Plataforma de CRM de IA Omnichannel
 
-*NestJS, Next.js, PostgreSQL, n8n, Azure Container Apps, Meta Cloud API, Docker · TK Technologies – Jun 2026 – Atual*
+*NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Atual*
 
-- Desenvolveu um CRM em produção para processamento de webhooks oficiais da Meta Cloud API (WhatsApp, Instagram, Messenger) integrado a fluxos de auto-reply/cooldown em PostgreSQL e inbox de agentes em Next.js. Deploy via ACA.
+- Desenvolveu um CRM omnichannel seguro que centraliza WhatsApp, Instagram, Facebook, Telegram e e-mails em uma caixa de entrada unificada com controle de acesso baseado em funções (RBAC).
+- Conectou dados de desempenho de Meta e Google Ads a uma visão unificada de marketing.
+- Implementou camada de LLMs (Claude/Google AI Studio) para auto-respostas, redação de mensagens outbound e análise automatizada de campanhas publicitárias.
 ```
 
 Also, add the **Portfólio de Engenharia de Plataforma de IA** entry at the bottom of Projetos de Destaque:

@@ -18,7 +18,7 @@ Google AI certifications (4 verified credentials on Credly) validate his solid f
 |----------|-------------|-------------|
 | 1 | Senior Data Engineer / Data Platform Engineer | Backed by Python, SQL, Airflow, PySpark, AWS lakehouse, APIs, orchestration, governed datasets |
 | 1 | Gen. AI Automation Engineer / AI Workflow Engineer | Backed by n8n, LLM integrations, chatbots, RAG/internal knowledge, webhooks, customer operations automation |
-| 1 | Senior / Applied AI Engineer / AI Platform Engineer | Backed by roadmap repos: FastAPI, pgvector RAG, LangGraph agents, MCP, RAGAS/DeepEval, observability — see `goals/senior-ai-roadmap.md` |
+| 3 | Senior / Applied AI Engineer / AI Platform Engineer | Growth track backed by planned roadmap repos; apply selectively while public evidence ships — see `goals/senior-ai-roadmap.md` |
 | 2 | Data/AI Solutions Engineer | Strong fit if the role values demos, training, stakeholder discovery, implementation, and post-launch support |
 | 2 | Automation Platform Engineer | Strong fit for companies scaling internal operations through APIs, n8n, backend services, cloud, and reporting |
 | 3 | Technical Implementation Engineer, AI/Data Products | Good growth path when hands-on engineering remains central and the role is not pure account management |
@@ -73,7 +73,7 @@ Use combinations of:
 
 - Built an automotive pricing intelligence platform that receives requests from chat/email/schedule/spreadsheets and dispatches public pricing plus internal stock lookup.
 - Designed backend services with FastAPI, NestJS, Next.js, Redis/Celery/Streams, PostgreSQL, Docker, and Azure deployment patterns (Azure Container Apps, Bicep IaC).
-- Architected a multi-channel WhatsApp/Instagram/Messenger CRM platform receiving official Meta Cloud API webhooks and executing robust customer welcome/cooldown flows.
+- Architected an omnichannel AI CRM platform (WhatsApp, IG, FB, Telegram, Email) with Meta/Google Ads integrations, role-based data governance, and LLM-powered replies.
 - Delivered private n8n automations for Telegram, WhatsApp, Instagram, Stripe, Clerk, and reporting workflows.
 - Obtained 4 Google AI certifications validating expertise in AI writing, communication, brainstorming, planning, and research tools.
 - Operated work through Notion sprints, turning blocked items, architecture decisions, migrations, and customer feedback into delivery tasks.

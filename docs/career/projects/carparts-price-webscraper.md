@@ -1,7 +1,7 @@
 ---
 repo: carparts-price-webscraper
-github_url: https://github.com/devzurc/carparts-price-webscraper
-github_ref: devzurc/carparts-price-webscraper
+github_url:
+github_ref:
 visibility: private
 status: archived
 period: 2025 - 2026

@@ -1,7 +1,7 @@
 ---
 repo: marketing-socialmedia-app
-github_url: https://github.com/devzurc/marketing-socialmedia-app
-github_ref: devzurc/marketing-socialmedia-app
+github_url:
+github_ref:
 visibility: private
 status: active
 period: 2025 - ongoing

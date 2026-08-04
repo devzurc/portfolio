@@ -1,147 +1,56 @@
+/* ── Desktop sidebar visible, no mobile topbar ── */
+@media (min-width: 769px) {
+  .mobile-topbar { display: none !important; }
+  .burger-btn { display: none !important; }
+}
+
+/* ── Tablet / narrow desktop ── */
 @media (max-width: 1100px) {
-  nav {
-    padding: 0 var(--spacing-24);
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-40);
-  }
-
-  .hero-proof {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .work-link {
-    grid-template-columns: 60px 1.5fr 1fr 60px;
-  }
-
-  .work-year {
-    display: none;
-  }
-
-  .job {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-16);
-    padding: var(--spacing-24);
-  }
-
-  .job-meta {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+  :root { --sidebar-w: 220px; }
+  .hero-grid { grid-template-columns: 1fr; gap: var(--spacing-24); }
+  .hero-proof { order: -1; }
+  .job { grid-template-columns: 1fr; gap: var(--spacing-12); }
+  .job-meta { flex-direction: row; justify-content: space-between; }
 }
 
+/* ── Mobile: sidebar collapses ── */
 @media (max-width: 768px) {
-  :root {
-    --nav-h: 64px;
-  }
+  :root { --sidebar-w: 0px; }
 
-  .section {
-    padding: var(--spacing-64) 0;
-  }
+  .sidebar { display: none; }
+  .mobile-topbar { display: flex !important; }
+  .main-content { margin-left: 0; padding-top: 64px; }
 
-  .section-head {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-12);
-  }
+  .container, .hero-inner { width: min(100% - 2rem, var(--max)); }
 
-  .hero {
-    min-height: auto;
-    padding-top: calc(var(--nav-h) + var(--spacing-32));
-    padding-bottom: var(--spacing-64);
-  }
+  .dashboard-banner { border-radius: 0; height: 160px; }
+  .profile-avatar { width: 96px; height: 96px; }
+  .profile-name { font-size: 1.35rem; }
 
-  .hero h1 {
-    font-size: clamp(2.8rem, 10vw, 4.5rem);
-    line-height: 0.95;
-  }
+  .section { padding: var(--spacing-48) 0; }
+  .section-head { gap: var(--spacing-8); }
+  .section-title { font-size: clamp(1.5rem, 5vw, 2rem); }
 
-  .hero-proof {
-    grid-template-columns: 1fr;
-    padding: var(--spacing-20);
-  }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-proof { order: 0; }
+  .hero-proof { grid-template-columns: 1fr; }
 
-  .work-link {
-    grid-template-columns: 40px 1fr auto;
-    padding: var(--spacing-24) 0;
-  }
+  .work-link { grid-template-columns: 28px minmax(0, 1fr) 20px; padding: var(--spacing-16); }
+  .work-tag, .work-year { display: none; }
 
-  .work-tag {
-    display: none;
-  }
+  .skills-grid, .badge-grid, .cert-grid, .fit-grid { grid-template-columns: 1fr; }
 
-  .skills-grid,
-  .cert-grid,
-  .badge-grid,
-  .fit-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-16);
-  }
-
-  .badge-card {
-    padding: var(--spacing-16);
-  }
-
-  .contact-cv {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
-  .contact-cv .btn {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .contact-links-row {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .contact-link-item {
-    width: 100%;
-    max-width: 320px;
-    justify-content: center;
-  }
+  .contact-panel { padding: var(--spacing-24) var(--spacing-16); }
+  .contact-cv { flex-direction: column; align-items: stretch; }
+  .contact-cv .btn, .contact-cv .shiny-cta { width: 100%; }
 }
 
+/* ── Small phones ── */
 @media (max-width: 480px) {
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .section-title {
-    font-size: 2.2rem;
-  }
-
-  .proof-value {
-    font-size: 2.8rem;
-  }
-
-  .work-name {
-    font-size: 1.6rem;
-  }
-
-  .job-title {
-    font-size: 1.6rem;
-  }
-
-  .skill-card-title {
-    font-size: 1.5rem;
-  }
-
-  .fit-title {
-    font-size: 1.5rem;
-  }
-
-  .contact-title {
-    font-size: 2.2rem;
-  }
+  .profile-avatar { width: 80px; height: 80px; }
+  .profile-name { font-size: 1.2rem; }
+  .profile-cta { flex-direction: column; align-items: stretch; }
+  .profile-cta .btn, .profile-cta .shiny-cta { width: 100%; }
+  .hero-statement { font-size: 1.05rem; }
+  .skill-card { min-height: 0; }
 }

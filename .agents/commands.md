@@ -209,7 +209,7 @@ I will describe the change below. You must:
 1. Draft paste-ready text for EN and PT Google Docs (links in project-context.md)
 2. Never invent dates, employers, or metrics
 3. Show portfolio sync impact (index.html) without editing until I approve
-4. Remind me to export PDFs to docs/resume/pdf/ and assets/files/cv/
+4. State whether Word/PDF/site download assets are current or pending the owner-side Google Docs paste and export sync
 ```
 
 **Examples:**

@@ -2,6 +2,44 @@
 
 All notable changes to the Lucas Cruz portfolio project will be documented in this file.
 
+## [Unreleased]
+
+## [3.0.0] - 2026-08-04
+
+### Added
+- **Complete Dashboard Layout Redesign:**
+  - Ground-up layout shift from full-width vertical scroll to **sidebar + main content dashboard** inspired by modern developer portfolios.
+  - Fixed left sidebar with icon-based vertical navigation (Home, Projects, Experience, Skills, Contact), external links (GitHub, LinkedIn, Medium), language toggle, and CV download.
+  - **Gradient banner** (purple → cyan → blue) spanning the top of the main content area.
+  - **Profile card** with circular avatar, name, title, and dual CTAs overlapping the banner.
+  - Mobile top bar with hamburger menu replaces sidebar on ≤768px viewports.
+  - Profile avatar image added at `assets/images/profile-avatar.png`.
+  - "Key numbers" panel in the About section with proof items (5+ years, 95K+ IoT, 10+ sources, C1 IELTS).
+
+### Changed
+- **Design system overhaul (`tokens.css`):** New deep navy color palette (`#0c0c14` primary), teal-cyan accent (`#00d4aa`), purple secondary (`#a855f7`), updated border and shadow tokens.
+- **Typography:** Switched from Inter to **Plus Jakarta Sans** (400/500/600/700) for headings and body. IBM Plex Mono retained for labels and tags.
+- **Layout architecture (`layout.css`):** Replaced fixed top nav with sidebar component. Main content offset by sidebar width with responsive collapse.
+- **All section styles updated** to card-based dashboard aesthetic with hover transitions and refined spacing.
+- **Responsive breakpoints** reworked: sidebar collapse at 768px, narrower sidebar at 1100px, small phone optimizations at 480px.
+- **JavaScript (`site.js`):** Scroll-spy now targets sidebar nav links. Profile card added to IntersectionObserver reveal list.
+
+### Preserved
+- All section IDs (`#hero`, `#projects`, `#experience`, `#skills`, `#certifications`, `#job-fit`, `#contact`).
+- Full i18n system (EN/PT toggle with `.en-only`/`.pt-only` blocks, `data-en`/`data-pt` attributes).
+- All SEO metadata (title, meta description, OG tags, Twitter cards, JSON-LD Person schema, canonical URL).
+- All content: projects, experience entries, skills cards, certifications, role-fit cards, contact info.
+- All external links (LinkedIn, GitHub, Medium, Credly, Coursera, Udemy, Alura verification URLs).
+- CV download paths unchanged (`assets/files/cv/LucasCruz_CV_EN.pdf`, `LucasCruz_CV_PT.pdf`).
+- `prefers-reduced-motion` support, skip-link, keyboard navigation.
+
+## [2.0.1] - 2026-07-16
+
+### Changed
+- **CRM Platform Copy Enrichment:**
+  - Upgraded "WhatsApp CRM" to "Omnichannel AI CRM Platform" across all portfolio components, CV files (English and Portuguese), and career evidence indexes.
+  - Added new specifications detailing integrations with Telegram, Email, Meta/Google Ads APIs, role-based access control (RBAC), and LLM auto-replies/insights layers.
+
 ## [2.0.0] - 2026-07-16
 
 ### Added

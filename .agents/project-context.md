@@ -44,7 +44,7 @@
 | ID | Purpose |
 |----|---------|
 | `#hero` | Name, roles, value prop, CTAs, headline stats |
-| `#projects` | Selected work list items with rolling text and cursor follow preview |
+| `#projects` | Recruiter-scan project rows with public links and sanitized private-work labels |
 | `#experience` | Employment timeline cards with impact bullets |
 | `#skills` | Service discipline cards (Data, Gen. AI, Cloud, Governance) |
 | `#certifications` | Google AI badges and verified certifications list |
@@ -76,26 +76,24 @@ Fixed top nav + full-screen mobile menu overlay. Nav labels use `data-en` / `dat
 
 ### Typography
 
-- **Body:** Inter (Weights: 400, 500, 600)
-- **Headings:** Instrument Serif (Weights: 400)
-- **Mono / labels / UI controls:** JetBrains Mono (Weights: 400, 500)
+- **Body and headings:** Inter (Weights: 400, 500)
+- **Mono / labels / UI controls:** IBM Plex Mono (Weights: 400, 500)
 
 ### Colors (CSS variables)
 
 ```css
---bg-primary: #0A0A0B;   /* Page background (near-black) */
---bg-elevated: #111113;  /* Elevated surfaces */
---bg-card: #161618;      /* Card backgrounds */
---accent: #00E5FF;       /* Electric cyan primary accent */
---accent-amber: #FFB800; /* Warm amber highlights / stats */
+--bg-primary: #132322;   /* Obsidian Shell page background */
+--bg-elevated: #0e1a19;  /* Deep Abyss nested surfaces */
+--bg-subtle: #edf7f5;    /* Mint Frost featured surfaces */
+--accent: #3ddc91;       /* Neon Pulse Green live signals only */
+--accent-amber: #ffcd48; /* Secondary verified-data highlight */
 ```
 
 ### Patterns
 
-- **Minimalist Dark Canvas:** Jet-black backdrop (`#0A0A0B`) featuring a repeating vector grid line layer and localized glowing spotlights.
-- **Accents:** Electric cyan is used for key links, active page tags, buttons, and hover boundaries. Warm amber marks verified metrics and certification IDs.
-- **Cursor Follow Preview:** Hovering on work items shows floating thumbnail boxes tracking client pointer movement.
-- **Components:** `.work-link` lists, `.job` timeline cards, `.skill-card` service grid, `.badge-card`.
+- **Green Console Canvas:** Flat Obsidian Shell (`#132322`) background with deep nested cards and Mint Frost featured panels.
+- **Accents:** Neon green is reserved for primary actions, active navigation, and verified proof signals; gradients and heavy shadows are excluded.
+- **Components:** Recruiter-scan project rows, timeline cards, a Mint Frost skills panel, and compact credential cards.
 
 ---
 
@@ -118,7 +116,7 @@ Fixed top nav + full-screen mobile menu overlay. Nav labels use `data-en` / `dat
 | **Word** | `word/LucasCruz_CV_EN.docx`, `word/LucasCruz_CV_PT.docx` | Direct export from Google Docs (recruiter/ATS) |
 | **PDF** | `pdf/LucasCruz_CV_EN.pdf`, `pdf/LucasCruz_CV_PT.pdf` | Repo snapshot / archive |
 | **Plain text** | `source/LucasCruz_CV_EN.txt`, `source/LucasCruz_CV_PT.txt` | Raw Google export for diffing |
-| **Google update note** | `google-docs-update-2026-06-17.md` | Paste-ready changes needed before next Google Docs pull |
+| **Google update note** | `google-docs-update-2026-07-16.md` | Paste-ready approved changes needed before the next Google Docs pull |
 | **Cover letter** | `markdown/LucasCruz_Cover_Letter_Europe_EN.md` | Europe-focused cover letter draft aligned from CV/career knowledge |
 
 **Sync command (pulls latest from Google Docs):**
@@ -143,7 +141,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 3. Update `markdown/*.md` if agents edited copy in-repo (or paste Google changes into markdown)
 4. Run `/sync-cv-portfolio` to align `index.html` with CV facts
 
-**Current audit note (2026-06-17):** Local markdown, Word, PDF, and site CV downloads are aligned. Product/client names are excluded from the public portfolio; employer TK Technologies remains where verified. Run `sync-from-google-docs.py` after Google Docs are updated to match local markdown.
+**Current audit note (2026-07-31):** Local Markdown includes approved CRM wording that is not yet reflected in Google Docs, Word, PDF, or site downloads. Product/client names are excluded from the public portfolio; employer TK Technologies remains where verified. Apply `google-docs-update-2026-07-16.md`, then run `sync-from-google-docs.py` and `/sync-cv-portfolio audit`.
 
 **CV management skill:** `@.agents/skills/cv-management.md`
 
@@ -223,7 +221,6 @@ Certs section groups credentials with **real verification URLs** or local certif
 |---------|----------|
 | Full-screen mobile menu | `toggleMenu()`, `closeMenu()` overlay |
 | Language toggle | `setLang(lang)` updates elements and attributes |
-| Cursor follow preview | Floating project preview moves with client mouse movements |
 | Scroll animations | IntersectionObserver on reveals (`.fade-in`, `.job`, `.work-item`) |
 | Active nav | Scroll listener highlights current section |
 

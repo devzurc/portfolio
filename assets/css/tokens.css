@@ -1,42 +1,48 @@
 :root {
-  /* ─── Core Palette ─── */
-  --bg-primary: #0A0A0B;
-  --bg-elevated: #111113;
-  --bg-card: #161618;
-  --bg-subtle: #1C1C1F;
-  --bg-hover: #202024;
+  /* ── Backgrounds ── */
+  --bg-primary: #0c0c14;
+  --bg-elevated: #14141f;
+  --bg-sidebar: #0f0f1a;
+  --bg-card: #1a1a2e;
+  --bg-card-hover: #1f1f35;
+  --bg-subtle: #f0f0f5;
+  --bg-hover: #22223a;
 
-  /* ─── Text ─── */
-  --text-primary: #F5F5F7;
-  --text-secondary: #8E8E93;
-  --text-tertiary: #636366;
-  --text-inverse: #0A0A0B;
+  /* ── Text ── */
+  --text-primary: #f0f0f5;
+  --text-secondary: #9ca3af;
+  --text-tertiary: #6b7280;
+  --text-inverse: #0c0c14;
 
-  /* ─── Accents ─── */
-  --accent: #00E5FF;
-  --accent-hover: #33ECFF;
-  --accent-glow: rgba(0, 229, 255, 0.15);
-  --accent-glow-strong: rgba(0, 229, 255, 0.25);
-  --accent-amber: #FFB800;
-  --accent-amber-soft: rgba(255, 184, 0, 0.15);
+  /* ── Accents ── */
+  --accent: #00d4aa;
+  --accent-hover: #00e8bb;
+  --accent-secondary: #a855f7;
+  --accent-amber: #ffcd48;
+  --gradient-banner: linear-gradient(135deg, #a855f7 0%, #06b6d4 50%, #3b82f6 100%);
 
-  /* ─── Borders ─── */
+  /* ── Borders ── */
   --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-default: rgba(255, 255, 255, 0.10);
-  --border-strong: rgba(255, 255, 255, 0.18);
-  --border-accent: rgba(0, 229, 255, 0.40);
+  --border-default: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.22);
+  --border-hover: var(--border-strong);
+  --border-accent: rgba(0, 212, 170, 0.5);
 
-  /* ─── Typography ─── */
-  --font-display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
-  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* ── Typography ── */
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* ─── Spacing ─── */
+  /* ── Spacing ── */
   --spacing-4: 4px;
+  --spacing-6: 6px;
   --spacing-8: 8px;
+  --spacing-10: 10px;
   --spacing-12: 12px;
   --spacing-16: 16px;
+  --spacing-20: 20px;
   --spacing-24: 24px;
+  --spacing-28: 28px;
   --spacing-32: 32px;
   --spacing-40: 40px;
   --spacing-48: 48px;
@@ -46,57 +52,37 @@
   --spacing-96: 96px;
   --spacing-120: 120px;
 
-  /* ─── Radius ─── */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+  /* ── Radius ── */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
   --radius-xl: 24px;
-  --radius-2xl: 40px;
-  --radius-pill: 999px;
+  --radius-2xl: 32px;
+  --radius-pill: 56px;
 
-  /* ─── Shadows ─── */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 24px var(--accent-glow), 0 0 48px rgba(0, 229, 255, 0.08);
-  --shadow-amber: 0 0 24px var(--accent-amber-soft);
+  --shadow-glow: 0 0 40px rgba(0, 212, 170, 0.15);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.25);
 
-  /* ─── Animation ─── */
+  /* ── Motion ── */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --duration-fast: 150ms;
   --duration-base: 250ms;
   --duration-slow: 400ms;
   --duration-reveal: 600ms;
 
-  /* ─── Layout ─── */
-  --max: 1280px;
-  --nav-h: 72px;
-  --section-py: clamp(80px, 10vw, 120px);
-
-  /* ─── Backward Compat Aliases (for any missed references) ─── */
-  --color-obsidian-shell: var(--bg-primary);
-  --color-pure-white: var(--text-primary);
-  --color-neon-pulse: var(--accent);
-  --color-slate-text: var(--text-secondary);
-  --color-deep-abyss: var(--bg-elevated);
-  --color-mint-frost: var(--bg-subtle);
-  --color-signal-yellow: var(--accent-amber);
-  --color-stone-border: var(--border-default);
-  --line-dark: var(--border-subtle);
-  --surface-deep-card: var(--bg-card);
-  --text-on-dark: var(--text-primary);
-  --text-on-dark-soft: var(--text-secondary);
-  --blue: var(--accent);
-  --blue-dark: var(--accent-hover);
-  --surface-2: var(--bg-subtle);
-  --ink: var(--bg-primary);
-  --text: var(--text-primary);
-  --text-soft: var(--text-secondary);
-  --radius-tabs: var(--radius-pill);
-  --radius-cards: var(--radius-lg);
-  --radius-buttons: var(--radius-pill);
-  --radius-largecards: var(--radius-xl);
-  --radius-smallelements: var(--radius-md);
-  --radius: var(--radius-lg);
+  /* ── Layout ── */
+  --max: 1100px;
+  --sidebar-w: 260px;
+  --sidebar-w-collapsed: 72px;
+  --nav-h: 0px;
+  --section-py: clamp(48px, 6vw, 80px);
+  --section-gap: var(--spacing-24);
+  --content-px: clamp(24px, 4vw, 48px);
 }

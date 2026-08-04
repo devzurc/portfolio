@@ -269,10 +269,17 @@ def ensure_project_stub(repo: dict, readme: str | None, today: str, slug: str) -
     description = (repo.get("description") or "").replace('"', "'")
     owner = repo.get("owner") or ""
     github_ref = f"{owner}/{name}" if owner else name
+    github_url = "" if visibility == "private" else repo["url"]
+    github_ref = "" if visibility == "private" else github_ref
+    evidence = (
+        f"- GitHub: {repo['url']}"
+        if visibility == "public"
+        else "- Repository: private — sanitized evidence only"
+    )
 
     content = f"""---
 repo: {slug}
-github_url: {repo['url']}
+github_url: {github_url}
 github_ref: {github_ref}
 visibility: {visibility}
 status: needs-review
@@ -321,7 +328,7 @@ _TODO: verified only_
 
 ## Evidence
 
-- GitHub: {repo['url']}
+{evidence}
 - README: `readmes/{slug}.md`
 
 ## Notes for AI / alignment
@@ -467,6 +474,8 @@ def build_stack_rollup() -> str:
         if path.name.startswith("_"):
             continue
         text = path.read_text(encoding="utf-8")
+        if (parse_frontmatter(text).get("status") or "").strip() == "needs-review":
+            continue
         stack = parse_frontmatter_stack(text)
         if not stack:
             continue

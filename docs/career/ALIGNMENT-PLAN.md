@@ -1,6 +1,6 @@
 # Alignment plan - CV · Portfolio · Career knowledge
 
-> **Status:** Mega-update implemented in repo on 2026-07-16. Added NestJS/Next.js CRM Automation Platform, integrated Credly profile link, and designed Google AI certifications badge section in index.html and both EN/PT CVs. Local markdown, PDF, Word, and website CV downloads are in-sync. Google Docs updates are pending owner-side paste and sync script trigger.
+> **Status:** Career and portfolio drafts were refreshed on 2026-07-31. Local Markdown contains the approved CRM scope; Google Docs, Word, PDF, and website CV downloads remain pending the owner-side paste and export step.
 
 This plan connects three surfaces:
 
@@ -15,7 +15,7 @@ This plan connects three surfaces:
 
 **Rule:** Public copy (CV + portfolio) only uses facts backed by `docs/career/projects/*.md` with `verified_outcomes` or CV text.
 
-**CV source of truth (2026-06-24):** Local markdown in `docs/resume/markdown/*.md` is **canonical** until Google Docs are updated from `docs/resume/google-docs-update-2026-06-17.md`. Do **not** run `sync-from-google-docs.py` before that — it would regress PT wording (Europe relocation / visa sponsorship). After Google Docs are updated, re-sync and run `/sync-cv-portfolio audit`.
+**CV source of truth (2026-07-31):** Local Markdown in `docs/resume/markdown/*.md` is **canonical** until Google Docs are updated from `docs/resume/google-docs-update-2026-07-16.md`. Do **not** run `sync-from-google-docs.py` before that. After Google Docs are updated, re-sync and run `/sync-cv-portfolio audit`.
 
 ---
 
@@ -23,7 +23,7 @@ This plan connects three surfaces:
 
 - [x] CV synced from Google Docs (`docs/resume/`)
 - [x] GitHub READMEs + project stubs (`docs/career/`)
-- [x] Curate every `projects/*.md` with `status: needs-review` into active, client-work, learning, archived, or engagement-complete
+- [ ] Curate each `projects/*.md` with `status: needs-review` into active, client-work, learning, archived, or engagement-complete
 - [x] Flag `portfolio_worthy` and `cv_worthy` per project
 - [x] Resolve EN/PT CV inconsistencies in markdown (8+ vs 10+ sites, security/governance parity, TK work mode)
 
@@ -55,6 +55,7 @@ For each repo in `INDEX.md`:
 | `stock-market-lakehouse` | Learning/lab profile only; README evidence is missing |
 | `project_dashboard_heroby` | wDiscover / IoT-adjacent client work |
 | `project_etl_emissaoCO2` | Medallion / ETL practice |
+| `sabia-hub`, `crm-hub`, `ORBITAI-CRM`, `invest-hub`, `my-finance` | Private evidence only — owner curation and publication permission required |
 | Others | Training or client ops — curate honestly |
 
 See `.repo-manifest.json` for GitHub name aliases (e.g. `n8n-instagram-assistant` canonical mirror under `devzurc`).
@@ -90,7 +91,7 @@ Map CV + career profiles → `index.html` sections:
 
 Command: `/improve-section` per section after audit.
 
-**Do not** add project cards without GitHub link or `portfolio_worthy: true`.
+Show public project links only where a public URL and publication permission exist. Approved private work may appear as sanitized evidence when `portfolio_worthy: true`; never substitute a generic GitHub link or expose repository details.
 
 ---
 
@@ -110,10 +111,11 @@ Command: `/improve-section` per section after audit.
 ## Remaining manual follow-up
 
 1. ~~Review the EN/PT markdown CV changes.~~ Done 2026-06-17.
-2. **Open (2026-06-24):** Apply approved copy to canonical Google Docs using `docs/resume/google-docs-update-2026-06-17.md`, then run `python3 docs/resume/scripts/sync-from-google-docs.py`. Until then, edit `docs/resume/markdown/*.md` only.
+2. **Open (2026-07-31):** Apply approved copy to canonical Google Docs using `docs/resume/google-docs-update-2026-07-16.md`, then run `python3 docs/resume/scripts/sync-from-google-docs.py`. Until then, edit `docs/resume/markdown/*.md` only.
 3. Re-run `/sync-cv-portfolio audit` after Google export if wording diverges from markdown.
-4. Run `/continuous-career-sync` when GitHub activity or learning signals change.
-5. Run `/pre-commit-review` before committing.
+4. Curate the five private-evidence profiles (`sabia-hub`, `crm-hub`, `ORBITAI-CRM`, `invest-hub`, `my-finance`) before using any of them in public copy.
+5. Run `/continuous-career-sync` when GitHub activity or learning signals change.
+6. Run `/pre-commit-review` before committing.
 
 ---
 

@@ -40,7 +40,7 @@ Use these as public-safe evidence. Keep them metric-free until specific counts o
 - Supported mobile launch readiness by working through Play Store/EAS setup, phased launch planning, and DUNS/company verification requirements.
 - Researched anti-bot and residential proxy options to improve web-scraping reliability for automotive market-intelligence pipelines.
 - Implemented and debugged secure n8n webhook/callback flows connecting chat, email, scraping, stock lookup, reporting, and notification systems.
-- Architected a multi-channel CRM platform (WhatsApp, Instagram, Messenger) with NestJS API, Next.js agent dashboard, and PostgreSQL logic layer, deploying to Azure Container Apps.
+- Architected an omnichannel AI CRM platform (WhatsApp, Instagram, Facebook, Telegram, Email) with NestJS API, Next.js agent dashboard (with RBAC), Meta/Google Ads integrations, and LLM automation layer, deploying to Azure Container Apps.
 
 ## Evidence to capture next
 

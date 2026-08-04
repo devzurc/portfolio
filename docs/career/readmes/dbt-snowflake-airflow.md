@@ -87,7 +87,7 @@ localhost:8080
 
 username: airflow
 
-password: airflow
+password: [REDACTED_EXAMPLE_PASSWORD]
 
 ---------------------------------------------
 
