@@ -1,0 +1,14 @@
+---
+description: Static frontend conventions for HTML, CSS, JavaScript, and responsive portfolio work.
+globs: ["index.html", "assets/css/**/*.css", "assets/js/**/*.js"]
+alwaysApply: false
+---
+
+# Static frontend conventions
+
+- Keep structure in `index.html`, styling in the matching modular CSS file, and behavior in `assets/js/site.js`.
+- Use CSS custom properties from `assets/css/tokens.css`; do not add unexplained hard-coded colors, spacing, or typography values.
+- Reuse existing components and section patterns before adding new classes.
+- Preserve section IDs, semantic landmarks, visible focus styles, reduced-motion support, and responsive behavior at 390px, 768px, and 1440px.
+- Prefer named event listeners or semantic anchors over inline event handlers.
+- Do not introduce Tailwind, React, a bundler, or dependencies without explicit approval.

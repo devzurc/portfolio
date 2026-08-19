@@ -5,8 +5,8 @@ google_doc: https://docs.google.com/document/d/1oi8mzTJNNTu3CdSuqEgiWCPmiyvGWxrs
 pdf: ../pdf/LucasCruz_CV_PT.pdf
 word: ../word/LucasCruz_CV_PT.docx
 last_synced: 2026-06-17
-last_updated: 2026-07-31
-sync_source: local-markdown-public-safe-tktech-delivery-update
+last_updated: 2026-08-19
+sync_source: local-markdown-github-evidence-and-tktech-scope-update
 ---
 
 # LUCAS CRUZ
@@ -19,7 +19,7 @@ Curitiba, PR · Disponível para realocação na Europa · Necessita de patrocí
 
 ## Resumo Profissional
 
-Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva utilizando AWS, Azure e GCP, com implementação de produto voltada a clientes. Construindo portfólio público de plataformas de IA em produção (RAG, agentes, avaliação, MCP, observabilidade) sobre dados empresariais ao longo de 2026. Inglês fluente (C1); disponível para realocação na Europa.
+Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva utilizando AWS, Azure e GCP, com desenvolvimento e manutenção de produtos voltados a clientes. Construindo portfólio público de plataformas de IA em produção (RAG, agentes, avaliação, MCP, observabilidade) sobre dados empresariais ao longo de 2026. Inglês fluente (C1); disponível para realocação na Europa.
 
 ## Competências Técnicas
 
@@ -44,7 +44,7 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 - Desenvolveu pipeline de web scraping em Python coletando dados de preço e metadados de mais de 10 sites de peças automotivas, gerando inteligência competitiva de mercado em escala.
 - Projetou workflows de automação com IA no n8n (ETL, RPA e agentes chatbot) integrando LLMs (Claude AI, Google AI Studio) e APIs do GCP (Sheets, Drive) para enriquecer dados e reduzir trabalho manual de análise.
 - Desenvolveu chatbot de IA conversacional permitindo que usuários de negócio consultassem e refinassem datasets de preço por linguagem natural, reduzindo o tempo de obtenção de insights.
-- Coordenou sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial e suporte pós-lançamento enquanto preparava o lançamento mobile com Play Store/EAS/DUNS.
+- Coordenou sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial e suporte pós-lançamento; atualmente contribui para a nova presença web da TK e para desenvolvimento e manutenção contínuos do produto CRM com descrições públicas sanitizadas.
 
 ### Engenheiro de Dados — Spacecom Monitoramento
 
@@ -80,19 +80,13 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 
 - Desenvolveu um CRM omnichannel seguro que centraliza WhatsApp, Instagram, Facebook, Telegram e e-mails em uma caixa de entrada unificada com controle de acesso baseado em funções (RBAC).
 - Conectou dados de desempenho de Meta e Google Ads a uma visão unificada de marketing.
-- Implementou camada de LLMs (Claude/Google AI Studio) para auto-respostas, redação de mensagens outbound e análise automatizada de campanhas publicitárias.
+- Implementou camada de LLMs (Claude/Google AI Studio) para auto-respostas, redação de mensagens outbound e análise automatizada de campanhas publicitárias; contribui para a presença web relacionada da TK e manutenção de produto com descrições públicas sanitizadas.
 
 ### Plataforma de Inteligência de Preços — Mercado Automotivo
 
 *Python, n8n, LLMs, GCP APIs, Azure, Docker · TK Technologies – Fev 2026 – Atual*
 
-- Coletou dados de mais de 10 sites automotivos com Python; orquestrou agentes de IA via n8n com Claude AI, Google AI Studio e GCP (Sheets, Drive) para automatizar análise de preços e gerar insights de compras competitivas. Deploy completo conteinerizado no Azure.
-
-### Assistente Conversacional Telegram
-
-*n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI · TK Technologies – Fev 2026 – Atual*
-
-- Workflow privado de automação conversacional que responde a partir de conhecimento interno curado, registra estado de usuários/conversas e aciona jobs de demonstração da plataforma CDP via APIs backend integradas.
+- Construiu plataforma de pipeline duplo para pesquisa de preços públicos e consulta de estoque interno, usando FastAPI/Celery/Playwright/Redis/PostgreSQL/n8n para relatórios e notificações auditáveis. Serviços conteinerizados executam no Azure com infraestrutura como código em Bicep.
 
 ### Data Lakehouse IoT na AWS — Arquitetura Medallion
 

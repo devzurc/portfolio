@@ -44,7 +44,7 @@
 | ID | Purpose |
 |----|---------|
 | `#hero` | Name, roles, value prop, CTAs, headline stats |
-| `#projects` | Recruiter-scan project rows with public links and sanitized private-work labels |
+| `#projects` | Three recruiter-scan flagship case studies with public links only where evidence is publishable |
 | `#experience` | Employment timeline cards with impact bullets |
 | `#skills` | Service discipline cards (Data, Gen. AI, Cloud, Governance) |
 | `#certifications` | Google AI badges and verified certifications list |
@@ -53,7 +53,7 @@
 
 ### Navigation
 
-Fixed top nav + full-screen mobile menu overlay. Nav labels use `data-en` / `data-pt` for dynamic translation on language switch.
+Fixed desktop sidebar + full-screen mobile-menu dialog. Nav labels use `data-en` / `data-pt` for dynamic translation on language switch.
 
 ---
 
@@ -76,24 +76,18 @@ Fixed top nav + full-screen mobile menu overlay. Nav labels use `data-en` / `dat
 
 ### Typography
 
-- **Body and headings:** Inter (Weights: 400, 500)
+- **Body and headings:** Plus Jakarta Sans (Weights: 400, 500, 600, 700)
 - **Mono / labels / UI controls:** IBM Plex Mono (Weights: 400, 500)
 
 ### Colors (CSS variables)
 
-```css
---bg-primary: #132322;   /* Obsidian Shell page background */
---bg-elevated: #0e1a19;  /* Deep Abyss nested surfaces */
---bg-subtle: #edf7f5;    /* Mint Frost featured surfaces */
---accent: #3ddc91;       /* Neon Pulse Green live signals only */
---accent-amber: #ffcd48; /* Secondary verified-data highlight */
-```
+The authoritative values are the custom properties in `assets/css/tokens.css`. Reuse them rather than adding near-duplicate literals.
 
 ### Patterns
 
-- **Green Console Canvas:** Flat Obsidian Shell (`#132322`) background with deep nested cards and Mint Frost featured panels.
-- **Accents:** Neon green is reserved for primary actions, active navigation, and verified proof signals; gradients and heavy shadows are excluded.
-- **Components:** Recruiter-scan project rows, timeline cards, a Mint Frost skills panel, and compact credential cards.
+- **v3 dashboard direction:** Dark dashboard surfaces, compact scan-oriented modules, evidence-forward project and career content.
+- **Accents:** Use existing tokens consistently; validate text contrast before introducing a new foreground/background pairing.
+- **Components:** Recruiter-scan project rows, timeline cards, dashboard panels, and compact credential cards.
 
 ---
 
@@ -116,7 +110,7 @@ Fixed top nav + full-screen mobile menu overlay. Nav labels use `data-en` / `dat
 | **Word** | `word/LucasCruz_CV_EN.docx`, `word/LucasCruz_CV_PT.docx` | Direct export from Google Docs (recruiter/ATS) |
 | **PDF** | `pdf/LucasCruz_CV_EN.pdf`, `pdf/LucasCruz_CV_PT.pdf` | Repo snapshot / archive |
 | **Plain text** | `source/LucasCruz_CV_EN.txt`, `source/LucasCruz_CV_PT.txt` | Raw Google export for diffing |
-| **Google update note** | `google-docs-update-2026-07-16.md` | Paste-ready approved changes needed before the next Google Docs pull |
+| **Google update note** | `google-docs-update-2026-08-19.md` | Paste-ready approved changes needed before the next Google Docs pull |
 | **Cover letter** | `markdown/LucasCruz_Cover_Letter_Europe_EN.md` | Europe-focused cover letter draft aligned from CV/career knowledge |
 
 **Sync command (pulls latest from Google Docs):**
@@ -141,9 +135,9 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 3. Update `markdown/*.md` if agents edited copy in-repo (or paste Google changes into markdown)
 4. Run `/sync-cv-portfolio` to align `index.html` with CV facts
 
-**Current audit note (2026-07-31):** Local Markdown includes approved CRM wording that is not yet reflected in Google Docs, Word, PDF, or site downloads. Product/client names are excluded from the public portfolio; employer TK Technologies remains where verified. Apply `google-docs-update-2026-07-16.md`, then run `sync-from-google-docs.py` and `/sync-cv-portfolio audit`.
+**Current CV note (2026-08-19):** Local Markdown, Word/PDF exports, and site downloads must stay aligned after every approved career update. Product/client names remain excluded from the public portfolio; current TK website, OrbitAI, and StokIA responsibilities use sanitized wording only.
 
-**CV management skill:** `@.agents/skills/cv-management.md`
+**CV management skill:** `@.agents/skills/cv-management/SKILL.md`
 
 ### CV document structure (EN)
 
@@ -172,8 +166,8 @@ Use the CV as the **factual authority** for employers, dates, metrics, projects,
 | GitHub sync report | `docs/career/github-sync-report.md` |
 | Sync script | `python3 docs/career/scripts/sync-github-projects.py` |
 
-Skill: `@.agents/skills/career-knowledge.md`
-Continuous sync skill: `@.agents/skills/continuous-career-sync.md`
+Skill: `@.agents/skills/career-knowledge/SKILL.md`
+Continuous sync skill: `@.agents/skills/continuous-career-sync/SKILL.md`
 
 Current sprint/process note: Lucas is working through Notion sprints at TKTech. Public-safe career knowledge lives in `docs/career/tktech-sprint-knowledge.md`; use it for customer-facing delivery, sprint ownership, mobile launch readiness, and role-fit mapping without exposing raw ticket names or private identifiers.
 
@@ -221,7 +215,7 @@ Certs section groups credentials with **real verification URLs** or local certif
 |---------|----------|
 | Full-screen mobile menu | `toggleMenu()`, `closeMenu()` overlay |
 | Language toggle | `setLang(lang)` updates elements and attributes |
-| Scroll animations | IntersectionObserver on reveals (`.fade-in`, `.job`, `.work-item`) |
+| Scroll animations | IntersectionObserver on reveals (`.fade-in`, `.job`, `.case-study`) |
 | Active nav | Scroll listener highlights current section |
 
 ---
@@ -239,18 +233,18 @@ Certs section groups credentials with **real verification URLs** or local certif
 
 | Path | Purpose |
 |------|---------|
-| `rules.md` | Binding rules for all agents |
+| `rules.md` | Stable pointer to the binding Cursor rule set |
 | `project-context.md` | This file — repo facts and structure |
 | `commands.md` | Slash-style reusable commands |
-| `skills/*.md` | Task-specific playbooks |
-| `skills/cv-management.md` | CV edit, add, remove, export, portfolio sync |
-| `skills/career-knowledge.md` | GitHub project sync, curated career profiles |
-| `skills/continuous-career-sync.md` | Watch GitHub signals and draft safe propagation into CV, cover letter, portfolio, and strategy |
-| `prompts/*.md` | Copy-paste prompt templates |
-| `prompts/update-cv.md` | CV change requests (add/edit/remove) |
-| `prompts/continuous-career-sync.md` | Full GitHub-to-career sync pass |
+| `skills/<name>/SKILL.md` | Canonical portable task playbooks for Codex and Cursor |
+| `skills/cv-management/SKILL.md` | CV edit, add, remove, export, portfolio sync |
+| `skills/career-knowledge/SKILL.md` | GitHub project sync and curated career profiles |
+| `skills/continuous-career-sync/SKILL.md` | GitHub-to-career evidence propagation workflow |
+| `skills/prompt-*/SKILL.md` | User-invoked command templates |
+| `specialists/*.md` | Canonical, narrowly scoped specialist definitions |
+| `scripts/sync-specialist-adapters.py` | Generates Cursor and Codex specialist adapters |
 
-Suggested Cursor setup: add `@.agents/rules.md` or symlink rules into `.cursor/rules/` if using Cursor Project Rules.
+Cursor reads `.cursor/rules/`, `.agents/skills/`, and generated `.cursor/agents/`. Codex reads `AGENTS.md`, `.agents/skills/`, and generated `.codex/agents/`.
 
 ---
 

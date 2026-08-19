@@ -7,6 +7,11 @@
       "knowledge_slug": "cdp-hub",
       "note": "Public portfolio links use tktechnologies/cdp-hub; private mirror under devzurc"
     },
+    "whatsapp-crm-platform": {
+      "canonical": "devzurc/ORBITAI-CRM",
+      "knowledge_slug": "whatsapp-crm-platform",
+      "note": "Private OrbitAI CRM evidence is curated under the sanitized omnichannel CRM profile; do not publish product-sensitive details."
+    },
     "muvstok-api": {
       "canonical": "devzurc/muvstok-api",
       "local_path": "/home/devzurc/projects/cdp-app/muvstok-api",

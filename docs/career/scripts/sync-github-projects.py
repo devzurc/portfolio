@@ -110,18 +110,12 @@ def fetch_all_repos(cfg: dict, manifest: dict) -> list[dict]:
 
 
 def sanitize_private_readme(text: str) -> str:
-    text = text.replace("\r\n", "\n").replace("\r", "\n")
-    text = "\n".join(line.rstrip() for line in text.split("\n"))
-    text = re.sub(r"https?://[^\s<>\"'\])]+", "[REDACTED_URL]", text)
-    text = re.sub(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b", "[REDACTED_EMAIL]", text)
-    text = re.sub(
-        r"(?i)\b(?:api[_-]?key|secret|token|password|webhook|bearer)\s*[=:]\s*\S+",
-        "[REDACTED_CREDENTIAL]",
-        text,
+    """Return provenance only; private README bodies are unsafe for this public repo."""
+    return (
+        "## Private repository evidence\n\n"
+        "The raw README is intentionally not mirrored in this public portfolio repository. "
+        "Use the matching curated project profile for public-safe stack, scope, and outcome evidence."
     )
-    text = re.sub(r"(?i)\b(?:sk|pk)_[A-Za-z0-9]{10,}", "[REDACTED_TOKEN]", text)
-    text = re.sub(r"(?i)\bghp_[A-Za-z0-9]{20,}", "[REDACTED_TOKEN]", text)
-    return text
 
 
 def is_curated_readme(path: Path) -> bool:

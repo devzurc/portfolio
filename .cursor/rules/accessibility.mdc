@@ -1,0 +1,13 @@
+---
+description: Accessibility baseline for public portfolio UI changes.
+globs: ["index.html", "assets/css/**/*.css", "assets/js/**/*.js"]
+alwaysApply: false
+---
+
+# Accessibility baseline
+
+- Target WCAG 2.2 AA: 4.5:1 contrast for normal text, keyboard access, visible focus, semantic heading order, and meaningful accessible names.
+- Use native elements before ARIA. Add ARIA only where native semantics are insufficient.
+- Keep interactive targets at least 44 by 44 CSS pixels when practical; ensure overlay menus move, contain, and restore focus.
+- Keep decorative images and icons hidden from assistive technology; provide useful alt text for informative images.
+- Respect `prefers-reduced-motion` for added or changed motion.

@@ -3,23 +3,40 @@
 
   const menu = document.getElementById("mobile-menu");
   const burger = document.getElementById("burgerBtn");
+  const menuClose = document.getElementById("mobileMenuClose");
+  const mainContent = document.querySelector(".main-content");
   const sections = ["hero", "projects", "experience", "skills", "certifications", "job-fit", "contact"];
+  let menuFocusTimeout;
 
-  function closeMenu() {
+  function closeMenu(restoreFocus = true) {
     if (!menu || !burger) return;
+    window.clearTimeout(menuFocusTimeout);
     menu.classList.remove("open");
+    menu.setAttribute("aria-hidden", "true");
     burger.classList.remove("open");
     burger.setAttribute("aria-expanded", "false");
     document.body.classList.remove("menu-open");
+    if (mainContent) mainContent.removeAttribute("inert");
+    if (restoreFocus) burger.focus();
+  }
+
+  function openMenu() {
+    if (!menu || !burger) return;
+    menu.classList.add("open");
+    menu.setAttribute("aria-hidden", "false");
+    burger.classList.add("open");
+    burger.setAttribute("aria-expanded", "true");
+    document.body.classList.add("menu-open");
+    if (mainContent) mainContent.setAttribute("inert", "");
+    menuFocusTimeout = window.setTimeout(() => menuClose?.focus(), 150);
   }
 
   function toggleMenu() {
-    if (!menu || !burger) return;
-    const isOpen = menu.classList.contains("open");
-    menu.classList.toggle("open", !isOpen);
-    burger.classList.toggle("open", !isOpen);
-    burger.setAttribute("aria-expanded", String(!isOpen));
-    document.body.classList.toggle("menu-open", !isOpen);
+    if (menu?.classList.contains("open")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   }
 
   function setLang(lang) {
@@ -49,6 +66,11 @@
       el.textContent = isPT ? el.dataset.pt : el.dataset.en;
     });
 
+    burger?.setAttribute("aria-label", isPT ? "Abrir menu" : "Open menu");
+    document.querySelectorAll(".lang-toggle").forEach((toggle) => {
+      toggle.setAttribute("aria-label", isPT ? "Seletor de idioma" : "Language selector");
+    });
+
     try {
       localStorage.setItem("lc-lang", lang);
     } catch (error) {
@@ -59,9 +81,10 @@
   if (burger) {
     burger.addEventListener("click", toggleMenu);
   }
+  menuClose?.addEventListener("click", () => closeMenu());
 
   document.querySelectorAll("[data-menu-close]").forEach((link) => {
-    link.addEventListener("click", closeMenu);
+    link.addEventListener("click", () => closeMenu(false));
   });
 
   document.querySelectorAll("[data-lang-button]").forEach((button) => {
@@ -82,6 +105,20 @@
     if (event.key === "Escape") {
       closeMenu();
       document.querySelectorAll(".cv-dropdown[open]").forEach((el) => el.removeAttribute("open"));
+    }
+    if (event.key === "Tab" && menu?.classList.contains("open")) {
+      const focusable = [...menu.querySelectorAll('a[href], button:not([disabled]), summary, [tabindex]:not([tabindex="-1"])')]
+        .filter((el) => !el.closest("[aria-hidden='true']") && el.getClientRects().length > 0);
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (!first || !last) return;
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     }
   });
 
@@ -115,23 +152,25 @@
     }
   });
 
-  /* ─── Active Scroll — Sidebar + Mobile Menu ─── */
+  /* ─── Active section — Sidebar + Mobile Menu ─── */
   const sidebarLinks = document.querySelectorAll(".sidebar-nav a, .mobile-menu-links a");
 
-  function updateActiveNav() {
-    let current = "hero";
-
-    sections.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el && window.scrollY >= el.offsetTop - 160) current = id;
-    });
-
+  function setActiveNav(current) {
     sidebarLinks.forEach((link) => {
       link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
     });
   }
 
-  /* Scope scroll listener to the main-content scrollable area or window */
-  updateActiveNav();
-  window.addEventListener("scroll", updateActiveNav, { passive: true });
+  setActiveNav("hero");
+  if ("IntersectionObserver" in window) {
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) setActiveNav(entry.target.id);
+      });
+    }, { rootMargin: "-20% 0px -65% 0px", threshold: 0 });
+    sections.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) navObserver.observe(section);
+    });
+  }
 })();

@@ -1,44 +1,62 @@
-# Agent workspace — Lucas Cruz portfolio
+# Lucas Cruz portfolio — agent guide
 
-This repo uses a **dual-layer agent system**. Edit the canonical layer first.
+## Project
 
-## Canonical sources (edit these)
+This is a zero-build GitHub Pages portfolio for Data Engineering, Gen. AI Engineering, and AI Platform Engineering roles. The public site is a bilingual (EN/PT-BR) single page built with `index.html`, modular CSS in `assets/css/`, and vanilla JavaScript in `assets/js/site.js`.
 
-| Layer | Path | Role |
-|-------|------|------|
-| **Always-on rules** | [`.cursor/rules/portfolio-agent-rules.mdc`](.cursor/rules/portfolio-agent-rules.mdc) | Binding agent behavior |
-| **Skills** | [`.cursor/skills/`](.cursor/skills/) | Task playbooks (career, CV, frontend, SEO, AI roadmap) |
-| **Repo facts** | [`.agents/project-context.md`](.agents/project-context.md) | Paths, Google Doc IDs, site structure |
-| **Commands** | [`.agents/commands.md`](.agents/commands.md) | Slash-command templates |
-| **Career knowledge** | [`docs/career/`](docs/career/) | Project profiles, job strategy, GitHub sync |
-| **AI roadmap** | [`docs/career/goals/`](docs/career/goals/) | Senior AI Platform Specialist roadmap Jul–Dec 2026 |
+## Canonical agent system
 
-## Legacy references (stable `@` paths)
+| Purpose | Canonical location |
+|---|---|
+| Project facts | `.agents/project-context.md` |
+| Reusable skills | `.agents/skills/<name>/SKILL.md` |
+| Specialist definitions | `.agents/specialists/<name>.md` |
+| Generated adapters | `.cursor/agents/` and `.codex/agents/` |
+| Cursor rules | `.cursor/rules/` |
+| Command index | `.agents/commands.md` |
 
-[`.agents/`](.agents/) mirrors skills and prompts for commands that `@`-reference `.agents/` paths. When content diverges, **`.cursor/skills/` wins**. Re-sync with `.cursor/skills/agents-to-skills/scripts/convert.py` if needed.
+Use one focused skill for every recurring workflow. Run `python3 .agents/scripts/sync-specialist-adapters.py --check` and `python3 .agents/scripts/validate-agent-system.py` after agent-system changes.
 
-## Quick start for agents
+## Common commands
 
-1. Read `.cursor/rules/portfolio-agent-rules.mdc` (auto-applied)
-2. Read `.agents/project-context.md` for repo facts
-3. Pick a skill from `.cursor/skills/` matching the task
-4. Use `.agents/commands.md` for structured slash workflows
+```bash
+# Preview the static site
+python3 -m http.server 8000
 
-## Key commands
+# Validate agent-system structure and generated adapters
+python3 .agents/scripts/sync-specialist-adapters.py --check
+python3 .agents/scripts/validate-agent-system.py
 
-| Command | Purpose |
-|---------|---------|
-| `/continuous-career-sync` | GitHub → career knowledge → draft CV/portfolio updates |
-| `/weekly-review` | Friday ritual: progress log, projects pipeline, skill matrix |
-| `/sync-cv-portfolio audit` | CV ↔ site alignment check |
-| `/review-portfolio` | Full hiring-impact review |
+# Check HTML structure, local asset references, and baseline SEO metadata
+python3 scripts/verify-static-site.py
 
-## Evidence pipeline
+# Synchronize approved CV exports from Google Docs
+python3 docs/resume/scripts/sync-from-google-docs.py
 
-```text
-GitHub repos → sync-github-projects.py → docs/career/projects/*.md
-                                        → docs/resume/ + index.html (approval required)
-docs/career/goals/ → monthly capstone repos → same pipeline
+# Refresh GitHub-derived career evidence
+python3 docs/career/scripts/sync-github-projects.py
 ```
 
-**Public rule:** Only use facts backed by curated profiles (`verified_outcomes`) or CV text. Roadmap skills are in-progress until repos prove them.
+There is no package manager, build command, or lint command. Use the dependency-free static verifier plus browser checks at mobile, tablet, and desktop widths for frontend changes. Do not add a build dependency without owner approval.
+
+## Non-negotiable constraints
+
+- Never fabricate roles, metrics, employers, certifications, URLs, or skills. CV Markdown and curated career profiles are the public-fact authority.
+- Preserve EN/PT-BR parity for every visitor-facing copy change, including metadata and language-toggle behavior.
+- Keep the static-site architecture: no framework migration, backend, database, API key, or production dependency without explicit approval.
+- Preserve stable section IDs, external-link safety (`target="_blank" rel="noopener noreferrer"`), and existing language-toggle patterns.
+- Treat the current v3 dashboard implementation and `assets/css/tokens.css` as the active design baseline. Do not apply the retired Sauce Labs theme.
+- Do not commit, deploy, modify CV artifacts, or change public claims unless the owner explicitly asks.
+
+## Delivery workflow
+
+1. Read `.agents/project-context.md` and the matching skill before editing.
+2. Use specialists only for independent, narrowly scoped research or verification; one implementation owner makes the edits.
+3. Verify the changed behavior, EN/PT-BR parity where applicable, and avoid unrelated refactors.
+4. Report changed files, checks run, deferred work, and any factual confirmation required.
+
+## Escalate before changing
+
+- Employment dates, titles, employers, visa/relocation messaging, metrics, certifications, or project links.
+- The stack, deployment model, or public-site information architecture.
+- Any request requiring unavailable external access, including Figma. Use supplied exports or screenshots until the relevant connector is available.

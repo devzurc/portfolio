@@ -1,6 +1,6 @@
 # Tech stack rollup
 
-> Updated 2026-07-31
+> Updated 2026-08-19
 > Counts are generated from curated `docs/career/projects/*.md` frontmatter, including multiline YAML `stack:` lists. Public-safe service categories are used where exact internal names are not needed.
 
 | Technology | Projects |

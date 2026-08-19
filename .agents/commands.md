@@ -18,7 +18,7 @@ Full-site review for hiring impact, UX, accessibility, and factual consistency.
 ```
 /review-portfolio
 
-Run a senior-level portfolio review using @.agents/skills/portfolio-review.md.
+Run a senior-level portfolio review using @.agents/skills/portfolio-review/SKILL.md.
 
 Scope: entire site (index.html).
 Output:
@@ -40,7 +40,7 @@ Start a new session with a full project, portfolio, CV, career knowledge, and jo
 ```
 /start-audit-sync
 
-Use @.agents/prompts/start-audit-sync.md.
+Use @.agents/skills/prompt-start-audit-sync/SKILL.md.
 
 Read the required context files, audit the repo, verify local integrity, map any pasted Notion sprint tasks into public-safe career knowledge, and return:
 1. Alignment status
@@ -61,7 +61,7 @@ Targeted copy and structure improvement for one section.
 ```
 /improve-section <section-id>
 
-Use @.agents/prompts/improve-section.md with section: <section-id>
+Use @.agents/skills/prompt-improve-section/SKILL.md with section: <section-id>
 Valid IDs: hero | projects | skills | experience | job-fit | certifications | contact
 
 Before editing:
@@ -87,7 +87,7 @@ Safely add a new project card with verified links only.
 ```
 /add-project
 
-Follow @.agents/prompts/add-project.md.
+Follow @.agents/skills/prompt-add-project/SKILL.md.
 
 I will provide project details. You must:
 1. Ask for any missing required fields
@@ -107,7 +107,7 @@ SEO and social metadata audit without changing page content.
 ```
 /seo-check
 
-Use @.agents/skills/seo-accessibility.md (SEO sections only).
+Use @.agents/skills/seo-accessibility/SKILL.md (SEO sections only).
 
 Audit:
 - <title>, meta description, og:* tags
@@ -128,7 +128,7 @@ Final gate before git commit.
 ```
 /pre-commit-review
 
-Run @.agents/prompts/review-before-commit.md against current git diff.
+Run @.agents/skills/prompt-review-before-commit/SKILL.md against current git diff.
 
 Report:
 - Factual integrity issues
@@ -149,7 +149,7 @@ Small UI/CSS/JS maintenance task.
 ```
 /frontend-fix <description>
 
-Use @.agents/skills/frontend-maintenance.md.
+Use @.agents/skills/frontend-maintenance/SKILL.md.
 
 Task: <description>
 
@@ -169,7 +169,7 @@ Align portfolio messaging with LinkedIn profile copy.
 ```
 /linkedin-sync
 
-Use @.agents/skills/copywriting-linkedin.md.
+Use @.agents/skills/copywriting-linkedin/SKILL.md.
 
 Compare hero + experience positioning with LinkedIn-style headline/about text I provide.
 Suggest EN improvements for both portfolio and LinkedIn post snippets.
@@ -185,7 +185,7 @@ Accessibility-focused pass.
 ```
 /a11y-pass
 
-Use @.agents/skills/seo-accessibility.md (accessibility sections).
+Use @.agents/skills/seo-accessibility/SKILL.md (accessibility sections).
 
 Check: contrast, focus order, aria labels, keyboard nav, motion preferences, semantic structure.
 Prioritize fixes that help screen readers and keyboard users without redesigning the site.
@@ -200,7 +200,7 @@ Add, edit, or remove CV content with EN + PT drafts for Google Docs.
 ```
 /update-cv
 
-Follow @.agents/prompts/update-cv.md and @.agents/skills/cv-management.md.
+Follow @.agents/skills/prompt-update-cv/SKILL.md and @.agents/skills/cv-management/SKILL.md.
 
 Operation: {{add | edit | remove}}
 Section: {{summary | skills | experience | projects | education | header}}
@@ -227,7 +227,7 @@ Audit or apply alignment between CV PDF and portfolio site.
 ```
 /sync-cv-portfolio {{audit | apply}}
 
-Use @.agents/skills/cv-management.md (Portfolio Sync Matrix).
+Use @.agents/skills/cv-management/SKILL.md (Portfolio Sync Matrix).
 
 Sources:
 @docs/resume/pdf/LucasCruz_CV_EN.pdf
@@ -277,7 +277,7 @@ Pull GitHub repo READMEs and refresh career knowledge index.
 ```
 /sync-github-career
 
-Run @.agents/skills/career-knowledge.md workflow:
+Run @.agents/skills/career-knowledge/SKILL.md workflow:
 1. Execute python3 docs/career/scripts/sync-github-projects.py
 2. Summarize repos synced, new readmes, stubs created
 3. List projects still status: needs-review
@@ -293,7 +293,7 @@ Watch GitHub and keep the career workspace ready to sync into CV, cover letter, 
 ```
 /continuous-career-sync
 
-Use @.agents/prompts/continuous-career-sync.md and @.agents/skills/continuous-career-sync.md.
+Use @.agents/skills/prompt-continuous-career-sync/SKILL.md and @.agents/skills/continuous-career-sync/SKILL.md.
 
 Run the GitHub sync script, inspect docs/career/github-sync-report.md, and:
 1. Apply safe evidence-layer updates only:
@@ -319,7 +319,7 @@ Fill in a curated project profile from README + owner input.
 ```
 /curate-project <repo-name>
 
-Use @.agents/skills/career-knowledge.md and:
+Use @.agents/skills/career-knowledge/SKILL.md and:
 @docs/career/readmes/<repo-name>.md
 @docs/career/projects/<repo-name>.md
 
@@ -336,7 +336,7 @@ Friday ritual: update AI roadmap progress, check projects pipeline, propose CV/p
 ```
 /weekly-review
 
-Use @.cursor/skills/ai-roadmap-tracking/SKILL.md and @docs/career/goals/.
+Use @.agents/skills/ai-roadmap-tracking/SKILL.md and @docs/career/goals/.
 
 1. Confirm current month focus from senior-ai-roadmap.md
 2. Run python3 docs/career/scripts/sync-github-projects.py if GitHub activity since last review

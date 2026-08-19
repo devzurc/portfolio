@@ -1,6 +1,7 @@
 ---
-repo: whatsapp-automation-platform
+repo: whatsapp-crm-platform
 github_url:
+github_ref: devzurc/ORBITAI-CRM
 visibility: private
 status: active
 period: 2026-06 - ongoing
@@ -14,7 +15,7 @@ verified_outcomes: []
 links:
   demo:
   docs:
-last_synced: 2026-07-16
+last_synced: 2026-08-19
 ---
 
 ## One-liner
@@ -32,6 +33,7 @@ Fragmented customer communications across multiple messaging apps and separate a
 - **Governance & Role-Based Access (RBAC):** Built strict access management controls so agents and managers only access chats, customer profiles, and ad data corresponding to their authorized roles.
 - **LLM Automation Layer:** Implemented LLM orchestration (Claude / Google AI Studio) for initial customer auto-replies, outbound agent-message drafting, and campaign analysis support.
 - **Azure IaC Deployment:** Containerized the services (Docker) and deployed via Azure Container Apps (ACA) using modular Bicep templates.
+- **Current product contribution:** Building the new TK web presence and contributing to ongoing product development and maintenance across the CRM product ecosystem, including StokIA work, using public-safe descriptions only.
 
 ## Architecture
 
@@ -56,3 +58,7 @@ Customer Channels (WhatsApp/IG/FB/Telegram/Email)
 ## Outcomes
 
 <!-- TODO: confirm public-safe, measurable outcomes with owner. -->
+
+## Public-safe scope note
+
+The owner confirmed current contributions to the new TK website, OrbitAI work, and StokIA development and maintenance on 2026-08-19. Public portfolio copy must describe this as sanitized product responsibility and must not expose product internals, customer data, deployment identifiers, or private URLs.

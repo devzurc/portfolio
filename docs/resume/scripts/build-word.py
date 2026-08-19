@@ -155,11 +155,15 @@ def build_docx(md_path: Path, out_path: Path) -> None:
             i += 1
             continue
 
-        if line.startswith("|") and "---" not in line:
-            parts = [p.strip() for p in line.strip("|").split("|")]
-            if len(parts) == 2 and parts[0].lower() not in ("category", "categoria"):
-                skill_rows.append((strip_md(parts[0]), strip_md(parts[1])))
-                in_skills_table = True
+        if line.startswith("|"):
+            # Markdown alignment rows (for example, ``| --- | --- |``) are
+            # table syntax, not CV body copy. Consume them so they do not
+            # render as a visible paragraph above the skills table.
+            if "---" not in line:
+                parts = [p.strip() for p in line.strip("|").split("|")]
+                if len(parts) == 2 and parts[0].lower() not in ("category", "categoria"):
+                    skill_rows.append((strip_md(parts[0]), strip_md(parts[1])))
+                    in_skills_table = True
             i += 1
             continue
 

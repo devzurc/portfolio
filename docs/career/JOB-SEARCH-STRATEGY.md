@@ -73,7 +73,7 @@ Use combinations of:
 
 - Built an automotive pricing intelligence platform that receives requests from chat/email/schedule/spreadsheets and dispatches public pricing plus internal stock lookup.
 - Designed backend services with FastAPI, NestJS, Next.js, Redis/Celery/Streams, PostgreSQL, Docker, and Azure deployment patterns (Azure Container Apps, Bicep IaC).
-- Architected an omnichannel AI CRM platform (WhatsApp, IG, FB, Telegram, Email) with Meta/Google Ads integrations, role-based data governance, and LLM-powered replies.
+- Architected an omnichannel AI CRM platform (WhatsApp, IG, FB, Telegram, Email) with Meta/Google Ads integrations, role-based data governance, and LLM-powered replies; currently contributes to the new TK web presence and product development/maintenance using sanitized public descriptions.
 - Delivered private n8n automations for Telegram, WhatsApp, Instagram, Stripe, Clerk, and reporting workflows.
 - Obtained 4 Google AI certifications validating expertise in AI writing, communication, brainstorming, planning, and research tools.
 - Operated work through Notion sprints, turning blocked items, architecture decisions, migrations, and customer feedback into delivery tasks.
@@ -90,4 +90,5 @@ Use combinations of:
 
 - Approved for public-safe wording on 2026-06-17: customer demos, product training, sales support, post-launch support, and mobile launch readiness through Play Store/EAS/DUNS preparation.
 - Confirmed 2026-06-17: no TKTech product or client names on the public portfolio; employer name TK Technologies remains on CV/site where verified.
+- Confirmed 2026-08-19: new TK website, OrbitAI work, and StokIA development/maintenance may appear as sanitized current-role responsibilities. Do not expose product internals or private URLs.
 - Any measured outcomes from current automations still need owner-supplied metrics before public use.

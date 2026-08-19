@@ -21,7 +21,7 @@
   .mobile-topbar { display: flex !important; }
   .main-content { margin-left: 0; padding-top: 64px; }
 
-  .container, .hero-inner { width: min(100% - 2rem, var(--max)); }
+  .container { width: min(100% - 2rem, var(--max)); }
 
   .dashboard-banner { border-radius: 0; height: 160px; }
   .profile-avatar { width: 96px; height: 96px; }
@@ -35,8 +35,8 @@
   .hero-proof { order: 0; }
   .hero-proof { grid-template-columns: 1fr; }
 
-  .work-link { grid-template-columns: 28px minmax(0, 1fr) 20px; padding: var(--spacing-16); }
-  .work-tag, .work-year { display: none; }
+  .case-study-details { grid-template-columns: 1fr; }
+  .case-study-topline, .case-study-footer { align-items: flex-start; flex-direction: column; }
 
   .skills-grid, .badge-grid, .cert-grid, .fit-grid { grid-template-columns: 1fr; }
 

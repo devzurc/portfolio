@@ -1,11 +1,25 @@
 {
   "github_user": "devzurc",
   "github_orgs": [],
-  "exclude_repos": ["My-Profile", "portfolio"],
+  "exclude_repos": [
+    "My-Profile",
+    "portfolio",
+    "tk-ORBITAI-hub",
+    "tk-website",
+    "tk-content-agent",
+    "tk-cdp-hub",
+    "tk-Stok-AI",
+    "tk-Atlas",
+    "tk-care",
+    "tk-transcription-agent",
+    "tk-knowledge-base",
+    "tk-stokai-mobile",
+    "tk-TKTudo-Web"
+  ],
   "exclude_private_repos": [],
   "include_private": true,
   "include_forks": false,
   "private_sync_mode": "sanitized",
   "readme_max_chars": 12000,
-  "notes": "Scan devzurc only (public + private). gh CLI must be logged in as devzurc — not tktechnologies. Private README mirrors are sanitized before commit."
+  "notes": "Scan devzurc only (public + private). gh CLI must be logged in as devzurc — not tktechnologies. Private README mirrors are sanitized before commit. The tk-* repositories are organizational mirrors and are excluded from standalone career records."
 }

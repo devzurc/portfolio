@@ -1,0 +1,12 @@
+---
+description: Maintain the shared Codex and Cursor agent system without adapter drift.
+globs: ["AGENTS.md", ".agents/**/*.md", ".agents/**/*.py", ".cursor/agents/**/*.md", ".cursor/rules/**/*.mdc", ".codex/agents/**/*.toml"]
+alwaysApply: false
+---
+
+# Agent-system maintenance
+
+- Treat `.agents/skills/<name>/SKILL.md` and `.agents/specialists/<name>.md` as canonical.
+- Do not directly edit generated `.cursor/agents/` or `.codex/agents/` adapters; change the specialist definition and rerun the sync script.
+- Keep skills focused, concise, and explicit about trigger, inputs, outputs, validation, and handoff.
+- Run the adapter sync check and agent-system validator after changes.

@@ -11,7 +11,7 @@
 .shiny-cta:hover { box-shadow: var(--shadow-glow); background: var(--accent-hover); }
 .btn-secondary { border: 1px solid var(--border-default); background: transparent; color: var(--text-primary); }
 .btn-secondary:hover { border-color: var(--text-secondary); }
-.btn-sm { min-height: 36px; padding: var(--spacing-6) var(--spacing-16); font-size: .72rem; }
+.btn-sm { min-height: 44px; padding: var(--spacing-10) var(--spacing-16); font-size: .72rem; }
 
 /* ── Tags / Pills ── */
 .tag, .stack-tag {
@@ -29,7 +29,7 @@
   padding: 3px; border: 1px solid var(--border-subtle); border-radius: var(--radius-pill);
 }
 .lang-btn {
-  display: flex; min-width: 34px; min-height: 34px;
+  display: flex; min-width: 44px; min-height: 44px;
   align-items: center; justify-content: center;
   border: 0; border-radius: var(--radius-pill);
   background: transparent; color: var(--text-secondary);
@@ -42,7 +42,7 @@
 .cv-dropdown summary { list-style: none; }
 .cv-dropdown summary::-webkit-details-marker { display: none; }
 .cv-btn {
-  display: inline-flex; min-height: 38px; align-items: center;
+  display: inline-flex; min-height: 44px; align-items: center;
   border: 1px solid var(--border-subtle); border-radius: var(--radius-pill);
   padding: 0 var(--spacing-16); background: transparent;
   color: var(--text-primary); font: 500 .72rem var(--font-mono);
@@ -55,6 +55,7 @@
   border: 1px solid var(--border-default); border-radius: var(--radius-sm);
   background: var(--bg-elevated); box-shadow: var(--shadow-md); z-index: 10;
 }
+.sidebar .cv-menu { top: auto; bottom: calc(100% + var(--spacing-8)); }
 .cv-dropdown[open] .cv-menu, .cv-dropdown:focus-within .cv-menu { display: block; }
 .cv-menu a {
   display: block; padding: var(--spacing-12) var(--spacing-16);
@@ -92,6 +93,3 @@
 /* ── Scroll Reveal ── */
 .fade-in { opacity: 0; transform: translateY(16px); transition: opacity var(--duration-reveal) var(--ease-out-expo), transform var(--duration-reveal) var(--ease-out-expo); }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-.text-roll { display: inline-block; }
-.text-roll-clone { display: none; }

@@ -1,0 +1,12 @@
+---
+description: Public content evidence and bilingual rules for portfolio and career-related changes.
+globs: ["index.html", "docs/career/**/*.md", "docs/resume/**/*.md"]
+alwaysApply: false
+---
+
+# Content and evidence
+
+- Keep EN/PT-BR public copy equivalent in meaning; update title and meta-description language behavior with positioning changes.
+- Source claims from `docs/resume/markdown/` or curated `docs/career/projects/` profiles only.
+- Mark missing proof as an owner confirmation item rather than filling gaps with inferred metrics or URLs.
+- Keep roadmap skills framed as in-progress until a verified public project supports the claim.

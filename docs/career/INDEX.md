@@ -1,6 +1,6 @@
 # Career project index
 
-> Updated 2026-07-31. Public-safe portfolio/CV evidence layer.
+> Updated 2026-08-19. Public-safe portfolio/CV evidence layer.
 
 ## Flagship and CV-backed work
 
@@ -13,7 +13,7 @@
 | [project_dashboard_heroby](https://github.com/devzurc/project_dashboard_heroby) | public | client-work | unknown | false | true | [profile](projects/project_dashboard_heroby.md) | [readme](readmes/project_dashboard_heroby.md) |
 | [project_rpa_send-nfses](https://github.com/devzurc/project_rpa_send-nfses) | public | client-work | unknown | false | true | [profile](projects/project_rpa_send-nfses.md) | [readme](readmes/project_rpa_send-nfses.md) |
 | spacecom-iot-lakehouse | private | client-work | Spacecom Monitoramento | true | true | [profile](projects/spacecom-iot-lakehouse.md) | CV-backed |
-| whatsapp-automation-platform | private | active | TK Technologies | true | true | [profile](projects/whatsapp-crm-platform.md) | CV-backed |
+| whatsapp-crm-platform | private | active | TK Technologies | true | true | [profile](projects/whatsapp-crm-platform.md) | [readme](readmes/whatsapp-crm-platform.md) |
 
 ## Sanitized private automation
 
@@ -33,7 +33,6 @@
 | my-finance | private | needs-review | unknown | false | false | [profile](projects/my-finance.md) | [readme](readmes/my-finance.md) |
 | n8n-clerk-followup | private | active | TK Technologies | false | false | [profile](projects/n8n-clerk-followup.md) | [readme](readmes/n8n-clerk-followup.md) |
 | n8n-instagram-assistant | private | active | TK Technologies | false | false | [profile](projects/n8n-instagram-assistant.md) | [readme](readmes/n8n-instagram-assistant.md) |
-| ORBITAI-CRM | private | needs-review | unknown | false | false | [profile](projects/ORBITAI-CRM.md) | [readme](readmes/ORBITAI-CRM.md) |
 | project-bigdatapipeline | private | archived | unknown | false | false | [profile](projects/project-bigdatapipeline.md) | [readme](readmes/project-bigdatapipeline.md) |
 | [project_analisys-bank-statement](https://github.com/devzurc/project_analisys-bank-statement) | public | learning | Personal / unknown | false | false | [profile](projects/project_analisys-bank-statement.md) | [readme](readmes/project_analisys-bank-statement.md) |
 | [project_dashboard-heroby-v1-](https://github.com/devzurc/project_dashboard-heroby-v1-) | public | archived | unknown | false | false | [profile](projects/project_dashboard-heroby-v1-.md) | [readme](readmes/project_dashboard-heroby-v1-.md) |

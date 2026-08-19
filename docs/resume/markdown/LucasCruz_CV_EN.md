@@ -5,8 +5,8 @@ google_doc: https://docs.google.com/document/d/1O4YsNWyfANs_332ecNZ8fgf-wclyuJCj
 pdf: ../pdf/LucasCruz_CV_EN.pdf
 word: ../word/LucasCruz_CV_EN.docx
 last_synced: 2026-06-17
-last_updated: 2026-07-31
-sync_source: local-markdown-public-safe-tktech-delivery-update
+last_updated: 2026-08-19
+sync_source: local-markdown-github-evidence-and-tktech-scope-update
 ---
 
 # LUCAS CRUZ
@@ -19,7 +19,7 @@ Curitiba, Brazil · Open to relocation across Europe · Requires visa sponsorshi
 
 ## Professional Summary
 
-Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics datasets, conversational AI workflows, automated reporting systems, and customer-facing product implementation. Building a public portfolio of production AI platform systems (RAG, agents, evaluation, MCP, observability) over enterprise data through 2026. Fluent in English (C1); open to relocation across Europe.
+Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics datasets, conversational AI workflows, automated reporting systems, and customer-facing product development and maintenance. Building a public portfolio of production AI platform systems (RAG, agents, evaluation, MCP, observability) over enterprise data through 2026. Fluent in English (C1); open to relocation across Europe.
 
 ## Technical Skills
 
@@ -43,7 +43,7 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 - Engineered a multi-source web scraping pipeline in Python targeting 10+ automotive parts websites, extracting pricing and product metadata at scale to deliver competitive market intelligence.
 - Architected AI-powered n8n automation workflows (ETL, RPA, and chatbot agents) by integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich datasets and reduce manual analysis work.
 - Developed a conversational AI chatbot that empowers business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.
-- Coordinated Notion-based delivery sprints, customer-facing demos, product training, sales support, and post-launch support while preparing Play Store/EAS/DUNS mobile launch readiness.
+- Coordinated Notion-based delivery sprints, customer-facing demos, product training, sales support, and post-launch support; currently contribute to a new TK web presence and ongoing CRM product development and maintenance using public-safe delivery descriptions.
 
 ### Data Engineer — Spacecom Monitoramento
 
@@ -79,19 +79,13 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience
 
 - Built a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
 - Connected Meta and Google Ads performance data to a unified marketing view.
-- Layered LLMs (Claude/Google AI Studio) for smart auto-replies, outbound messaging assistance, and automated ad campaign analysis.
+- Layered LLMs (Claude/Google AI Studio) for smart auto-replies, outbound messaging assistance, and automated ad campaign analysis; contribute to the related TK web presence and product maintenance using sanitized public descriptions.
 
 ### Automotive Market Price Intelligence Platform
 
 *Python, n8n, LLMs, GCP APIs, Azure, Docker · TK Technologies – Feb 2026 – Present*
 
-- Scraped 10+ automotive parts sites with Python; orchestrated AI agents via n8n with Claude AI, Google AI Studio, and GCP to automate price analysis. Fully containerised on Azure.
-
-### Telegram Conversational Assistant
-
-*n8n, LLMs, Telegram Bot API, Redis, Data Tables, FastAPI · TK Technologies – Feb 2026 – Present*
-
-- Built a private conversational automation workflow that answers from curated internal knowledge, logs user/conversation state, and triggers CDP demo jobs through integrated backend APIs.
+- Built a dual-pipeline platform for public price research and internal stock lookup, using FastAPI/Celery/Playwright/Redis/PostgreSQL/n8n to deliver auditable reporting and notifications. Containerised services run on Azure with Bicep infrastructure-as-code.
 
 ### IoT Data Lakehouse on AWS – Medallion Architecture
 
