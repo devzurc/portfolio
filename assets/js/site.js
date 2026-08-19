@@ -7,7 +7,7 @@
   const header = document.querySelector("[data-site-header]");
   const form = document.getElementById("contact-form");
   const feedback = document.getElementById("form-feedback");
-  const sections = ["hero", "projects", "experience", "skills", "certifications", "job-fit", "contact"];
+  const sections = ["hero", "projects", "skills", "experience", "certifications", "job-fit", "contact"];
   const navLinks = document.querySelectorAll(".desktop-nav a, .mobile-menu-links a");
   let menuFocusTimeout;
 
@@ -22,8 +22,6 @@
     menu.setAttribute("aria-hidden", "true");
     burger.classList.remove("open");
     burger.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("menu-open");
-    document.querySelector("main")?.removeAttribute("inert");
     if (restoreFocus) burger.focus();
   }
 
@@ -33,8 +31,6 @@
     menu.setAttribute("aria-hidden", "false");
     burger.classList.add("open");
     burger.setAttribute("aria-expanded", "true");
-    document.body.classList.add("menu-open");
-    document.querySelector("main")?.setAttribute("inert", "");
     menuFocusTimeout = window.setTimeout(() => menuClose?.focus(), 100);
   }
 
@@ -83,15 +79,6 @@
       closeMenu();
       document.querySelectorAll(".cv-dropdown[open]").forEach((el) => el.removeAttribute("open"));
     }
-    if (event.key === "Tab" && menu?.classList.contains("open")) {
-      const focusable = [...menu.querySelectorAll('a[href],button:not([disabled]),summary,[tabindex]:not([tabindex="-1"])')]
-        .filter((el) => el.getClientRects().length > 0);
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (!first || !last) return;
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-      if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-    }
   });
 
   try { if (localStorage.getItem("lc-lang") === "pt") setLang("pt"); } catch (_) { /* unavailable */ }
@@ -101,7 +88,10 @@
       if (entry.isIntersecting) { entry.target.classList.add("visible"); revealObserver.unobserve(entry.target); }
     }), { threshold: 0.08, rootMargin: "0px 0px -24px 0px" })
     : null;
-  document.querySelectorAll(".fade-in").forEach((el) => revealObserver ? revealObserver.observe(el) : el.classList.add("visible"));
+  document.querySelectorAll(".fade-in").forEach((el, index) => {
+    el.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 80}ms`);
+    revealObserver ? revealObserver.observe(el) : el.classList.add("visible");
+  });
 
   function setActiveNav(id) {
     navLinks.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${id}`));
@@ -113,8 +103,8 @@
     }), { rootMargin: "-28% 0px -62% 0px", threshold: 0 });
     sections.forEach((id) => document.getElementById(id) && spy.observe(document.getElementById(id)));
   }
-  window.addEventListener("scroll", () => header?.classList.toggle("is-scrolled", window.scrollY > 20), { passive: true });
-  header?.classList.toggle("is-scrolled", window.scrollY > 20);
+  window.addEventListener("scroll", () => header?.classList.toggle("is-scrolled", window.scrollY > 50), { passive: true });
+  header?.classList.toggle("is-scrolled", window.scrollY > 50);
 
   if (form && feedback) {
     form.addEventListener("submit", (event) => {

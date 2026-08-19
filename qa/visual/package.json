@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-visual-qa",
+  "private": true,
+  "scripts": { "test": "playwright test", "compare": "node compare.js" },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0"
+  }
+}
