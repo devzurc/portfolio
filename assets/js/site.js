@@ -113,7 +113,14 @@
       const invalid = fields.find((field) => !field.value.trim() || (field.type === "email" && !field.validity.valid));
       fields.forEach((field) => field.setAttribute("aria-invalid", String(field === invalid)));
       if (invalid) {
-        feedback.textContent = isPortuguese() ? "Preencha todos os campos com informações válidas antes de continuar." : "Please complete every field with valid information before continuing.";
+        const invalidEmail = invalid.name === "email" && !invalid.validity.valid;
+        feedback.textContent = invalidEmail
+          ? (isPortuguese()
+            ? "Informe um e-mail válido (por exemplo, nome@empresa.com)."
+            : "Enter a valid email address (for example, name@company.com).")
+          : (isPortuguese()
+            ? "Preencha o campo destacado antes de continuar."
+            : "Complete the highlighted field before continuing.");
         feedback.className = "form-feedback error";
         invalid.focus();
         return;

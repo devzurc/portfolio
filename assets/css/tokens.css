@@ -19,6 +19,9 @@
   --accent-hover: #00e8bb;
   --accent-secondary: #a855f7;
   --accent-amber: #ffcd48;
+  --accent-rgb: 0, 212, 170;
+  --accent-secondary-rgb: 168, 85, 247;
+  --accent-blue-rgb: 59, 130, 246;
   --gradient-banner: linear-gradient(135deg, #a855f7 0%, #06b6d4 50%, #3b82f6 100%);
 
   /* ── Borders ── */
