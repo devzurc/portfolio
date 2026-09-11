@@ -57,6 +57,6 @@ There is no package manager, build command, or lint command. Use the dependency-
 
 ## Escalate before changing
 
-- Employment dates, titles, employers, visa/relocation messaging, metrics, certifications, or project links.
+- Employment dates, titles, employers, visa sponsorship messaging, metrics, certifications, or project links. Do not add relocation or Europe-only availability copy.
 - The stack, deployment model, or public-site information architecture.
 - Any request requiring unavailable external access, including Figma. Use supplied exports or screenshots until the relevant connector is available.

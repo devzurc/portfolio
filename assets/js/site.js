@@ -47,6 +47,12 @@
     document.querySelectorAll("[data-en][data-pt]").forEach((el) => {
       el.textContent = isPT ? el.dataset.pt : el.dataset.en;
     });
+    document.querySelectorAll("[data-cv-en][data-cv-pt]").forEach((el) => {
+      const href = isPT ? el.dataset.cvPt : el.dataset.cvEn;
+      el.setAttribute("href", href);
+      const file = href.split("?")[0].split("/").pop();
+      if (el.hasAttribute("download")) el.setAttribute("download", file);
+    });
     document.title = isPT
       ? "Lucas Cruz - Engenheiro de Dados Sênior & Automação com IA Generativa"
       : "Lucas Cruz - Senior Data Engineer & Gen. AI Automation Engineer";

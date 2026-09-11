@@ -4,9 +4,9 @@ title: Lucas Cruz — CV (English)
 google_doc: https://docs.google.com/document/d/1O4YsNWyfANs_332ecNZ8fgf-wclyuJCjZpO0LBqX2S8/edit
 pdf: ../pdf/LucasCruz_CV_EN.pdf
 word: ../word/LucasCruz_CV_EN.docx
-last_synced: 2026-06-17
-last_updated: 2026-08-19
-sync_source: local-markdown-github-evidence-and-tktech-scope-update
+last_synced: 2026-09-11
+last_updated: 2026-09-11
+sync_source: markdown-local-export-google-docs-pending
 ---
 
 # LUCAS CRUZ
@@ -15,89 +15,68 @@ sync_source: local-markdown-github-evidence-and-tktech-scope-update
 
 +55 (21) 96552-9308 · dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
 
-Curitiba, Brazil · Open to relocation across Europe · Requires visa sponsorship
+Florianópolis, Santa Catarina, Brazil · Requires visa sponsorship
 
 ## Professional Summary
 
-Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics datasets, conversational AI workflows, automated reporting systems, and customer-facing product development and maintenance. Building a public portfolio of production AI platform systems (RAG, agents, evaluation, MCP, observability) over enterprise data through 2026. Fluent in English (C1); open to relocation across Europe.
+Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, AI agents, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics, conversational AI workflows, and customer-facing product development. Currently extending this work toward production AI platforms (RAG, agents, evaluation, MCP, observability) over enterprise data. Fluent in English (C1).
 
 ## Technical Skills
 
 | Category | Skills |
 |----------|--------|
 | Gen. AI & LLMs | LLM Integration, AI Agents (OpenAI, Claude, Gemini…), RAG, Prompt Engineering, Chatbot Development |
-| Data Engineering, APIs & Orchestration | Python, SQL, NestJS, Next.js, FastAPI, SQLAlchemy, Pydantic, Apache Spark (PySpark), Pandas, dbt, Trino, REST APIs, Web Scraping, Parquet, Apache Airflow, n8n, Celery, Redis Streams, Meta Cloud API |
+| Data Engineering & Orchestration | Python, SQL, Apache Spark (PySpark), Pandas, FastAPI, NestJS, Next.js, dbt, Trino, REST APIs, Web Scraping, Playwright, Parquet, Apache Airflow, n8n, Celery, Redis, Meta Cloud API |
 | Cloud & Lakehouses | Amazon Web Service (AWS), Microsoft Azure, Google Cloud (GCP), Oracle Cloud (OCI), Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database |
-| Databases & BI | PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker |
+| Relational Databases & BI | PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker |
 | Security & Data Governance | LGPD/GDPR Compliance, Data Privacy, IAM, RBAC, Data Masking, Encryption (Rest/Transit), Audit Logging, RFID/NFC Tagging, Firewall |
-| DevOps & Infrastructure | Docker, Kubernetes, Terraform, Azure Bicep, Azure Container Apps, Git, CI/CD Pipelines, Linux, Bash Scripting |
+| DevOps & Infrastructure | Docker, Kubernetes, Azure Bicep, Azure Container Apps, Git, CI/CD Pipelines, Linux, Bash Scripting |
 | Languages | Portuguese (Native) · English (C1 – Advanced) · Spanish (B1 – Intermediate) |
 
 ## Work Experience
 
-### Gen. AI Engineer — TK Technologies
+### Gen. AI Engineer — TK Technologies | Curitiba, PR – Brazil (Hybrid) · Feb 2026 – Present · Contract
 
-**Curitiba, PR – Brazil (Hybrid)** · Feb 2026 – Present · 6-month contract, expected Aug 2026
-
-- Architected an omnichannel AI CRM platform (integrating WhatsApp, Instagram, Facebook, Telegram, and Email) with role-based data governance, Meta/Google Ads tracking, and LLM-powered auto-replies, deploying to Azure Container Apps with Bicep IaC.
+- Architected OrbitAI, an omnichannel AI CRM platform (WhatsApp, Instagram, Facebook, Telegram, and Email) with role-based data governance, Meta/Google Ads tracking, and LLM-powered auto-replies, deploying to Azure Container Apps with Bicep IaC.
 - Engineered a multi-source web scraping pipeline in Python targeting 10+ automotive parts websites, extracting pricing and product metadata at scale to deliver competitive market intelligence.
 - Architected AI-powered n8n automation workflows (ETL, RPA, and chatbot agents) by integrating LLMs (Claude AI, Google AI Studio) and GCP APIs (Sheets, Drive) to enrich datasets and reduce manual analysis work.
 - Developed a conversational AI chatbot that empowers business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.
-- Coordinated Notion-based delivery sprints, customer-facing demos, product training, sales support, and post-launch support; currently contribute to a new TK web presence and ongoing CRM product development and maintenance using public-safe delivery descriptions.
+- Coordinated Notion-based delivery sprints, customer-facing demos, product training, sales support, and post-launch support; contribute to the TK web presence and ongoing CRM product development and maintenance.
 
-### Data Engineer — Spacecom Monitoramento
-
-**Curitiba, PR – Brazil (On-site)** · Apr 2023 – Jul 2024
+### Data Engineer — Spacecom Monitoramento | Curitiba, PR – Brazil (On-site) · Apr 2023 – Jul 2024
 
 - Designed and maintained an enterprise Big Data Lakehouse on AWS S3 leveraging Medallion Architecture (Bronze/Silver/Gold) alongside Delta Lake, Parquet, PySpark, and Trino to support heavy analytics workloads.
 - Supported a high-availability IoT platform scaling to 95,000+ devices, efficiently processing hundreds of millions of telemetry records per day.
-- Managed electronic security tag (RFID/NFC) data for government court systems, applying LGPD/GDPR-aligned privacy controls, access governance, and secure handling of sensitive judicial data.
-- Orchestrated and optimised ETL pipelines with Apache Airflow to improve pipeline reliability; utilised Docker on AWS EC2 to reduce deployment issues.
-- Remediated inconsistencies in pipeline steps to improve downstream analytics consistency, delivering reliable datasets to Qlik Sense and Apache Superset dashboards.
+- Managed electronic security tag (RFID/NFC) data for government court systems, ensuring strict LGPD/GDPR compliance through robust data privacy controls, access governance, and secure handling of sensitive judicial data.
+- Orchestrated and optimised ETL pipelines with Apache Airflow, reducing failure rates by ~30%; utilised Docker on AWS EC2 to cut deployment issues by an additional ~25%.
+- Remediated inconsistencies in pipeline steps to boost downstream analytics accuracy by ~40%, successfully delivering reliable datasets to Qlik Sense and Apache Superset dashboards.
 
-### Data Engineer Consultant — wDiscover
-
-**Curitiba, PR – Brazil (Remote)** · Jun 2022 – May 2024
+### Data Engineer Consultant — wDiscover | Curitiba, PR – Brazil (Remote) · Jun 2022 – May 2024
 
 - Delivered end-to-end data projects across the fintech, agribusiness, and operations sectors by integrating high-volume payment providers (PagSeguro, Stone, Cielo), John Deere IoT APIs, and REST APIs.
-- Designed dimensional Data Warehouses on SQL Server and Oracle Autonomous Database; automated complex ETL workflows with Airflow on Docker/Oracle Cloud to reduce recurring manual effort.
+- Designed dimensional Data Warehouses on SQL Server and Oracle Autonomous Database; automated complex ETL workflows with Airflow on Docker/Oracle Cloud to reduce manual effort by ~35%.
 - Built dynamic Power BI dashboards to track critical KPIs, financial metrics, and operational performance for diverse client domains.
 
-### Data Analyst — Itaete Group
-
-**Curitiba, PR – Brazil (Hybrid)** · Jun 2020 – Feb 2023
+### Data Analyst — Itaete Group | Curitiba, PR – Brazil (Hybrid) · Jun 2020 – Feb 2023
 
 - Designed a SQL Server Data Warehouse and robust Python/SQL pipelines using Pandas to cleanse, transform, and enrich data from IoT devices, PostgreSQL, APIs, and CSV sources.
-- Built Power BI dashboards and automated legacy Excel/VBA reporting workflows, shortening data processing time and reducing manual operational workloads.
+- Built Power BI dashboards and automated legacy Excel/VBA reporting workflows, slashing data processing time by ~50% and significantly reducing manual operational workloads.
 - Developed internal systems for inventory management and financial automation, streamlining invoice generation and automated weekly report distribution.
 
 ## Notable Projects
 
-### Omnichannel AI CRM Platform
+### OrbitAI — Omnichannel AI CRM · NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Present
 
-*NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Present*
+- Built OrbitAI, a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
+- Layered Meta/Google Ads performance data and LLMs (Claude/Google AI Studio) for auto-replies, outbound messaging assistance, and automated campaign analysis.
 
-- Built a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
-- Connected Meta and Google Ads performance data to a unified marketing view.
-- Layered LLMs (Claude/Google AI Studio) for smart auto-replies, outbound messaging assistance, and automated ad campaign analysis; contribute to the related TK web presence and product maintenance using sanitized public descriptions.
+### Car Parts Price Searcher · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Feb 2026 – Present
 
-### Automotive Market Price Intelligence Platform
+- Built a car-parts price searcher across 10+ sites, with parallel public-price and internal-stock lookup, auditable reporting, and notifications from containerised Azure services.
 
-*Python, n8n, LLMs, GCP APIs, Azure, Docker · TK Technologies – Feb 2026 – Present*
-
-- Built a dual-pipeline platform for public price research and internal stock lookup, using FastAPI/Celery/Playwright/Redis/PostgreSQL/n8n to deliver auditable reporting and notifications. Containerised services run on Azure with Bicep infrastructure-as-code.
-
-### IoT Data Lakehouse on AWS – Medallion Architecture
-
-*AWS S3, Apache Spark, Delta Lake, Airflow, Trino, Apache Superset · Client Project – Feb 2024*
+### IoT Data Lakehouse on AWS – Medallion Architecture · AWS S3, Apache Spark, Delta Lake, Airflow, Trino, Apache Superset · Client Project – Feb 2024
 
 - Designed a Bronze/Silver/Gold lakehouse on AWS S3 ingesting from APIs and databases. Virtualised the Gold layer with Trino and surfaced governed datasets through BI dashboards.
-
-### AI Platform Engineering Portfolio (in progress — 2026)
-
-*FastAPI · PostgreSQL/pgvector · LangGraph · MCP · RAGAS · Docker · OpenTelemetry*
-
-- Building public, production-grade AI systems over enterprise data: RAG with hybrid retrieval and evaluation gates, LangGraph agent orchestration with human approval, MCP tool servers, and observability. Milestones shipping Jul–Dec 2026 on github.com/devzurc.
 
 ## Education
 

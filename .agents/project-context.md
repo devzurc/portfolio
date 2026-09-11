@@ -13,7 +13,7 @@
 | **Primary file** | `index.html` (single-page portfolio) |
 | **Stack** | Static HTML, modular CSS in `assets/css/`, vanilla JavaScript in `assets/js/site.js` |
 | **Deployment** | GitHub Pages — push to `main` |
-| **Audience** | Recruiters and hiring managers for Data Engineering, Gen. AI, and AI Platform roles (Europe/US English-first) |
+| **Audience** | Recruiters and hiring managers for Data Engineering, Gen. AI, and AI Platform roles (English-first international) |
 
 ---
 
@@ -32,7 +32,7 @@
 - Production-scale IoT context (95K devices — verify before changing)
 - Gen. AI stack: LLM integration, RAG, AI agents, prompt engineering, n8n
 - Data stack: Python, Spark/PySpark, SQL, dbt, Airflow, Snowflake, Databricks, Delta Lake
-- Open to **relocation across Europe**; requires **visa sponsorship**
+- Requires **visa sponsorship** (do not advertise relocation or Europe-only availability)
 - Advanced English (C1 / IELTS)
 
 ---
@@ -49,7 +49,7 @@
 | `#skills` | Service discipline cards (Data, Gen. AI, Cloud, Governance) |
 | `#certifications` | Google AI badges and verified certifications list |
 | `#job-fit` | Role-fit guidance cards |
-| `#contact` | Contact actions, location, CV download, relocation |
+| `#contact` | Contact actions, location, CV download |
 
 ### Navigation
 
@@ -110,8 +110,8 @@ The authoritative values are the custom properties in `assets/css/tokens.css`. R
 | **Word** | `word/LucasCruz_CV_EN.docx`, `word/LucasCruz_CV_PT.docx` | Direct export from Google Docs (recruiter/ATS) |
 | **PDF** | `pdf/LucasCruz_CV_EN.pdf`, `pdf/LucasCruz_CV_PT.pdf` | Repo snapshot / archive |
 | **Plain text** | `source/LucasCruz_CV_EN.txt`, `source/LucasCruz_CV_PT.txt` | Raw Google export for diffing |
-| **Google update note** | `google-docs-update-2026-08-19.md` | Paste-ready approved changes needed before the next Google Docs pull |
-| **Cover letter** | `markdown/LucasCruz_Cover_Letter_Europe_EN.md` | Europe-focused cover letter draft aligned from CV/career knowledge |
+| **Google update note** | `google-docs-update-2026-09-10.md` | In-place paste pack to restore the compact 2-page Google Docs layout before the next export |
+| **Cover letter** | `markdown/LucasCruz_Cover_Letter_EN.md`, `markdown/LucasCruz_Cover_Letter_PT.md` | Cover letter drafts aligned from CV/career knowledge |
 
 **Sync command (pulls latest from Google Docs):**
 
@@ -135,7 +135,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 3. Update `markdown/*.md` if agents edited copy in-repo (or paste Google changes into markdown)
 4. Run `/sync-cv-portfolio` to align `index.html` with CV facts
 
-**Current CV note (2026-08-19):** Local Markdown, Word/PDF exports, and site downloads must stay aligned after every approved career update. Product/client names remain excluded from the public portfolio; current TK website, OrbitAI, and StokIA responsibilities use sanitized wording only.
+**Current CV note (2026-09-11):** Local Markdown is canonical. Site Word/PDF were rebuilt from markdown (LibreOffice 2-page export) because Google Docs still serve Curitiba/Europe/May 2026 copy. Apply `docs/resume/google-docs-update-2026-09-10.md` in Google Docs before running `sync-from-google-docs.py`. TK is Feb 2026 – Present. Header location is Florianópolis. The OrbitAI product name is approved for CV notable projects and the matching portfolio card. StokIA, internals, and private URLs stay out of public copy.
 
 **CV management skill:** `@.agents/skills/cv-management/SKILL.md`
 
@@ -143,7 +143,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 
 Sections in order — keep EN and PT structurally aligned:
 
-1. Header — name, titles, contact, location/relocation
+1. Header — name, titles, contact, location, visa
 2. Professional Summary
 3. Technical Skills (grouped categories)
 4. Work Experience (reverse chronological)
@@ -169,7 +169,7 @@ Use the CV as the **factual authority** for employers, dates, metrics, projects,
 Skill: `@.agents/skills/career-knowledge/SKILL.md`
 Continuous sync skill: `@.agents/skills/continuous-career-sync/SKILL.md`
 
-Current sprint/process note: Lucas is working through Notion sprints at TKTech. Public-safe career knowledge lives in `docs/career/tktech-sprint-knowledge.md`; use it for customer-facing delivery, sprint ownership, mobile launch readiness, and role-fit mapping without exposing raw ticket names or private identifiers.
+Current sprint/process note: Lucas is in the TK Technologies contract (Feb 2026 – Present). Public-safe career knowledge lives in `docs/career/tktech-sprint-knowledge.md`; use it for OrbitAI, CDP/car-parts searcher, customer-facing delivery, sprint ownership, and mobile launch readiness without exposing raw ticket names or private identifiers.
 
 ### Verified external profiles
 
@@ -201,7 +201,7 @@ Certs section groups credentials with **real verification URLs** or local certif
 
 - **Title (EN):** Lucas Cruz - Senior Data Engineer & Gen. AI Automation Engineer
 - **Title (PT):** Lucas Cruz - Engenheiro de Dados Senior & Automacao com IA Generativa
-- **Meta description:** References production data pipelines, cloud lakehouses, Gen. AI/n8n automation, and Europe relocation
+- **Meta description:** References production data pipelines, cloud lakehouses, and Gen. AI/n8n automation
 - **Canonical:** `https://devzurc.github.io/portfolio/`
 - **Open Graph:** `og:title`, `og:description`, `og:type=website`, `og:url`, `og:image`
 - **Twitter:** summary large image metadata
@@ -214,7 +214,7 @@ Certs section groups credentials with **real verification URLs** or local certif
 | Feature | Function |
 |---------|----------|
 | Full-screen mobile menu | `toggleMenu()`, `closeMenu()` overlay |
-| Language toggle | `setLang(lang)` updates elements and attributes |
+| Language toggle | `setLang(lang)` updates copy, metadata, and language-aware CV download hrefs |
 | Scroll animations | IntersectionObserver on reveals (`.fade-in`, `.job`, `.case-study`) |
 | Active nav | Scroll listener highlights current section |
 
@@ -252,7 +252,7 @@ Cursor reads `.cursor/rules/`, `.agents/skills/`, and generated `.cursor/agents/
 
 - [ ] Run `python3 docs/resume/scripts/sync-from-google-docs.py` after Google Doc edits
 - [ ] `markdown/*.md` reflects latest approved CV content before regenerating DOCX/PDF
-- [ ] `source/*.txt` reflects a fresh Google Docs export before treating it as source evidence
+- [ ] `source/*.txt` matches markdown until Google Docs are pasted; after paste, re-export before treating Google as source evidence
 - [ ] Portfolio `#experience`, `#projects`, `#skills`, hero stats align with CV facts
 - [ ] Cert links still resolve
 - [ ] GitHub project links are public and representative

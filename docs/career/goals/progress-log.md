@@ -86,6 +86,29 @@ Keeping a dual-language static site in sync with resumes and project metadata re
 
 ---
 
+## Week of 2026-09-08
+
+**Monday — measurable improvement chosen:**  
+Realign CV downloads, Google Docs drift, and career surfaces after recruiters were still getting Curitiba/Europe PDFs.
+
+**Tuesday–Wednesday — implemented:**  
+- Rebuilt Word/PDF/source from canonical markdown (Florianópolis, TK Present, OrbitAI). Did not pull stale Google Docs.
+- Cache-busted CV URLs; PT hero/mobile download follows language.
+- GitHub sync 2026-09-11; parked private hubs; curated `franq-data-lakehouse-challenge` as learning.
+- Slid Jul–Sep AI platform capstones; opened job-application tracker.
+
+**Thursday — evaluate/observe:**  
+- Google Docs still stale; live GitHub Pages still old until owner commit/push.
+- Local site PDFs contain Florianópolis / OrbitAI / Present and no Europe line.
+
+**Friday — technical note:**  
+Public downloads follow GitHub Pages, not the working tree. Markdown can be current while recruiters still see last shipped PDFs.
+
+**Weekend — polish:**
+- Shipped 2-page site PDFs from markdown/Word; live downloads pending this push.
+
+---
+
 ## Template (copy for future weeks)
 
 ```markdown

@@ -3,7 +3,10 @@ repo: crm-hub
 github_url:
 github_ref:
 visibility: private
-status: needs-review
+status: private-evidence
+parked: true
+parked_on: 2026-09-11
+parked_reason: Private repo; no public CV or portfolio copy until owner curation and publication permission.
 period: unknown
 employer: unknown
 role: unknown
@@ -15,13 +18,13 @@ verified_outcomes: []
 links:
   demo:
   docs:
-last_synced: 2026-07-31
+last_synced: 2026-09-11
 source_readme: readmes/crm-hub.md
 ---
 
 # crm-hub
 
-> Auto-generated stub — **curate this file**. Raw README: `readmes/crm-hub.md`
+> **Parked 2026-09-11.** Private evidence only. Do not add to CV or `index.html` until the owner confirms employer, dates, and publication permission.
 
 ## One-liner
 

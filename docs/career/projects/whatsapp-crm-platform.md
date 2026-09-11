@@ -16,11 +16,12 @@ links:
   demo:
   docs:
 last_synced: 2026-08-19
+cv_alignment: OrbitAI — Omnichannel AI CRM
 ---
 
 ## One-liner
 
-An all-in-one Omnichannel AI CRM that centralizes messaging (WhatsApp, Instagram, Telegram, Facebook, Email), integrates Google/Meta Ads data, manages user roles, and uses LLMs for automated replies and marketing insights.
+An all-in-one Omnichannel AI CRM (OrbitAI) that centralizes messaging (WhatsApp, Instagram, Telegram, Facebook, Email), integrates Google/Meta Ads data, manages user roles, and uses LLMs for automated replies and marketing insights.
 
 ## Problem
 
@@ -61,4 +62,4 @@ Customer Channels (WhatsApp/IG/FB/Telegram/Email)
 
 ## Public-safe scope note
 
-The owner confirmed current contributions to the new TK website, OrbitAI work, and StokIA development and maintenance on 2026-08-19. Public portfolio copy must describe this as sanitized product responsibility and must not expose product internals, customer data, deployment identifiers, or private URLs.
+The owner confirmed current contributions to the new TK website, OrbitAI work, and StokIA development and maintenance on 2026-08-19. The OrbitAI product name is approved for public CV notable projects and the matching portfolio card. Do not expose StokIA, product internals, customer data, deployment identifiers, or private URLs.

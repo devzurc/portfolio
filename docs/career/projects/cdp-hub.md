@@ -5,7 +5,7 @@ mirror_url:
 visibility: private
 status: active
 period: Feb 2026 - Present
-period_note: "TK Technologies contract extended to 6 months; expected completion in Aug 2026."
+period_note: "TK Technologies contract is ongoing as of Sep 2026 (Feb 2026 – Present). Do not publish an expected end date."
 employer: TK Technologies
 role: Platform engineer - monorepo architecture, dual-pipeline orchestration, Azure deployment, workflow automation
 domains: [automotive-parts, gen-ai, iot-adjacent, procurement-intelligence]
@@ -36,7 +36,7 @@ links:
 last_synced: 2026-06-13
 source_readme: readmes/cdp-hub.md
 related_projects: [muvstok-api]
-cv_alignment: Automotive Market Price Intelligence Platform (TK Technologies)
+cv_alignment: Car Parts Price Searcher (TK Technologies)
 public_safety: Live webhook URLs, workflow identifiers, cloud resource names, vault names, secret names, and environment variable names are omitted.
 ---
 

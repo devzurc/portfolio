@@ -30,7 +30,7 @@ The agent should be proactive, but not reckless. GitHub can prove that a repo, R
 | Curated profiles | `docs/career/projects/*.md` | Main AI career knowledge source |
 | Role strategy | `docs/career/JOB-SEARCH-STRATEGY.md` | Update when evidence changes role fit |
 | CV source | `docs/resume/markdown/*.md` + Google Docs | CV facts must stay EN/PT aligned |
-| Cover letter | `docs/resume/markdown/LucasCruz_Cover_Letter_Europe_EN.md` | Keep aligned with strongest current narrative |
+| Cover letter | `docs/resume/markdown/LucasCruz_Cover_Letter_EN.md` | Keep aligned with strongest current narrative |
 | Portfolio | `index.html` | Public subset of curated and CV-backed facts |
 | Agent context | `.agents/project-context.md`, `@.agents/skills/prompt-start-audit-sync/SKILL.md` | Keep workflow discoverable |
 | AI roadmap | `docs/career/goals/` | Senior AI Platform Specialist tracking — use `@.agents/skills/ai-roadmap-tracking/SKILL.md` |

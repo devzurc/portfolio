@@ -5,7 +5,7 @@ mirror_url:
 visibility: private
 status: active
 period: Feb 2026 - Present
-period_note: "TK Technologies contract extended to 6 months; expected completion in Aug 2026."
+period_note: "TK Technologies contract is ongoing as of Sep 2026 (Feb 2026 – Present). Do not publish an expected end date."
 employer: TK Technologies
 role: Backend engineer - FastAPI job API, Redis Streams workers, PostgreSQL persistence, Azure container deployment
 domains: [automotive-parts, api-design, data-ingestion]

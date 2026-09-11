@@ -9,7 +9,7 @@ Private-to-you working area for AI agents to understand **what you built**, **wi
 | **Raw mirror** | `readmes/` | Auto-synced README from GitHub — evidence, not marketing copy |
 | **Curated truth** | `projects/` | One profile per repo — problem, your role, stack, verified outcomes |
 | **Rollups** | `INDEX.md`, `tech-stack-rollup.md`, `github-sync-report.md` | Generated indexes, stack signals, and latest GitHub change report |
-| **Next phase** | `ALIGNMENT-PLAN.md` | Checklist to sync CV ↔ portfolio ↔ projects |
+| **Next phase** | `ALIGNMENT-PLAN.md`, `alignment-note-2026-09-11.md` | Checklist to sync CV ↔ portfolio ↔ projects |
 | **Job strategy** | `JOB-SEARCH-STRATEGY.md` | Role-fit thinking, search filters, interview story bank |
 | **Sprint/process knowledge** | `tktech-sprint-knowledge.md` | Public-safe Notion sprint/task mapping for TKTech delivery work |
 | **AI roadmap & goals** | `goals/` | Senior AI Platform Specialist roadmap, skill matrix, progress log, job tracker |

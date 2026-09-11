@@ -1,10 +1,10 @@
 # Senior AI Platform Specialist — goals system
 
-> Living workspace for the Jul–Dec 2026 roadmap: build production AI systems, track progress, and wire evidence into CV, portfolio, and job search.
+> Living workspace for the **rebaselined Sep 2026–2027 Q1** roadmap: build production AI systems, track progress, and wire evidence into CV, portfolio, and job search. Jul–Sep 2026 capstones slipped; see `senior-ai-roadmap.md`.
 
 ## North star
 
-By **December 31, 2026**, prove with shipped, public artifacts that you can design and operate an end-to-end production AI system:
+By **December 31, 2026** (at risk after the Sep 2026 rebaseline), prove with shipped, public artifacts that you can design and operate an end-to-end production AI system. LangGraph / MCP / full capstone may land in **2027 Q1**. Apply now as Senior Data Engineer / GenAI Engineer with current evidence.
 
 - FastAPI backend
 - PostgreSQL + `pgvector`
@@ -41,7 +41,7 @@ Use this line in hero copy, CV summary, cover letter, LinkedIn, and interview in
 | `skill-matrix.md` | Tier 1/2/3 stack with current vs target levels |
 | `projects-pipeline.md` | Capstone repos, status, CV/portfolio mapping |
 | `progress-log.md` | Weekly cadence log (build, measure, explain, harden) |
-| `job-applications.md` | Parallel job search tracker (US/EU English roles) |
+| `job-applications.md` | Parallel job search tracker (English-first roles) |
 
 ### Evidence pipeline
 

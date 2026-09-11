@@ -21,7 +21,7 @@ Shared patterns are section headers, project rows, tags, timeline cards, skill c
 - Grid: 48px hero background grid.
 - Hero title: 96px desktop, 72px tablet, 48px mobile.
 - Breakpoints: 640px, 768px, and 1024px are the reconstruction contract.
-- Project raster assets: `assets/images/projects/automotive-cdp.jpg`, `omnichannel-ai-crm.jpg`, and `iot-data-lakehouse.jpg`.
+- Project raster assets: `assets/images/projects/automotive-price-intelligence.jpg`, `omnichannel-ai-crm.jpg`, and `iot-data-lakehouse.jpg`.
 - Icons: dependency-free inline SVG for social links; typographic marks remain in skill cards.
 - Fonts: Plus Jakarta Sans and IBM Plex Mono from Google Fonts.
 

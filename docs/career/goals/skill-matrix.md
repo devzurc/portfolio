@@ -1,8 +1,8 @@
 # Skill matrix — Senior AI Platform Specialist
 
 > Levels: **aware** → **building** → **production** → **teaching**  
-> Last updated: 2026-06-24  
-> Rule: upgrade a level only when a shipped repo or verified work proves it.
+> Last updated: 2026-09-11
+> Rule: upgrade a level only when a shipped repo or verified work proves it. Jul–Sep 2026 capstones slipped; do not raise RAG/LangGraph/MCP/eval levels until a public repo exists.
 
 **Legend:** Current → Target (Dec 2026) · Proof project
 
@@ -52,13 +52,13 @@
 |-------|-------|----------|
 | Data pipelines & lakehouses | production | Spacecom AWS Medallion, wDiscover DW |
 | FastAPI + PostgreSQL + Redis/Celery | production | CDP Platform, muvstok-api |
-| NestJS + Next.js web application architecture | production | Omnichannel AI CRM Platform |
+| NestJS + Next.js web application architecture | production | OrbitAI (whatsapp-crm-platform) |
 | n8n + LLM workflow automation | production | Telegram, WhatsApp, Stripe workflows |
-| Meta Cloud API & Omnichannel integrations | production | Omnichannel AI CRM webhook parsing & outbound messages |
+| Meta Cloud API & Omnichannel integrations | production | OrbitAI webhook parsing & outbound messages |
 | Cloud deployment (AWS, Azure, Docker) | production | TK Technologies, Spacecom |
 | Web scraping at scale | production | CDP automotive pricing pipeline |
 | BI & governed datasets | production | Power BI, Qlik, Superset |
-| English C1 + Europe relocation | verified | IELTS, CV, portfolio |
+| English C1 | verified | IELTS, CV, portfolio |
 
 ---
 
@@ -75,9 +75,7 @@
 
 | Month | Primary skill upgrades |
 |-------|------------------------|
-| Jul | Structured outputs, FastAPI service patterns, pytest |
-| Aug | pgvector, hybrid retrieval, reranking, citations |
-| Sep | RAGAS, DeepEval, CI regression gates |
-| Oct | LangGraph state, checkpoints, human-in-the-loop |
-| Nov | MCP security, audit logging, threat modeling |
-| Dec | LangSmith, OTel, cost/latency dashboards, runbooks |
+| Sep–Oct | Structured outputs, FastAPI service patterns, pytest (`raw-llm-systems`) |
+| Oct–Nov | pgvector, hybrid retrieval, reranking, citations |
+| Nov–Dec | RAGAS, DeepEval, CI regression gates |
+| 2027 Q1 | LangGraph, MCP, LangSmith, OTel, runbooks |

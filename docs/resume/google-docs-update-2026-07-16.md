@@ -1,5 +1,7 @@
 # Google Docs CV update — 2026-07-16
 
+> **Superseded.** Do not paste this pack. Current copy lives in `google-docs-update-2026-09-10.md`. Relocation and Europe-availability wording has been removed from current CV sources.
+
 Use this to update the canonical Google Docs CVs before running `docs/resume/scripts/sync-from-google-docs.py`.
 
 ---
@@ -13,7 +15,7 @@ Use this to update the canonical Google Docs CVs before running `docs/resume/scr
 Replace the existing Professional Summary block with:
 
 ```text
-Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics datasets, conversational AI workflows, automated reporting systems, and customer-facing product implementation. Building a public portfolio of production AI platform systems (RAG, agents, evaluation, MCP, observability) over enterprise data through 2026. Fluent in English (C1); open to relocation across Europe.
+Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics datasets, conversational AI workflows, automated reporting systems, and customer-facing product implementation. Building a public portfolio of production AI platform systems (RAG, agents, evaluation, MCP, observability) over enterprise data through 2026. Fluent in English (C1).
 ```
 
 ### Technical Skills (Integrations)
@@ -75,7 +77,7 @@ Append the following Google/Coursera certifications to the bottom of the section
 Replace the existing Resumo Profissional block with:
 
 ```text
-Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva utilizando AWS, Azure e GCP, com implementação de produto voltada a clientes. Construindo portfólio público de plataformas de IA em produção (RAG, agentes, avaliação, MCP, observabilidade) sobre dados empresariais ao longo de 2026. Inglês fluente (C1); disponível para realocação na Europa.
+Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva utilizando AWS, Azure e GCP, com implementação de produto voltada a clientes. Construindo portfólio público de plataformas de IA em produção (RAG, agentes, avaliação, MCP, observabilidade) sobre dados empresariais ao longo de 2026. Inglês fluente (C1).
 ```
 
 ### Competências Técnicas (Integrations)

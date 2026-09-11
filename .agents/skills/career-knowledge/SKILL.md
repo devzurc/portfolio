@@ -84,6 +84,7 @@ Template: `projects/_template.md`
 | `learning` | Tutorial/training — mention skills, not as flagship project |
 | `archived` | Old/duplicate — exclude from portfolio |
 | `needs-review` | Auto stub — owner must curate |
+| `private-evidence` | Real private work, parked; no public CV/portfolio copy until owner permission |
 
 ---
 

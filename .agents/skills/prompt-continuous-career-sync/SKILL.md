@@ -20,7 +20,7 @@ Context to read first:
 @docs/career/README.md
 @docs/career/ALIGNMENT-PLAN.md
 @docs/career/JOB-SEARCH-STRATEGY.md
-@docs/resume/markdown/LucasCruz_Cover_Letter_Europe_EN.md
+@docs/resume/markdown/LucasCruz_Cover_Letter_EN.md
 
 Sync steps:
 1. Run `python3 docs/career/scripts/sync-github-projects.py`.

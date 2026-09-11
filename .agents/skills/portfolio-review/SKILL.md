@@ -42,7 +42,7 @@ Score each section **1–5** (5 = excellent for target roles):
 | Projects | Real links, architecture clarity, outcome honesty |
 | Job fit | Target roles, growth environment, search filters, evidence alignment |
 | Certifications | Verifiable URLs, relevant to target roles |
-| Contact | Location/relocation/visa clarity, link prominence |
+| Contact | Location and visa clarity, link prominence (no relocation copy) |
 | Footer | Professional, consistent |
 
 ### Step 3 — Cross-section consistency

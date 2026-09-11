@@ -3,15 +3,15 @@
 > Tracks capstone repos from roadmap → curated profile → CV → portfolio.  
 > Update after each repo ships and after `/continuous-career-sync` or `/weekly-review`.
 
-| Repo (planned) | Month | Status | GitHub URL | Career profile | portfolio_worthy | cv_worthy | Portfolio card | CV bullet |
-|----------------|-------|--------|------------|----------------|------------------|-----------|----------------|-----------|
-| `raw-llm-systems` | Jul 2026 | planned | — | — | — | — | — | — |
-| `data-engineering-knowledge-rag` | Aug 2026 | planned | — | — | — | — | — | — |
-| `data-engineering-knowledge-rag` (eval) | Sep 2026 | planned | — | — | — | — | — | — |
-| `analytics-agent-orchestrator` | Oct 2026 | planned | — | — | — | — | — | — |
-| `mcp-data-catalog-server` | Nov 2026 | planned | — | — | — | — | — | — |
-| `mcp-warehouse-assistant` | Nov 2026 | planned | — | — | — | — | — | — |
-| `ai-data-operations-platform` | Dec 2026 | planned | — | — | — | — | — | — |
+| Repo (planned) | Window | Status | GitHub URL | Career profile | portfolio_worthy | cv_worthy | Portfolio card | CV bullet |
+|----------------|--------|--------|------------|----------------|------------------|-----------|----------------|-----------|
+| `raw-llm-systems` | Sep–Oct 2026 | planned — next | — | — | — | — | — | — |
+| `data-engineering-knowledge-rag` | Oct–Nov 2026 | planned | — | — | — | — | — | — |
+| `data-engineering-knowledge-rag` (eval) | Nov–Dec 2026 | planned | — | — | — | — | — | — |
+| `analytics-agent-orchestrator` | 2027 Q1 | slipped | — | — | — | — | — | — |
+| `mcp-data-catalog-server` | 2027 Q1 | slipped | — | — | — | — | — | — |
+| `mcp-warehouse-assistant` | 2027 Q1 | slipped | — | — | — | — | — | — |
+| `ai-data-operations-platform` | 2027 Q1 | slipped | — | — | — | — | — | — |
 
 ---
 
@@ -19,12 +19,13 @@
 
 | Repo / project | Status | GitHub | portfolio_worthy | cv_worthy | Notes |
 |----------------|--------|--------|------------------|-----------|-------|
-| `cdp-hub` | active | [tktechnologies/cdp-hub](https://github.com/tktechnologies/cdp-hub) (public) · devzurc mirror (private) | true | true | Flagship DE + GenAI platform |
-| `whatsapp-automation-platform` | active | private mirror | true | true | Omnichannel AI CRM Platform |
+| `cdp-hub` | active | [tktechnologies/cdp-hub](https://github.com/tktechnologies/cdp-hub) (public) · devzurc mirror (private) | true | true | Flagship DE + GenAI platform (Car Parts Price Searcher) |
+| `whatsapp-crm-platform` | active | private mirror (`ORBITAI-CRM`) | true | true | OrbitAI omnichannel AI CRM |
 | `n8n-telegram-assistant` | active | private mirror | true | true | Conversational AI + RAG-adjacent |
 | `n8n-whatsapp-assistant` | active | no mirror | true | false | Sanitized profile only |
 | `n8n-stripe-checkout` | active | private mirror | true | true | Automation platform proof |
 | `spacecom-iot-lakehouse` | client-work | no public repo | true | true | Lakehouse at scale |
+| `franq-data-lakehouse-challenge` | learning | [devzurc/franq-data-lakehouse-challenge](https://github.com/devzurc/franq-data-lakehouse-challenge) | false | false | Public CNPJ lakehouse challenge; not on CV yet |
 
 ---
 

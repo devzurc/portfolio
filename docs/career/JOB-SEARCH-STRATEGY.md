@@ -28,7 +28,7 @@ Google AI certifications (4 verified credentials on Credly) validate his solid f
 - Data teams building lakehouses, orchestration layers, data quality, internal APIs, or governed analytics products.
 - AI/product teams turning LLMs into operational workflows for support, sales, reporting, document processing, or internal tooling.
 - SaaS or B2B teams that need a builder who can also run demos, train customers, gather feedback, and support adoption.
-- Europe-based companies open to visa sponsorship, especially teams comfortable with English-first collaboration.
+- Companies open to visa sponsorship, especially teams comfortable with English-first collaboration.
 - Roles mentioning Python, SQL, Airflow, FastAPI, Azure/AWS/GCP, Docker, n8n, LLMs, RAG, webhooks, data platform, or workflow automation.
 - Roles mentioning LangGraph, pgvector, MCP, RAGAS, DeepEval, LangSmith, OpenTelemetry, agent orchestration, or AI platform engineering.
 
@@ -38,13 +38,13 @@ Google AI certifications (4 verified credentials on Credly) validate his solid f
 - Pure low-code/no-code roles where engineering depth is not valued.
 - Pure sales or customer success roles without hands-on technical delivery.
 - Data analyst-only roles that center mostly on dashboards and ad hoc reporting.
-- Roles requiring local EU work authorization with no sponsorship path.
+- Roles requiring local work authorization with no sponsorship path.
 
 ## Search keywords
 
 Use combinations of:
 
-- `Senior Data Engineer visa sponsorship Europe`
+- `Senior Data Engineer visa sponsorship`
 - `Data Platform Engineer Python Airflow Azure`
 - `AI Automation Engineer n8n LLM`
 - `GenAI Engineer workflow automation`
@@ -52,10 +52,9 @@ Use combinations of:
 - `Technical Implementation Engineer AI automation`
 - `Data Engineer LLM RAG pipelines`
 - `Automation Engineer FastAPI webhooks`
-- `Data Engineer relocation sponsorship`
 - `Senior AI Engineer RAG LangGraph visa sponsorship`
 - `AI Platform Engineer pgvector evaluation production`
-- `Applied AI Engineer FastAPI observability Europe`
+- `Applied AI Engineer FastAPI observability`
 - `GenAI Systems Engineer MCP agent orchestration`
 
 ## Resume and portfolio angles by role
@@ -64,7 +63,7 @@ Use combinations of:
 |-------------|-----------|------------------|
 | Senior Data Engineer | AWS S3 lakehouse, PySpark, Airflow, Trino, governed BI | Spacecom, wDiscover, CDP data/reporting contracts |
 | Data Platform Engineer | FastAPI services, Redis/Celery, PostgreSQL, Docker, Azure | CDP Platform, `muvstok-api`, deployment/migration work |
-| Gen. AI Automation Engineer | n8n, LLM workflows, chatbots, internal knowledge, RAG | Telegram assistant, WhatsApp intake, CDP automation |
+| Gen. AI Automation Engineer | n8n, LLM workflows, chatbots, OrbitAI, internal knowledge | Telegram assistant, WhatsApp intake, OrbitAI, CDP automation |
 | AI/Data Solutions Engineer | Customer demos, training, product support, stakeholder feedback | TKTech sprint knowledge and customer-facing delivery notes |
 | Automation Platform Engineer | Webhooks, payments, lifecycle email, messaging integrations | Stripe, Clerk, WhatsApp, Instagram, n8n callback/security work |
 | Senior / Applied AI Engineer / AI Platform Engineer | Production RAG, agent orchestration, evaluation harnesses, MCP tools, observability over enterprise data | Roadmap repos (`goals/projects-pipeline.md`) + CDP Platform + lakehouse background |
@@ -73,7 +72,7 @@ Use combinations of:
 
 - Built an automotive pricing intelligence platform that receives requests from chat/email/schedule/spreadsheets and dispatches public pricing plus internal stock lookup.
 - Designed backend services with FastAPI, NestJS, Next.js, Redis/Celery/Streams, PostgreSQL, Docker, and Azure deployment patterns (Azure Container Apps, Bicep IaC).
-- Architected an omnichannel AI CRM platform (WhatsApp, IG, FB, Telegram, Email) with Meta/Google Ads integrations, role-based data governance, and LLM-powered replies; currently contributes to the new TK web presence and product development/maintenance using sanitized public descriptions.
+- Built OrbitAI, an omnichannel AI CRM (WhatsApp, IG, FB, Telegram, Email) with Meta/Google Ads integrations, role-based data governance, and LLM-powered replies.
 - Delivered private n8n automations for Telegram, WhatsApp, Instagram, Stripe, Clerk, and reporting workflows.
 - Obtained 4 Google AI certifications validating expertise in AI writing, communication, brainstorming, planning, and research tools.
 - Operated work through Notion sprints, turning blocked items, architecture decisions, migrations, and customer feedback into delivery tasks.
@@ -82,13 +81,26 @@ Use combinations of:
 ## Next portfolio improvements
 
 - Keep the compact "customer-facing delivery" signal in `#experience`, `#job-fit`, and CV wording aligned as new TKTech delivery evidence appears.
-- Create a sanitized CDP case-study page or markdown story with architecture, constraints, and outcomes.
+- Create a sanitized CDP / Car Parts Price Searcher case-study page or markdown story with architecture, constraints, and outcomes.
 - Create a sanitized "AI workflow automation suite" story grouping Telegram, WhatsApp, Stripe, Clerk, and Instagram.
-- Add a small job-evaluation checklist for new opportunities: visa, hands-on ownership, cloud/data depth, customer exposure, growth path, compensation, language, location.
+- Owner decision: promote `franq-data-lakehouse-challenge` to CV/portfolio or keep as learning-only.
+
+## Job-evaluation checklist
+
+Use before spending time on an application:
+
+- [ ] Visa sponsorship is possible (or not required)
+- [ ] Hands-on engineering ownership (not pure CS/sales)
+- [ ] Cloud + data or AI-workflow depth matches the evidence (lakehouse, CDP, OrbitAI, n8n)
+- [ ] Customer/demo exposure is valued if the role is solutions-shaped
+- [ ] Growth path toward production AI systems without requiring unshipped roadmap skills
+- [ ] Compensation and language (English-first) are acceptable
+- [ ] Location / remote policy fits Florianópolis + sponsorship, without advertising Europe-only availability
 
 ## Confirmation status
 
 - Approved for public-safe wording on 2026-06-17: customer demos, product training, sales support, post-launch support, and mobile launch readiness through Play Store/EAS/DUNS preparation.
-- Confirmed 2026-06-17: no TKTech product or client names on the public portfolio; employer name TK Technologies remains on CV/site where verified.
-- Confirmed 2026-08-19: new TK website, OrbitAI work, and StokIA development/maintenance may appear as sanitized current-role responsibilities. Do not expose product internals or private URLs.
+- Confirmed 2026-06-17: no TKTech product or client names on the public portfolio except later-approved OrbitAI; employer name TK Technologies remains on CV/site where verified.
+- Confirmed 2026-08-19: new TK website, OrbitAI work, and StokIA development/maintenance may appear as sanitized current-role responsibilities. Do not expose product internals or private URLs. OrbitAI is approved for CV notable projects and the matching portfolio card.
+- Confirmed 2026-09-11: home city Florianópolis; no Europe relocation copy; TK Technologies Feb 2026 – Present with no expected end date.
 - Any measured outcomes from current automations still need owner-supplied metrics before public use.

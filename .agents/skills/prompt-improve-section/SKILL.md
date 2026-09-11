@@ -25,7 +25,7 @@ Section ID: {{SECTION_ID}}
 
 My goal for this section:
 {{GOAL}}
-<!-- e.g. "Stronger Gen. AI keywords for EU recruiters" or "Shorter hero paragraph" -->
+<!-- e.g. "Stronger Gen. AI keywords for recruiters" or "Shorter hero paragraph" -->
 
 Constraints:
 - Do NOT invent metrics, employers, projects, or links
@@ -81,7 +81,7 @@ New certs require certificate URL from owner.
 
 ### `contact`
 
-Focus: relocation/visa clarity, link prominence, CV download UX.  
+Focus: location/visa clarity, link prominence, CV download UX. Do not add relocation copy.  
 Do not change email or social URLs without owner confirmation.
 
 ---
@@ -91,7 +91,7 @@ Do not change email or social URLs without owner confirmation.
 ```
 Improve the portfolio section: hero
 
-My goal: Tighten the hero paragraph for senior DE + Gen. AI roles in Europe; keep 5+ years and IoT scale if already verified.
+My goal: Tighten the hero paragraph for senior DE + Gen. AI roles; keep 5+ years and IoT scale if already verified.
 
 @.agents/skills/prompt-improve-section/SKILL.md
 @.agents/rules.md

@@ -11,7 +11,7 @@ Use this skill when improving portfolio copy, hero messaging, experience bullets
 
 ## Audience
 
-- **Primary:** Technical recruiters and hiring managers (EU market)
+- **Primary:** Technical recruiters and hiring managers (English-first international roles)
 - **Secondary:** Engineering leads scanning for pipeline + Gen. AI depth
 - **Language:** Professional EN (default) + PT-BR (paired blocks)
 
@@ -25,7 +25,7 @@ Use this skill when improving portfolio copy, hero messaging, experience bullets
 | Lead with systems you built | Lead with tools you "know" |
 | Use strong verbs: architected, automated, orchestrated, deployed | Passive voice walls |
 | Mention scale **only with owner-verified numbers** | Round up or invent metrics |
-| Acknowledge relocation + visa need clearly | Hide location/sponsorship facts |
+| Keep location factual; visa sponsorship may stay | Reintroduce relocation or Europe-only availability |
 
 **Register:** Senior IC — credible peer, not marketing brochure.
 
@@ -89,9 +89,10 @@ Structure per card:
 
 Keep friction low. Reinforce:
 
-- Open to Europe opportunities
+- Location (Florianópolis)
 - Visa sponsorship required
 - Email + LinkedIn prominent
+- Do not advertise relocation or Europe-only availability
 
 ---
 

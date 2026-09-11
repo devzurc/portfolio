@@ -1,17 +1,30 @@
-# Senior AI Platform Specialist — roadmap (Jul–Dec 2026)
+# Senior AI Platform Specialist — roadmap (rebaselined Sep 2026)
 
 > Monthly capstones ship as **separate public GitHub repos** under `devzurc`, synced into `docs/career/projects/`, then surfaced on CV and portfolio when `portfolio_worthy: true`.
 
-**Deadline:** December 31, 2026  
-**Job search:** Parallel from day one — apply as Senior Data Engineer / GenAI Engineer while building.
+**Deadline:** December 31, 2026 remains the north star and is **at risk**.
+**Job search:** Parallel from day one — apply as Senior Data Engineer / GenAI Engineer with current evidence (OrbitAI, CDP/car-parts searcher, Spacecom lakehouse). Do not put RAG, LangGraph, MCP, RAGAS, or pgvector on the CV as production skills until a public repo proves them.
+
+### Rebaseline — 2026-09-11
+
+Jul–Sep 2026 capstones (`raw-llm-systems`, RAG, eval) did not ship. Slide, do not backfill fake progress:
+
+| Original month | New window | Repo |
+|----------------|------------|------|
+| Jul 2026 | Sep–Oct 2026 | `raw-llm-systems` — **next action** |
+| Aug 2026 | Oct–Nov 2026 | `data-engineering-knowledge-rag` |
+| Sep 2026 | Nov–Dec 2026 | eval layer on the RAG repo |
+| Oct–Dec 2026 | 2027 Q1 unless compressed | LangGraph, MCP, full platform capstone |
+
+Immediate next public artifact: a small FastAPI + structured-outputs + Docker Compose repo named `raw-llm-systems`.
 
 ---
 
-## July 2026 — Foundation + raw LLM systems
+## Sep–Oct 2026 — Foundation + raw LLM systems
 
 **Goal:** Prove you understand primitives without framework magic.
 
-**Repo:** `raw-llm-systems` (planned)
+**Repo:** `raw-llm-systems` (planned — next)
 
 | Task | Status |
 |------|--------|
@@ -30,7 +43,7 @@
 
 ---
 
-## August 2026 — Production RAG core
+## Oct–Nov 2026 — Production RAG core
 
 **Goal:** Build your real RAG platform over data-engineering / enterprise-data content.
 
@@ -55,7 +68,7 @@
 
 ---
 
-## September 2026 — Evaluation specialist layer
+## Nov–Dec 2026 — Evaluation specialist layer
 
 **Goal:** Stop trusting vibes.
 
@@ -78,7 +91,7 @@
 
 ---
 
-## October 2026 — LangGraph agent system
+## 2027 Q1 — LangGraph agent system (slipped from Oct 2026)
 
 **Goal:** Move from chatbot to controlled agent workflow.
 
@@ -104,7 +117,7 @@
 
 ---
 
-## November 2026 — MCP + multi-agent integration
+## 2027 Q1 — MCP + multi-agent integration (slipped from Nov 2026)
 
 **Goal:** Become tool-platform fluent.
 
@@ -131,7 +144,7 @@
 
 ---
 
-## December 2026 — Production AI platform capstone
+## 2027 Q1 — Production AI platform capstone (slipped from Dec 2026)
 
 **Goal:** Package everything into a senior portfolio artifact.
 

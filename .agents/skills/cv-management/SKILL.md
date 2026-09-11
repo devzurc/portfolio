@@ -52,8 +52,8 @@ Updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/`.
 
 | # | Section | Notes |
 |---|---------|-------|
-| 1 | **Header** | Name, `Data Engineer \| Gen. AI Engineer`, phone, email, LinkedIn, portfolio URL, location, relocation, visa |
-| 2 | **Professional Summary** | 3–4 lines; years, domains, stack keywords, English level, Europe intent |
+| 1 | **Header** | Name, `Data Engineer \| Gen. AI Engineer`, phone, email, LinkedIn, portfolio URL, location, visa |
+| 2 | **Professional Summary** | 3–4 lines; years, domains, stack keywords, English level. Do not add relocation or Europe-only availability. |
 | 3 | **Technical Skills** | Grouped rows (Gen. AI, Data Eng, Orchestration, Cloud, Lakehouses, DBs, BI, Security/Governance, DevOps, Languages) |
 | 4 | **Work Experience** | Reverse chronological; `Title – Company \| Location (mode)` + date range + 3–5 bullets |
 | 5 | **Notable Projects** | Title · stack · context · date; 1–3 bullets each |
@@ -190,7 +190,7 @@ Only edit with owner-provided facts (degree name, institution, date, majors). Sy
 
 ### H. Header / contact changes
 
-Fields: phone, email, LinkedIn, portfolio URL, relocation line.
+Fields: phone, email, LinkedIn, portfolio URL, location, visa. Do not add a relocation line.
 
 Any URL change must be verified live. Update `index.html` `#contact` and CV download paths if portfolio URL changes.
 
