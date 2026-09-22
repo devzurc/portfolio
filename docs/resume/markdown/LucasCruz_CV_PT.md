@@ -4,9 +4,9 @@ title: Lucas Cruz — CV (Português)
 google_doc: https://docs.google.com/document/d/1oi8mzTJNNTu3CdSuqEgiWCPmiyvGWxrsstU93K0QV0Q/edit
 pdf: ../pdf/LucasCruz_CV_PT.pdf
 word: ../word/LucasCruz_CV_PT.docx
-last_synced: 2026-09-11
-last_updated: 2026-09-11
-sync_source: markdown-local-export-google-docs-pending
+last_synced: 2026-09-22
+last_updated: 2026-09-22
+sync_source: google-docs-export
 ---
 
 # LUCAS CRUZ

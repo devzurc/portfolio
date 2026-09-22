@@ -111,7 +111,7 @@ The authoritative values are the custom properties in `assets/css/tokens.css`. R
 | **PDF** | `pdf/LucasCruz_CV_EN.pdf`, `pdf/LucasCruz_CV_PT.pdf` | Repo snapshot / archive |
 | **Plain text** | `source/LucasCruz_CV_EN.txt`, `source/LucasCruz_CV_PT.txt` | Raw Google export for diffing |
 | **Google update note** | `google-docs-update-2026-09-10.md` | In-place paste pack to restore the compact 2-page Google Docs layout before the next export |
-| **Cover letter** | `markdown/LucasCruz_Cover_Letter_EN.md`, `markdown/LucasCruz_Cover_Letter_PT.md` | Cover letter drafts aligned from CV/career knowledge |
+| **Cover letter** | `markdown/LucasCruz_Cover_Letter_EN.md`, `markdown/LucasCruz_Cover_Letter_PT.md` | Drafts aligned from CV/career knowledge. Google Docs: EN `1rdaAgWzm8KGyhUolCEdVitg2zftuJYlpZMooe4gyI4g`, PT `15davoxr1GtnWgvhN2tSIsDJ2br_Fb4AHEGpGFNgUybI` |
 
 **Sync command (pulls latest from Google Docs):**
 
@@ -135,7 +135,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 3. Update `markdown/*.md` if agents edited copy in-repo (or paste Google changes into markdown)
 4. Run `/sync-cv-portfolio` to align `index.html` with CV facts
 
-**Current CV note (2026-09-11):** Local Markdown is canonical. Site Word/PDF were rebuilt from markdown (LibreOffice 2-page export) because Google Docs still serve Curitiba/Europe/May 2026 copy. Apply `docs/resume/google-docs-update-2026-09-10.md` in Google Docs before running `sync-from-google-docs.py`. TK is Feb 2026 – Present. Header location is Florianópolis. The OrbitAI product name is approved for CV notable projects and the matching portfolio card. StokIA, internals, and private URLs stay out of public copy.
+**Current CV note (2026-09-22):** Google Docs, local Markdown, Word, source text, and site PDFs match. Header location is Florianópolis. Visa line is sponsorship required, with no Europe relocation line. TK is Feb 2026 – Present. OrbitAI is approved for CV notable projects and the matching portfolio card. StokIA, internals, and private URLs stay out of public copy. Cover letters live in Google Docs as well as `docs/resume/markdown/`.
 
 **CV management skill:** `@.agents/skills/cv-management/SKILL.md`
 

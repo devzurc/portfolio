@@ -1,10 +1,17 @@
 # Google Docs CV update — 2026-09-10
 
-> **Checked 2026-09-11:** Canonical Google Docs still serve Curitiba / Europe / Feb–May 2026 copy. Do **not** run `sync-from-google-docs.py` until this pack is pasted in place. Local Word/PDF/source files were rebuilt from markdown so site downloads match Florianópolis, TK Present, and OrbitAI. Google Docs remain the ATS original once this paste is done.
+> **Applied 2026-09-22:** The English and Portuguese Google Docs were updated from the local Word files through the connected Google account `dev.lucascruz@gmail.com`. A fresh export was pulled into `docs/resume/word`, `docs/resume/source`, `docs/resume/pdf`, and `assets/files/cv`. Both Docs now use Florianópolis, visa sponsorship, TK Present, and OrbitAI. The Europe line, the May 2026 end date, and the Snowflake/dbt learning project are gone.
 
-Restore the **original compact 2-page Google Docs layout**, then replace text in place. Canonical draft copy lives in `docs/resume/markdown/LucasCruz_CV_EN.md` and `docs/resume/markdown/LucasCruz_CV_PT.md`.
+Reject the Docs, and do not export, if any of these are still present:
 
-**Do not** paste Markdown (`#`, `|`, `---`, `###`) into Google Docs. **Do not** delete the skills table. **Do not** run `python3 docs/resume/scripts/sync-from-google-docs.py` until both Docs look aligned on 2 pages.
+- Header city Curitiba, or “Open to relocation across Europe” / “Disponível para trabalho presencial, híbrido ou remoto”
+- TK Technologies ending May 2026 / Mai 2026, or a 3-month contract
+- Notable project “Modern Cloud Data Pipeline” / “Pipeline de Dados em Nuvem” or a ~50% deployment-error claim
+- Missing OrbitAI and Car Parts Price Searcher / Buscador de Preços de Peças
+
+This file remains the paste pack if a future Doc drifts. The 2026-09-22 update was applied online, so another paste is not required unless a reject check below fails.
+
+Canonical draft copy lives in `docs/resume/markdown/LucasCruz_CV_EN.md` and `docs/resume/markdown/LucasCruz_CV_PT.md`.
 
 | Language | Google Doc |
 |----------|------------|

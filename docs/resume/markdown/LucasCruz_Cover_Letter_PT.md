@@ -1,9 +1,10 @@
 ---
 lang: pt-BR
 title: Lucas Cruz — Carta de Apresentação
-last_updated: 2026-09-11
+last_updated: 2026-09-22
 source: portfolio-career-knowledge
 template_vars: [Role, Company]
+google_doc: https://docs.google.com/document/d/15davoxr1GtnWgvhN2tSIsDJ2br_Fb4AHEGpGFNgUybI/edit
 ---
 
 # Lucas Cruz — Carta de Apresentação

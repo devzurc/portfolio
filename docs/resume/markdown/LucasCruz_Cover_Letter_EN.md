@@ -1,8 +1,9 @@
 ---
 lang: en
 title: Lucas Cruz - Cover Letter
-last_updated: 2026-09-11
+last_updated: 2026-09-22
 source: portfolio-career-knowledge
+google_doc: https://docs.google.com/document/d/1rdaAgWzm8KGyhUolCEdVitg2zftuJYlpZMooe4gyI4g/edit
 ---
 
 # Lucas Cruz - Cover Letter

@@ -1,78 +1,69 @@
-LUCAS CRUZ
-
+﻿LUCAS CRUZ
 Engenheiro de Dados Sênior | Engenheiro de Automação com IA Generativa
-
 +55 (21) 96552-9308 · dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
-
 Florianópolis, Santa Catarina · Necessita de patrocínio de visto
 
-Resumo Profissional
 
+RESUMO PROFISSIONAL
 Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem, agentes de IA e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva, com desenvolvimento e manutenção de produtos voltados a clientes. Atualmente estende esse trabalho para plataformas de IA em produção (RAG, agentes, avaliação, MCP, observabilidade) sobre dados empresariais. Inglês fluente (C1).
 
-Competências Técnicas
 
-IA Generativa & LLMs	Integração com LLMs, Agentes de IA (OpenAI, Claude, Gemini…), RAG, Engenharia de Prompt, Chatbots
-Dados & Orquestração	Python, SQL, Apache Spark (PySpark), Pandas, FastAPI, NestJS, Next.js, dbt, Trino, REST APIs, Web Scraping, Playwright, Parquet, Apache Airflow, n8n, Celery, Redis, Meta Cloud API
-Cloud & Lakehouses	Amazon Web Service (AWS), Microsoft Azure, Google Cloud (GCP), Oracle Cloud (OCI), Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database
-Bancos de Dados & BI	PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker
-Segurança & Governança	Conformidade LGPD/GDPR, Privacidade de Dados, IAM, RBAC, Mascaramento de Dados, Criptografia em Repouso/Trânsito, Logs de Auditoria, RFID/NFC, Firewall
-DevOps & Infraestrutura	Docker, Kubernetes, Azure Bicep, Azure Container Apps, Git, Pipelines CI/CD, Linux, Bash Scripting
-Idiomas	Português (Nativo) · Inglês (C1 – Avançado) · Espanhol (B1 – Intermediário)
+COMPETÊNCIAS TÉCNICAS
+IA Generativa & LLMs
+	Integração com LLMs, Agentes de IA (OpenAI, Claude, Gemini…), RAG, Engenharia de Prompt, Chatbots
+	Dados & Orquestração
+	Python, SQL, Apache Spark (PySpark), Pandas, FastAPI, NestJS, Next.js, dbt, Trino, REST APIs, Web Scraping, Playwright, Parquet, Apache Airflow, n8n, Celery, Redis, Meta Cloud API
+	Cloud & Lakehouses
+	Amazon Web Service (AWS), Microsoft Azure, Google Cloud (GCP), Oracle Cloud (OCI), Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database
+	Bancos de Dados & BI
+	PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker
+	Segurança & Governança
+	Conformidade LGPD/GDPR, Privacidade de Dados, IAM, RBAC, Mascaramento de Dados, Criptografia em Repouso/Trânsito, Logs de Auditoria, RFID/NFC, Firewall
+	DevOps & Infraestrutura
+	Docker, Kubernetes, Azure Bicep, Azure Container Apps, Git, Pipelines CI/CD, Linux, Bash Scripting
+	Idiomas
+	Português (Nativo) · Inglês (C1 – Avançado) · Espanhol (B1 – Intermediário)
+	
 
-Experiência Profissional
-
-Engenheiro de IA Generativa — TK Technologies | Curitiba, PR (Híbrido) · Fev 2026 – Atual · Contrato
-
+EXPERIÊNCIA PROFISSIONAL
+Engenheiro de IA Generativa — TK Technologies | Curitiba, PR (Híbrido)        Fev 2026 – Atual · Contrato
 * Projetou o OrbitAI, uma plataforma de CRM de IA omnichannel (WhatsApp, Instagram, Facebook, Telegram e e-mail) com governança de acesso (RBAC), rastreamento de Meta/Google Ads e auto-respostas por LLMs, realizando deploy no Azure Container Apps com Bicep IaC.
 * Desenvolveu pipeline de web scraping em Python coletando dados de preço e metadados de mais de 10 sites de peças automotivas, gerando inteligência competitiva de mercado em escala.
 * Projetou workflows de automação com IA no n8n (ETL, RPA e agentes chatbot) integrando LLMs (Claude AI, Google AI Studio) e APIs do GCP (Sheets, Drive) para enriquecer dados e reduzir trabalho manual de análise.
 * Desenvolveu chatbot de IA conversacional permitindo que usuários de negócio consultassem e refinassem datasets de preço por linguagem natural, reduzindo o tempo de obtenção de insights.
 * Coordenou sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial e suporte pós-lançamento; contribui para a presença web da TK e para o desenvolvimento e manutenção contínuos do produto CRM.
-
-Engenheiro de Dados — Spacecom Monitoramento | Curitiba, PR (Presencial) · Abr 2023 – Jul 2024
-
+Engenheiro de Dados — Spacecom Monitoramento | Curitiba, PR (Presencial)        Abr 2023 – Jul 2024
 * Projetou e manteve um Data Lakehouse de Big Data na AWS S3 com Arquitetura Medallion (Bronze/Prata/Ouro) utilizando Delta Lake, Parquet, PySpark e Trino, suportando cargas de trabalho analíticas e de reportes.
 * Suportou plataforma IoT de grande escala processando dados de mais de 95.000 dispositivos, com centenas de milhões de registros por dia em alta disponibilidade.
 * Gerenciou dados de tags eletrônicas de segurança (RFID/NFC) para sistemas do judiciário, aplicando controles de privacidade, governança de acesso e manuseio seguro de dados sensíveis em conformidade com LGPD/GDPR.
 * Orquestrou e otimizou pipelines ETL com Apache Airflow, reduzindo falhas em ~30%; realizou deploy de serviços com Docker na AWS EC2, diminuindo problemas de implantação em ~25%.
 * Identificou e corrigiu etapas inconsistentes nos pipelines, aumentando a acurácia dos dados em ~40%; entregou datasets consumidos por dashboards no Qlik Sense e Apache Superset.
-
-Consultor de Engenharia de Dados — wDiscover | Curitiba, PR (Remoto) · Jun 2022 – Mai 2024
-
+Consultor de Engenharia de Dados — wDiscover | Curitiba, PR (Remoto)        Jun 2022 – Mai 2024
 * Entregou projetos completos de dados para clientes de fintechs, agronegócio e operações, integrando provedores de pagamento (PagSeguro, Stone, Cielo), API IoT John Deere, REST APIs e web scraping.
 * Projetou Data Warehouses no SQL Server e Oracle Autonomous Database com modelagem dimensional; automatizou ETL com Airflow em Docker/Oracle Cloud, reduzindo esforço manual em ~35%.
 * Construiu dashboards no Power BI para monitoramento de KPIs, métricas financeiras e desempenho operacional, habilitando decisões orientadas a dados para stakeholders.
-
-Analista de Dados — Grupo Itaeté | Curitiba, PR (Híbrido) · Jun 2020 – Fev 2023
-
+Analista de Dados — Grupo Itaeté | Curitiba, PR (Híbrido)        Jun 2020 – Fev 2023
 * Projetou Data Warehouse no SQL Server e pipelines Python/SQL com Pandas para limpeza, transformação e enriquecimento de dados, integrando dispositivos IoT, PostgreSQL, APIs e arquivos CSV.
 * Criou dashboards no Power BI e workflows automatizados de relatórios em Excel/VBA, reduzindo o tempo de processamento de dados em ~50% e o volume de trabalho manual operacional.
 * Desenvolveu sistemas internos de controle de estoque e automação financeira, incluindo geração de notas fiscais e distribuição automática de relatórios semanais.
 
-Projetos de Destaque
 
-OrbitAI — CRM de IA Omnichannel · NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Atual
-
+PROJETOS DE DESTAQUE
+OrbitAI — CRM de IA Omnichannel  ·  NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker  ·  TK Technologies – Jun 2026 – Atual
 * Desenvolveu o OrbitAI, um CRM omnichannel seguro que centraliza WhatsApp, Instagram, Facebook, Telegram e e-mails em uma caixa de entrada unificada com controle de acesso baseado em funções (RBAC).
 * Conectou dados de desempenho de Meta e Google Ads e uma camada de LLMs (Claude/Google AI Studio) para auto-respostas, mensagens outbound e análise automatizada de campanhas.
-
-Buscador de Preços de Peças · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Fev 2026 – Atual
-
+Buscador de Preços de Peças  ·  Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep  ·  TK Technologies – Fev 2026 – Atual
 * Construiu um buscador de preços de peças em mais de 10 sites, com pesquisa paralela de preços públicos e estoque interno, relatórios auditáveis e notificações em serviços conteinerizados no Azure.
-
-Data Lakehouse IoT na AWS — Arquitetura Medallion · AWS S3, Apache Spark, Delta Lake, Airflow, Trino, Apache Superset · Projeto de Cliente – Fev 2024
-
+Data Lakehouse IoT na AWS — Arquitetura Medallion  ·  AWS S3, Apache Spark, Delta Lake, Airflow, Trino, Apache Superset  ·  Projeto de Cliente – Fev 2024
 * Projetou lakehouse Bronze/Prata/Ouro na AWS S3 com ingestão via APIs e bancos de dados; virtualizou a camada Ouro com Trino; entregou datasets governados para dashboards de BI.
 
-Formação Acadêmica
 
+FORMAÇÃO ACADÊMICA
 Tecnólogo em Análise e Desenvolvimento de Sistemas — Universidade Dom Bosco, Curitiba, PR · Jun 2023
-
 Ênfase em: Sistemas de Informação, Business Analytics, Análise de Dados, Banco de Dados, Engenharia de Software
 
-Licenças & Certificações
 
+LICENÇAS & CERTIFICAÇÕES
 * AI for Writing and Communicating — Google (ID da Credencial: HE8YE5IS7WVW) · Jul 2026
 * AI for Research and Insights — Google (ID da Credencial: 4PZDF3XQOF55) · Jul 2026
 * AI for Brainstorming and Planning — Google (ID da Credencial: 7SFW2HGOKIU5) · Jul 2026

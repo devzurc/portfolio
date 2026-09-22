@@ -1,28 +1,30 @@
 # Tech stack rollup
 
-> Updated 2026-08-19
+> Updated 2026-09-22
 > Counts are generated from curated `docs/career/projects/*.md` frontmatter, including multiline YAML `stack:` lists. Public-safe service categories are used where exact internal names are not needed.
 
 | Technology | Projects |
 |------------|----------|
-| Python | 13 |
+| Python | 17 |
+| Docker | 9 |
 | n8n | 9 |
-| Docker | 5 |
+| FastAPI | 7 |
+| PostgreSQL | 7 |
 | Pandas | 5 |
-| PostgreSQL | 5 |
-| FastAPI | 4 |
-| Redis | 4 |
+| Redis | 5 |
 | AWS CLI | 3 |
+| Azure | 3 |
 | Boto3 | 3 |
 | n8n Data Tables | 3 |
+| SQL | 3 |
 | Webhooks | 3 |
 | XlsxWriter | 3 |
 | Apache Airflow | 2 |
-| Azure | 2 |
 | Azure Container Apps | 2 |
 | Excel | 2 |
 | Gmail API | 2 |
 | HTML email templates | 2 |
+| llm | 2 |
 | Node.js | 2 |
 | Openpyxl | 2 |
 | Parquet | 2 |
@@ -55,15 +57,16 @@
 | n8n LangChain Agent | 1 |
 | Notion | 1 |
 | PL/pgSQL | 1 |
+| power bi | 1 |
 | PyArrow | 1 |
 | Pydantic v2 | 1 |
 | PySpark | 1 |
 | Python 3.12 | 1 |
 | Qlik Sense | 1 |
+| rag | 1 |
 | Redis Streams | 1 |
 | Slack | 1 |
 | Snowflake | 1 |
-| SQL | 1 |
 | SQLAlchemy 2.x | 1 |
 | Stripe API | 1 |
 | Svix webhooks | 1 |

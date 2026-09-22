@@ -1,37 +1,39 @@
 ---
 lang: en
-title: Lucas Cruz — CV (English)
-google_doc: https://docs.google.com/document/d/1O4YsNWyfANs_332ecNZ8fgf-wclyuJCjZpO0LBqX2S8/edit
-pdf: ../pdf/LucasCruz_CV_EN.pdf
-word: ../word/LucasCruz_CV_EN.docx
-last_synced: 2026-09-22
+title: Lucas Cruz — private application CV (173tech)
+audience: 173tech Senior Data Analyst application only
+canonical_cv: LucasCruz_CV_EN.md
 last_updated: 2026-09-22
-sync_source: google-docs-export
+do_not_sync: true
 ---
 
 # LUCAS CRUZ
 
-**Senior Data Engineer | Gen. AI Automation Engineer**
+**Senior Data Engineer | Analytics & Gen. AI**
 
 +55 (21) 96552-9308 · dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
 
 Florianópolis, Santa Catarina, Brazil · Requires visa sponsorship
 
+> Private draft for the 173tech Senior Data Analyst application. Do not replace the canonical CV, do not paste this into the public Google Docs, and do not publish it on the site. Facts match `LucasCruz_CV_EN.md`. Experience stays reverse chronological. The summary leads with consulting and analytics.
+
 ## Professional Summary
 
-Senior Data Engineer and Gen. AI Automation Engineer with 5+ years of experience building production data pipelines, cloud lakehouses, AI agents, and LLM/n8n automation across IoT, fintech, agribusiness, and automotive intelligence. Proven track record delivering end-to-end data platforms, governed analytics, conversational AI workflows, and customer-facing product development. Currently extending this work toward production AI platforms (RAG, agents, evaluation, MCP, observability) over enterprise data. Fluent in English (C1).
+Data professional with 5+ years turning messy operational data into models, KPI reporting, and working delivery. Consulting work at wDiscover covered dimensional warehouses and Power BI KPIs across fintech, agribusiness, and operations. As a Data Analyst at Itaeté Group, I built a SQL Server warehouse and cut reporting processing time by ~50%. At Spacecom I repaired inconsistent pipelines and delivered governed datasets to Qlik Sense and Apache Superset. I now build Python and LLM workflows at TK Technologies, including customer demos, training, and sprint delivery. Production modelling is SQL on SQL Server, Oracle, and an AWS lakehouse. Hands-on dbt is from personal projects only (dbt Core on DuckDB, and a Snowflake/Airflow lab), not a client dbt practice. Fluent in English (C1).
 
 ## Technical Skills
 
 | Category | Skills |
 |----------|--------|
-| Gen. AI & LLMs | LLM Integration, AI Agents (OpenAI, Claude, Gemini…), RAG, Prompt Engineering, Chatbot Development |
-| Data Engineering & Orchestration | Python, SQL, Apache Spark (PySpark), Pandas, FastAPI, NestJS, Next.js, dbt, Trino, REST APIs, Web Scraping, Playwright, Parquet, Apache Airflow, n8n, Celery, Redis, Meta Cloud API |
-| Cloud & Lakehouses | Amazon Web Service (AWS), Microsoft Azure, Google Cloud (GCP), Oracle Cloud (OCI), Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database |
-| Relational Databases & BI | PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker |
-| Security & Data Governance | LGPD/GDPR Compliance, Data Privacy, IAM, RBAC, Data Masking, Encryption (Rest/Transit), Audit Logging, RFID/NFC Tagging, Firewall |
-| DevOps & Infrastructure | Docker, Kubernetes, Azure Bicep, Azure Container Apps, Git, CI/CD Pipelines, Linux, Bash Scripting |
+| SQL & modelling | SQL, dimensional modelling, SQL Server, Oracle Autonomous Database, PostgreSQL, MySQL |
+| Analytics & BI | Power BI, Qlik Sense, Apache Superset, KPI reporting |
+| Data platforms | Python, Pandas, PySpark, Apache Airflow, Trino, Delta Lake, AWS S3, Parquet |
+| Analytics engineering | dbt Core and Snowflake — personal projects only, not client production |
+| AI & automation | LLM integration, AI agents, n8n, prompt engineering |
+| Cloud & delivery | AWS, Azure, GCP, OCI, Docker, Git |
 | Languages | Portuguese (Native) · English (C1 – Advanced) · Spanish (B1 – Intermediate) |
+
+Looker, Tableau, Metabase, BigQuery, Redshift, and Databricks are omitted here. They are not backed by a production bullet.
 
 ## Work Experience
 
