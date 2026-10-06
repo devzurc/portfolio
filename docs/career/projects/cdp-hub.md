@@ -78,7 +78,7 @@ Python · FastAPI · Celery · Playwright · Redis · PostgreSQL · n8n · Googl
 
 ## Outcomes
 
-- Built and operated during the current TK Technologies engagement, Feb 2026 - Present; contract expected through Aug 2026.
+- Built and operated during the current TK Technologies engagement, Feb 2026 – Present. Do not publish an end date.
 - Parallel public price search and internal stock enrichment per SKU batch.
 - Structured reporting contract distinguishes found-price, no-price, not-found, blocked, timeout, and error outcomes.
 
@@ -87,8 +87,19 @@ Python · FastAPI · Celery · Playwright · Redis · PostgreSQL · n8n · Googl
 - Public org repo: https://github.com/tktechnologies/cdp-hub
 - README: `readmes/cdp-hub.md`
 
+## CI/CD (verified 2026-09-22, sanitized)
+
+Owner-confirmed and checked in GitHub Actions on the private `cdp-hub` mirror. Do not publish resource names, vault names, subscription IDs, workflow IDs, or secret names.
+
+- **CI** on pull requests and on `main`, split by path: scraper, internal API, and contracts.
+- Checks include Ruff lint and format, mypy on the API, a spec-check script, and pytest. Tests run against PostgreSQL and Redis service containers.
+- **CD to development** runs on push to `dev`. It logs in to Azure, builds and deploys API and worker images tagged with the commit SHA, then can sync automation workflows.
+- **CD to production** is manual (`workflow_dispatch`), with separate toggles for each service, and uses a protected GitHub environment.
+- Deploy steps call bash scripts in the repo. This is the hands-on CI/CD evidence for interviews from Feb 2026 onward.
+
 ## Notes for AI / alignment
 
 - Strongest portfolio narrative for **Gen. AI Engineer + Data Engineer** work at TK Technologies.
 - Surface the internal stock lookup service as a component of this platform, not as a duplicate standalone portfolio card.
 - Public-safe summary only: live webhook URLs, workflow IDs, cloud resource names, vault names, secret names, and environment variable names are intentionally omitted.
+- In interviews, describe CI versus CD and the dev-versus-manual-prod gate. Do not name internal product lines, Azure resource names, or workflow identifiers.

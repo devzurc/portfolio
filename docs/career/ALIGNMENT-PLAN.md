@@ -1,6 +1,6 @@
 # Alignment plan - CV · Portfolio · Career knowledge
 
-> **Status (2026-09-11):** Local markdown, Word, source txt, site PDFs, and unpublished `index.html` are aligned on Florianópolis, TK **Feb 2026 – Present**, OrbitAI, and Car Parts Price Searcher. Canonical Google Docs are still stale (Curitiba / Europe / May 2026). Paste `docs/resume/google-docs-update-2026-09-10.md` before running `sync-from-google-docs.py`. Do not commit or push until the owner asks.
+> **Status (2026-10-06):** Owner asked to publish. `cnpj-lakehouse` is a personal portfolio card, not a CV notable project. TK stays **Feb 2026 – Present**. Site PDFs were rebuilt from markdown so downloads match the labs split. Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `sync-from-google-docs.py`. Do not pull Google Docs before that paste. `gh` must be signed in as `devzurc` to refresh private repos.
 
 This plan connects three surfaces:
 
@@ -15,7 +15,7 @@ This plan connects three surfaces:
 
 **Rule:** Public copy (CV + portfolio) only uses facts backed by `docs/career/projects/*.md` with `verified_outcomes` or CV text.
 
-**CV source of truth (2026-09-11):** `docs/resume/markdown/*.md` is canonical until Google Docs match the 2026-09-10 paste pack. Local PDFs were rebuilt from markdown because a Google export would still pull Curitiba/Europe copy. After Google Docs are updated, run `python3 docs/resume/scripts/sync-from-google-docs.py` and re-check header, TK dates, and project names.
+**CV source of truth (2026-10-06):** `docs/resume/markdown/*.md` is the draft for the tighter skills split and summary. Word, source text, and site PDFs were rebuilt from that markdown. Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `python3 docs/resume/scripts/sync-from-google-docs.py`.
 
 Locked facts:
 
@@ -33,7 +33,7 @@ See `docs/career/alignment-note-2026-09-11.md` for the fact matrix and LinkedIn 
 - [x] CV markdown restored to compact draft (`docs/resume/markdown/`)
 - [x] GitHub READMEs + project stubs (`docs/career/`) — last sync 2026-09-11
 - [x] Park private `needs-review` hubs (`crm-hub`, `sabia-hub`, `invest-hub`, `my-finance`) as `private-evidence`
-- [x] Curate `franq-data-lakehouse-challenge` as public **learning** (not CV/portfolio)
+- [x] Curate `cnpj-lakehouse` (renamed from `franq-data-lakehouse-challenge`) as a public personal portfolio card, not a CV notable project
 - [x] Flag `portfolio_worthy` and `cv_worthy` per project
 - [x] Resolve EN/PT CV inconsistencies in markdown
 - [ ] Owner paste into Google Docs, then Google export sync
@@ -63,7 +63,7 @@ For each repo in `INDEX.md`:
 | `n8n-stripe-checkout` | Stok IA checkout automation — portfolio optional |
 | `n8n-instagram-assistant` | TK social automation — portfolio optional |
 | `n8n-clerk-followup` | Stok IA trial lifecycle — internal; CV one-liner only |
-| `franq-data-lakehouse-challenge` | Public learning lakehouse; keep off CV until owner promotes |
+| `cnpj-lakehouse` | Personal portfolio card (Prefect, dbt, DuckDB). Not a CV notable project. Not production dbt. |
 | `dbt-snowflake-airflow` | Learning/lab profile only |
 | `stock-market-lakehouse` | Learning/lab profile only |
 | `project_dashboard_heroby` | wDiscover / IoT-adjacent client work |
@@ -121,11 +121,11 @@ Show public project links only where a public URL and publication permission exi
 ## Remaining manual follow-up
 
 1. ~~Review the EN/PT markdown CV changes.~~ Done 2026-06-17.
-2. **Open:** Apply `docs/resume/google-docs-update-2026-09-10.md` in both Google Docs, then `python3 docs/resume/scripts/sync-from-google-docs.py`.
+2. **Open:** Paste `docs/resume/google-docs-update-2026-10-06.md` into both Google Docs, then `python3 docs/resume/scripts/sync-from-google-docs.py`. Do this before any Google pull.
 3. Re-run `/sync-cv-portfolio audit` after Google export if wording diverges from markdown.
 4. Un-park private-evidence profiles only after owner curation (`sabia-hub`, `crm-hub`, `invest-hub`, `my-finance`).
 5. Run `/continuous-career-sync` when GitHub activity or learning signals change.
-6. Run `/pre-commit-review` before committing. **Do not commit or push until the owner asks.**
+6. Owner asked to publish the CNPJ card, labs split, and rebuilt CV downloads on 2026-10-06.
 7. Manual LinkedIn check (location Florianópolis, no Europe relocation, TK Present, OrbitAI).
 
 ---
@@ -134,5 +134,5 @@ Show public project links only where a public URL and publication permission exi
 
 1. ~~Which client names are OK on the public portfolio vs anonymized?~~ No product/client names on portfolio except approved OrbitAI; employer TK Technologies OK.
 2. ~~Are the `10+` automotive sites and TK hybrid/6-month contract wording approved?~~ Confirmed 2026-06-17; expected-Aug end date removed 2026-09-11 (contract is Present).
-3. Should `franq-data-lakehouse-challenge` be promoted to CV/portfolio, or stay learning-only?
+3. ~~Should `franq-data-lakehouse-challenge` be promoted to CV/portfolio, or stay learning-only?~~ Promoted to the site on 2026-10-05 as personal `cnpj-lakehouse`. Kept off CV Notable Projects.
 4. Should any other learning/lab profiles be expanded with verified evidence before returning to the CV/site?

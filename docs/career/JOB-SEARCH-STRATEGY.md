@@ -89,7 +89,7 @@ Use combinations of:
 - Keep the compact "customer-facing delivery" signal in `#experience`, `#job-fit`, and CV wording aligned as new TKTech delivery evidence appears.
 - Create a sanitized CDP / Car Parts Price Searcher case-study page or markdown story with architecture, constraints, and outcomes.
 - Create a sanitized "AI workflow automation suite" story grouping Telegram, WhatsApp, Stripe, Clerk, and Instagram.
-- Owner decision: promote `franq-data-lakehouse-challenge` to CV/portfolio or keep as learning-only.
+- `cnpj-lakehouse` (renamed from `franq-data-lakehouse-challenge`) is the public personal lakehouse card. It is not a CV notable project and not production dbt/Snowflake evidence.
 
 ## Job-evaluation checklist
 
@@ -114,6 +114,7 @@ Use before spending time on an application:
 - Confirmed 2026-09-11: home city Florianópolis; no Europe relocation copy; TK Technologies Feb 2026 – Present with no expected end date.
 - Confirmed 2026-09-22: UK-first sponsorship search across the UK, Ireland, the Netherlands, Portugal, and Spain. Public brand stays Senior Data Engineer / Gen. AI. Sponsorship willingness for a specific role goes in the application, not on the public CV.
 - GitHub sync on 2026-09-22 refreshed README dates and the stack rollup. No new project stubs and no new public-safe outcomes. The rollup recount of llm, Power BI, and RAG is existing curated evidence, not a new skill to add. dbt and Snowflake stay learning-only.
+- Confirmed 2026-10-05 by the career-alignment pass: `cnpj-lakehouse` is on the portfolio as a personal project. Databricks, Redshift, Looker, and Kubernetes are not production skills. dbt, Prefect, and DuckDB stay in the labs line, backed by that repo. The Jul 2024–Feb 2026 gap stays unexplained. Private repos were not re-synced (`gh` is `lucas-devzurc`).
 - Any measured outcomes from current automations still need owner-supplied metrics before public use.
 
 ## UK-first sponsorship search

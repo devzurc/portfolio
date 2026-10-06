@@ -1,6 +1,6 @@
 # Career project index
 
-> Updated 2026-09-11. Public-safe portfolio/CV evidence layer.
+> Updated 2026-10-05. Public-safe portfolio/CV evidence layer.
 
 ## Flagship and CV-backed work
 
@@ -26,9 +26,9 @@
 | Project | Visibility | Status | Employer | Portfolio | CV | Profile | README |
 |---------|------------|--------|----------|-----------|-----|---------|--------|
 | carparts-price-webscraper | private | archived | TK Technologies | false | false | [profile](projects/carparts-price-webscraper.md) | [readme](readmes/carparts-price-webscraper.md) |
+| [cnpj-lakehouse](https://github.com/devzurc/cnpj-lakehouse) | public | learning | Personal / challenge | true | false | [profile](projects/cnpj-lakehouse.md) | [readme](readmes/cnpj-lakehouse.md) |
 | crm-hub | private | private-evidence | unknown | false | false | [profile](projects/crm-hub.md) | [readme](readmes/crm-hub.md) |
 | [dbt-snowflake-airflow](https://github.com/devzurc/dbt-snowflake-airflow) | public | learning | Personal | false | false | [profile](projects/dbt-snowflake-airflow.md) | [readme](readmes/dbt-snowflake-airflow.md) |
-| [franq-data-lakehouse-challenge](https://github.com/devzurc/franq-data-lakehouse-challenge) | public | learning | Personal / challenge | false | false | [profile](projects/franq-data-lakehouse-challenge.md) | [readme](readmes/franq-data-lakehouse-challenge.md) |
 | invest-hub | private | private-evidence | unknown | false | false | [profile](projects/invest-hub.md) | [readme](readmes/invest-hub.md) |
 | marketing-socialmedia-app | private | active | TK Technologies | false | false | [profile](projects/marketing-socialmedia-app.md) | [readme](readmes/marketing-socialmedia-app.md) |
 | my-finance | private | private-evidence | unknown | false | false | [profile](projects/my-finance.md) | [readme](readmes/my-finance.md) |

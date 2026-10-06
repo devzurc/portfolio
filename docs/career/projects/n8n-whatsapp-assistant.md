@@ -5,7 +5,7 @@ mirror_url:
 visibility: private
 status: active
 period: 2026
-period_note: "TK Technologies WhatsApp intake automation; workflow and successful webhook executions verified from sanitized local evidence in June 2026. Engagement extended to 6 months, expected through Aug 2026."
+period_note: "TK Technologies WhatsApp intake automation; workflow and successful webhook executions verified from sanitized local evidence in June 2026. Engagement is Feb 2026 – Present. Do not publish an end date."
 employer: TK Technologies
 role: Automation engineer - WhatsApp/Evolution API intake, message normalization, customer request logging, welcome replies, staff notifications
 domains: [customer-support, sales-intake, whatsapp, private-client-automation]

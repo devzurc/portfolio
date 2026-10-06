@@ -25,7 +25,7 @@
 | `n8n-whatsapp-assistant` | active | no mirror | true | false | Sanitized profile only |
 | `n8n-stripe-checkout` | active | private mirror | true | true | Automation platform proof |
 | `spacecom-iot-lakehouse` | client-work | no public repo | true | true | Lakehouse at scale |
-| `franq-data-lakehouse-challenge` | learning | [devzurc/franq-data-lakehouse-challenge](https://github.com/devzurc/franq-data-lakehouse-challenge) | false | false | Public CNPJ lakehouse challenge; not on CV yet |
+| `cnpj-lakehouse` | learning | [devzurc/cnpj-lakehouse](https://github.com/devzurc/cnpj-lakehouse) | true | false | Personal CNPJ lakehouse. Site card only. Not a CV notable project. |
 
 ---
 

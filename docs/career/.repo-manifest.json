@@ -58,6 +58,11 @@
     "project_etl_heroby": {
       "canonical": "devzurc/project_etl_heroby",
       "knowledge_slug": "project_etl_heroby"
+    },
+    "cnpj-lakehouse": {
+      "canonical": "devzurc/cnpj-lakehouse",
+      "knowledge_slug": "cnpj-lakehouse",
+      "note": "Renamed from franq-data-lakehouse-challenge. Public personal lakehouse. Not a CV notable project."
     }
   },
   "default_employer_context": "TK Technologies",

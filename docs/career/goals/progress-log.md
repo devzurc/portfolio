@@ -109,6 +109,27 @@ Public downloads follow GitHub Pages, not the working tree. Markdown can be curr
 
 ---
 
+## Week of 2026-09-29
+
+**Monday — measurable improvement chosen:**  
+Align public career surfaces with the renamed `cnpj-lakehouse` repo and recruiter-scan copy.
+
+**Tuesday–Wednesday — implemented:**  
+- Public GitHub sync on 2026-10-05. `franq-data-lakehouse-challenge` now resolves to `cnpj-lakehouse`.
+- Personal portfolio card only. Not a CV notable project. dbt, Prefect, and DuckDB stay labs skills.
+- Private repos were not refreshed because `gh` is signed in as `lucas-devzurc`.
+
+**Thursday — evaluate/observe:**  
+- README-verified January 2026 sample: 10,000 companies, 10,349 establishments, 4,057 partners. Not the full registry.
+
+**Friday — technical note:**  
+A public runnable lakehouse is the proof a recruiter can open. Private CRM and scraping work stays sanitized on the site.
+
+**Weekend — polish:**  
+- 2026-10-06: published the personal CNPJ lakehouse card and rebuilt site PDFs from markdown. dbt, Prefect, and DuckDB stay labs. Snowflake is a separate lab, not part of the CNPJ repo. Google Docs still need `docs/resume/google-docs-update-2026-10-06.md` before the next Google pull.
+
+---
+
 ## Template (copy for future weeks)
 
 ```markdown

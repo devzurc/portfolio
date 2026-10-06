@@ -5,8 +5,8 @@ google_doc: https://docs.google.com/document/d/1oi8mzTJNNTu3CdSuqEgiWCPmiyvGWxrs
 pdf: ../pdf/LucasCruz_CV_PT.pdf
 word: ../word/LucasCruz_CV_PT.docx
 last_synced: 2026-09-22
-last_updated: 2026-09-22
-sync_source: google-docs-export
+last_updated: 2026-10-06
+sync_source: markdown-built-pdf-pending-google-paste
 ---
 
 # LUCAS CRUZ
@@ -19,27 +19,27 @@ Florianópolis, Santa Catarina · Necessita de patrocínio de visto
 
 ## Resumo Profissional
 
-Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem, agentes de IA e automações com LLMs/n8n. Atuação comprovada em IoT, fintechs, agronegócio e inteligência automotiva, com desenvolvimento e manutenção de produtos voltados a clientes. Atualmente estende esse trabalho para plataformas de IA em produção (RAG, agentes, avaliação, MCP, observabilidade) sobre dados empresariais. Inglês fluente (C1).
+Construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em produção, em IoT, fintech, agronegócio e produtos automotivos, com mais de 5 anos em dados e inglês C1. Estou estudando RAG, avaliação e observabilidade em produção. Isso ainda não é um sistema entregue.
 
 ## Competências Técnicas
 
 | Categoria | Competências |
 |-----------|--------------|
-| IA Generativa & LLMs | Integração com LLMs, Agentes de IA (OpenAI, Claude, Gemini…), RAG, Engenharia de Prompt, Chatbots |
-| Dados & Orquestração | Python, SQL, Apache Spark (PySpark), Pandas, FastAPI, NestJS, Next.js, dbt, Trino, REST APIs, Web Scraping, Playwright, Parquet, Apache Airflow, n8n, Celery, Redis, Meta Cloud API |
-| Cloud & Lakehouses | Amazon Web Service (AWS), Microsoft Azure, Google Cloud (GCP), Oracle Cloud (OCI), Snowflake, Databricks, Amazon Redshift, Delta Lake, Oracle Autonomous Database |
-| Bancos de Dados & BI | PostgreSQL, SQL Server, MySQL, Redis, Power BI, Qlik Sense, Apache Superset, Looker |
-| Segurança & Governança | Conformidade LGPD/GDPR, Privacidade de Dados, IAM, RBAC, Mascaramento de Dados, Criptografia em Repouso/Trânsito, Logs de Auditoria, RFID/NFC, Firewall |
-| DevOps & Infraestrutura | Docker, Kubernetes, Azure Bicep, Azure Container Apps, Git, Pipelines CI/CD, Linux, Bash Scripting |
+| IA generativa e automação | Integração com LLMs (Claude, Google AI Studio), n8n, desenho de prompts, chatbots, Meta Cloud API |
+| Engenharia de dados | Python, SQL, Apache Spark (PySpark), Pandas, Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
+| Nuvem e entrega | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep, FastAPI, NestJS, Next.js, Celery, Redis, Git, CI/CD |
+| Bancos e BI | PostgreSQL, SQL Server, Oracle Autonomous Database, Power BI, Qlik Sense, Apache Superset |
+| Governança | LGPD/GDPR, RBAC, privacidade de dados |
+| Laboratório (não é produção de cliente) | dbt Core, Prefect, DuckDB, Snowflake |
 | Idiomas | Português (Nativo) · Inglês (C1 – Avançado) · Espanhol (B1 – Intermediário) |
 
 ## Experiência Profissional
 
 ### Engenheiro de IA Generativa — TK Technologies | Curitiba, PR (Híbrido) · Fev 2026 – Atual · Contrato
 
-- Projetou o OrbitAI, uma plataforma de CRM de IA omnichannel (WhatsApp, Instagram, Facebook, Telegram e e-mail) com governança de acesso (RBAC), rastreamento de Meta/Google Ads e auto-respostas por LLMs, realizando deploy no Azure Container Apps com Bicep IaC.
+- Construiu o OrbitAI, um CRM de IA omnichannel (WhatsApp, Instagram, Facebook, Telegram e e-mail) com controle de acesso, rastreamento de Meta/Google Ads e respostas por LLMs, em Azure Container Apps com Bicep.
 - Desenvolveu pipeline de web scraping em Python coletando dados de preço e metadados de mais de 10 sites de peças automotivas, gerando inteligência competitiva de mercado em escala.
-- Projetou workflows de automação com IA no n8n (ETL, RPA e agentes chatbot) integrando LLMs (Claude AI, Google AI Studio) e APIs do GCP (Sheets, Drive) para enriquecer dados e reduzir trabalho manual de análise.
+- Construiu workflows n8n para ETL, chat, entrada de mensagens e follow-up operacional, com LLMs (Claude, Google AI Studio) e APIs do GCP (Sheets, Drive).
 - Desenvolveu chatbot de IA conversacional permitindo que usuários de negócio consultassem e refinassem datasets de preço por linguagem natural, reduzindo o tempo de obtenção de insights.
 - Coordenou sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial e suporte pós-lançamento; contribui para a presença web da TK e para o desenvolvimento e manutenção contínuos do produto CRM.
 
@@ -86,6 +86,7 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 
 ## Licenças & Certificações
 
+- **IELTS General** — Inglês C1
 - **AI for Writing and Communicating** — Google (ID da Credencial: HE8YE5IS7WVW) · Jul 2026
 - **AI for Research and Insights** — Google (ID da Credencial: 4PZDF3XQOF55) · Jul 2026
 - **AI for Brainstorming and Planning** — Google (ID da Credencial: 7SFW2HGOKIU5) · Jul 2026

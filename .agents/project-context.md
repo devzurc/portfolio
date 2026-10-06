@@ -31,7 +31,7 @@
 - Multi-cloud exposure (AWS, Azure, GCP, OCI)
 - Production-scale IoT context (95K devices — verify before changing)
 - Gen. AI stack: LLM integration, RAG, AI agents, prompt engineering, n8n
-- Data stack: Python, Spark/PySpark, SQL, dbt, Airflow, Snowflake, Databricks, Delta Lake
+- Data stack: Python, Spark/PySpark, SQL, Airflow, Delta Lake. Labs, not client production: dbt, Prefect, DuckDB, Snowflake. Databricks, Redshift, Looker, and Kubernetes are not production claims.
 - Requires **visa sponsorship** (do not advertise relocation or Europe-only availability)
 - Advanced English (C1 / IELTS)
 
@@ -44,7 +44,7 @@
 | ID | Purpose |
 |----|---------|
 | `#hero` | Name, roles, value prop, CTAs, headline stats |
-| `#projects` | Three recruiter-scan flagship case studies with public links only where evidence is publishable |
+| `#projects` | Recruiter-scan case studies: OrbitAI, Car Parts Price Searcher, IoT lakehouse, and personal `cnpj-lakehouse` |
 | `#experience` | Employment timeline cards with impact bullets |
 | `#skills` | Service discipline cards (Data, Gen. AI, Cloud, Governance) |
 | `#certifications` | Google AI badges and verified certifications list |
@@ -135,7 +135,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 3. Update `markdown/*.md` if agents edited copy in-repo (or paste Google changes into markdown)
 4. Run `/sync-cv-portfolio` to align `index.html` with CV facts
 
-**Current CV note (2026-09-22):** Google Docs, local Markdown, Word, source text, and site PDFs match. Header location is Florianópolis. Visa line is sponsorship required, with no Europe relocation line. TK is Feb 2026 – Present. OrbitAI is approved for CV notable projects and the matching portfolio card. StokIA, internals, and private URLs stay out of public copy. Cover letters live in Google Docs as well as `docs/resume/markdown/`.
+**Current CV note (2026-10-06):** Header location is Florianópolis. Visa line is sponsorship required, with no Europe relocation line. TK is Feb 2026 – Present. OrbitAI is approved for CV notable projects and the matching portfolio card. `cnpj-lakehouse` is a personal portfolio card, not a CV notable project. Production skills and lab skills are split in markdown, Word, source text, and site PDFs. Databricks, Redshift, Looker, and Kubernetes are not production claims. Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `sync-from-google-docs.py`. Do not pull Google Docs before that paste, or the labs split will be overwritten. StokIA, internals, and private URLs stay out of public copy. Cover letters live in Google Docs as well as `docs/resume/markdown/`.
 
 **CV management skill:** `@.agents/skills/cv-management/SKILL.md`
 
@@ -201,7 +201,7 @@ Certs section groups credentials with **real verification URLs** or local certif
 
 - **Title (EN):** Lucas Cruz - Senior Data Engineer & Gen. AI Automation Engineer
 - **Title (PT):** Lucas Cruz - Engenheiro de Dados Senior & Automacao com IA Generativa
-- **Meta description:** References production data pipelines, cloud lakehouses, and Gen. AI/n8n automation
+- **Meta description:** Senior Data Engineer. Production AWS lakehouses, Python pipelines, and n8n/LLM workflows. Public lab work uses dbt, Prefect, and DuckDB.
 - **Canonical:** `https://devzurc.github.io/portfolio/`
 - **Open Graph:** `og:title`, `og:description`, `og:type=website`, `og:url`, `og:image`
 - **Twitter:** summary large image metadata
