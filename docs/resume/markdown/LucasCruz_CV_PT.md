@@ -11,37 +11,46 @@ sync_source: markdown-built-pdf-pending-google-paste
 
 # LUCAS CRUZ
 
-**Engenheiro de Dados Sênior | Engenheiro de Automação com IA Generativa**
+**Engenheiro de IA / Engenheiro de Dados Sênior**
 
-+55 (21) 96552-9308 · dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
+dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
 
-Florianópolis, Santa Catarina · Necessita de patrocínio de visto
+Curitiba, Paraná, Brasil
 
 ## Resumo Profissional
 
-Construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em produção, em IoT, fintech, agronegócio e produtos automotivos, com mais de 5 anos em dados e inglês C1. Estou estudando RAG, avaliação e observabilidade em produção. Isso ainda não é um sistema entregue.
+Engenheiro de IA e engenheiro de dados sênior, com ~5 anos em engenharia de dados e experiência anterior como analista de dados, atuando em frontend, full-stack, backend e automação com IA. Na TK Technologies, projetou e construiu uma plataforma de dados de preços e estoque de autopeças (Python assíncrono, n8n, Azure) e construiu funcionalidades de frontend e full-stack para uma plataforma de chat de IA generativa multimodelo (React, TypeScript, Tailwind). Antes, construiu pipelines Python/SQL, ETL orquestrado com Airflow, data warehouses e lakehouses na AWS (Medallion, Delta Lake, Trino) para IoT, fintech e agronegócio, com dados governados sob LGPD/GDPR. Projetos pessoais incluem um CRM multi-tenant com sugestões de resposta por IA (FastAPI, Next.js, PostgreSQL), um lakehouse local-first (Prefect, dbt Core, DuckDB) e RAG em produção com pgvector (em andamento). Inglês: IELTS B2 (2025), autoavaliação próxima de C1.
 
 ## Competências Técnicas
 
 | Categoria | Competências |
 |-----------|--------------|
-| IA generativa e automação | Integração com LLMs (Claude, Google AI Studio), n8n, desenho de prompts, chatbots, Meta Cloud API |
-| Engenharia de dados | Python, SQL, Apache Spark (PySpark), Pandas, Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
-| Nuvem e entrega | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep, FastAPI, NestJS, Next.js, Celery, Redis, Git, CI/CD |
+| Dados para IA e apps com LLMs | Integração com LLMs (Claude, Google AI Studio), automação com IA, agentes de IA para programação, consulta conversacional de dados, n8n, desenho de prompts, chatbots, Meta Cloud API |
+| Engenharia de dados | Python, SQL, Pandas, Apache Spark (PySpark), Airflow, ETL/ELT, modelagem dimensional, Delta Lake, Parquet, Trino, ingestão via APIs REST, contratos JSON Schema, webhooks, Playwright, web scraping |
+| Frontend e full-stack | React 18, TypeScript, Vite, Tailwind CSS, Figma para UI, Next.js, NestJS, FastAPI |
+| Nuvem e entrega | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Azure App Service, Bicep, Celery, Redis Streams, n8n, Git, GitHub Actions CI/CD |
 | Bancos e BI | PostgreSQL, SQL Server, Oracle Autonomous Database, Power BI, Qlik Sense, Apache Superset |
 | Governança | LGPD/GDPR, RBAC, privacidade de dados |
-| Laboratório (não é produção de cliente) | dbt Core, Prefect, DuckDB, Snowflake |
-| Idiomas | Português (Nativo) · Inglês (C1 – Avançado) · Espanhol (B1 – Intermediário) |
+| Laboratório (não é produção de cliente) | dbt Core, Prefect, DuckDB, Snowflake, pgvector/RAG (em andamento) |
+| Idiomas | Português (Nativo) · Inglês (IELTS B2 (2025), autoavaliação próxima de C1) · Espanhol (B1 – Intermediário) |
 
 ## Experiência Profissional
 
-### Engenheiro de IA Generativa — TK Technologies | Curitiba, PR (Híbrido) · Fev 2026 – Atual · Contrato
+### Engenheiro de IA Generativa (Dados para IA e Engenharia Full-Stack) — TK Technologies | Curitiba, PR (Híbrido) · Fev 2026 – Atual · Contrato
 
-- Construiu o OrbitAI, um CRM de IA omnichannel (WhatsApp, Instagram, Facebook, Telegram e e-mail) com controle de acesso, rastreamento de Meta/Google Ads e respostas por LLMs, em Azure Container Apps com Bicep.
-- Desenvolveu pipeline de web scraping em Python coletando dados de preço e metadados de mais de 10 sites de peças automotivas, gerando inteligência competitiva de mercado em escala.
-- Construiu workflows n8n para ETL, chat, entrada de mensagens e follow-up operacional, com LLMs (Claude, Google AI Studio) e APIs do GCP (Sheets, Drive).
-- Desenvolveu chatbot de IA conversacional permitindo que usuários de negócio consultassem e refinassem datasets de preço por linguagem natural, reduzindo o tempo de obtenção de insights.
-- Coordenou sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial e suporte pós-lançamento; contribui para a presença web da TK e para o desenvolvimento e manutenção contínuos do produto CRM.
+- Projetou e construiu, praticamente sozinho, uma plataforma de dados de preços e estoque de autopeças que recebe pedidos de SKU por chat, e-mail, agendamentos e planilhas e executa web scraping e consultas ao estoque interno em paralelo.
+- Construiu serviços Python assíncronos (FastAPI, Celery, Redis Streams, Playwright) com cache, contratos em JSON Schema e callbacks via webhook, orquestrados com n8n.
+- Implantou ambientes separados de dev e prod no Azure com IaC em Bicep, contêineres e CI/CD com GitHub Actions, incluindo health checks, salvaguardas contra indisponibilidade, cotas e controle de acesso.
+- Entregou relatórios automatizados em planilhas e dashboards com status de resultado claros e notificações por Telegram/e-mail, usando agentes de IA para programação em todo o processo.
+- Construiu um workspace web full-stack para a plataforma de preços de autopeças: frontend em React + TypeScript + Vite + Tailwind com consultas de SKU via chat, tabelas de resultados e um dashboard analítico executivo (KPIs, catálogo, cobertura de sites, benchmarking de SKUs), testado com Vitest.
+- Projetou o backend em FastAPI/Postgres por trás dele: autenticação, isolamento de dados por tenant, log de auditoria append-only e um pipeline de dados em duas etapas (bruto para tratado) que transforma resultados de scraping e de estoque em métricas certificadas.
+- Construiu funcionalidades de frontend e full-stack para uma plataforma de chat de IA generativa multimodelo com React 18, TypeScript, Vite e Tailwind CSS: ~17 telas desenhadas no Figma e ~6 funcionalidades no input do chat (geração de imagem, deep research, artefatos, anexos de arquivos, entrada de áudio), com 12 PRs mergeados em ~4 semanas como implementador, sob revisão do tech lead.
+- Entregou via tarefas rastreadas no Jira, conventional commits, evidências de QA e de regressão visual e merges condicionados a revisão, com CI/CD via GitHub Actions no Azure App Service.
+
+
+### Pausa na carreira · Out 2024 – Out 2025
+
+- Intercâmbio de inglês em Londres, Reino Unido (imersão diária, IELTS B2) e estudos de atualização profissional, incl. IBM Introduction to Data Engineering.
 
 ### Engenheiro de Dados — Spacecom Monitoramento | Curitiba, PR (Presencial) · Abr 2023 – Jul 2024
 
@@ -65,12 +74,14 @@ Construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em pro
 
 ## Projetos de Destaque
 
-### OrbitAI — CRM de IA Omnichannel · NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Atual
 
-- Desenvolveu o OrbitAI, um CRM omnichannel seguro que centraliza WhatsApp, Instagram, Facebook, Telegram e e-mails em uma caixa de entrada unificada com controle de acesso baseado em funções (RBAC).
+
+### Omnichannel AI Platform (privada) · NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Atual
+
+- Desenvolveu um CRM omnichannel seguro que centraliza WhatsApp, Instagram, Facebook, Telegram e e-mails em uma caixa de entrada unificada com controle de acesso baseado em funções (RBAC).
 - Conectou dados de desempenho de Meta e Google Ads e uma camada de LLMs (Claude/Google AI Studio) para auto-respostas, mensagens outbound e análise automatizada de campanhas.
 
-### Buscador de Preços de Peças · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Fev 2026 – Atual
+### Automotive Parts Price Search (privado) · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Fev 2026 – Atual
 
 - Construiu um buscador de preços de peças em mais de 10 sites, com pesquisa paralela de preços públicos e estoque interno, relatórios auditáveis e notificações em serviços conteinerizados no Azure.
 
@@ -86,8 +97,12 @@ Construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em pro
 
 ## Licenças & Certificações
 
-- **IELTS General** — Inglês C1
+- **IELTS General** — IELTS B2 (banda 5.5, set 2025)
 - **AI for Writing and Communicating** — Google (ID da Credencial: HE8YE5IS7WVW) · Jul 2026
 - **AI for Research and Insights** — Google (ID da Credencial: 4PZDF3XQOF55) · Jul 2026
 - **AI for Brainstorming and Planning** — Google (ID da Credencial: 7SFW2HGOKIU5) · Jul 2026
 - **AI Fundamentals** — Google (ID da Credencial: UKBGM0AZUIS2) · Jul 2026
+- **Introduction to Data Engineering** — IBM · Jan 2025
+- **Docker Essentials** — LINUXtips · Jun 2024
+- **AWS Cloud Practitioner Essentials** — AWS (Coursera) · Abr 2024
+- **AWS Discovery Day** — Ka Solution · Fev 2024

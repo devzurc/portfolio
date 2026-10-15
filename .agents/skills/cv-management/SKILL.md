@@ -52,8 +52,8 @@ Updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/`.
 
 | # | Section | Notes |
 |---|---------|-------|
-| 1 | **Header** | Name, `Data Engineer \| Gen. AI Engineer`, phone, email, LinkedIn, portfolio URL, location, visa |
-| 2 | **Professional Summary** | 3–4 lines; years, domains, stack keywords, English level. Do not add relocation or Europe-only availability. |
+| 1 | **Header** | Name, `AI Engineer / Senior Data Engineer` (PT `Engenheiro de IA / Engenheiro de Dados Sênior`), email, LinkedIn, portfolio URL, location (per `TAILORING-RULES.md`; visa only in intl variant) |
+| 2 | **Professional Summary** | 3–4 lines; years, domains, stack keywords, English level. Do not add relocation or Europe-only availability (relocation appears only in the intl variant's location line). |
 | 3 | **Technical Skills** | Grouped rows (Gen. AI, Data Eng, Orchestration, Cloud, Lakehouses, DBs, BI, Security/Governance, DevOps, Languages) |
 | 4 | **Work Experience** | Reverse chronological; `Title – Company \| Location (mode)` + date range + 3–5 bullets |
 | 5 | **Notable Projects** | Title · stack · context · date; 1–3 bullets each |
@@ -190,7 +190,7 @@ Only edit with owner-provided facts (degree name, institution, date, majors). Sy
 
 ### H. Header / contact changes
 
-Fields: phone, email, LinkedIn, portfolio URL, location, visa. Do not add a relocation line.
+Fields: email, LinkedIn, portfolio URL, location (no public phone number). Do not add a relocation or visa line to the default EN/PT CVs. The only exception is the international variants (`LucasCruz_CV_EN_intl` / `LucasCruz_CV_PT_intl`), used for roles outside Brazil, which are also what the Google Docs hold: EN `Curitiba, Paraná, Brazil · Open to relocation · Requires visa sponsorship`, PT `Curitiba, Paraná, Brasil · Aberto a realocação · Requer patrocínio de visto`. The repo markdown holds the default Brazil versions. The location line is a per-application placeholder; follow `TAILORING-RULES.md`.
 
 Any URL change must be verified live. Update `index.html` `#contact` and CV download paths if portfolio URL changes.
 

@@ -1,30 +1,17 @@
----
-lang: pt-BR
-title: Lucas Cruz — Carta de Apresentação
-last_updated: 2026-10-05
-source: portfolio-career-knowledge
-template_vars: [Role, Company]
-google_doc: https://docs.google.com/document/d/15davoxr1GtnWgvhN2tSIsDJ2br_Fb4AHEGpGFNgUybI/edit
----
+Prezada equipe de recrutamento,
 
-# Lucas Cruz — Carta de Apresentação
+Candidato-me à vaga de [Role] na [Company]. Sou Engenheiro de IA e Engenheiro de Dados Sênior, com ~5 anos em engenharia de dados dentro de uma carreira mais longa em TI, e gosto de transformar problemas operacionais complexos em sistemas confiáveis e bem documentados.
 
-Prezada Equipe de Recrutamento,
+Na minha função atual, construí uma plataforma de dados de preços e estoque de autopeças. Ela recebe pedidos por SKU, consulta em paralelo preços públicos e o estoque interno e entrega relatórios auditáveis. A plataforma usa Python, FastAPI, Celery, Redis e n8n, com deploy na Azure via CI/CD. Na mesma equipe, desenvolvi funcionalidades em React e TypeScript para uma plataforma de chat com IA generativa, do design no Figma até o merge revisado.
 
-Escrevo para a vaga de **[Role]** na **[Company]**. Sou Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa. Há mais de 5 anos construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em produção, em IoT, fintech, agronegócio e produtos automotivos.
+Antes disso, construí pipelines de ETL orquestrados com Airflow, data warehouses e lakehouses na AWS (Medallion, Delta Lake, PySpark, Trino) para IoT, fintech e agronegócio, com dados regidos pela LGPD/GDPR. Em projetos pessoais, criei um CRM multi-tenant com respostas sugeridas por IA e um lakehouse local-first com Prefect, dbt e DuckDB. Estou desenvolvendo um serviço de RAG em estilo de produção com pgvector como projeto de portfólio. Ele está em andamento e ainda não foi lançado.
 
-Na minha atuação atual na TK Technologies, desenvolvo pipelines de scraping em Python, serviços backend e automações n8n/LLM para busca de preços de peças automotivas. Um dos principais projetos é uma plataforma ponta a ponta que recebe solicitações de SKU por chat, e-mail, agendamentos ou planilhas, executa pipelines de preços públicos e consulta de estoque interno, e entrega relatórios estruturados por workflows automatizados. Também projeto o OrbitAI, um CRM de IA omnichannel que reúne canais de mensagens, controle de acesso baseado em funções, dados de publicidade e respostas assistidas por LLMs em uma única superfície operacional. Também conduzo sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial e suporte pós-lançamento enquanto preparo o lançamento mobile. Anteriormente, na Spacecom Monitoramento, projetei e mantive um lakehouse na AWS S3 com Arquitetura Medallion, PySpark, Delta Lake, Airflow e Trino, suportando uma plataforma IoT com mais de 95.000 dispositivos e centenas de milhões de registros de telemetria por dia.
+Ofereço um perfil prático: converso com as áreas de negócio, projeto sistemas de dados que se sustentam em produção e os conecto a fluxos de IA que as pessoas realmente usam. Meu inglês é IELTS B2 (2025), e tenho interesse especial em trabalhar em um ambiente em inglês.
 
-Trabalho perto de quem usa o sistema: entendo o problema operacional, monto o fluxo de dados e tiro o trabalho repetido da mão das pessoas. Uso Python, SQL, FastAPI, Airflow, n8n, AWS, Azure, GCP, PostgreSQL e Docker em produção. Estou estudando RAG, avaliação e observabilidade em produção. Isso ainda não está entregue. O lakehouse público de prática é o [cnpj-lakehouse](https://github.com/devzurc/cnpj-lakehouse) (dbt, Prefect, DuckDB), separado do trabalho de cliente.
-
-Estou em Florianópolis, Santa Catarina, Brasil. Trabalho em inglês no nível C1 e aceito patrocínio de visto quando necessário.
-
-Ficaria feliz em levar minha experiência em engenharia de dados e automação com IA para a **[Company]**, especialmente se o time precisa de alguém que conecte plataformas de dados, infraestrutura cloud, workflows de IA e reporting voltado ao negócio.
+Ficarei feliz em conversar sobre como posso contribuir com a [Company].
 
 Atenciosamente,
 
 Lucas Cruz
-
-Florianópolis, Santa Catarina, Brasil
-
+Curitiba, Paraná, Brasil
 dev.lucascruz@gmail.com | linkedin.com/in/lucas-cruz | devzurc.github.io/portfolio

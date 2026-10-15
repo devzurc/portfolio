@@ -11,37 +11,46 @@ sync_source: markdown-built-pdf-pending-google-paste
 
 # LUCAS CRUZ
 
-**Senior Data Engineer | Gen. AI Automation Engineer**
+**AI Engineer / Senior Data Engineer**
 
-+55 (21) 96552-9308 · dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
+dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
 
-Florianópolis, Santa Catarina, Brazil · Requires visa sponsorship
+Curitiba, Paraná, Brazil
 
 ## Professional Summary
 
-I build production data pipelines, cloud lakehouses, and LLM/n8n workflows across IoT, fintech, agribusiness, and automotive products, with 5+ years in data roles and English at C1. I am learning production RAG, evaluation, and observability. Those are not shipped systems yet.
+AI engineer and senior data engineer with ~5 years in data engineering, building on earlier data-analyst experience, working across frontend, full-stack, backend, and AI automation. At TK Technologies, designed and built an automotive-parts pricing and stock data platform (async Python, n8n, Azure) and built frontend and full-stack features for a multi-model generative-AI chat platform (React, TypeScript, Tailwind). Previously built Python/SQL pipelines, Airflow-orchestrated ETL, data warehouses, and AWS lakehouses (Medallion, Delta Lake, Trino) for IoT, fintech, and agribusiness, handling LGPD/GDPR-governed data. Personal projects include a multi-tenant CRM with AI draft replies (FastAPI, Next.js, PostgreSQL), a local-first lakehouse (Prefect, dbt Core, DuckDB), and production RAG with pgvector (in progress). English: IELTS B2 (2025), self-assessed near C1.
 
 ## Technical Skills
 
 | Category | Skills |
 |----------|--------|
-| Gen. AI & automation | LLM integration (Claude, Google AI Studio), n8n, prompt design, chatbots, Meta Cloud API |
-| Data engineering | Python, SQL, Apache Spark (PySpark), Pandas, Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
-| Cloud & delivery | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep, FastAPI, NestJS, Next.js, Celery, Redis, Git, CI/CD |
+| AI data & LLM apps | LLM integration (Claude, Google AI Studio), AI automation, AI coding agents, conversational data querying, n8n, prompt design, chatbots, Meta Cloud API |
+| Data engineering | Python, SQL, Pandas, Apache Spark (PySpark), Airflow, ETL/ELT, dimensional modelling, Delta Lake, Parquet, Trino, REST API ingestion, JSON Schema contracts, webhooks, Playwright, web scraping |
+| Frontend & full-stack | React 18, TypeScript, Vite, Tailwind CSS, Figma-to-UI, Next.js, NestJS, FastAPI |
+| Cloud & delivery | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Azure App Service, Bicep, Celery, Redis Streams, n8n, Git, GitHub Actions CI/CD |
 | Databases & BI | PostgreSQL, SQL Server, Oracle Autonomous Database, Power BI, Qlik Sense, Apache Superset |
 | Governance | LGPD/GDPR, RBAC, data privacy |
-| Labs (not client production) | dbt Core, Prefect, DuckDB, Snowflake |
-| Languages | Portuguese (Native) · English (C1 – Advanced) · Spanish (B1 – Intermediate) |
+| Labs (not client production) | dbt Core, Prefect, DuckDB, Snowflake, pgvector/RAG (in progress) |
+| Languages | Portuguese (Native) · English (IELTS B2 (2025), self-assessed near C1) · Spanish (B1 – Intermediate) |
 
 ## Work Experience
 
-### Gen. AI Engineer — TK Technologies | Curitiba, PR – Brazil (Hybrid) · Feb 2026 – Present · Contract
+### Gen AI Engineer (AI Data & Full-Stack Engineering) — TK Technologies | Curitiba, PR – Brazil (Hybrid) · Feb 2026 – Present · Contract
 
-- Built OrbitAI, an omnichannel AI CRM (WhatsApp, Instagram, Facebook, Telegram, and email) with role-based access, Meta/Google Ads tracking, and LLM replies, deployed on Azure Container Apps with Bicep.
-- Engineered a multi-source web scraping pipeline in Python targeting 10+ automotive parts websites, extracting pricing and product metadata at scale to deliver competitive market intelligence.
-- Built n8n workflows for ETL, chat, messaging intake, and operational follow-up, using LLMs (Claude, Google AI Studio) and GCP APIs (Sheets, Drive).
-- Developed a conversational AI chatbot that empowers business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.
-- Coordinated Notion-based delivery sprints, customer-facing demos, product training, sales support, and post-launch support; contribute to the TK web presence and ongoing CRM product development and maintenance.
+- Designed and built, nearly alone, an automotive-parts pricing and stock data platform that takes SKU requests from chat, email, schedules, and spreadsheets and runs web scraping and internal inventory lookups in parallel.
+- Built async Python services (FastAPI, Celery, Redis Streams, Playwright) with caching, JSON Schema contracts, and webhook callbacks, orchestrated with n8n.
+- Deployed separate dev and prod environments on Azure with Bicep IaC, containers, and GitHub Actions CI/CD, adding health checks, outage guardrails, quotas, and access control.
+- Delivered automated spreadsheet reporting and dashboards with clear outcome statuses and Telegram/email notifications, using AI coding agents throughout.
+- Built a full-stack web workspace for the automotive-parts pricing platform: a React + TypeScript + Vite + Tailwind frontend with chat-based SKU lookups, results tables and an executive analytics dashboard (KPIs, catalog, site coverage, SKU benchmarking), tested with Vitest.
+- Designed the FastAPI/Postgres backend behind it: authentication, per-tenant data isolation, an append-only audit log, and a two-stage (raw-to-cleaned) data pipeline that turns scraper and inventory results into certified metrics.
+- Built frontend and full-stack features for a multi-model generative-AI chat platform in React 18, TypeScript, Vite, and Tailwind CSS: ~17 Figma-designed screens and ~6 chat input features (image generation, deep research, artifacts, file attachments, audio input), with 12 merged PRs in ~4 weeks as implementer under tech-lead review.
+- Delivered through Jira-tracked tasks, conventional commits, QA and visual regression evidence, and review-gated merges, with GitHub Actions CI/CD to Azure App Service.
+
+
+### Career break · Oct 2024 – Oct 2025
+
+- English exchange in London, UK (daily immersion, IELTS B2) and upskilling studies, incl. IBM Introduction to Data Engineering.
 
 ### Data Engineer — Spacecom Monitoramento | Curitiba, PR – Brazil (On-site) · Apr 2023 – Jul 2024
 
@@ -65,12 +74,14 @@ I build production data pipelines, cloud lakehouses, and LLM/n8n workflows acros
 
 ## Notable Projects
 
-### OrbitAI — Omnichannel AI CRM · NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Present
 
-- Built OrbitAI, a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
+
+### Omnichannel AI Platform (private) · NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Present
+
+- Built a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
 - Layered Meta/Google Ads performance data and LLMs (Claude/Google AI Studio) for auto-replies, outbound messaging assistance, and automated campaign analysis.
 
-### Car Parts Price Searcher · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Feb 2026 – Present
+### Automotive Parts Price Search (private) · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Feb 2026 – Present
 
 - Built a car-parts price searcher across 10+ sites, with parallel public-price and internal-stock lookup, auditable reporting, and notifications from containerised Azure services.
 
@@ -86,8 +97,12 @@ Majors: Information Systems · Business Analytics · Data Analysis · Database S
 
 ## Licenses & Certifications
 
-- **IELTS General** — English C1
+- **IELTS General** — IELTS B2 (band 5.5, Sep 2025)
 - **AI for Writing and Communicating** — Google (Credential ID: HE8YE5IS7WVW) · Jul 2026
 - **AI for Research and Insights** — Google (Credential ID: 4PZDF3XQOF55) · Jul 2026
 - **AI for Brainstorming and Planning** — Google (Credential ID: 7SFW2HGOKIU5) · Jul 2026
 - **AI Fundamentals** — Google (Credential ID: UKBGM0AZUIS2) · Jul 2026
+- **Introduction to Data Engineering** — IBM · Jan 2025
+- **Docker Essentials** — LINUXtips · Jun 2024
+- **AWS Cloud Practitioner Essentials** — AWS (Coursera) · Apr 2024
+- **AWS Discovery Day** — Ka Solution · Feb 2024
