@@ -132,8 +132,8 @@ def paginate(blocks: list[tuple[str, str]]) -> list[list[DrawText]]:
                 add_line(line, 8.8)
             continue
         size = 9.6
-        center = "@" in text or "linkedin" in text or "github" in text or "+55" in text
-        font = "F2" if text.startswith("Senior ") or text.startswith("Engenheiro ") else "F1"
+        center = "@" in text or "linkedin" in text or "github" in text
+        font = "F2" if text.startswith(("AI Engineer", "Engenheiro de IA", "Senior ", "Engenheiro ")) else "F1"
         for line in wrap_text(text, size):
             add_line(line, size, font, center=center)
 
