@@ -7,7 +7,7 @@
   const header = document.querySelector("[data-site-header]");
   const form = document.getElementById("contact-form");
   const feedback = document.getElementById("form-feedback");
-  const sections = ["hero", "projects", "skills", "experience", "certifications", "job-fit", "contact"];
+  const sections = ["hero", "projects", "services", "skills", "experience", "certifications", "job-fit", "contact"];
   const navLinks = document.querySelectorAll(".desktop-nav a, .mobile-menu-links a");
   let menuFocusTimeout;
 
