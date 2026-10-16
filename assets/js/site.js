@@ -7,7 +7,7 @@
   const header = document.querySelector("[data-site-header]");
   const form = document.getElementById("contact-form");
   const feedback = document.getElementById("form-feedback");
-  const sections = ["hero", "projects", "skills", "experience", "certifications", "job-fit", "contact"];
+  const sections = ["hero", "projects", "services", "skills", "experience", "certifications", "job-fit", "contact"];
   const navLinks = document.querySelectorAll(".desktop-nav a, .mobile-menu-links a");
   let menuFocusTimeout;
 
@@ -54,8 +54,8 @@
       if (el.hasAttribute("download")) el.setAttribute("download", file);
     });
     document.title = isPT
-      ? "Lucas Cruz - Engenheiro de Dados Sênior & Automação com IA Generativa"
-      : "Lucas Cruz - Senior Data Engineer & Gen. AI Automation Engineer";
+      ? "Lucas Cruz - Engenheiro de IA / Engenheiro de Dados Sênior"
+      : "Lucas Cruz - AI Engineer / Senior Data Engineer";
     const description = document.querySelector('meta[name="description"]');
     if (description) {
       description.content = isPT ? description.dataset.metaDescPt : description.dataset.metaDescEn;

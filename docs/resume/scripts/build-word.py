@@ -251,7 +251,6 @@ def is_centered_meta(line: str) -> bool:
     return any(
         token in lowered
         for token in (
-            "+55",
             "@",
             "linkedin",
             "github",

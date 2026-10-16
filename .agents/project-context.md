@@ -32,7 +32,7 @@
 - Production-scale IoT context (95K devices — verify before changing)
 - Gen. AI stack: LLM integration, RAG, AI agents, prompt engineering, n8n
 - Data stack: Python, Spark/PySpark, SQL, Airflow, Delta Lake. Labs, not client production: dbt, Prefect, DuckDB, Snowflake. Databricks, Redshift, Looker, and Kubernetes are not production claims.
-- Requires **visa sponsorship** (do not advertise relocation or Europe-only availability)
+- No relocation, visa or Europe-only availability copy in public content
 - Advanced English (C1 / IELTS)
 
 ---
@@ -135,7 +135,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 3. Update `markdown/*.md` if agents edited copy in-repo (or paste Google changes into markdown)
 4. Run `/sync-cv-portfolio` to align `index.html` with CV facts
 
-**Current CV note (2026-10-06):** Header location is Florianópolis. Visa line is sponsorship required, with no Europe relocation line. TK is Feb 2026 – Present. OrbitAI is approved for CV notable projects and the matching portfolio card. `cnpj-lakehouse` is a personal portfolio card, not a CV notable project. Production skills and lab skills are split in markdown, Word, source text, and site PDFs. Databricks, Redshift, Looker, and Kubernetes are not production claims. Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `sync-from-google-docs.py`. Do not pull Google Docs before that paste, or the labs split will be overwritten. StokIA, internals, and private URLs stay out of public copy. Cover letters live in Google Docs as well as `docs/resume/markdown/`.
+**Current CV note (ZUR-101, 2026-10-16):** Header location is Curitiba, Paraná. No phone, no relocation/visa line, and the current employer is never named publicly ("Software company (name on request)"). The private CRM project uses the generic name "Omnichannel CRM Platform". Databricks, Redshift, Looker, Kubernetes, LangChain and production RAG are not claims; dbt, Prefect, DuckDB and Snowflake are lab-only. CVs (EN/PT PDF, Word, markdown, txt) are generated from the same wording; the career break (Oct 2024 – Oct 2025) is shown as English immersion and tech upskilling. Internal details and private URLs stay out of public copy.
 
 **CV management skill:** `@.agents/skills/cv-management/SKILL.md`
 
@@ -143,7 +143,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 
 Sections in order — keep EN and PT structurally aligned:
 
-1. Header — name, titles, contact, location, visa
+1. Header — name, titles, contact, location
 2. Professional Summary
 3. Technical Skills (grouped categories)
 4. Work Experience (reverse chronological)
@@ -169,7 +169,7 @@ Use the CV as the **factual authority** for employers, dates, metrics, projects,
 Skill: `@.agents/skills/career-knowledge/SKILL.md`
 Continuous sync skill: `@.agents/skills/continuous-career-sync/SKILL.md`
 
-Current sprint/process note: Lucas is in the TK Technologies contract (Feb 2026 – Present). Public-safe career knowledge lives in `docs/career/tktech-sprint-knowledge.md`; use it for OrbitAI, CDP/car-parts searcher, customer-facing delivery, sprint ownership, and mobile launch readiness without exposing raw ticket names or private identifiers.
+Current sprint/process note: Lucas is in a software-company contract (Feb 2026 – Present). The employer is never named in public content; private career notes live outside this public repo or in `docs/career/` pending the hygiene PR.
 
 ### Verified external profiles
 
@@ -183,7 +183,7 @@ Current sprint/process note: Lucas is in the TK Technologies contract (Feb 2026 
 | Email | dev.lucascruz@gmail.com |
 
 Only link to repos, demos, or articles that exist. GitHub username: **devzurc**.
-Flagship TK Technologies CDP links use the organization repository: `https://github.com/tktechnologies/cdp-hub`.
+Flagship CDP project links use the organization repository (private); do not link private repositories from public copy.
 
 ---
 

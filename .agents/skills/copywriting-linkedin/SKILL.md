@@ -25,7 +25,7 @@ Use this skill when improving portfolio copy, hero messaging, experience bullets
 | Lead with systems you built | Lead with tools you "know" |
 | Use strong verbs: architected, automated, orchestrated, deployed | Passive voice walls |
 | Mention scale **only with owner-verified numbers** | Round up or invent metrics |
-| Keep location factual; visa sponsorship may stay | Reintroduce relocation or Europe-only availability |
+| Keep location factual | Add relocation, visa or Europe-only availability |
 
 **Register:** Senior IC — credible peer, not marketing brochure.
 
@@ -89,10 +89,9 @@ Structure per card:
 
 Keep friction low. Reinforce:
 
-- Location (Florianópolis)
-- Visa sponsorship required
+- Location (Curitiba)
 - Email + LinkedIn prominent
-- Do not advertise relocation or Europe-only availability
+- No relocation, visa or Europe-only availability copy
 
 ---
 

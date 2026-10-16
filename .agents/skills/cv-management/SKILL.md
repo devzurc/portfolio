@@ -52,7 +52,7 @@ Updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/`.
 
 | # | Section | Notes |
 |---|---------|-------|
-| 1 | **Header** | Name, `Data Engineer \| Gen. AI Engineer`, phone, email, LinkedIn, portfolio URL, location, visa |
+| 1 | **Header** | Name, `AI Engineer / Senior Data Engineer` (PT `Engenheiro de IA / Engenheiro de Dados Sênior`), email, LinkedIn, portfolio URL, location (per `TAILORING-RULES.md`) |
 | 2 | **Professional Summary** | 3–4 lines; years, domains, stack keywords, English level. Do not add relocation or Europe-only availability. |
 | 3 | **Technical Skills** | Grouped rows (Gen. AI, Data Eng, Orchestration, Cloud, Lakehouses, DBs, BI, Security/Governance, DevOps, Languages) |
 | 4 | **Work Experience** | Reverse chronological; `Title – Company \| Location (mode)` + date range + 3–5 bullets |
@@ -123,7 +123,7 @@ Rules:
 | Field | Example |
 |-------|---------|
 | Title | Gen. AI Engineer |
-| Company | TK Technologies |
+| Company | Software company (name on request) |
 | Location | Curitiba, PR – Brazil |
 | Mode | Hybrid / Remote / On-site |
 | Dates | Feb 2026 – May 2026 |
@@ -190,7 +190,7 @@ Only edit with owner-provided facts (degree name, institution, date, majors). Sy
 
 ### H. Header / contact changes
 
-Fields: phone, email, LinkedIn, portfolio URL, location, visa. Do not add a relocation line.
+Fields: email, LinkedIn, portfolio URL, location (no public phone number). Do not add a relocation or visa line to any public CV, PDF, markdown or site copy. The location line is a per-application placeholder; follow `TAILORING-RULES.md`.
 
 Any URL change must be verified live. Update `index.html` `#contact` and CV download paths if portfolio URL changes.
 
