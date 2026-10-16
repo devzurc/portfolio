@@ -4,14 +4,15 @@ All notable changes to the Lucas Cruz portfolio project will be documented in th
 
 ## [Unreleased]
 
-### Changed (ZUR-12, draft, pending owner confirmation)
-- Public CV is now CV v2 (EN) without phone or relocation/visa lines; the outdated PT PDF is no longer served (PT UI links to the EN CV until a PT v2 is approved).
-- Employer shown as "Software company (name on request)"; role title aligned with CV v2; TK bullets expanded from CV v2.
-- Removed "Production skills" / "Three production systems" wording and the LangChain tags.
+### Changed (ZUR-101, draft, pending owner confirmation)
+- Public CV is CV v2 in EN and PT (generated from the same script): no phone, no relocation/visa line, employer shown as "Software company (name on request)". Sources (markdown, txt, Word) synced; `_intl` markdown variants removed from the public tree.
+- Role title aligned with CV v2 and extra experience bullets added (EN/PT).
+- Removed "Production skills" / "Three production systems" wording, LangChain tags and "production RAG" wording.
+- Private CRM project renamed generically ("Omnichannel CRM Platform" / "Plataforma CRM Omnichannel").
+- Career break (Oct 2024 - Oct 2025, London) shown as English immersion and tech upskilling.
 - Added a Services section and nav entry (EN/PT).
 - SEO: removed same-URL hreflang, added og:locale/og:site_name/og:image:alt, JSON-LD image/alumniOf/region; sitemap lastmod.
-- Accessibility: brand link accessible name, purple badge contrast.
-- Career break (Oct 2024 - Oct 2025) kept, flagged UNVERIFIED in a source comment.
+- Accessibility: brand link accessible name, badge and contact-note contrast.
 
 ## [3.0.0] - 2026-08-04
 

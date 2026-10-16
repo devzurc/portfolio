@@ -8,7 +8,7 @@ Curitiba, Paraná, Brasil
 
 Resumo Profissional
 
-Engenheiro de IA e engenheiro de dados sênior, com ~5 anos em engenharia de dados e experiência anterior como analista de dados, atuando em frontend, full-stack, backend e automação com IA. Na TK Technologies, projetou e construiu uma plataforma de dados de preços e estoque de autopeças (Python assíncrono, n8n, Azure) e construiu funcionalidades de frontend e full-stack para uma plataforma de chat de IA generativa multimodelo (React, TypeScript, Tailwind). Antes, construiu pipelines Python/SQL, ETL orquestrado com Airflow, data warehouses e lakehouses na AWS (Medallion, Delta Lake, Trino) para IoT, fintech e agronegócio, com dados governados sob LGPD/GDPR. Projetos pessoais incluem um CRM multi-tenant com sugestões de resposta por IA (FastAPI, Next.js, PostgreSQL), um lakehouse local-first (Prefect, dbt Core, DuckDB) e RAG em produção com pgvector (em andamento). Inglês: IELTS B2 (2025), autoavaliação próxima de C1.
+Engenheiro de IA e engenheiro de dados sênior, com ~5 anos em engenharia de dados e experiência anterior como analista de dados, atuando em frontend, full-stack, backend e automação com IA. Em uma empresa de software, projetou e construiu uma plataforma de dados de preços e estoque de autopeças (Python assíncrono, n8n, Azure) e construiu funcionalidades de frontend e full-stack para uma plataforma de chat de IA generativa multimodelo (React, TypeScript, Tailwind). Antes, construiu pipelines Python/SQL, ETL orquestrado com Airflow, data warehouses e lakehouses na AWS (Medallion, Delta Lake, Trino) para IoT, fintech e agronegócio, com dados governados sob LGPD/GDPR. Projetos pessoais incluem um CRM multi-tenant com sugestões de resposta por IA (FastAPI, Next.js, PostgreSQL), um lakehouse local-first (Prefect, dbt Core, DuckDB) e um projeto de RAG com pgvector, em andamento e fora de produção. Inglês: IELTS B2 (2025), autoavaliação próxima de C1.
 
 Competências Técnicas
 
@@ -23,7 +23,7 @@ Idiomas | Português (Nativo) · Inglês (IELTS B2 (2025), autoavaliação próx
 
 Experiência Profissional
 
-Engenheiro de IA Generativa (Dados para IA e Engenharia Full-Stack) — TK Technologies | Curitiba, PR (Híbrido) · Fev 2026 – Atual · Contrato
+Engenheiro de IA Generativa (Dados para IA e Engenharia Full-Stack) — Empresa de software (nome sob consulta) | Curitiba, PR (Híbrido) · Fev 2026 – Atual · Contrato
 
 - Projetou e construiu, praticamente sozinho, uma plataforma de dados de preços e estoque de autopeças que recebe pedidos de SKU por chat, e-mail, agendamentos e planilhas e executa web scraping e consultas ao estoque interno em paralelo.
 - Construiu serviços Python assíncronos (FastAPI, Celery, Redis Streams, Playwright) com cache, contratos em JSON Schema e callbacks via webhook, orquestrados com n8n.
@@ -35,9 +35,9 @@ Engenheiro de IA Generativa (Dados para IA e Engenharia Full-Stack) — TK Techn
 - Entregou via tarefas rastreadas no Jira, conventional commits, evidências de QA e de regressão visual e merges condicionados a revisão, com CI/CD via GitHub Actions no Azure App Service.
 
 
-Pausa na carreira · Out 2024 – Out 2025
+Pausa na carreira — imersão em inglês e atualização tecnológica | Londres, Inglaterra · Out 2024 – Out 2025
 
-- Intercâmbio de inglês em Londres, Reino Unido (imersão diária, IELTS B2) e estudos de atualização profissional, incl. IBM Introduction to Data Engineering.
+- Imersão em inglês em Londres (imersão diária, IELTS B2) e cursos de tecnologia, incluindo IBM Introduction to Data Engineering, aprendendo sobre tecnologia no contexto empresarial europeu.
 
 Engenheiro de Dados — Spacecom Monitoramento | Curitiba, PR (Presencial) · Abr 2023 – Jul 2024
 
@@ -63,12 +63,12 @@ Projetos de Destaque
 
 
 
-Omnichannel AI Platform (privada) · NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Atual
+Plataforma CRM Omnichannel (privada) · NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker · Empresa de software (nome sob consulta) – Jun 2026 – Atual
 
 - Desenvolveu um CRM omnichannel seguro que centraliza WhatsApp, Instagram, Facebook, Telegram e e-mails em uma caixa de entrada unificada com controle de acesso baseado em funções (RBAC).
 - Conectou dados de desempenho de Meta e Google Ads e uma camada de LLMs (Claude/Google AI Studio) para auto-respostas, mensagens outbound e análise automatizada de campanhas.
 
-Automotive Parts Price Search (privado) · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Fev 2026 – Atual
+Automotive Parts Price Search (privado) · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · Empresa de software (nome sob consulta) – Fev 2026 – Atual
 
 - Construiu um buscador de preços de peças em mais de 10 sites, com pesquisa paralela de preços públicos e estoque interno, relatórios auditáveis e notificações em serviços conteinerizados no Azure.
 

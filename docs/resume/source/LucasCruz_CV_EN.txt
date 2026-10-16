@@ -8,7 +8,7 @@ Curitiba, Paraná, Brazil
 
 Professional Summary
 
-AI engineer and senior data engineer with ~5 years in data engineering, building on earlier data-analyst experience, working across frontend, full-stack, backend, and AI automation. At TK Technologies, designed and built an automotive-parts pricing and stock data platform (async Python, n8n, Azure) and built frontend and full-stack features for a multi-model generative-AI chat platform (React, TypeScript, Tailwind). Previously built Python/SQL pipelines, Airflow-orchestrated ETL, data warehouses, and AWS lakehouses (Medallion, Delta Lake, Trino) for IoT, fintech, and agribusiness, handling LGPD/GDPR-governed data. Personal projects include a multi-tenant CRM with AI draft replies (FastAPI, Next.js, PostgreSQL), a local-first lakehouse (Prefect, dbt Core, DuckDB), and production RAG with pgvector (in progress). English: IELTS B2 (2025), self-assessed near C1.
+AI engineer and senior data engineer with ~5 years in data engineering, building on earlier data-analyst experience, working across frontend, full-stack, backend, and AI automation. At a software company, designed and built an automotive-parts pricing and stock data platform (async Python, n8n, Azure) and built frontend and full-stack features for a multi-model generative-AI chat platform (React, TypeScript, Tailwind). Previously built Python/SQL pipelines, Airflow-orchestrated ETL, data warehouses, and AWS lakehouses (Medallion, Delta Lake, Trino) for IoT, fintech, and agribusiness, handling LGPD/GDPR-governed data. Personal projects include a multi-tenant CRM with AI draft replies (FastAPI, Next.js, PostgreSQL), a local-first lakehouse (Prefect, dbt Core, DuckDB), and a RAG project with pgvector, in progress and not in production. English: IELTS B2 (2025), self-assessed near C1.
 
 Technical Skills
 
@@ -23,7 +23,7 @@ Languages | Portuguese (Native) · English (IELTS B2 (2025), self-assessed near 
 
 Work Experience
 
-Gen AI Engineer (AI Data & Full-Stack Engineering) — TK Technologies | Curitiba, PR – Brazil (Hybrid) · Feb 2026 – Present · Contract
+Gen AI Engineer (AI Data & Full-Stack Engineering) — Software company (name on request) | Curitiba, PR – Brazil (Hybrid) · Feb 2026 – Present · Contract
 
 - Designed and built, nearly alone, an automotive-parts pricing and stock data platform that takes SKU requests from chat, email, schedules, and spreadsheets and runs web scraping and internal inventory lookups in parallel.
 - Built async Python services (FastAPI, Celery, Redis Streams, Playwright) with caching, JSON Schema contracts, and webhook callbacks, orchestrated with n8n.
@@ -35,9 +35,9 @@ Gen AI Engineer (AI Data & Full-Stack Engineering) — TK Technologies | Curitib
 - Delivered through Jira-tracked tasks, conventional commits, QA and visual regression evidence, and review-gated merges, with GitHub Actions CI/CD to Azure App Service.
 
 
-Career break · Oct 2024 – Oct 2025
+Career break — English immersion & tech upskilling | London, England · Oct 2024 – Oct 2025
 
-- English exchange in London, UK (daily immersion, IELTS B2) and upskilling studies, incl. IBM Introduction to Data Engineering.
+- English immersion in London (daily immersion, IELTS B2) and technology courses, including IBM Introduction to Data Engineering, while learning about tech in the European business context.
 
 Data Engineer — Spacecom Monitoramento | Curitiba, PR – Brazil (On-site) · Apr 2023 – Jul 2024
 
@@ -63,12 +63,12 @@ Notable Projects
 
 
 
-Omnichannel AI Platform (private) · NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Present
+Omnichannel CRM Platform (private) · NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · Software company (name on request) – Jun 2026 – Present
 
 - Built a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
 - Layered Meta/Google Ads performance data and LLMs (Claude/Google AI Studio) for auto-replies, outbound messaging assistance, and automated campaign analysis.
 
-Automotive Parts Price Search (private) · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Feb 2026 – Present
+Automotive Parts Price Search (private) · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · Software company (name on request) – Feb 2026 – Present
 
 - Built a car-parts price searcher across 10+ sites, with parallel public-price and internal-stock lookup, auditable reporting, and notifications from containerised Azure services.
 

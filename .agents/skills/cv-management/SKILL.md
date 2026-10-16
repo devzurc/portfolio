@@ -123,7 +123,7 @@ Rules:
 | Field | Example |
 |-------|---------|
 | Title | Gen. AI Engineer |
-| Company | TK Technologies |
+| Company | Software company (name on request) |
 | Location | Curitiba, PR – Brazil |
 | Mode | Hybrid / Remote / On-site |
 | Dates | Feb 2026 – May 2026 |
@@ -190,7 +190,7 @@ Only edit with owner-provided facts (degree name, institution, date, majors). Sy
 
 ### H. Header / contact changes
 
-Fields: email, LinkedIn, portfolio URL, location (no public phone number). Do not add a relocation or visa line to the default EN/PT CVs. The only exception is the international variants (`LucasCruz_CV_EN_intl` / `LucasCruz_CV_PT_intl`), used for roles outside Brazil, which are also what the Google Docs hold: EN `Curitiba, Paraná, Brazil · Open to relocation · Requires visa sponsorship`, PT `Curitiba, Paraná, Brasil · Aberto a realocação · Requer patrocínio de visto`. The repo markdown holds the default Brazil versions. The location line is a per-application placeholder; follow `TAILORING-RULES.md`.
+Fields: email, LinkedIn, portfolio URL, location (no public phone number). Do not add a relocation or visa line to any public CV, PDF, markdown or site copy. The location line is a per-application placeholder; follow `TAILORING-RULES.md`.
 
 Any URL change must be verified live. Update `index.html` `#contact` and CV download paths if portfolio URL changes.
 
