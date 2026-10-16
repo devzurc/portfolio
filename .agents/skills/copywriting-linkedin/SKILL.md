@@ -89,7 +89,7 @@ Structure per card:
 
 Keep friction low. Reinforce:
 
-- Location (Florianópolis)
+- Location (Curitiba)
 - Visa sponsorship required
 - Email + LinkedIn prominent
 - Do not advertise relocation or Europe-only availability
