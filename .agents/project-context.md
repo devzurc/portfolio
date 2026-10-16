@@ -32,7 +32,7 @@
 - Production-scale IoT context (95K devices — verify before changing)
 - Gen. AI stack: LLM integration, RAG, AI agents, prompt engineering, n8n
 - Data stack: Python, Spark/PySpark, SQL, Airflow, Delta Lake. Labs, not client production: dbt, Prefect, DuckDB, Snowflake. Databricks, Redshift, Looker, and Kubernetes are not production claims.
-- Requires **visa sponsorship** (do not advertise relocation or Europe-only availability)
+- No relocation, visa or Europe-only availability copy in public content
 - Advanced English (C1 / IELTS)
 
 ---
@@ -143,7 +143,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 
 Sections in order — keep EN and PT structurally aligned:
 
-1. Header — name, titles, contact, location, visa
+1. Header — name, titles, contact, location
 2. Professional Summary
 3. Technical Skills (grouped categories)
 4. Work Experience (reverse chronological)
@@ -169,7 +169,7 @@ Use the CV as the **factual authority** for employers, dates, metrics, projects,
 Skill: `@.agents/skills/career-knowledge/SKILL.md`
 Continuous sync skill: `@.agents/skills/continuous-career-sync/SKILL.md`
 
-Current sprint/process note: Lucas is in the TK Technologies contract (Feb 2026 – Present). Public-safe career knowledge lives in `docs/career/tktech-sprint-knowledge.md`; use it for OrbitAI, CDP/car-parts searcher, customer-facing delivery, sprint ownership, and mobile launch readiness without exposing raw ticket names or private identifiers.
+Current sprint/process note: Lucas is in a software-company contract (Feb 2026 – Present). The employer is never named in public content; private career notes live outside this public repo or in `docs/career/` pending the hygiene PR.
 
 ### Verified external profiles
 
@@ -183,7 +183,7 @@ Current sprint/process note: Lucas is in the TK Technologies contract (Feb 2026 
 | Email | dev.lucascruz@gmail.com |
 
 Only link to repos, demos, or articles that exist. GitHub username: **devzurc**.
-Flagship TK Technologies CDP links use the organization repository: `https://github.com/tktechnologies/cdp-hub`.
+Flagship CDP project links use the organization repository (private); do not link private repositories from public copy.
 
 ---
 

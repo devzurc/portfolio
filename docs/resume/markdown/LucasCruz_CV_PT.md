@@ -5,7 +5,7 @@ google_doc: https://docs.google.com/document/d/1oi8mzTJNNTu3CdSuqEgiWCPmiyvGWxrs
 pdf: ../pdf/LucasCruz_CV_PT.pdf
 word: ../word/LucasCruz_CV_PT.docx
 last_synced: 2026-09-22
-last_updated: 2026-10-06
+last_updated: 2026-10-16
 sync_source: markdown-built-pdf-pending-google-paste
 ---
 

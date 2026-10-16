@@ -6,7 +6,7 @@
 
 **Active positioning:** Senior Data Engineer · GenAI Automation Engineer · AI Platform Engineer  
 **Selective add-on:** Analytics Engineer / consulting Senior Data Analyst, only with sponsorship and delivery ownership  
-**Location:** Curitiba, Paraná, Brazil · English IELTS B2  
+**Location:** Florianópolis, Santa Catarina, Brazil · Requires visa sponsorship · English C1 (IELTS)  
 **Portfolio:** https://devzurc.github.io/portfolio/
 
 ---
@@ -43,6 +43,8 @@ Target 5–8 sponsorship-qualified applications a week. Keep the public CV gener
 | Date | Company | Role | Location | Status | Tailored angle | Notes |
 |------|---------|------|----------|--------|----------------|-------|
 | 2026-09-11 | — | — | — | researching | Tracker opened | Surfaces realigned (Florianópolis, TK Present, OrbitAI). Lead with Senior DE / Gen. AI Automation using current evidence. |
+| 2026-09-22 | 173tech | Senior Data Analyst | London EC1M, UK remote-first, one day a month in London | researching | Consulting analytics: wDiscover, Itaeté, Spacecom; TK AI as extra. Honest dbt. | Posting lists UK visa sponsorship. Base £60,000–£70,000 clears the £41,700 Skilled Worker floor. Google Docs CV and cover letters were updated 2026-09-22. LinkedIn still needs the manual check before submit. Private pack: `docs/resume/markdown/LucasCruz_CV_173tech_EN.md` and `LucasCruz_Cover_Letter_173tech_EN.md`. Change status to `applied` only after submission. |
+
 **Status values:** `researching` · `applied` · `screening` · `interview` · `offer` · `rejected` · `withdrawn`
 
 ---
@@ -63,7 +65,7 @@ Target 5–8 sponsorship-qualified applications a week. Keep the public CV gener
 ## Application checklist (per role)
 
 - [ ] CV tailored (EN) — lead with role-relevant projects
-- [ ] Cover letter customized (`docs/resume/markdown/LucasCruz_Cover_Letter_EN.md`)
+- [ ] Cover letter customized (`docs/resume/markdown/LucasCruz_Cover_Letter_EN.md`, or the 173tech file for that role)
 - [ ] Portfolio link included
 - [ ] Visa sponsorship question answered clearly if asked
 - [ ] Sponsor evidence recorded in the log
@@ -76,6 +78,6 @@ Target 5–8 sponsorship-qualified applications a week. Keep the public CV gener
 
 | Phase | Applications/week | Notes |
 |-------|-------------------|-------|
-| Sep 2026 | 5–8 | UK sponsorship first. Lead with current DE + GenAI evidence. Do not wait for a RAG repo. |
+| Sep 2026 | 5–8 | UK sponsorship first. Lead with current DE + GenAI evidence. Use the 173tech pack only for that application. Do not wait for a RAG repo. |
 | Oct–Nov 2026 | 5–8 | Add `raw-llm-systems` / RAG only after the public repo exists |
 | Dec 2026–2027 Q1 | 5–10 | Full AI platform narrative only when capstone evidence ships |

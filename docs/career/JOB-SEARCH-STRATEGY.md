@@ -20,7 +20,7 @@ Google AI certifications (4 verified credentials on Credly) validate his solid f
 | 1 | Gen. AI Automation Engineer / AI Workflow Engineer | Backed by n8n, LLM integrations, chatbots, RAG/internal knowledge, webhooks, customer operations automation |
 | 3 | Senior / Applied AI Engineer / AI Platform Engineer | Growth track backed by planned roadmap repos; apply selectively while public evidence ships — see `goals/senior-ai-roadmap.md` |
 | 2 | Data/AI Solutions Engineer | Strong fit if the role values demos, training, stakeholder discovery, implementation, and post-launch support |
-| 2 | Analytics Engineer / consulting Senior Data Analyst | Selective. Apply when the role owns modelling, delivery, and stakeholders and offers sponsorship. Lead with wDiscover, Itaeté, and Spacecom analytics. |
+| 2 | Analytics Engineer / consulting Senior Data Analyst | Selective. Apply when the role owns modelling, delivery, and stakeholders and offers sponsorship. Lead with wDiscover, Itaeté, and Spacecom analytics. See the 173tech private pack. |
 | 2 | Automation Platform Engineer | Strong fit for companies scaling internal operations through APIs, n8n, backend services, cloud, and reporting |
 | 3 | Technical Implementation Engineer, AI/Data Products | Good growth path when hands-on engineering remains central and the role is not pure account management |
 
@@ -66,7 +66,7 @@ Use combinations of:
 | Target role | Lead with | Supporting proof |
 |-------------|-----------|------------------|
 | Senior Data Engineer | AWS S3 lakehouse, PySpark, Airflow, Trino, governed BI | Spacecom, wDiscover, CDP data/reporting contracts |
-| Analytics consulting / Senior Data Analyst | wDiscover dimensional models and Power BI, Itaeté analyst work, Spacecom data quality | TK LLM workflows as the AI extra. Do not claim production dbt, Looker, Snowflake, BigQuery, Redshift, or Databricks. |
+| Analytics consulting / Senior Data Analyst | wDiscover dimensional models and Power BI, Itaeté analyst work, Spacecom data quality | TK LLM workflows as the AI extra. Use `docs/resume/markdown/LucasCruz_CV_173tech_EN.md`. Do not claim production dbt, Looker, Snowflake, BigQuery, Redshift, or Databricks. |
 | Data Platform Engineer | FastAPI services, Redis/Celery, PostgreSQL, Docker, Azure | CDP Platform, `muvstok-api`, deployment/migration work |
 | Gen. AI Automation Engineer | n8n, LLM workflows, chatbots, OrbitAI, internal knowledge | Telegram assistant, WhatsApp intake, OrbitAI, CDP automation |
 | AI/Data Solutions Engineer | Customer demos, training, product support, stakeholder feedback | TKTech sprint knowledge and customer-facing delivery notes |
@@ -119,7 +119,10 @@ Use before spending time on an application:
 
 ## UK-first sponsorship search
 
-Search core stays Senior Data Engineer / Gen. AI. Add analytics-consulting applications only when the posting combines modelling, delivery ownership, and a real visa path.
+Search core stays Senior Data Engineer / Gen. AI. Add analytics-consulting applications only when the posting combines modelling, delivery ownership, and a real visa path. 173tech is the first logged example. Private pack:
+
+- `docs/resume/markdown/LucasCruz_CV_173tech_EN.md`
+- `docs/resume/markdown/LucasCruz_Cover_Letter_173tech_EN.md`
 
 Open a role only when the posting names sponsorship, a licensed sponsor, or a relocation visa. Skip "must already have the right to work."
 
@@ -174,6 +177,7 @@ Updated 2026-09-22 from the local Word files into the existing Docs, then export
 - PT-BR CV: https://docs.google.com/document/d/1oi8mzTJNNTu3CdSuqEgiWCPmiyvGWxrsstU93K0QV0Q/edit
 - EN cover letter: https://docs.google.com/document/d/1rdaAgWzm8KGyhUolCEdVitg2zftuJYlpZMooe4gyI4g/edit
 - PT-BR cover letter: https://docs.google.com/document/d/15davoxr1GtnWgvhN2tSIsDJ2br_Fb4AHEGpGFNgUybI/edit
+- 173tech cover letter: https://docs.google.com/document/d/1ed2uQv7uj_eiqO_nJuynLOOfK3EwxRRXysD4KE6LJns/edit
 
 ### LinkedIn
 
