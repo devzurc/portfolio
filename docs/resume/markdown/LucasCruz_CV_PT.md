@@ -13,7 +13,7 @@ sync_source: markdown-built-pdf-pending-google-paste
 
 **Engenheiro de Dados Sênior | Engenheiro de Automação com IA Generativa**
 
-+55 (21) 96552-9308 · dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
+dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
 
 Florianópolis, Santa Catarina · Necessita de patrocínio de visto
 

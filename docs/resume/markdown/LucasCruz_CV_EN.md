@@ -13,7 +13,7 @@ sync_source: markdown-built-pdf-pending-google-paste
 
 **Senior Data Engineer | Gen. AI Automation Engineer**
 
-+55 (21) 96552-9308 · dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
+dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
 
 Florianópolis, Santa Catarina, Brazil · Requires visa sponsorship
 

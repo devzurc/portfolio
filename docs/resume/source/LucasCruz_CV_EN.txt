@@ -1,6 +1,6 @@
 LUCAS CRUZ
 Senior Data Engineer | Gen. AI Automation Engineer
-+55 (21) 96552-9308 · dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
+dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
 Florianópolis, Santa Catarina, Brazil · Requires visa sponsorship
 PROFESSIONAL SUMMARY
 I build production data pipelines, cloud lakehouses, and LLM/n8n workflows across IoT, fintech, agribusiness, and automotive products, with 5+ years in data roles and English at C1. I am learning production RAG, evaluation, and observability. Those are not shipped systems yet.

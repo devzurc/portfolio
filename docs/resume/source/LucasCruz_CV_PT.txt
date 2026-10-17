@@ -1,6 +1,6 @@
 LUCAS CRUZ
 Engenheiro de Dados Sênior | Engenheiro de Automação com IA Generativa
-+55 (21) 96552-9308 · dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
+dev.lucascruz@gmail.com · linkedin.com/in/lucas-cruz · devzurc.github.io/portfolio
 Florianópolis, Santa Catarina · Necessita de patrocínio de visto
 RESUMO PROFISSIONAL
 Construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em produção, em IoT, fintech, agronegócio e produtos automotivos, com mais de 5 anos em dados e inglês C1. Estou estudando RAG, avaliação e observabilidade em produção. Isso ainda não é um sistema entregue.
