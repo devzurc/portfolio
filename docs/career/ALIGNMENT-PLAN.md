@@ -22,7 +22,7 @@ Locked facts:
 - Home city: Florianópolis, Santa Catarina. Employer cities may stay Curitiba.
 - Visa sponsorship required. No Europe relocation line.
 - TK Technologies: Feb 2026 – Present (no expected end date).
-- Public flagship names: OrbitAI; Car Parts Price Searcher.
+- Public flagship names: CRM; Car Parts Price Searcher.
 
 See `docs/career/alignment-note-2026-09-11.md` for the fact matrix and LinkedIn checklist.
 
@@ -57,7 +57,7 @@ For each repo in `INDEX.md`:
 | Repo | CV / portfolio link today |
 |------|---------------------------|
 | `cdp-hub` | CV: Car Parts Price Searcher (TK Technologies) |
-| `whatsapp-crm-platform` (`ORBITAI-CRM`) | CV/site: OrbitAI |
+| `whatsapp-crm-platform` (`ORBITAI-CRM`) | CV/site: CRM |
 | `muvstok-api` | Component of CDP — cite under platform work, not separate card |
 | `n8n-telegram-assistant` | CV: conversational AI chatbot bullet (TK Technologies) |
 | `n8n-stripe-checkout` | Stok IA checkout automation — portfolio optional |
@@ -126,13 +126,13 @@ Show public project links only where a public URL and publication permission exi
 4. Un-park private-evidence profiles only after owner curation (`sabia-hub`, `crm-hub`, `invest-hub`, `my-finance`).
 5. Run `/continuous-career-sync` when GitHub activity or learning signals change.
 6. Owner asked to publish the CNPJ card, labs split, and rebuilt CV downloads on 2026-10-06.
-7. Manual LinkedIn check (location Florianópolis, no Europe relocation, TK Present, OrbitAI).
+7. Manual LinkedIn check (location Florianópolis, no Europe relocation, TK Present, CRM).
 
 ---
 
 ## Open questions for you
 
-1. ~~Which client names are OK on the public portfolio vs anonymized?~~ No product/client names on portfolio except approved OrbitAI; employer TK Technologies OK.
+1. ~~Which client names are OK on the public portfolio vs anonymized?~~ No product/client names on portfolio except approved CRM; employer TK Technologies OK.
 2. ~~Are the `10+` automotive sites and TK hybrid/6-month contract wording approved?~~ Confirmed 2026-06-17; expected-Aug end date removed 2026-09-11 (contract is Present).
 3. ~~Should `franq-data-lakehouse-challenge` be promoted to CV/portfolio, or stay learning-only?~~ Promoted to the site on 2026-10-05 as personal `cnpj-lakehouse`. Kept off CV Notable Projects.
 4. Should any other learning/lab profiles be expanded with verified evidence before returning to the CV/site?

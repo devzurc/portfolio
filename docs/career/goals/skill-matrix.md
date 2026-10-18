@@ -52,9 +52,9 @@
 |-------|-------|----------|
 | Data pipelines & lakehouses | production | Spacecom AWS Medallion, wDiscover DW |
 | FastAPI + PostgreSQL + Redis/Celery | production | CDP Platform, muvstok-api |
-| NestJS + Next.js web application architecture | production | OrbitAI (whatsapp-crm-platform) |
+| NestJS + Next.js web application architecture | production | CRM (whatsapp-crm-platform) |
 | n8n + LLM workflow automation | production | Telegram, WhatsApp, Stripe workflows |
-| Meta Cloud API & Omnichannel integrations | production | OrbitAI webhook parsing & outbound messages |
+| Meta Cloud API & Omnichannel integrations | production | CRM webhook parsing & outbound messages |
 | Cloud deployment (AWS, Azure, Docker) | production | TK Technologies, Spacecom |
 | Web scraping at scale | production | CDP automotive pricing pipeline |
 | BI & governed datasets | production | Power BI, Qlik, Superset |

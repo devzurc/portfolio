@@ -44,7 +44,7 @@
 | ID | Purpose |
 |----|---------|
 | `#hero` | Name, roles, value prop, CTAs, headline stats |
-| `#projects` | Recruiter-scan case studies: OrbitAI, Car Parts Price Searcher, IoT lakehouse, and personal `cnpj-lakehouse` |
+| `#projects` | Recruiter-scan case studies: CRM, Car Parts Price Searcher, IoT lakehouse, and personal `cnpj-lakehouse` |
 | `#experience` | Employment timeline cards with impact bullets |
 | `#skills` | Service discipline cards (Data, Gen. AI, Cloud, Governance) |
 | `#certifications` | Google AI badges and verified certifications list |
@@ -135,7 +135,7 @@ This updates `word/`, `source/`, `pdf/`, and copies PDFs to `assets/files/cv/` f
 3. Update `markdown/*.md` if agents edited copy in-repo (or paste Google changes into markdown)
 4. Run `/sync-cv-portfolio` to align `index.html` with CV facts
 
-**Current CV note (2026-10-06):** Header location is Florianópolis. Visa line is sponsorship required, with no Europe relocation line. TK is Feb 2026 – Present. OrbitAI is approved for CV notable projects and the matching portfolio card. `cnpj-lakehouse` is a personal portfolio card, not a CV notable project. Production skills and lab skills are split in markdown, Word, source text, and site PDFs. Databricks, Redshift, Looker, and Kubernetes are not production claims. Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `sync-from-google-docs.py`. Do not pull Google Docs before that paste, or the labs split will be overwritten. StokIA, internals, and private URLs stay out of public copy. Cover letters live in Google Docs as well as `docs/resume/markdown/`.
+**Current CV note (2026-10-06):** Header location is Florianópolis. Visa line is sponsorship required, with no Europe relocation line. TK is Feb 2026 – Present. The omnichannel CRM is approved for CV notable projects and the matching portfolio card. `cnpj-lakehouse` is a personal portfolio card, not a CV notable project. Production skills and lab skills are split in markdown, Word, source text, and site PDFs. Databricks, Redshift, Looker, and Kubernetes are not production claims. Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `sync-from-google-docs.py`. Do not pull Google Docs before that paste, or the labs split will be overwritten. StokIA, internals, and private URLs stay out of public copy. Cover letters live in Google Docs as well as `docs/resume/markdown/`.
 
 **CV management skill:** `@.agents/skills/cv-management/SKILL.md`
 
@@ -169,7 +169,7 @@ Use the CV as the **factual authority** for employers, dates, metrics, projects,
 Skill: `@.agents/skills/career-knowledge/SKILL.md`
 Continuous sync skill: `@.agents/skills/continuous-career-sync/SKILL.md`
 
-Current sprint/process note: Lucas is in the TK Technologies contract (Feb 2026 – Present). Public-safe career knowledge lives in `docs/career/tktech-sprint-knowledge.md`; use it for OrbitAI, CDP/car-parts searcher, customer-facing delivery, sprint ownership, and mobile launch readiness without exposing raw ticket names or private identifiers.
+Current sprint/process note: Lucas is in the TK Technologies contract (Feb 2026 – Present). Public-safe career knowledge lives in `docs/career/tktech-sprint-knowledge.md`; use it for CRM, CDP/car-parts searcher, customer-facing delivery, sprint ownership, and mobile launch readiness without exposing raw ticket names or private identifiers.
 
 ### Verified external profiles
 

@@ -20,7 +20,7 @@
 | Repo / project | Status | GitHub | portfolio_worthy | cv_worthy | Notes |
 |----------------|--------|--------|------------------|-----------|-------|
 | `cdp-hub` | active | [tktechnologies/cdp-hub](https://github.com/tktechnologies/cdp-hub) (public) · devzurc mirror (private) | true | true | Flagship DE + GenAI platform (Car Parts Price Searcher) |
-| `whatsapp-crm-platform` | active | private mirror (`ORBITAI-CRM`) | true | true | OrbitAI omnichannel AI CRM |
+| `whatsapp-crm-platform` | active | private mirror (`ORBITAI-CRM`) | true | true | Omnichannel AI CRM |
 | `n8n-telegram-assistant` | active | private mirror | true | true | Conversational AI + RAG-adjacent |
 | `n8n-whatsapp-assistant` | active | no mirror | true | false | Sanitized profile only |
 | `n8n-stripe-checkout` | active | private mirror | true | true | Automation platform proof |

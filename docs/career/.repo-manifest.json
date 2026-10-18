@@ -10,7 +10,7 @@
     "whatsapp-crm-platform": {
       "canonical": "devzurc/ORBITAI-CRM",
       "knowledge_slug": "whatsapp-crm-platform",
-      "note": "Private OrbitAI CRM evidence is curated under the sanitized omnichannel CRM profile; do not publish product-sensitive details."
+      "note": "Private CRM evidence is curated under the sanitized omnichannel CRM profile; do not publish product-sensitive details."
     },
     "muvstok-api": {
       "canonical": "devzurc/muvstok-api",

@@ -37,7 +37,7 @@ I build production data pipelines, cloud lakehouses, and LLM/n8n workflows acros
 
 ### Gen. AI Engineer — TK Technologies | Curitiba, PR – Brazil (Hybrid) · Feb 2026 – Present · Contract
 
-- Built OrbitAI, an omnichannel AI CRM (WhatsApp, Instagram, Facebook, Telegram, and email) with role-based access, Meta/Google Ads tracking, and LLM replies, deployed on Azure Container Apps with Bicep.
+- Built an omnichannel AI CRM (WhatsApp, Instagram, Facebook, Telegram, and email) with role-based access, Meta/Google Ads tracking, and LLM replies, deployed on Azure Container Apps with Bicep.
 - Engineered a multi-source web scraping pipeline in Python targeting 10+ automotive parts websites, extracting pricing and product metadata at scale to deliver competitive market intelligence.
 - Built n8n workflows for ETL, chat, messaging intake, and operational follow-up, using LLMs (Claude, Google AI Studio) and GCP APIs (Sheets, Drive).
 - Developed a conversational AI chatbot that empowers business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.
@@ -65,9 +65,9 @@ I build production data pipelines, cloud lakehouses, and LLM/n8n workflows acros
 
 ## Notable Projects
 
-### OrbitAI — Omnichannel AI CRM · NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Present
+### Omnichannel AI CRM · NestJS, Next.js, PostgreSQL, LLMs, Meta & Google Ads APIs, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Present
 
-- Built OrbitAI, a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
+- Built a secure omnichannel CRM integrating WhatsApp, Instagram, Facebook, Telegram, and Email into a unified inbox with role-based access control (RBAC).
 - Layered Meta/Google Ads performance data and LLMs (Claude/Google AI Studio) for auto-replies, outbound messaging assistance, and automated campaign analysis.
 
 ### Car Parts Price Searcher · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Feb 2026 – Present

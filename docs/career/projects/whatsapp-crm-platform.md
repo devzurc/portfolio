@@ -16,12 +16,12 @@ links:
   demo:
   docs:
 last_synced: 2026-08-19
-cv_alignment: OrbitAI — Omnichannel AI CRM
+cv_alignment: Omnichannel AI CRM
 ---
 
 ## One-liner
 
-An all-in-one Omnichannel AI CRM (OrbitAI) that centralizes messaging (WhatsApp, Instagram, Telegram, Facebook, Email), integrates Google/Meta Ads data, manages user roles, and uses LLMs for automated replies and marketing insights.
+An all-in-one Omnichannel AI CRM that centralizes messaging (WhatsApp, Instagram, Telegram, Facebook, Email), integrates Google/Meta Ads data, manages user roles, and uses LLMs for automated replies and marketing insights.
 
 ## Problem
 
@@ -62,13 +62,13 @@ Customer Channels (WhatsApp/IG/FB/Telegram/Email)
 
 ## CI/CD (verified 2026-09-22, sanitized)
 
-Checked on the private OrbitAI hub. The workflow is a quality and security gate, not an automated production deploy.
+Checked on the private CRM hub. The workflow is a quality and security gate, not an automated production deploy.
 
 - Runs on pull requests, pushes to `main`, and a weekly schedule.
 - Gates include secret scanning, CodeQL, Semgrep, a high-level dependency audit, lint, API and web unit tests, a production build, shellcheck, and a Bicep compile of the CRM infrastructure template.
 - A filesystem and IaC scanner fails the job on high and critical findings.
-- Deployment evidence for OrbitAI remains Docker images plus Azure Container Apps defined in Bicep. Do not describe this repo as having the same push-to-dev CD pipeline as CDP.
+- Deployment evidence for CRM remains Docker images plus Azure Container Apps defined in Bicep. Do not describe this repo as having the same push-to-dev CD pipeline as CDP.
 
 ## Public-safe scope note
 
-The owner confirmed current contributions to the new TK website, OrbitAI work, and StokIA development and maintenance on 2026-08-19. The OrbitAI product name is approved for public CV notable projects and the matching portfolio card. Do not expose StokIA, product internals, customer data, deployment identifiers, or private URLs.
+The owner confirmed current contributions to the new TK website, CRM work, and StokIA development and maintenance on 2026-08-19. The CRM product name is approved for public CV notable projects and the matching portfolio card. Do not expose StokIA, product internals, customer data, deployment identifiers, or private URLs.

@@ -3,7 +3,7 @@
 > Monthly capstones ship as **separate public GitHub repos** under `devzurc`, synced into `docs/career/projects/`, then surfaced on CV and portfolio when `portfolio_worthy: true`.
 
 **Deadline:** December 31, 2026 remains the north star and is **at risk**.
-**Job search:** Parallel from day one — apply as Senior Data Engineer / GenAI Engineer with current evidence (OrbitAI, CDP/car-parts searcher, Spacecom lakehouse). Do not put RAG, LangGraph, MCP, RAGAS, or pgvector on the CV as production skills until a public repo proves them.
+**Job search:** Parallel from day one — apply as Senior Data Engineer / GenAI Engineer with current evidence (CRM, CDP/car-parts searcher, Spacecom lakehouse). Do not put RAG, LangGraph, MCP, RAGAS, or pgvector on the CV as production skills until a public repo proves them.
 
 ### Rebaseline — 2026-09-11
 

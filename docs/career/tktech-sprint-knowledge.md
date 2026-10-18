@@ -1,10 +1,10 @@
 # TKTech sprint and delivery knowledge
 
-> Public-safe career knowledge from owner notes and a Notion sprint board screenshot shared on 2026-06-17. Refreshed 2026-09-11 for current role dates (TK Present, no expected end) and approved OrbitAI naming. The owner approved public-safe use of customer demos/training/sales/support and Play Store/EAS/DUNS mobile launch readiness on 2026-06-17. Keep raw ticket names, client/person identifiers, workflow secrets, internal URLs, phone numbers, and private app/account details out of public portfolio copy.
+> Public-safe career knowledge from owner notes and a Notion sprint board screenshot shared on 2026-06-17. Refreshed 2026-09-11 for current role dates (TK Present, no expected end) and approved CRM naming. The owner approved public-safe use of customer demos/training/sales/support and Play Store/EAS/DUNS mobile launch readiness on 2026-06-17. Keep raw ticket names, client/person identifiers, workflow secrets, internal URLs, phone numbers, and private app/account details out of public portfolio copy.
 
 ## Current working model (2026-09-11)
 
-Lucas is still in the TK Technologies Gen. AI Engineer contract (**Feb 2026 – Present**). Current public-safe delivery is OrbitAI (omnichannel CRM), the car-parts price searcher / CDP platform, Notion sprint coordination, and customer-facing demos/training/support. No new raw Notion export was provided on 2026-09-11, so ticket-level themes below stay as last approved. Do not publish an expected contract end date.
+Lucas is still in the TK Technologies Gen. AI Engineer contract (**Feb 2026 – Present**). Current public-safe delivery is the omnichannel CRM, the car-parts price searcher / CDP platform, Notion sprint coordination, and customer-facing demos/training/support. No new raw Notion export was provided on 2026-09-11, so ticket-level themes below stay as last approved. Do not publish an expected contract end date.
 
 Lucas works from Notion sprints, with tickets grouped by sprint, status, responsible owner, and epic. The board shows a mix of completed, in-progress, ready, blocked, and canceled work across CDP, automation, mobile launch, customer/payment, and career-growth epics.
 
@@ -42,7 +42,7 @@ Use these as public-safe evidence. Keep them metric-free until specific counts o
 - Supported mobile launch readiness by working through Play Store/EAS setup, phased launch planning, and DUNS/company verification requirements.
 - Researched anti-bot and residential proxy options to improve web-scraping reliability for automotive market-intelligence pipelines.
 - Implemented and debugged secure n8n webhook/callback flows connecting chat, email, scraping, stock lookup, reporting, and notification systems.
-- Architected OrbitAI, an omnichannel AI CRM platform (WhatsApp, Instagram, Facebook, Telegram, Email) with NestJS API, Next.js agent dashboard (with RBAC), Meta/Google Ads integrations, and LLM automation layer, deploying to Azure Container Apps.
+- Architected an omnichannel AI CRM platform (WhatsApp, Instagram, Facebook, Telegram, Email) with NestJS API, Next.js agent dashboard (with RBAC), Meta/Google Ads integrations, and LLM automation layer, deploying to Azure Container Apps.
 
 ## Evidence to capture next
 

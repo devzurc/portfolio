@@ -37,7 +37,7 @@ Construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em pro
 
 ### Engenheiro de IA Generativa — TK Technologies | Curitiba, PR (Híbrido) · Fev 2026 – Atual · Contrato
 
-- Construiu o OrbitAI, um CRM de IA omnichannel (WhatsApp, Instagram, Facebook, Telegram e e-mail) com controle de acesso, rastreamento de Meta/Google Ads e respostas por LLMs, em Azure Container Apps com Bicep.
+- Construiu um CRM de IA omnichannel (WhatsApp, Instagram, Facebook, Telegram e e-mail) com controle de acesso, rastreamento de Meta/Google Ads e respostas por LLMs, em Azure Container Apps com Bicep.
 - Desenvolveu pipeline de web scraping em Python coletando dados de preço e metadados de mais de 10 sites de peças automotivas, gerando inteligência competitiva de mercado em escala.
 - Construiu workflows n8n para ETL, chat, entrada de mensagens e follow-up operacional, com LLMs (Claude, Google AI Studio) e APIs do GCP (Sheets, Drive).
 - Desenvolveu chatbot de IA conversacional permitindo que usuários de negócio consultassem e refinassem datasets de preço por linguagem natural, reduzindo o tempo de obtenção de insights.
@@ -65,9 +65,9 @@ Construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em pro
 
 ## Projetos de Destaque
 
-### OrbitAI — CRM de IA Omnichannel · NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Atual
+### CRM de IA Omnichannel · NestJS, Next.js, PostgreSQL, LLMs, APIs de Meta/Google Ads, Azure Container Apps, Docker · TK Technologies – Jun 2026 – Atual
 
-- Desenvolveu o OrbitAI, um CRM omnichannel seguro que centraliza WhatsApp, Instagram, Facebook, Telegram e e-mails em uma caixa de entrada unificada com controle de acesso baseado em funções (RBAC).
+- Desenvolveu um CRM omnichannel seguro que centraliza WhatsApp, Instagram, Facebook, Telegram e e-mails em uma caixa de entrada unificada com controle de acesso baseado em funções (RBAC).
 - Conectou dados de desempenho de Meta e Google Ads e uma camada de LLMs (Claude/Google AI Studio) para auto-respostas, mensagens outbound e análise automatizada de campanhas.
 
 ### Buscador de Preços de Peças · Python, FastAPI, Celery, Playwright, Redis, PostgreSQL, n8n, Azure, Bicep · TK Technologies – Fev 2026 – Atual
