@@ -1,6 +1,6 @@
 # Career project index
 
-> Updated 2026-10-05. Public-safe portfolio/CV evidence layer.
+> Updated 2026-10-18. Public-safe portfolio/CV evidence layer.
 
 ## Flagship and CV-backed work
 
@@ -34,6 +34,7 @@
 | my-finance | private | private-evidence | unknown | false | false | [profile](projects/my-finance.md) | [readme](readmes/my-finance.md) |
 | n8n-clerk-followup | private | active | TK Technologies | false | false | [profile](projects/n8n-clerk-followup.md) | [readme](readmes/n8n-clerk-followup.md) |
 | n8n-instagram-assistant | private | active | TK Technologies | false | false | [profile](projects/n8n-instagram-assistant.md) | [readme](readmes/n8n-instagram-assistant.md) |
+| personal-assistant | private | private-evidence | Personal | false | false | [profile](projects/personal-assistant.md) | [readme](readmes/personal-assistant.md) |
 | project-bigdatapipeline | private | archived | unknown | false | false | [profile](projects/project-bigdatapipeline.md) | [readme](readmes/project-bigdatapipeline.md) |
 | [project_analisys-bank-statement](https://github.com/devzurc/project_analisys-bank-statement) | public | learning | Personal / unknown | false | false | [profile](projects/project_analisys-bank-statement.md) | [readme](readmes/project_analisys-bank-statement.md) |
 | [project_dashboard-heroby-v1-](https://github.com/devzurc/project_dashboard-heroby-v1-) | public | archived | unknown | false | false | [profile](projects/project_dashboard-heroby-v1-.md) | [readme](readmes/project_dashboard-heroby-v1-.md) |
@@ -42,6 +43,7 @@
 | sabia-hub | private | private-evidence | unknown | false | false | [profile](projects/sabia-hub.md) | [readme](readmes/sabia-hub.md) |
 | [stock-market-lakehouse](https://github.com/devzurc/stock-market-lakehouse) | public | learning | Personal | false | false | [profile](projects/stock-market-lakehouse.md) | [readme](readmes/stock-market-lakehouse.md) |
 | [train_etl_dataingestion](https://github.com/devzurc/train_etl_dataingestion) | public | learning | Personal | false | false | [profile](projects/train_etl_dataingestion.md) | [readme](readmes/train_etl_dataingestion.md) |
+| zurcsi-website | private | private-evidence | Personal / Consultancy | false | false | [profile](projects/zurcsi-website.md) | [readme](readmes/zurcsi-website.md) |
 
 ## Manifest and sync
 

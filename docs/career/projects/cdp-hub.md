@@ -23,6 +23,8 @@ stack:
   - Docker
   - Azure Container Apps
   - Azure Bicep
+  - GitHub Actions CI/CD
+  - pytest
   - JSON Schema
 portfolio_worthy: true
 cv_worthy: true

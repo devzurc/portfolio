@@ -5,7 +5,7 @@ google_doc: https://docs.google.com/document/d/1oi8mzTJNNTu3CdSuqEgiWCPmiyvGWxrs
 pdf: ../pdf/LucasCruz_CV_PT.pdf
 word: ../word/LucasCruz_CV_PT.docx
 last_synced: 2026-09-22
-last_updated: 2026-10-06
+last_updated: 2026-10-18
 sync_source: markdown-built-pdf-pending-google-paste
 ---
 
@@ -19,17 +19,17 @@ Florianópolis, Santa Catarina · Necessita de patrocínio de visto
 
 ## Resumo Profissional
 
-Construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em produção, em IoT, fintech, agronegócio e produtos automotivos, com mais de 5 anos em dados e inglês C1. Estou estudando RAG, avaliação e observabilidade em produção. Isso ainda não é um sistema entregue.
+Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com mais de 5 anos construindo pipelines de dados em produção, lakehouses Medallion na AWS e workflows operacionais com LLMs/n8n em IoT, fintech, agronegócio e inteligência automotiva. Experiência ponta a ponta desde serviços Python/FastAPI/TypeScript e datasets governados até deploys conteinerizados em Azure/AWS, esteiras de qualidade em CI/CD e entrega técnica junto a stakeholders (inglês C1).
 
 ## Competências Técnicas
 
 | Categoria | Competências |
 |-----------|--------------|
-| IA generativa e automação | Integração com LLMs (Claude, Google AI Studio), n8n, desenho de prompts, chatbots, Meta Cloud API |
-| Engenharia de dados | Python, SQL, Apache Spark (PySpark), Pandas, Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
-| Nuvem e entrega | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep, FastAPI, NestJS, Next.js, Celery, Redis, Git, CI/CD |
+| IA generativa e automação | Integração com LLMs (Claude, Google AI Studio, xAI Grok), n8n, agentes LangChain, desenho de prompts, chatbots, Meta Cloud API, webhooks |
+| Engenharia de dados | Python, SQL, Apache Spark (PySpark), Pandas, Apache Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
+| Nuvem, backend e entrega | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep (IaC), FastAPI, TypeScript, NestJS, Next.js, Celery, Redis / Streams, Pydantic, Git, GitHub Actions (CI/CD), pytest |
 | Bancos e BI | PostgreSQL, SQL Server, Oracle Autonomous Database, Power BI, Qlik Sense, Apache Superset |
-| Governança | LGPD/GDPR, RBAC, privacidade de dados |
+| Governança | Conformidade LGPD/GDPR, RBAC, privacidade de dados, contratos de dados (JSON Schema) |
 | Laboratório (não é produção de cliente) | dbt Core, Prefect, DuckDB, Snowflake |
 | Idiomas | Português (Nativo) · Inglês (C1 – Avançado) · Espanhol (B1 – Intermediário) |
 

@@ -1,4 +1,4 @@
-<!-- PRIVATE REPO: sanitized from https://github.com/devzurc/my-finance on 2026-09-22 -->
+<!-- PRIVATE REPO: sanitized from https://github.com/devzurc/my-finance on 2026-10-18 -->
 
 ## Private repository evidence
 

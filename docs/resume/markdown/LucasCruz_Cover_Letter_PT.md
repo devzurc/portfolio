@@ -1,7 +1,7 @@
 ---
 lang: pt-BR
 title: Lucas Cruz — Carta de Apresentação
-last_updated: 2026-10-05
+last_updated: 2026-10-18
 source: portfolio-career-knowledge
 template_vars: [Role, Company]
 google_doc: https://docs.google.com/document/d/15davoxr1GtnWgvhN2tSIsDJ2br_Fb4AHEGpGFNgUybI/edit
@@ -11,15 +11,18 @@ google_doc: https://docs.google.com/document/d/15davoxr1GtnWgvhN2tSIsDJ2br_Fb4AH
 
 Prezada Equipe de Recrutamento,
 
-Escrevo para a vaga de **[Role]** na **[Company]**. Sou Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa. Há mais de 5 anos construo pipelines de dados, lakehouses em nuvem e workflows com LLMs/n8n em produção, em IoT, fintech, agronegócio e produtos automotivos.
+Escrevo para me candidatar à vaga de **[Role]** na **[Company]**. Sou Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa, com mais de 5 anos de experiência construindo pipelines de dados em produção, lakehouses em nuvem e workflows operacionais com LLMs/n8n nos setores de IoT, fintech, agronegócio e inteligência automotiva.
 
-Na minha atuação atual na TK Technologies, desenvolvo pipelines de scraping em Python, serviços backend e automações n8n/LLM para busca de preços de peças automotivas. Um dos principais projetos é uma plataforma ponta a ponta que recebe solicitações de SKU por chat, e-mail, agendamentos ou planilhas, executa pipelines de preços públicos e consulta de estoque interno, e entrega relatórios estruturados por workflows automatizados. Também projeto um CRM de IA omnichannel que reúne canais de mensagens, controle de acesso baseado em funções, dados de publicidade e respostas assistidas por LLMs em uma única superfície operacional. Também conduzo sprints de entrega no Notion, demos para clientes, treinamento de produto, apoio comercial e suporte pós-lançamento enquanto preparo o lançamento mobile. Anteriormente, na Spacecom Monitoramento, projetei e mantive um lakehouse na AWS S3 com Arquitetura Medallion, PySpark, Delta Lake, Airflow e Trino, suportando uma plataforma IoT com mais de 95.000 dispositivos e centenas de milhões de registros de telemetria por dia.
+Nas minhas entregas recentes, uno arquitetura de dados e backend à entrega prática de produto:
 
-Trabalho perto de quem usa o sistema: entendo o problema operacional, monto o fluxo de dados e tiro o trabalho repetido da mão das pessoas. Uso Python, SQL, FastAPI, Airflow, n8n, AWS, Azure, GCP, PostgreSQL e Docker em produção. Estou estudando RAG, avaliação e observabilidade em produção. Isso ainda não está entregue. O lakehouse público de prática é o [cnpj-lakehouse](https://github.com/devzurc/cnpj-lakehouse) (dbt, Prefect, DuckDB), separado do trabalho de cliente.
+- **Plataforma de Inteligência de Preços e Estoque Automotivo (TK Technologies):** Desenvolvi uma plataforma ponta a ponta (`FastAPI`, `Celery`, `Playwright`, `Redis Streams`, `PostgreSQL`, `n8n`, `Azure Container Apps`, `Bicep`) que recebe solicitações de SKU por chat, e-mail, agendamentos ou planilhas, executa busca paralela de preços públicos em mais de 10 sites e consulta de estoque interno, e entrega relatórios auditáveis.
+- **CRM de IA Omnichannel (TK Technologies):** Arquitetei uma caixa de entrada unificada (`TypeScript`, `NestJS`, `Next.js`, `PostgreSQL`, `Docker`, `Azure`) integrando WhatsApp, Instagram, Facebook, Telegram e e-mail com controle de acesso baseado em funções (RBAC), métricas de Meta/Google Ads e respostas assistidas por LLMs.
+- **Data Lakehouse IoT Corporativo (Spacecom Monitoramento):** Projetei e mantive um lakehouse em Arquitetura Medallion (`AWS S3`, `PySpark`, `Delta Lake`, `Airflow`, `Trino`, `Superset`, `Qlik Sense`) suportando mais de 95.000 dispositivos IoT e centenas de milhões de registros diários de telemetria sob governança LGPD/GDPR, reduzindo falhas de pipeline em ~30% e elevando a acurácia analítica em ~40%.
+- **Entrega Técnica e Relacionamento com Clientes:** Além da engenharia e das esteiras de qualidade em CI/CD, coordeno sprints no Notion, conduzo demos e treinamentos de produto para clientes e converto feedback operacional diretamente em melhorias de produção.
 
-Estou em Florianópolis, Santa Catarina, Brasil. Trabalho em inglês no nível C1 e aceito patrocínio de visto quando necessário.
+Trago um perfil prático e orientado à produção: atuo próximo às áreas de negócio e tecnologia, desenho contratos confiáveis de dados e APIs e automatizo fluxos operacionais repetitivos. Além dos sistemas de produção para clientes, mantenho projetos públicos de laboratório no GitHub, como o [cnpj-lakehouse](https://github.com/devzurc/cnpj-lakehouse) (`Prefect`, `dbt Core`, `DuckDB`).
 
-Ficaria feliz em levar minha experiência em engenharia de dados e automação com IA para a **[Company]**, especialmente se o time precisa de alguém que conecte plataformas de dados, infraestrutura cloud, workflows de IA e reporting voltado ao negócio.
+Estou baseado em Florianópolis, Santa Catarina, Brasil, trabalho em inglês no nível C1 (IELTS) e necessito de patrocínio de visto quando aplicável. Ficaria feliz em conversar sobre como minha experiência em plataformas de dados e automação com IA pode contribuir para a **[Company]**.
 
 Atenciosamente,
 

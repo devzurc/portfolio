@@ -5,7 +5,7 @@ google_doc: https://docs.google.com/document/d/1O4YsNWyfANs_332ecNZ8fgf-wclyuJCj
 pdf: ../pdf/LucasCruz_CV_EN.pdf
 word: ../word/LucasCruz_CV_EN.docx
 last_synced: 2026-09-22
-last_updated: 2026-10-06
+last_updated: 2026-10-18
 sync_source: markdown-built-pdf-pending-google-paste
 ---
 
@@ -19,17 +19,17 @@ Florianópolis, Santa Catarina, Brazil · Requires visa sponsorship
 
 ## Professional Summary
 
-I build production data pipelines, cloud lakehouses, and LLM/n8n workflows across IoT, fintech, agribusiness, and automotive products, with 5+ years in data roles and English at C1. I am learning production RAG, evaluation, and observability. Those are not shipped systems yet.
+Senior Data Engineer and Gen. AI Automation Engineer with 5+ years building production data pipelines, AWS Medallion lakehouses, and LLM/n8n operational workflows across IoT, fintech, agribusiness, and automotive intelligence. Experienced in end-to-end delivery from Python/FastAPI/TypeScript services and governed datasets to containerized Azure/AWS deployments, CI/CD quality gates, and stakeholder-facing product delivery (English C1).
 
 ## Technical Skills
 
 | Category | Skills |
 |----------|--------|
-| Gen. AI & automation | LLM integration (Claude, Google AI Studio), n8n, prompt design, chatbots, Meta Cloud API |
-| Data engineering | Python, SQL, Apache Spark (PySpark), Pandas, Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
-| Cloud & delivery | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep, FastAPI, NestJS, Next.js, Celery, Redis, Git, CI/CD |
+| Gen. AI & automation | LLM integration (Claude, Google AI Studio, xAI Grok), n8n, LangChain agents, prompt design, chatbots, Meta Cloud API, webhooks |
+| Data engineering | Python, SQL, Apache Spark (PySpark), Pandas, Apache Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
+| Cloud, backend & delivery | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep (IaC), FastAPI, TypeScript, NestJS, Next.js, Celery, Redis / Streams, Pydantic, Git, GitHub Actions (CI/CD), pytest |
 | Databases & BI | PostgreSQL, SQL Server, Oracle Autonomous Database, Power BI, Qlik Sense, Apache Superset |
-| Governance | LGPD/GDPR, RBAC, data privacy |
+| Governance | LGPD/GDPR compliance, RBAC, data privacy, schema contracts (JSON Schema) |
 | Labs (not client production) | dbt Core, Prefect, DuckDB, Snowflake |
 | Languages | Portuguese (Native) · English (C1 – Advanced) · Spanish (B1 – Intermediate) |
 

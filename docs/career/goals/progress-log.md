@@ -130,6 +130,28 @@ A public runnable lakehouse is the proof a recruiter can open. Private CRM and s
 
 ---
 
+## Week of 2026-10-18
+
+**Monday — measurable improvement chosen:**  
+Run a full GitHub sync under `devzurc` (public + private) and align all recruiter-facing texts (`index.html`, EN/PT CVs, and Cover Letters) with verified technologies, methodologies, and CV metrics.
+
+**Tuesday–Wednesday — implemented:**  
+- Switched `gh` active account to `devzurc` and synced all 26 repositories.
+- Curated `personal-assistant` and `zurcsi-website` as parked `private-evidence` profiles; added verified `TypeScript`, `GitHub Actions CI/CD`, and `pytest` stack signals to `cdp-hub` and `whatsapp-crm-platform`.
+- Upgraded `index.html` (`#hero`, `#projects`, `#skills`, `#experience`, `#job-fit`) in EN and PT-BR with verified CV impact metrics (`~30%`, `~25%`, `~40%`, `~35%`, `~50%`) and engineering methodologies (`Redis Streams`, `Bicep`, `GitHub Actions`, `RBAC`).
+- Polished EN/PT CV summaries, cover letters, and rebuilt 2-page DOCX and PDF downloads (`?v=20261018`).
+
+**Thursday — evaluate/observe:**  
+- Static site verifier, agent system validator, and EN/PT parity checks all pass; both rebuilt CV PDFs fit cleanly on 2 A4 pages.
+
+**Friday — technical note:**  
+Recruiters scan summaries and experience timelines in seconds. Removing self-defeating disclaimers while keeping a strict, transparent table split between client production skills and public lab work preserves 100% factual integrity while projecting senior confidence.
+
+**Weekend — polish:**  
+- Paste updated `docs/resume/google-docs-update-2026-10-06.md` into Google Docs and begin `raw-llm-systems` milestone repo.
+
+---
+
 ## Template (copy for future weeks)
 
 ```markdown

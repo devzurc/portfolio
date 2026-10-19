@@ -1,6 +1,6 @@
 # Alignment plan - CV · Portfolio · Career knowledge
 
-> **Status (2026-10-06):** Owner asked to publish. `cnpj-lakehouse` is a personal portfolio card, not a CV notable project. TK stays **Feb 2026 – Present**. Site PDFs were rebuilt from markdown so downloads match the labs split. Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `sync-from-google-docs.py`. Do not pull Google Docs before that paste. `gh` must be signed in as `devzurc` to refresh private repos.
+> **Status (2026-10-18):** Full GitHub sync completed as `devzurc` (26 repos). Parked `personal-assistant` and `zurcsi-website` as `private-evidence`. Enriched CV, Cover Letter, and `index.html` with verified GitHub methodologies (GitHub Actions CI/CD, Bicep IaC, Redis Streams, TypeScript) and CV impact metrics (`~30%`, `~25%`, `~40%`, `~35%`, `~50%`), removing negative disclaimers while keeping lab skills (`dbt Core`, `Prefect`, `DuckDB`, `Snowflake`) cleanly separated. Site PDFs and Word files rebuilt (`?v=20261018`). Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `sync-from-google-docs.py`.
 
 This plan connects three surfaces:
 
@@ -15,7 +15,7 @@ This plan connects three surfaces:
 
 **Rule:** Public copy (CV + portfolio) only uses facts backed by `docs/career/projects/*.md` with `verified_outcomes` or CV text.
 
-**CV source of truth (2026-10-06):** `docs/resume/markdown/*.md` is the draft for the tighter skills split and summary. Word, source text, and site PDFs were rebuilt from that markdown. Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `python3 docs/resume/scripts/sync-from-google-docs.py`.
+**CV source of truth (2026-10-18):** `docs/resume/markdown/*.md` is the canonical source for the polished summary and production-vs-labs skills split. Word, source text, and site PDFs were rebuilt from that markdown. Google Docs still match the 2026-09-22 export until the owner pastes `docs/resume/google-docs-update-2026-10-06.md` and runs `python3 docs/resume/scripts/sync-from-google-docs.py`.
 
 Locked facts:
 
@@ -31,8 +31,8 @@ See `docs/career/alignment-note-2026-09-11.md` for the fact matrix and LinkedIn 
 ## Phase 0 — Inventory (done / in progress)
 
 - [x] CV markdown restored to compact draft (`docs/resume/markdown/`)
-- [x] GitHub READMEs + project stubs (`docs/career/`) — last sync 2026-09-11
-- [x] Park private `needs-review` hubs (`crm-hub`, `sabia-hub`, `invest-hub`, `my-finance`) as `private-evidence`
+- [x] GitHub READMEs + project stubs (`docs/career/`) — last sync 2026-10-18 (as `devzurc`, 26 repos)
+- [x] Park private `needs-review` hubs (`crm-hub`, `sabia-hub`, `invest-hub`, `my-finance`, `personal-assistant`, `zurcsi-website`) as `private-evidence`
 - [x] Curate `cnpj-lakehouse` (renamed from `franq-data-lakehouse-challenge`) as a public personal portfolio card, not a CV notable project
 - [x] Flag `portfolio_worthy` and `cv_worthy` per project
 - [x] Resolve EN/PT CV inconsistencies in markdown

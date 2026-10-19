@@ -8,7 +8,7 @@ period: 2026-06 - ongoing
 employer: TK Technologies
 role: Full-stack Engineer / Architect
 domains: [saas, crm, messaging, automation, ai]
-stack: [NestJS, Next.js, PostgreSQL, LLMs, Meta Ads API, Google Ads API, Meta Cloud API, Telegram API, Docker, Bicep, pnpm, RBAC]
+stack: [TypeScript, NestJS, Next.js, PostgreSQL, LLMs, Meta Ads API, Google Ads API, Meta Cloud API, Telegram API, Docker, Azure Container Apps, Azure Bicep, GitHub Actions CI/CD, pnpm, RBAC]
 portfolio_worthy: true
 cv_worthy: true
 verified_outcomes: []
