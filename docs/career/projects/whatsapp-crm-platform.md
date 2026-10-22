@@ -34,7 +34,7 @@ Fragmented customer communications across multiple messaging apps and separate a
 - **Governance & Role-Based Access (RBAC):** Built strict access management controls so agents and managers only access chats, customer profiles, and ad data corresponding to their authorized roles.
 - **LLM Automation Layer:** Implemented LLM orchestration (Claude / Google AI Studio) for initial customer auto-replies, outbound agent-message drafting, and campaign analysis support.
 - **Azure IaC Deployment:** Containerized the services (Docker) and deployed via Azure Container Apps (ACA) using modular Bicep templates.
-- **Current product contribution:** Building the new TK web presence and contributing to ongoing product development and maintenance across the CRM product ecosystem, including StokIA work, using public-safe descriptions only.
+- **Current product contribution:** Building the new TK web presence and contributing to ongoing product development and maintenance across the CRM product ecosystem. The separate frontend product is curated in `projects/tk-ai-workspace-frontend.md`. Public copy uses that profile's sanitized TK bullet only.
 
 ## Architecture
 

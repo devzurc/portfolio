@@ -44,6 +44,7 @@
 | [stock-market-lakehouse](https://github.com/devzurc/stock-market-lakehouse) | public | learning | Personal | false | false | [profile](projects/stock-market-lakehouse.md) | [readme](readmes/stock-market-lakehouse.md) |
 | [train_etl_dataingestion](https://github.com/devzurc/train_etl_dataingestion) | public | learning | Personal | false | false | [profile](projects/train_etl_dataingestion.md) | [readme](readmes/train_etl_dataingestion.md) |
 | zurcsi-website | private | private-evidence | Personal / Consultancy | false | false | [profile](projects/zurcsi-website.md) | [readme](readmes/zurcsi-website.md) |
+| tk-ai-workspace-frontend | private | private-evidence | TK Technologies | false | false | [profile](projects/tk-ai-workspace-frontend.md) | not mirrored |
 
 ## Manifest and sync
 

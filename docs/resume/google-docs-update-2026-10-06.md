@@ -26,7 +26,7 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years building prod
 |----------|--------|
 | Gen. AI & automation | LLM integration (Claude, Google AI Studio, xAI Grok), n8n, LangChain agents, prompt design, chatbots, Meta Cloud API, webhooks |
 | Data engineering | Python, SQL, Apache Spark (PySpark), Pandas, Apache Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
-| Cloud, backend & delivery | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep (IaC), FastAPI, TypeScript, NestJS, Next.js, Celery, Redis / Streams, Pydantic, Git, GitHub Actions (CI/CD), pytest |
+| Cloud, backend & delivery | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep (IaC), FastAPI, TypeScript, React, Vite, Tailwind CSS, NestJS, Next.js, Celery, Redis / Streams, Pydantic, Git, GitHub Actions (CI/CD), pytest |
 | Databases & BI | PostgreSQL, SQL Server, Oracle Autonomous Database, Power BI, Qlik Sense, Apache Superset |
 | Governance | LGPD/GDPR compliance, RBAC, data privacy, schema contracts (JSON Schema) |
 | Labs (not client production) | dbt Core, Prefect, DuckDB, Snowflake |
@@ -46,8 +46,20 @@ Engenheiro de Dados Sênior e Engenheiro de Automação com IA Generativa com ma
 |-----------|--------------|
 | IA generativa e automação | Integração com LLMs (Claude, Google AI Studio, xAI Grok), n8n, agentes LangChain, desenho de prompts, chatbots, Meta Cloud API, webhooks |
 | Engenharia de dados | Python, SQL, Apache Spark (PySpark), Pandas, Apache Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
-| Nuvem, backend e entrega | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep (IaC), FastAPI, TypeScript, NestJS, Next.js, Celery, Redis / Streams, Pydantic, Git, GitHub Actions (CI/CD), pytest |
+| Nuvem, backend e entrega | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep (IaC), FastAPI, TypeScript, React, Vite, Tailwind CSS, NestJS, Next.js, Celery, Redis / Streams, Pydantic, Git, GitHub Actions (CI/CD), pytest |
 | Bancos e BI | PostgreSQL, SQL Server, Oracle Autonomous Database, Power BI, Qlik Sense, Apache Superset |
 | Governança | Conformidade LGPD/GDPR, RBAC, privacidade de dados, contratos de dados (JSON Schema) |
 | Laboratório (não é produção de cliente) | dbt Core, Prefect, DuckDB, Snowflake |
 | Idiomas | Português (Nativo) · Inglês (C1 – Avançado) · Espanhol (B1 – Intermediário) |
+
+## English — replace the last TK Technologies bullet
+
+Built the product frontend in React, TypeScript, Vite, and Tailwind from Figma (home shell, image and artifact modes, a learning hub, and a prompt-pack studio), connected those screens to an existing Node.js API for workspace entitlements, content catalogs, and feature-interest tracking with Clerk sessions, and delivered it on short-lived branches with typecheck, production build, and visual source audits.
+
+Remove the previous Notion sprint / TK web presence bullet. Do not add the internal product name.
+
+## Português — substituir o último bullet da TK Technologies
+
+Construiu o frontend do produto em React, TypeScript, Vite e Tailwind a partir do Figma (shell da home, modos de imagem e artefato, hub de aprendizado e estúdio de pacotes de prompts), conectou essas telas a uma API Node.js existente para permissões de workspace, catálogos de conteúdo e registro de interesse com sessões Clerk, e entregou em branches curtas com typecheck, build de produção e auditoria visual de código antes da revisão.
+
+Remover o bullet anterior de sprints no Notion / presença web da TK. Não incluir o nome interno do produto.

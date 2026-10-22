@@ -27,7 +27,7 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years building prod
 |----------|--------|
 | Gen. AI & automation | LLM integration (Claude, Google AI Studio, xAI Grok), n8n, LangChain agents, prompt design, chatbots, Meta Cloud API, webhooks |
 | Data engineering | Python, SQL, Apache Spark (PySpark), Pandas, Apache Airflow, Delta Lake, Parquet, Trino, Playwright, web scraping |
-| Cloud, backend & delivery | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep (IaC), FastAPI, TypeScript, NestJS, Next.js, Celery, Redis / Streams, Pydantic, Git, GitHub Actions (CI/CD), pytest |
+| Cloud, backend & delivery | AWS, Azure, GCP, OCI, Docker, Azure Container Apps, Bicep (IaC), FastAPI, TypeScript, React, Vite, Tailwind CSS, NestJS, Next.js, Celery, Redis / Streams, Pydantic, Git, GitHub Actions (CI/CD), pytest |
 | Databases & BI | PostgreSQL, SQL Server, Oracle Autonomous Database, Power BI, Qlik Sense, Apache Superset |
 | Governance | LGPD/GDPR compliance, RBAC, data privacy, schema contracts (JSON Schema) |
 | Labs (not client production) | dbt Core, Prefect, DuckDB, Snowflake |
@@ -41,7 +41,7 @@ Senior Data Engineer and Gen. AI Automation Engineer with 5+ years building prod
 - Engineered a multi-source web scraping pipeline in Python targeting 10+ automotive parts websites, extracting pricing and product metadata at scale to deliver competitive market intelligence.
 - Built n8n workflows for ETL, chat, messaging intake, and operational follow-up, using LLMs (Claude, Google AI Studio) and GCP APIs (Sheets, Drive).
 - Developed a conversational AI chatbot that empowers business users to query and refine pricing datasets via natural language, reducing time-to-insight for non-technical stakeholders.
-- Coordinated Notion-based delivery sprints, customer-facing demos, product training, sales support, and post-launch support; contribute to the TK web presence and ongoing CRM product development and maintenance.
+- Built the product frontend in React, TypeScript, Vite, and Tailwind from Figma (home shell, image and artifact modes, a learning hub, and a prompt-pack studio), connected those screens to an existing Node.js API for workspace entitlements, content catalogs, and feature-interest tracking with Clerk sessions, and delivered it on short-lived branches with typecheck, production build, and visual source audits.
 
 ### Data Engineer — Spacecom Monitoramento | Curitiba, PR – Brazil (On-site) · Apr 2023 – Jul 2024
 
